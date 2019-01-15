@@ -4220,3 +4220,6 @@ body.is-touch #banner {
     padding: 0;
   }
 }
+a:hover {
+  cursor: pointer;
+}
