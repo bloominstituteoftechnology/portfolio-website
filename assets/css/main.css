@@ -1181,8 +1181,6 @@ input, select, textarea {
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
-		background-image: url(/images/mackinac-bridge.jpg);
-		background-size: 100% 100%;
 	}
 
 		#wrapper:before {

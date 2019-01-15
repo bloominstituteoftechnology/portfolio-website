@@ -1,37 +1,27 @@
 /*
-	Dimension by HTML5 UP
+	Aerial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* BG */
+/* Wrapper */
 
-	body.is-preload #bg:before {
-		background-color: transparent;
+	#wrapper {
+		opacity: 1 !important;
+	}
+
+/* Overlay */
+
+	#overlay {
+		opacity: 1 !important;
 	}
 
 /* Header */
 
-	body.is-preload #header {
-		-moz-filter: none;
-		-webkit-filter: none;
-		-ms-filter: none;
-		filter: none;
+	#header {
+		opacity: 1 !important;
 	}
 
-		body.is-preload #header > * {
-			opacity: 1;
+		#header nav li {
+			opacity: 1 !important;
 		}
-
-		body.is-preload #header .content .inner {
-			max-height: none;
-			padding: 3rem 2rem;
-			opacity: 1;
-		}
-
-/* Main */
-
-	#main article {
-		opacity: 1;
-		margin: 4rem 0 0 0;
-	}
