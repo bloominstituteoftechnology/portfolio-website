@@ -6,7 +6,7 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 
 ## Project Set Up
 
-Follow these steps to set up and work on your project:
+### Follow these steps to set up and work on your project:
 
 - [ ] Create a forked copy of this project.
 - [ ] Add PM as collaborator on Github.
@@ -15,7 +15,7 @@ Follow these steps to set up and work on your project:
 - [ ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: `git push origin <firstName-lastName>`.
 
-Follow these steps to download your template and start the project:
+### Follow these steps to download your template and start the project:
 
 - [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
 - [ ] Pick a template that represents you and download it to your local machine
@@ -23,7 +23,8 @@ Follow these steps to download your template and start the project:
   * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
 - [ ] Work on the MVP requirements listed below
 
-Follow these steps for completing your project after your MVP is completed:
+### Follow these steps for completing your project after your MVP is completed:
+
 - [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
 - [ ] PM then will count the HW as done by merging the branch back into master.
