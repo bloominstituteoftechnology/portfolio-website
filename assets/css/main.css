@@ -1647,7 +1647,7 @@ input, select, textarea {
 	font-size: 40px;
 	color: darkgray;
 	text-align: center;
-	font-style: bold;
+	line-height: 1.25; 
 }
 .work-boxes .box1 {
 	width: 200px;
