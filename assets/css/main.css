@@ -3482,8 +3482,9 @@ body.landing .dropotron.level-0 {
 
 #header nav {
   position: absolute;
-  right: 1em;
+  right: 15em;
   top: 0;
+  font-size: 25px;
 }
 
 #header nav ul {
@@ -3492,7 +3493,8 @@ body.landing .dropotron.level-0 {
 
 #header nav ul li {
   display: inline-block;
-  margin-left: 1em;
+
+  margin: 0 1.5em;
 }
 
 #header nav ul li a,
