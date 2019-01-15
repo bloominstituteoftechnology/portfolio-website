@@ -1644,6 +1644,10 @@ input, select, textarea {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	color: black;
+	font-size: 40px;
+	color: darkgray;
+	text-align: center;
+	font-style: bold;
 }
 .work-boxes .box1 {
 	width: 200px;
@@ -1651,25 +1655,26 @@ input, select, textarea {
 	background: rgb(58, 56, 56);
 	margin-bottom: 50px;
 	border-radius: 8px;
+	padding-top: 10%;
 }
 .work-boxes .box2 {
 	width: 200px;
 	height: 200px;
 	background: rgb(58, 56, 56);
 	border-radius: 8px;
-
+	padding-top: 10%;
 }
 .work-boxes .box3 {
 	width: 200px;
 	height: 200px;
 	background: rgb(58, 56, 56);
 	border-radius: 8px;
-
+	padding-top: 10%;
 }
 .work-boxes .box4 {
 	width: 200px;
 	height: 200px;
 	background: rgb(58, 56, 56);
 	border-radius: 8px;
-
+	padding-top: 10%;
 }
