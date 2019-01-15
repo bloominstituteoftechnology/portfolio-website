@@ -1636,3 +1636,40 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/******Work Boxes********/
+
+.work-boxes {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	color: black;
+}
+.work-boxes .box1 {
+	width: 200px;
+	height: 200px;
+	background: rgb(58, 56, 56);
+	margin-bottom: 50px;
+	border-radius: 8px;
+}
+.work-boxes .box2 {
+	width: 200px;
+	height: 200px;
+	background: rgb(58, 56, 56);
+	border-radius: 8px;
+
+}
+.work-boxes .box3 {
+	width: 200px;
+	height: 200px;
+	background: rgb(58, 56, 56);
+	border-radius: 8px;
+
+}
+.work-boxes .box4 {
+	width: 200px;
+	height: 200px;
+	background: rgb(58, 56, 56);
+	border-radius: 8px;
+
+}
