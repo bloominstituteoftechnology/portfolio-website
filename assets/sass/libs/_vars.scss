@@ -1,49 +1,95 @@
 // Misc.
 	$misc: (
-		z-index-base:		10000,
-		z-index-overlay:	100000,
-		max-spotlight:		20
+		z-index-base:	10000
 	);
 
 // Duration.
 	$duration: (
-		navPanel:			0.5s,
-		transition:			0.2s,
-		landing-fadein:		1.5s
+		navPanel: 0.5s
 	);
 
 // Size.
 	$size: (
-		border-radius:		4px,
-		element-height:		3em,
-		element-margin:		2em,
-		navPanel:			275px,
-		container-width:	70em
+		navPanel: 275px
 	);
 
 // Font.
 	$font: (
-		family:				('Roboto', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				100,
-		weight-bold:		300
 	);
 
 // Palette.
 	$palette: (
-		bg:					#1c1d26,
-		bg-transparent:		rgba(23,24,32,0.95),
-		fg-bold:			#ffffff,
-		fg:					rgba(255,255,255,0.75),
-		fg-light:			rgba(255,255,255,0.5),
-		fg-lighter:			rgba(255,255,255,0.15),
-		border:				rgba(255,255,255,0.3),
-		border-bg:			rgba(255,255,255,0.075),
-		border2:			rgba(255,255,255,0.5),
-		border2-bg:			rgba(255,255,255,0.25),
-		accent1:			#e44c65,
-		accent2:			#272833,
-		accent2-transparent:rgba(39,40,51,0.965),
-		accent3:			#5480f1,
-		accent4:			#39c088
+		bg:				#f3f6fa,
+		fg:				#7c8081,
+		border:			transparentize(#7c8081, 0.8),
+
+		header: (
+			bg:			#fff,
+			fg:			inherit,
+			alt-bg:		transparent,
+			alt-fg:		#fff
+		),
+
+		banner: (
+			bg:			#898786,
+			fg:			#fff,
+			inner-bg:	#341b2b,
+			inner-fg:	#fff
+		),
+
+		footer: (
+			bg:			#E8EEF4,
+			fg:			#7c8081
+		),
+
+		one: (
+			bg:			#83d3c9,
+			fg:			#fff
+		),
+
+		two: (
+			bg:			#fff,
+			fg:			inherit
+		),
+
+		three: (
+			bg:			#645862,
+			fg:			#fff
+		),
+
+		navPanel: (
+			bg:			#1c2021,
+			fg:			#fff
+		),
+
+		navButton: (
+			bg:			rgba(163,169,170,0.75),
+			fg:			#fff
+		),
+
+		twitter: (
+			bg:			#70aecd,
+			fg:			#fff
+		),
+
+		facebook: (
+			bg:			#7490c3,
+			fg:			#fff
+		),
+
+		google-plus: (
+			bg:			#db6b67,
+			fg:			#fff
+		),
+
+		github: (
+			bg:			#dcad8b,
+			fg:			#fff
+		),
+
+		dribbble: (
+			bg:			#da83ae,
+			fg:			#fff
+		)
+
 	);
