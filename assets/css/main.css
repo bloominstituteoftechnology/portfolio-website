@@ -3481,7 +3481,7 @@ body.landing .dropotron.level-0 {
 }
 
 #header nav {
-  position: absolute;
+  position: fixed;
   right: 15em;
   top: 0;
   font-size: 25px;
