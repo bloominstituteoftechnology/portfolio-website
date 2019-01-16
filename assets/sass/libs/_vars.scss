@@ -1,22 +1,25 @@
 // Misc.
-	$misc: (
-		z-index-base:	10000
-	);
+$misc: (
+        z-index-base: 10000
+);
 
 // Duration.
-	$duration: (
-		navPanel: 0.5s
-	);
+$duration: (
+        navPanel: 0.5s
+);
 
 // Size.
-	$size: (
-		navPanel: 275px
-	);
+$size: (
+        navPanel: 275px
+);
 
 // Font.
-	$font: (
-	);
+$font: (
+);
 
 // Palette.
-	$palette: (
-	);
+$palette: (
+);
+
+$fa-font-path: "./webfonts";
+
