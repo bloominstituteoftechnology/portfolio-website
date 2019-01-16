@@ -1,0 +1,44 @@
+{
+  "name": "jeremiahtenbrink.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio web site.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremiahtenbrink/jeremiahtenbrink.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "web",
+    "developer",
+    "full",
+    "stack",
+    "node.js",
+    "node",
+    "javascript",
+    "php",
+    "react",
+    "css",
+    "html",
+    "scss",
+    "less"
+  ],
+  "author": "Jeremiah Tenbrink",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremiahtenbrink/jeremiahtenbrink.github.io/issues"
+  },
+  "homepage": "https://github.com/jeremiahtenbrink/jeremiahtenbrink.github.io#readme"
+}
