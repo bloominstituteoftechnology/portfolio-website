@@ -4277,7 +4277,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #f2f5f3; }
+  background: #e7eff6; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -4299,9 +4299,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #6b7770;
+  color: #2a4d69;
   margin: 0 0 0.5em 0;
-  line-height: 1.3; }
+  line-height: 1.3;
+  letter-spacing: 5px; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
@@ -4311,7 +4312,7 @@ h2 {
   font-size: 1.65em; }
   h2.major {
     position: relative;
-    border-top: solid 5px #e7eae8;
+    border-top: solid 5px #2a4d69;
     font-size: 1.65em;
     text-align: center;
     margin: 0 0 3em 0;
@@ -4322,9 +4323,11 @@ h2 {
       display: inline-block;
       top: -0.775em;
       padding: 0 1.25em 0 1.25em; }
+  h2.lambda-label {
+    color: #9d001d; }
 
 h3, h4 {
-  font-size: 1.25em; }
+  font-size: 1.6em; }
 
 a {
   color: #006376;
@@ -4363,7 +4366,9 @@ blockquote {
   font-style: italic; }
 
 p, ul, ol, dl, table {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  font-size: 1.1rem;
+  color: #262e2e; }
 
 /* Section/Article */
 section, article {
@@ -4376,7 +4381,7 @@ header > p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #c1cac5; }
+  color: #9d9d9d; }
 
 /* Container */
 .container {
@@ -5324,7 +5329,7 @@ ul.contact {
       height: 48px;
       border-radius: 6px;
       outline: 0;
-      background: #c1cac5;
+      background: #2a4d69;
       text-align: center; }
       ul.contact li a:before {
         color: #f2f5f3;
@@ -5344,6 +5349,8 @@ ul.contact {
         background-color: #2E5E86; }
       ul.contact li:hover a.fa-google-plus {
         background-color: #DA2713; }
+      ul.contact li:hover a.fa-github {
+        background-color: #262e2e; }
     ul.contact li:active {
       top: 0; }
 
@@ -5373,17 +5380,19 @@ ul.special {
         transition: background-color .2s ease-in-out;
         display: block;
         text-align: center;
-        background: #c1cac5;
+        background: #2a4d69;
         border-radius: 100%;
         width: 2.25em;
         height: 2.25em;
         line-height: 2.175em;
         font-size: 5em;
-        color: #fff; }
+        color: #fff;
+        transition: all .4s; }
     ul.special li:hover {
       top: -1em; }
       ul.special li:hover a:before {
-        background: #b9d2ce; }
+        background: #adcbe3;
+        color: #262e2e; }
 
 /* Meta */
 ul.meta {
@@ -5567,15 +5576,15 @@ table {
   font-weight: 700;
   text-transform: uppercase;
   padding: 2em 0;
-  background: #fff;
+  background: #e7eff6;
   margin: 0 auto; }
   #header .logo {
     position: relative;
     text-align: center;
-    border-top: solid 5px #e7eae8;
+    border-top: solid 5px #2a4d69;
     top: 0.65em; }
     #header .logo div {
-      background: #fff;
+      background: #e7eff6;
       position: relative;
       display: inline-block;
       padding: 0 1.5em 0 1.5em;
@@ -5584,7 +5593,7 @@ table {
       display: inline; }
     #header .logo p {
       display: inline;
-      color: #C1CAC5; }
+      color: #9d9d9d; }
 
 /* Nav */
 body {
@@ -5595,8 +5604,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.95);
-  background-image: url("images/overlay.png");
+  background-image: linear-gradient(to right, #2666e66e, #88969700), url(images/overlay.png);
   width: 100%;
   height: 3.25em;
   line-height: 3.25em;
@@ -5628,7 +5636,7 @@ body {
       position: relative;
       display: block;
       text-decoration: none;
-      color: #6b7770;
+      color: #2a4d69;
       top: -6px;
       padding: 6px 1.5em 0.25em 1.5em;
       border-bottom-left-radius: 6px;
@@ -5637,13 +5645,13 @@ body {
     #nav li:hover, #nav li.active {
       top: 3px; }
     #nav li:hover a, #nav li:hover span {
-      background: #C1CAC5;
+      background: #2a4d69;
       color: #fff; }
     #nav li.active a, #nav li.active span {
       background: #C1CAC5;
       color: #fff; }
     #nav li.current a {
-      background: #7ddde0;
+      background: #63ace5;
       color: #fff; }
 
 .dropotron {
@@ -5717,7 +5725,7 @@ body {
       font-family: 'Open Sans Condensed', sans-serif;
       font-weight: 700;
       text-transform: uppercase;
-      color: #575d59;
+      color: #adcbe3;
       font-size: 1.35em;
       margin: 0 0 1.25em 0; }
     #banner .content .button {
@@ -5725,24 +5733,23 @@ body {
       -webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
       -ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
       transition: border-color .2s ease-in-out, color .2s ease-in-out;
-      color: #b4b7b5;
+      color: #9d9d9d;
       background: transparent !important;
-      border: solid 4px #575d59;
-      border-color: rgba(87, 93, 89, 0.35);
+      border: solid 4px #adcbe3;
       font-size: 1.5em; }
       #banner .content .button:hover {
         color: #e4e7e5;
-        border-color: rgba(87, 93, 89, 0.75); }
+        border-color: #2a4d69; }
       #banner .content .button:active {
         color: #fff;
-        border-color: #616763; }
+        border-color: #2a4d69; }
 
 /* Main */
 #main {
   margin-top: 2rem;
-  background: #fff;
-  border-top: solid 5px #7ddde0;
-  border-bottom: solid 5px #c1cac5;
+  background: #e7eff6;
+  border-top: solid 5px #262e2e;
+  border-bottom: solid 5px #2a4d69;
   border-top-width: 35px;
   border-bottom-width: 10px;
   padding: 6em 0 6em 0; }
@@ -5763,12 +5770,12 @@ body {
   #footer h2.major {
     margin: 0 0 1.5em 0; }
     #footer h2.major span {
-      background: #f2f5f3; }
+      background: #e7eff6; }
 
 /* Copyright */
 #copyright {
   display: inline-block;
-  background: #e7eae8;
+  background: #e7eff6;
   padding: 0.75em 2em 0.75em 2em;
   border-radius: 8px;
   color: #8b9790;
@@ -5779,6 +5786,7 @@ body {
     margin: 0; }
     #copyright .menu li {
       border-color: #C1CAC5;
+      letter-spacing: 2px;
       border-width: 2px;
       line-height: 1em; }
 
@@ -6085,6 +6093,7 @@ body {
   /* Copyright */
   #copyright .menu li {
     display: block;
+    letter-spacing: 3px;
     border-left: 0;
     padding-left: 0;
     line-height: 1.75em; } }
