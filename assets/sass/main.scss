@@ -4,6 +4,7 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
+@import 'libs/_utilities.scss';
 @import "font-awesome/fontawesome";
 
 @import "font-awesome/solid";
@@ -303,10 +304,18 @@ header {
   display: inline-block;
   border-radius: 8px;
 
+
   img {
     display: block;
     width: 100%;
     border-radius: 8px;
+  }
+
+  & .lambda-logo {
+    img{
+      margin: 0 auto;
+      width: 75%;
+    }
   }
 
   &:before {
@@ -346,6 +355,7 @@ header {
     }
   }
 }
+
 
 /* Button */
 
@@ -806,6 +816,7 @@ table {
         margin: 0 0 0.5em 0;
       }
     }
+
   }
 }
 

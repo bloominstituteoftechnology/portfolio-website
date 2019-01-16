@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
+.u-border-black {
+  border: 1px solid black; }
+
 .fa,
 .fas,
 .far,
@@ -5162,6 +5165,9 @@ header > p {
     display: block;
     width: 100%;
     border-radius: 8px; }
+  .image .lambda-logo img {
+    margin: 0 auto;
+    width: 75%; }
   .image:before {
     content: '';
     position: absolute;
