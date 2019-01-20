@@ -1,5 +1,3 @@
-var w = window.innerWidth;
-var h = window.innerHeight;
 
 var s = window.screen;
 var width = q.width = s.width;
