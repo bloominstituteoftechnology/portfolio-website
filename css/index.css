@@ -203,22 +203,43 @@ footer {
     border-radius: 10px;
   }
 }
+.home .intro {
+  border: 2px solid red;
+  margin: 20px;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
 }
-.z {
-  width: 100%;
+.home .about-me {
+  border: 2px solid red;
+  margin: 20px;
 }
-#p {
-  position: relative;
-  width: 100%;
-  height: 150%;
-  top: -600px;
-  z-index: -1;
+.home .about-me h3 {
+  padding: 15px;
 }
-.yw-bg {
-  background-color: rgba(225, 225, 225 0.8);
+.home .about-me p {
+  padding: 0 20px;
+}
+.home .port-text {
+  border: 2px solid red;
+  margin: 20px;
+}
+.home .port-text h3 {
+  padding: 15px;
+}
+.home .port-text p {
+  padding: 0 15px;
+}
+.home .contact-text {
+  border: 2px solid red;
+  margin: 20px;
+}
+.home .contact-text h3 {
+  padding: 15px;
+}
+.home .contact-text p {
+  padding: 0 15px;
 }

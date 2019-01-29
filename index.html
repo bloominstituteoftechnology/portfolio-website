@@ -19,24 +19,34 @@
 <body>
 
  <!-- navigation code here -->
-  <div class="header">
-    <h1>Ethan Baugher</h1>
-    <nav>
-      <a href="#">Home</a> 
-      <a href="#">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
-      <a href="#">Sign In</a>
-    </nav>
-  </div>
 
-  <div class="yw-bg">   
+  <div class="yw-bg" style="position: relative;z-index: 1;">   
+    <div class="header" style="z-index: 8;">
+      <h1>Ethan Baugher</h1>
+      <nav>
+        <a href="#">Home</a> 
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </div>  
     <div class="container home">
   
     <header class="intro">
       <h2>Lift Off</h2>
     
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit facilis consequatur laborum, ex repudiandae quas fugit placeat obcaecati sed, magnam soluta aliquam ad, ab error fuga impedit fugiat expedita.</p>
+
+      <button class="btn about-btn">
+        About
+      </button>
+      <button class="btn portfolio-btn">
+        Portfolio
+      </button>
+      <button class="btn contact-btn">
+        Contact
+      </button>
     </header>
    
     <section class="about-me">
@@ -48,20 +58,23 @@
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, praesentium consequuntur. Sed possimus ab aspernatur minus veritatis dolorem corrupti, sequi quibusdam officia quasi consequuntur nostrum reprehenderit architecto necessitatibus, consectetur tempora.</p>
     </section>
     
-    <section class="portfolio">
-      <div class="port-text">
-        <h3>Let's Go For A Walk</h3>
-
-        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-      
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
-        <button class="btn">
-          Sign Up
-        </button>
-      </div>
-      
+    <section class="port-text">
+    
+      <h3>About Me</h3>
+        
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, voluptatum vel! Consequuntur illum voluptas architecto quisquam et error natus voluptates itaque ratione delectus! Facere voluptate architecto accusamus debitis, sunt doloremque.</p>
+        
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, praesentium consequuntur. Sed possimus ab aspernatur minus veritatis dolorem corrupti, sequi quibusdam officia quasi consequuntur nostrum reprehenderit architecto necessitatibus, consectetur tempora.</p>
     </section>
+
+    <div class="contact-text">
+      <h3>Let's Go For A Walk</h3>
+
+      <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
+    
+      <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
+    </div>
+      
 
     <footer>
       <p>Copyright Ethan Baugher 2019</p>
@@ -69,7 +82,7 @@
 
     </div>
   </div>
-  <canvas id="q"></canvas>
+  <canvas id="q" style="position: fixed; top: 0; left: 0; z-index: 0;"></canvas>></canvas>
   
 
 </body>
