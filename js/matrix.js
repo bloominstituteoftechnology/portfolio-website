@@ -9,7 +9,7 @@
   var draw = function () {
     q.getContext('2d').fillStyle='rgba(255,255,255,.1)';
     q.getContext('2d').fillRect(0,0,width,height);
-    q.getContext('2d').fillStyle='rgba(0,100,200,.8)';
+    q.getContext('2d').fillStyle='rgba(0,100,200,.384)';
     letters.map(function(y_pos, index){
       text = String.fromCharCode(3e4+Math.random()*33);
       x_pos = index * 33;
@@ -20,16 +20,38 @@
   };
 
  setInterval(draw, 70);
-console.log(s);
-console.log(width);
 
 window.onresize = function(){ location.reload(); }
 
-
-
 //=====events
 
-let button = document.getElementById("about-btn");
-    button.addEventListener('click', () => {
-       alert("button clicked");
-    });
+function myFunction() {
+  var x = document.getElementById("about-id");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+//==========portfolio
+
+function myFunction3() {
+  var x = document.getElementById("port-id");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+//==========contact
+
+function myFunction2() {
+  var x = document.getElementById("cont-id");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

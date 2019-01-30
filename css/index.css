@@ -170,7 +170,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background: #F6F6F6;
+  background-image: linear-gradient(to right, rgba(0, 81, 180, 0.348), rgba(241, 241, 241, 0.348));
 }
 .header h1 {
   margin: 10px auto 0px;
@@ -206,6 +206,7 @@ footer {
 .home .intro {
   border: 2px solid red;
   margin: 20px;
+  padding: 20px;
 }
 .home .intro h2 {
   padding: 15px;
