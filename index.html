@@ -3,48 +3,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>SpaceWalkers!</title>
-
+  <title>Ethan Baugher Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
+  <script src="js/matrix.js" async></script><!--background-->
+  <script src="js/intro.js" async></script><!--landingpage-->
+  <script src="js/about.js" async></script><!--about-->
+  <script src="js/portfolio.js" async></script><!--portfolio-->
+  <script src="js/contact.js" async></script><!--contact-->
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-
- <!-- navigation code here -->
-
   <div class="yw-bg" style="position: relative;z-index: 1;">   
-    <div class="header" style="z-index: 8;">
+    <div class="header" style="position: fixed; top: 0; z-index: 8;">
       <h1>Ethan Baugher</h1>
-      <nav>
-        <a href="#">Home</a> 
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-        <a href="#">Sign In</a>
-      </nav>
     </div>  
     <div class="container home">
   
     <header class="intro">
-      <h2>Lift Off</h2>
+      <h2>Welcome</h2>
     
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit facilis consequatur laborum, ex repudiandae quas fugit placeat obcaecati sed, magnam soluta aliquam ad, ab error fuga impedit fugiat expedita.</p>
+      <p>My name is Ethan and I am a Full Stack Web developer.</p>
 
       <button onclick="myFunction()" class="btn" id="about-btn">
         About
       </button>
-      <button onclick="myFunction2()" class="btn portfolio-btn">
+      <button onclick="myFunction2()" class="btn" id="portfolio-btn">
         Portfolio
       </button>
-      <button onclick="myFunction3()" class="btn contact-btn">
+      <button onclick="myFunction3()" class="btn" id="contact-btn">
         Contact
       </button>
     </header>
@@ -53,40 +44,37 @@
      
       <h3>About Me</h3>
     
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, voluptatum vel! Consequuntur illum voluptas architecto quisquam et error natus voluptates itaque ratione delectus! Facere voluptate architecto accusamus debitis, sunt doloremque.</p>
+      <p>I have a wife and 2 kids and I work in a button factory. </p>
     
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, praesentium consequuntur. Sed possimus ab aspernatur minus veritatis dolorem corrupti, sequi quibusdam officia quasi consequuntur nostrum reprehenderit architecto necessitatibus, consectetur tempora.</p>
+      <p>I happen to be a professional button animator.</p>
     </section>
     
     <section id="port-id" class="port-text">
     
-      <h3>About Me</h3>
+      <h3>My Portfolio</h3>
         
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, voluptatum vel! Consequuntur illum voluptas architecto quisquam et error natus voluptates itaque ratione delectus! Facere voluptate architecto accusamus debitis, sunt doloremque.</p>
+      <p>I am woke </p>
         
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, praesentium consequuntur. Sed possimus ab aspernatur minus veritatis dolorem corrupti, sequi quibusdam officia quasi consequuntur nostrum reprehenderit architecto necessitatibus, consectetur tempora.</p>
+      <p>git awesome knowledge at the click of a button...wow...now I know kung fu</p>
     </section>
 
     <div id="cont-id" class="contact-text">
-      <h3>Let's Go For A Walk</h3>
+      <h3>Contact Me</h3>
 
-      <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
+      <p>Red Pill</p>
     
-      <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
+      <p>Blue Pill</p>
     </div>
       
-
-    <footer>
+    </div>
+    <footer style="position: fixed; bottom: 0; left: 0;">
       <p>Copyright Ethan Baugher 2019</p>
     </footer>
 
-    </div>
+    
   </div>
   <canvas id="q" style="position: fixed; top: 0; left: 0; z-index: 0;"></canvas>></canvas>
   
 
 </body>
 </html>
-<!--Source Code for java-->
-
-<script src="js/matrix.js"></script>
