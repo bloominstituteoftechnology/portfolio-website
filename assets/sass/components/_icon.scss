@@ -1,0 +1,72 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		cursor: default;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+
+		&.major {
+			display: block;
+			margin: 0 0 _size(element-margin) 0;
+
+			&:before {
+				border-radius: 100%;
+				border: solid 1px;
+				display: inline-block;
+				font-size: 1.75em;
+				height: 3.5em;
+				line-height: 3.5em;
+				width: 3.5em;
+			}
+		}
+
+		&.accent1 {
+			color: _palette(accent1, bg);
+		}
+
+		&.accent2 {
+			color: _palette(accent2, bg);
+		}
+
+		&.accent3 {
+			color: _palette(accent3, bg);
+		}
+
+		&.accent4 {
+			color: _palette(accent4, bg);
+		}
+
+		@include breakpoint('<=small') {
+			&.major {
+				&:before {
+					font-size: 1.5em;
+					height: 3.25em;
+					line-height: 3.25em;
+					width: 3.25em;
+				}
+			}
+		}
+	}
+
+	@mixin color-icon($p: null) {
+		.icon {
+			&.major {
+				&:before {
+					border-color: _palette($p, border);
+				}
+			}
+		}
+	}
+
+	@include color-icon;

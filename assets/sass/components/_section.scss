@@ -1,0 +1,43 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Section/Article */
+
+	section, article {
+		&.special {
+			text-align: center;
+		}
+	}
+
+	header {
+		p {
+			margin: -0.75em 0 (_size(element-margin) * 1.5) 0;
+		}
+
+		&.major {
+			text-align: center;
+
+			> :first-child {
+				margin-top: -0.25em;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			p {
+				margin: -0.25em 0 _size(element-margin) 0;
+			}
+		}
+	}
+
+	@mixin color-section($p: null) {
+		header {
+			p {
+				color: _palette($p, fg-light);
+			}
+		}
+	}
+
+	@include color-section;

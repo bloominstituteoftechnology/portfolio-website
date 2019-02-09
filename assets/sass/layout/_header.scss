@@ -1,0 +1,141 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Header */
+
+	#header {
+		@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'row');
+		color: _palette(accent1, fg-bold);
+		cursor: default;
+		line-height: 1.5;
+		margin: 0 0 3em 0;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+			color: inherit;
+		}
+
+		> .logo {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '1');
+			display: inline-block;
+			font-size: 1.25em;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing-heading);
+			text-transform: uppercase;
+			vertical-align: middle;
+
+			span {
+				border-left: solid 1px _palette(accent1, border);
+				color: _palette(accent1, fg-light);
+				display: inline-block;
+				font-size: 0.8em;
+				margin-left: 0.325em;
+				padding-left: 0.825em;
+				position: relative;
+				top: -0.075em;
+			}
+		}
+
+		> nav {
+			@include vendor('flex-grow', '1');
+			@include vendor('flex-shrink', '0');
+			text-align: right;
+			white-space: nowrap;
+
+			ul {
+				list-style: none;
+				margin: -0.5em -1em 0 0;
+				padding-left: 0;
+
+				li {
+					display: inline-block;
+					font-weight: _font(weight-bold);
+					letter-spacing: _font(letter-spacing-heading);
+					margin-left: 0.5em;
+					padding-left: 0;
+					text-transform: uppercase;
+
+					a {
+						display: inline-block;
+						line-height: inherit;
+						padding: 0.5em 1em;
+
+						&[href="#menu"] {
+							@include icon;
+
+							&:before {
+								content: '\f0c9';
+								float: right;
+								margin-left: 0.75em;
+							}
+						}
+
+						&:hover {
+							background-color: _palette(accent1, border-bg);
+							border-radius: _size(border-radius);
+						}
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=large') {
+			margin: 0 0 2em 0;
+
+			> .logo {
+				span {
+					top: -0.05em;
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			> .logo {
+				font-size: 1em;
+
+				span {
+					font-size: 1em;
+					top: 0;
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			height: 44px;
+			line-height: 44px;
+			margin: 0;
+			padding: 0 1.25em;
+
+			> .logo {
+				font-size: 0.8em;
+
+				span {
+					display: none;
+				}
+			}
+
+			> nav {
+				font-size: 0.8em;
+
+				ul {
+					margin: 0;
+
+					li {
+						a {
+							padding: 0;
+
+							&:hover {
+								background-color: transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

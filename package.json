@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "description": "Portfolio web site.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "autoprefixer": "^9.4.7",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.1"
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",
-    "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5"
   },
   "scripts": {
-    "watch:sass": "node-sass assets/sass/main.scss assets/css/main.css -w",
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/main.css -w --source-map true",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass"
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/sass.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/css/sass.css -o assets/css/prefixed.css",
+    "compress:css": "node-sass assets/css/prefixed.css assets/css/main.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",

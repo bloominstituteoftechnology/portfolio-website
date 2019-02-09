@@ -1,0 +1,104 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Spotlights */
+
+	.spotlights {
+		box-shadow: 0 0 2em 0 _palette(shadow);
+		margin: 0 0 _size(element-margin) 0;
+
+		> article {
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'row');
+
+			.content {
+				@include padding(4em, 5em);
+				text-align: center;
+			}
+
+			.image {
+				border-radius: 0;
+				position: relative;
+
+				img {
+					border-radius: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			> :nth-child(1) {
+				width: 40%;
+			}
+
+			> :nth-child(2) {
+				width: 60%;
+			}
+
+			&:nth-child(2n - 1) {
+				@include vendor('flex-direction', 'row-reverse');
+
+				> :nth-child(1) {
+					width: 60%;
+				}
+
+				> :nth-child(2) {
+					width: 40%;
+				}
+			}
+		}
+
+		@include breakpoint('<=xlarge') {
+			> article {
+				.content {
+					@include padding(4em, 4em);
+				}
+			}
+		}
+
+		@include breakpoint('<=medium') {
+			> article {
+				@include vendor('flex-direction', 'column');
+
+				.image {
+					img {
+						position: relative;
+					}
+				}
+
+				> :nth-child(1) {
+					width: 100%;
+				}
+
+				> :nth-child(2) {
+					width: 100%;
+				}
+
+				&:nth-child(2n - 1) {
+					@include vendor('flex-direction', 'column');
+
+					> :nth-child(1) {
+						width: 100%;
+					}
+
+					> :nth-child(2) {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			> article {
+				.content {
+					@include padding(3em, 2em);
+				}
+			}
+		}
+	}

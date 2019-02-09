@@ -1,0 +1,106 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		@include vendor('appearance', 'none');
+		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out');
+		border-radius: _size(element-height) / 0.7;
+		border: 0;
+		cursor: pointer !important;
+		display: inline-block;
+		font-weight: _font(weight-extrabold);
+		height: _size(element-height) / 0.7;
+		line-height: _size(element-height) / 0.7;
+		padding: 0 3em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+		letter-spacing: _font(letter-spacing-heading);
+		text-transform: uppercase;
+		font-size: 0.7em;
+
+		&.icon {
+			&:before {
+				margin-right: 0.5em;
+			}
+		}
+
+		&.fit {
+			width: 100%;
+		}
+
+		&.small {
+			font-size: 0.6em;
+		}
+
+		&.large {
+			font-size: 1em;
+		}
+
+		&.disabled,
+		&:disabled {
+			@include vendor('pointer-events', 'none');
+			opacity: 0.25;
+		}
+	}
+
+	@mixin color-button($p: null) {
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 1px _palette($p, border);
+			color: _palette($p, fg-bold) !important;
+
+			&:hover {
+				background-color: _palette($p, border-bg);
+			}
+
+			&:active {
+				background-color: _palette($p, border-bg-alt);
+			}
+
+			@if ($p == null) {
+				&.primary {
+					background-color: _palette(accent1, bg);
+					color: _palette(accent1, fg-bold) !important;
+
+					&:hover {
+						background-color: lighten(_palette(accent1, bg), 5);
+					}
+
+					&:active {
+						background-color: lighten(_palette(accent1, bg), 10);
+					}
+				}
+			}
+			@else {
+				&.primary {
+					box-shadow: 0 0 3em 0 _palette(shadow);
+					background-color: saturate(lighten(_palette($p, bg), 5), 3);
+					color: _palette($p, fg-bold) !important;
+
+					&:hover {
+						background-color: saturate(lighten(_palette($p, bg), 10), 3);
+					}
+
+					&:active {
+						background-color: saturate(lighten(_palette($p, bg), 15), 5);
+					}
+				}
+			}
+		}
+	}
+
+	@include color-button;

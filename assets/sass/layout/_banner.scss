@@ -1,0 +1,172 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Banner */
+
+#banner {
+  @include vendor('display', 'flex');
+  @include vendor('flex-direction', 'row');
+  background-color: darken(_palette(accent1, bg), 15);
+
+  > .items {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('flex-grow', '0');
+    @include vendor('flex-shrink', '0');
+    width: 40%;
+
+    section {
+      @include padding(5em, 6em);
+      @include vendor('transition', (
+              'opacity 0.5s ease-in-out',
+              'transform 0.5s ease-in-out'
+      ));
+      text-align: center;
+
+      h1 {
+        font-size: 1.75em;
+      }
+
+      &.accent1 {
+        @include color-typography(accent1);
+        @include color-button(accent1);
+      }
+
+      &.accent2 {
+        @include color-typography(accent2);
+        @include color-button(accent2);
+      }
+
+      &.accent3 {
+        @include color-typography(accent3);
+        @include color-button(accent3);
+      }
+
+      &.accent4 {
+        @include color-typography(accent4);
+        @include color-button(accent4);
+      }
+    }
+  }
+
+  > .slider {
+    @include vendor('flex-grow', '0');
+    @include vendor('flex-shrink', '0');
+    @include vendor('transition', 'opacity #{_duration(slider)} ease-in-out');
+    width: 60%;
+    opacity: 1;
+    position: relative;
+
+    > article {
+      @include vendor('transition', (
+              'opacity #{_duration(slider)}',
+              'visibility #{_duration(slider)}'
+      ));
+      background-size: cover;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 0;
+
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &.top {
+        z-index: 1;
+      }
+
+      &:before {
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  body.is-preload & {
+    > .slider {
+      opacity: 0;
+    }
+  }
+
+  @include breakpoint('<=xlarge') {
+    > .items {
+      section {
+        @include padding(4.5em, 5em);
+      }
+    }
+  }
+
+  @include breakpoint('<=large') {
+    > .items {
+      section {
+        @include padding(3.5em, 3em);
+      }
+    }
+  }
+
+  @include breakpoint('<=medium') {
+    @include vendor('flex-direction', 'column-reverse');
+
+    > .items {
+      @include vendor('flex-direction', 'row');
+      width: 100%;
+    }
+
+    > .slider {
+      height: 40em;
+      max-height: 55vh;
+      width: 100%;
+    }
+  }
+
+  @include breakpoint('<=small') {
+    > .items {
+      section {
+        @include padding(3em, 3em);
+
+        h1 {
+          font-size: 1.25em;
+        }
+      }
+    }
+
+    > .slider {
+      height: 30em;
+      max-height: none;
+    }
+  }
+
+  @include breakpoint('<=xsmall') {
+    > .items {
+      @include vendor('flex-direction', 'column');
+
+      section {
+        @include padding(3em, 3em);
+      }
+    }
+
+    > .slider {
+      height: 20em;
+      max-height: 40vh;
+    }
+  }
+}

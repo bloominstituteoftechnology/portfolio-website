@@ -1,0 +1,59 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Page Wrapper */
+
+	#page-wrapper {
+		overflow-x: hidden;
+		width: 100%;
+
+		> :first-child,
+		> :last-child {
+			background-color: darken(_palette(accent1, bg), 4);
+		}
+
+		> * {
+			padding: 0 4em;
+		}
+
+		> :first-child {
+			padding-top: 4em;
+			overflow: hidden;
+		}
+
+		> :last-child {
+			padding-bottom: 4em;
+			overflow: hidden;
+		}
+
+		@include breakpoint('<=large') {
+			> * {
+				padding: 0 2em;
+			}
+
+			> :first-child {
+				padding-top: 2em;
+			}
+
+			> :last-child {
+				padding-bottom: 4em;
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			> * {
+				padding: 0;
+			}
+
+			> :first-child {
+				padding-top: 0;
+			}
+
+			> :last-child {
+				padding-bottom: 3em;
+			}
+		}
+	}

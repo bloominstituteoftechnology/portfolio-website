@@ -1,0 +1,19 @@
+///
+/// Altitude by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Contact Icons */
+
+	ul.contact-icons {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			&:before {
+				padding-left: 0;
+				margin-right: 1em;
+			}
+		}
+	}

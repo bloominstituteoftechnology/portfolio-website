@@ -1,39 +1,83 @@
 // Misc.
-$misc: (
-        z-index-base: 10000
-);
+	$misc: (
+		z-index-base:				10000
+	);
 
 // Duration.
-$duration: (
-        navPanel: 0.5s
-);
+	$duration: (
+		menu:						0.5s,
+		transition:					0.2s,
+		slider:						1.5s
+	);
 
 // Size.
-$size: (
-        navPanel: 275px
-);
+	$size: (
+		border-radius:				4px,
+		border-width:				1px,
+		element-height:				2.75em,
+		element-margin:				2em
+	);
 
 // Font.
-$font: (
-);
+	$font: (
+		family:						('Raleway', sans-serif),
+		family-fixed:				('Courier New', monospace),
+		weight:						300,
+		weight-bold:				500,
+		weight-extrabold:			600,
+		letter-spacing-heading:		0.1em
+	);
 
 // Palette.
-$palette: (
-);
+	$palette: (
+		bg:							#ffffff,
+		fg:							rgba(67,75,86,0.75),
+		fg-bold:					#434b56,
+		fg-light:					rgba(67,75,86,0.5),
+		border:						rgba(67,75,86,0.25),
+		border-bg:					rgba(67,75,86,0.05),
+		border-bg-alt:				rgba(67,75,86,0.1),
 
-$fa-font-path: "./webfonts";
+		shadow:						rgba(0,0,0,0.1),
 
-$dark-blue: 	#2a4d69 ;
-$blue: 	#2a4d69 ;
-$light-blue: #adcbe3 ;
-$off-white: #e7eff6;
-$brighter-blue: #63ace5;
+		accent1: (
+			bg:						#575b72,
+			fg:						rgba(255,255,255,0.75),
+			fg-bold:				#ffffff,
+			fg-light:				rgba(255,255,255,0.5),
+			border:					rgba(255,255,255,0.25),
+			border-bg:				rgba(255,255,255,0.05),
+			border-bg-alt:			rgba(255,255,255,0.1)
+		),
 
-$grey-lightest: #eeeeee;
-$grey-light: #dddddd ;
-$grey: #cccccc ;
-$grey-darker: #bbbbbb;
-$grey-darkest: #9d9d9d;
-$darkDarkDarkGrey: #262e2e;
+		accent2: (
+			bg:						#4cabb1,
+			fg:						rgba(255,255,255,0.75),
+			fg-bold:				#ffffff,
+			fg-light:				rgba(255,255,255,0.5),
+			border:					rgba(255,255,255,0.25),
+			border-bg:				rgba(255,255,255,0.05),
+			border-bg-alt:			rgba(255,255,255,0.1)
+		),
 
-$lambda-color: #9d001d;
+		accent3: (
+			bg:						#69c7ad,
+			fg:						rgba(255,255,255,0.75),
+			fg-bold:				#ffffff,
+			fg-light:				rgba(255,255,255,0.5),
+			border:					rgba(255,255,255,0.25),
+			border-bg:				rgba(255,255,255,0.05),
+			border-bg-alt:			rgba(255,255,255,0.1)
+		),
+
+		accent4: (
+			bg:						#fed586,
+			fg:						rgba(255,255,255,0.75),
+			fg-bold:				#ffffff,
+			fg-light:				rgba(255,255,255,0.5),
+			border:					rgba(255,255,255,0.25),
+			border-bg:				rgba(255,255,255,0.05),
+			border-bg-alt:			rgba(255,255,255,0.1)
+		)
+
+	);
