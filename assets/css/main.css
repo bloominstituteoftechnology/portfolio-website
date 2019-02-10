@@ -5399,7 +5399,8 @@ button,
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 0 2em 0; }
+  margin: 0 0 2em 0;
+  justify-content: space-around; }
   .features section {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
@@ -5502,6 +5503,17 @@ form {
         margin: 0 0 1em 0; }
       form.combined input[type="submit"] {
         border-radius: 2.75em; } }
+  form .label-input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem; }
+    form .label-input-group label {
+      width: 20%;
+      text-align: center; }
+    form .label-input-group input {
+      order: 1;
+      width: 80%; }
 
 label {
   display: block;
@@ -5512,6 +5524,7 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="textarea"],
 select,
 textarea {
   -moz-appearance: none;
@@ -5530,6 +5543,7 @@ textarea {
   input[type="text"]:invalid,
   input[type="password"]:invalid,
   input[type="email"]:invalid,
+  input[type="textarea"]:invalid,
   select:invalid,
   textarea:invalid {
     box-shadow: none; }
@@ -5624,6 +5638,7 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="textarea"],
 select,
 textarea {
   background-color: rgba(67, 75, 86, 0.05);
@@ -5631,6 +5646,7 @@ textarea {
   input[type="text"]:focus,
   input[type="password"]:focus,
   input[type="email"]:focus,
+  input[type="textarea"]:focus,
   select:focus,
   textarea:focus {
     border-color: #fed586;
@@ -5638,30 +5654,35 @@ textarea {
   input[type="text"] ::-webkit-input-placeholder,
   input[type="password"] ::-webkit-input-placeholder,
   input[type="email"] ::-webkit-input-placeholder,
+  input[type="textarea"] ::-webkit-input-placeholder,
   select ::-webkit-input-placeholder,
   textarea ::-webkit-input-placeholder {
     color: rgba(67, 75, 86, 0.5) !important; }
   input[type="text"] :-moz-placeholder,
   input[type="password"] :-moz-placeholder,
   input[type="email"] :-moz-placeholder,
+  input[type="textarea"] :-moz-placeholder,
   select :-moz-placeholder,
   textarea :-moz-placeholder {
     color: rgba(67, 75, 86, 0.5) !important; }
   input[type="text"] ::-moz-placeholder,
   input[type="password"] ::-moz-placeholder,
   input[type="email"] ::-moz-placeholder,
+  input[type="textarea"] ::-moz-placeholder,
   select ::-moz-placeholder,
   textarea ::-moz-placeholder {
     color: rgba(67, 75, 86, 0.5) !important; }
   input[type="text"] :-ms-input-placeholder,
   input[type="password"] :-ms-input-placeholder,
   input[type="email"] :-ms-input-placeholder,
+  input[type="textarea"] :-ms-input-placeholder,
   select :-ms-input-placeholder,
   textarea :-ms-input-placeholder {
     color: rgba(67, 75, 86, 0.5) !important; }
   input[type="text"].invert,
   input[type="password"].invert,
   input[type="email"].invert,
+  input[type="textarea"].invert,
   select.invert,
   textarea.invert {
     background: #ffffff;
@@ -5669,24 +5690,28 @@ textarea {
     input[type="text"].invert::-webkit-input-placeholder,
     input[type="password"].invert::-webkit-input-placeholder,
     input[type="email"].invert::-webkit-input-placeholder,
+    input[type="textarea"].invert::-webkit-input-placeholder,
     select.invert::-webkit-input-placeholder,
     textarea.invert::-webkit-input-placeholder {
       color: rgba(67, 75, 86, 0.5) !important; }
     input[type="text"].invert:-moz-placeholder,
     input[type="password"].invert:-moz-placeholder,
     input[type="email"].invert:-moz-placeholder,
+    input[type="textarea"].invert:-moz-placeholder,
     select.invert:-moz-placeholder,
     textarea.invert:-moz-placeholder {
       color: rgba(67, 75, 86, 0.5) !important; }
     input[type="text"].invert::-moz-placeholder,
     input[type="password"].invert::-moz-placeholder,
     input[type="email"].invert::-moz-placeholder,
+    input[type="textarea"].invert::-moz-placeholder,
     select.invert::-moz-placeholder,
     textarea.invert::-moz-placeholder {
       color: rgba(67, 75, 86, 0.5) !important; }
     input[type="text"].invert:-ms-input-placeholder,
     input[type="password"].invert:-ms-input-placeholder,
     input[type="email"].invert:-ms-input-placeholder,
+    input[type="textarea"].invert:-ms-input-placeholder,
     select.invert:-ms-input-placeholder,
     textarea.invert:-ms-input-placeholder {
       color: rgba(67, 75, 86, 0.5) !important; }
@@ -6336,6 +6361,7 @@ table.alt tbody tr td {
         .wrapper > .inner > .main.accent1 input[type="text"],
         .wrapper > .inner > .main.accent1 input[type="password"],
         .wrapper > .inner > .main.accent1 input[type="email"],
+        .wrapper > .inner > .main.accent1 input[type="textarea"],
         .wrapper > .inner > .main.accent1 select,
         .wrapper > .inner > .main.accent1 textarea {
           background-color: rgba(255, 255, 255, 0.05);
@@ -6343,6 +6369,7 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent1 input[type="text"]:focus,
           .wrapper > .inner > .main.accent1 input[type="password"]:focus,
           .wrapper > .inner > .main.accent1 input[type="email"]:focus,
+          .wrapper > .inner > .main.accent1 input[type="textarea"]:focus,
           .wrapper > .inner > .main.accent1 select:focus,
           .wrapper > .inner > .main.accent1 textarea:focus {
             border-color: #fed586;
@@ -6350,30 +6377,35 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent1 input[type="text"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent1 input[type="password"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent1 input[type="email"] ::-webkit-input-placeholder,
+          .wrapper > .inner > .main.accent1 input[type="textarea"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent1 select ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent1 textarea ::-webkit-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent1 input[type="text"] :-moz-placeholder,
           .wrapper > .inner > .main.accent1 input[type="password"] :-moz-placeholder,
           .wrapper > .inner > .main.accent1 input[type="email"] :-moz-placeholder,
+          .wrapper > .inner > .main.accent1 input[type="textarea"] :-moz-placeholder,
           .wrapper > .inner > .main.accent1 select :-moz-placeholder,
           .wrapper > .inner > .main.accent1 textarea :-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent1 input[type="text"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent1 input[type="password"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent1 input[type="email"] ::-moz-placeholder,
+          .wrapper > .inner > .main.accent1 input[type="textarea"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent1 select ::-moz-placeholder,
           .wrapper > .inner > .main.accent1 textarea ::-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent1 input[type="text"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent1 input[type="password"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent1 input[type="email"] :-ms-input-placeholder,
+          .wrapper > .inner > .main.accent1 input[type="textarea"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent1 select :-ms-input-placeholder,
           .wrapper > .inner > .main.accent1 textarea :-ms-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent1 input[type="text"].invert,
           .wrapper > .inner > .main.accent1 input[type="password"].invert,
           .wrapper > .inner > .main.accent1 input[type="email"].invert,
+          .wrapper > .inner > .main.accent1 input[type="textarea"].invert,
           .wrapper > .inner > .main.accent1 select.invert,
           .wrapper > .inner > .main.accent1 textarea.invert {
             background: #ffffff;
@@ -6381,24 +6413,28 @@ table.alt tbody tr td {
             .wrapper > .inner > .main.accent1 input[type="text"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent1 input[type="password"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent1 input[type="email"].invert::-webkit-input-placeholder,
+            .wrapper > .inner > .main.accent1 input[type="textarea"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent1 select.invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent1 textarea.invert::-webkit-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent1 input[type="text"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent1 input[type="password"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent1 input[type="email"].invert:-moz-placeholder,
+            .wrapper > .inner > .main.accent1 input[type="textarea"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent1 select.invert:-moz-placeholder,
             .wrapper > .inner > .main.accent1 textarea.invert:-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent1 input[type="text"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent1 input[type="password"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent1 input[type="email"].invert::-moz-placeholder,
+            .wrapper > .inner > .main.accent1 input[type="textarea"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent1 select.invert::-moz-placeholder,
             .wrapper > .inner > .main.accent1 textarea.invert::-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent1 input[type="text"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent1 input[type="password"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent1 input[type="email"].invert:-ms-input-placeholder,
+            .wrapper > .inner > .main.accent1 input[type="textarea"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent1 select.invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent1 textarea.invert:-ms-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
@@ -6508,6 +6544,7 @@ table.alt tbody tr td {
         .wrapper > .inner > .main.accent2 input[type="text"],
         .wrapper > .inner > .main.accent2 input[type="password"],
         .wrapper > .inner > .main.accent2 input[type="email"],
+        .wrapper > .inner > .main.accent2 input[type="textarea"],
         .wrapper > .inner > .main.accent2 select,
         .wrapper > .inner > .main.accent2 textarea {
           background-color: rgba(255, 255, 255, 0.05);
@@ -6515,6 +6552,7 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent2 input[type="text"]:focus,
           .wrapper > .inner > .main.accent2 input[type="password"]:focus,
           .wrapper > .inner > .main.accent2 input[type="email"]:focus,
+          .wrapper > .inner > .main.accent2 input[type="textarea"]:focus,
           .wrapper > .inner > .main.accent2 select:focus,
           .wrapper > .inner > .main.accent2 textarea:focus {
             border-color: #fed586;
@@ -6522,30 +6560,35 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent2 input[type="text"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent2 input[type="password"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent2 input[type="email"] ::-webkit-input-placeholder,
+          .wrapper > .inner > .main.accent2 input[type="textarea"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent2 select ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent2 textarea ::-webkit-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent2 input[type="text"] :-moz-placeholder,
           .wrapper > .inner > .main.accent2 input[type="password"] :-moz-placeholder,
           .wrapper > .inner > .main.accent2 input[type="email"] :-moz-placeholder,
+          .wrapper > .inner > .main.accent2 input[type="textarea"] :-moz-placeholder,
           .wrapper > .inner > .main.accent2 select :-moz-placeholder,
           .wrapper > .inner > .main.accent2 textarea :-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent2 input[type="text"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent2 input[type="password"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent2 input[type="email"] ::-moz-placeholder,
+          .wrapper > .inner > .main.accent2 input[type="textarea"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent2 select ::-moz-placeholder,
           .wrapper > .inner > .main.accent2 textarea ::-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent2 input[type="text"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent2 input[type="password"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent2 input[type="email"] :-ms-input-placeholder,
+          .wrapper > .inner > .main.accent2 input[type="textarea"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent2 select :-ms-input-placeholder,
           .wrapper > .inner > .main.accent2 textarea :-ms-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent2 input[type="text"].invert,
           .wrapper > .inner > .main.accent2 input[type="password"].invert,
           .wrapper > .inner > .main.accent2 input[type="email"].invert,
+          .wrapper > .inner > .main.accent2 input[type="textarea"].invert,
           .wrapper > .inner > .main.accent2 select.invert,
           .wrapper > .inner > .main.accent2 textarea.invert {
             background: #ffffff;
@@ -6553,24 +6596,28 @@ table.alt tbody tr td {
             .wrapper > .inner > .main.accent2 input[type="text"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent2 input[type="password"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent2 input[type="email"].invert::-webkit-input-placeholder,
+            .wrapper > .inner > .main.accent2 input[type="textarea"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent2 select.invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent2 textarea.invert::-webkit-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent2 input[type="text"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent2 input[type="password"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent2 input[type="email"].invert:-moz-placeholder,
+            .wrapper > .inner > .main.accent2 input[type="textarea"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent2 select.invert:-moz-placeholder,
             .wrapper > .inner > .main.accent2 textarea.invert:-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent2 input[type="text"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent2 input[type="password"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent2 input[type="email"].invert::-moz-placeholder,
+            .wrapper > .inner > .main.accent2 input[type="textarea"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent2 select.invert::-moz-placeholder,
             .wrapper > .inner > .main.accent2 textarea.invert::-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent2 input[type="text"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent2 input[type="password"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent2 input[type="email"].invert:-ms-input-placeholder,
+            .wrapper > .inner > .main.accent2 input[type="textarea"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent2 select.invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent2 textarea.invert:-ms-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
@@ -6680,6 +6727,7 @@ table.alt tbody tr td {
         .wrapper > .inner > .main.accent3 input[type="text"],
         .wrapper > .inner > .main.accent3 input[type="password"],
         .wrapper > .inner > .main.accent3 input[type="email"],
+        .wrapper > .inner > .main.accent3 input[type="textarea"],
         .wrapper > .inner > .main.accent3 select,
         .wrapper > .inner > .main.accent3 textarea {
           background-color: rgba(255, 255, 255, 0.05);
@@ -6687,6 +6735,7 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent3 input[type="text"]:focus,
           .wrapper > .inner > .main.accent3 input[type="password"]:focus,
           .wrapper > .inner > .main.accent3 input[type="email"]:focus,
+          .wrapper > .inner > .main.accent3 input[type="textarea"]:focus,
           .wrapper > .inner > .main.accent3 select:focus,
           .wrapper > .inner > .main.accent3 textarea:focus {
             border-color: #fed586;
@@ -6694,30 +6743,35 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent3 input[type="text"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent3 input[type="password"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent3 input[type="email"] ::-webkit-input-placeholder,
+          .wrapper > .inner > .main.accent3 input[type="textarea"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent3 select ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent3 textarea ::-webkit-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent3 input[type="text"] :-moz-placeholder,
           .wrapper > .inner > .main.accent3 input[type="password"] :-moz-placeholder,
           .wrapper > .inner > .main.accent3 input[type="email"] :-moz-placeholder,
+          .wrapper > .inner > .main.accent3 input[type="textarea"] :-moz-placeholder,
           .wrapper > .inner > .main.accent3 select :-moz-placeholder,
           .wrapper > .inner > .main.accent3 textarea :-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent3 input[type="text"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent3 input[type="password"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent3 input[type="email"] ::-moz-placeholder,
+          .wrapper > .inner > .main.accent3 input[type="textarea"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent3 select ::-moz-placeholder,
           .wrapper > .inner > .main.accent3 textarea ::-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent3 input[type="text"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent3 input[type="password"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent3 input[type="email"] :-ms-input-placeholder,
+          .wrapper > .inner > .main.accent3 input[type="textarea"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent3 select :-ms-input-placeholder,
           .wrapper > .inner > .main.accent3 textarea :-ms-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent3 input[type="text"].invert,
           .wrapper > .inner > .main.accent3 input[type="password"].invert,
           .wrapper > .inner > .main.accent3 input[type="email"].invert,
+          .wrapper > .inner > .main.accent3 input[type="textarea"].invert,
           .wrapper > .inner > .main.accent3 select.invert,
           .wrapper > .inner > .main.accent3 textarea.invert {
             background: #ffffff;
@@ -6725,24 +6779,28 @@ table.alt tbody tr td {
             .wrapper > .inner > .main.accent3 input[type="text"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent3 input[type="password"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent3 input[type="email"].invert::-webkit-input-placeholder,
+            .wrapper > .inner > .main.accent3 input[type="textarea"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent3 select.invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent3 textarea.invert::-webkit-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent3 input[type="text"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent3 input[type="password"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent3 input[type="email"].invert:-moz-placeholder,
+            .wrapper > .inner > .main.accent3 input[type="textarea"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent3 select.invert:-moz-placeholder,
             .wrapper > .inner > .main.accent3 textarea.invert:-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent3 input[type="text"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent3 input[type="password"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent3 input[type="email"].invert::-moz-placeholder,
+            .wrapper > .inner > .main.accent3 input[type="textarea"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent3 select.invert::-moz-placeholder,
             .wrapper > .inner > .main.accent3 textarea.invert::-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent3 input[type="text"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent3 input[type="password"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent3 input[type="email"].invert:-ms-input-placeholder,
+            .wrapper > .inner > .main.accent3 input[type="textarea"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent3 select.invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent3 textarea.invert:-ms-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
@@ -6852,6 +6910,7 @@ table.alt tbody tr td {
         .wrapper > .inner > .main.accent4 input[type="text"],
         .wrapper > .inner > .main.accent4 input[type="password"],
         .wrapper > .inner > .main.accent4 input[type="email"],
+        .wrapper > .inner > .main.accent4 input[type="textarea"],
         .wrapper > .inner > .main.accent4 select,
         .wrapper > .inner > .main.accent4 textarea {
           background-color: rgba(255, 255, 255, 0.05);
@@ -6859,6 +6918,7 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent4 input[type="text"]:focus,
           .wrapper > .inner > .main.accent4 input[type="password"]:focus,
           .wrapper > .inner > .main.accent4 input[type="email"]:focus,
+          .wrapper > .inner > .main.accent4 input[type="textarea"]:focus,
           .wrapper > .inner > .main.accent4 select:focus,
           .wrapper > .inner > .main.accent4 textarea:focus {
             border-color: #fed586;
@@ -6866,30 +6926,35 @@ table.alt tbody tr td {
           .wrapper > .inner > .main.accent4 input[type="text"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent4 input[type="password"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent4 input[type="email"] ::-webkit-input-placeholder,
+          .wrapper > .inner > .main.accent4 input[type="textarea"] ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent4 select ::-webkit-input-placeholder,
           .wrapper > .inner > .main.accent4 textarea ::-webkit-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent4 input[type="text"] :-moz-placeholder,
           .wrapper > .inner > .main.accent4 input[type="password"] :-moz-placeholder,
           .wrapper > .inner > .main.accent4 input[type="email"] :-moz-placeholder,
+          .wrapper > .inner > .main.accent4 input[type="textarea"] :-moz-placeholder,
           .wrapper > .inner > .main.accent4 select :-moz-placeholder,
           .wrapper > .inner > .main.accent4 textarea :-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent4 input[type="text"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent4 input[type="password"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent4 input[type="email"] ::-moz-placeholder,
+          .wrapper > .inner > .main.accent4 input[type="textarea"] ::-moz-placeholder,
           .wrapper > .inner > .main.accent4 select ::-moz-placeholder,
           .wrapper > .inner > .main.accent4 textarea ::-moz-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent4 input[type="text"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent4 input[type="password"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent4 input[type="email"] :-ms-input-placeholder,
+          .wrapper > .inner > .main.accent4 input[type="textarea"] :-ms-input-placeholder,
           .wrapper > .inner > .main.accent4 select :-ms-input-placeholder,
           .wrapper > .inner > .main.accent4 textarea :-ms-input-placeholder {
             color: rgba(255, 255, 255, 0.5) !important; }
           .wrapper > .inner > .main.accent4 input[type="text"].invert,
           .wrapper > .inner > .main.accent4 input[type="password"].invert,
           .wrapper > .inner > .main.accent4 input[type="email"].invert,
+          .wrapper > .inner > .main.accent4 input[type="textarea"].invert,
           .wrapper > .inner > .main.accent4 select.invert,
           .wrapper > .inner > .main.accent4 textarea.invert {
             background: #ffffff;
@@ -6897,24 +6962,28 @@ table.alt tbody tr td {
             .wrapper > .inner > .main.accent4 input[type="text"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent4 input[type="password"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent4 input[type="email"].invert::-webkit-input-placeholder,
+            .wrapper > .inner > .main.accent4 input[type="textarea"].invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent4 select.invert::-webkit-input-placeholder,
             .wrapper > .inner > .main.accent4 textarea.invert::-webkit-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent4 input[type="text"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent4 input[type="password"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent4 input[type="email"].invert:-moz-placeholder,
+            .wrapper > .inner > .main.accent4 input[type="textarea"].invert:-moz-placeholder,
             .wrapper > .inner > .main.accent4 select.invert:-moz-placeholder,
             .wrapper > .inner > .main.accent4 textarea.invert:-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent4 input[type="text"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent4 input[type="password"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent4 input[type="email"].invert::-moz-placeholder,
+            .wrapper > .inner > .main.accent4 input[type="textarea"].invert::-moz-placeholder,
             .wrapper > .inner > .main.accent4 select.invert::-moz-placeholder,
             .wrapper > .inner > .main.accent4 textarea.invert::-moz-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
             .wrapper > .inner > .main.accent4 input[type="text"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent4 input[type="password"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent4 input[type="email"].invert:-ms-input-placeholder,
+            .wrapper > .inner > .main.accent4 input[type="textarea"].invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent4 select.invert:-ms-input-placeholder,
             .wrapper > .inner > .main.accent4 textarea.invert:-ms-input-placeholder {
               color: rgba(67, 75, 86, 0.5) !important; }
@@ -7647,6 +7716,8 @@ body.is-menu-visible #menu {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 0 4em 0; }
     #footer .links > div {
       padding: 2em 0 0.1em 0 ;
@@ -7660,7 +7731,7 @@ body.is-menu-visible #menu {
       flex-shrink: 0;
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       border-top: solid 1px rgba(255, 255, 255, 0.25);
-      width: 25%; }
+      width: 33%; }
       #footer .links > div ul {
         list-style: none;
         margin-top: 2em;

@@ -28,51 +28,62 @@ var settings = {
 };
 
 class Project {
-    constructor( name, title, content, articles ) {
-        this.headingElement = document.getElementById("main-heading");
-        this.p = document.getElementById("main-p")
+    constructor( name, title, content, articles, demoUrl = "#", githubUrl = "#" ) {
+        this.headingElement = document.getElementById( "main-heading" );
+        this.p = document.getElementById( "main-p" );
         this.name = name;
         this.title = title;
         this.content = content;
         this.articles = articles;
+        this.demoUrl = demoUrl;
+        this.githubUrl = githubUrl;
     }
     
-    setVisible (){
+    setVisible() {
         
         this.headingElement.textContent = this.title;
         this.p.textContent = this.content;
-        this.articles.forEach((article) => {
-           article.setActive();
-        });
+        this.articles.forEach( ( article ) => {
+            article.setActive( this.demoUrl, this.githubUrl );
+        } );
     }
 }
 
 class Article {
     constructor( name, content, img, articleNumber ) {
         this.articleNumber = articleNumber;
-        this.heading = document.getElementById(`article${articleNumber}-heading`);
-        this.p = document.getElementById(`article${articleNumber}-p`);
+        this.heading = document.getElementById( `article${ articleNumber }-heading` );
+        this.p = document.getElementById( `article${ articleNumber }-p` );
+        this.link = document.getElementById( `article${ articleNumber }-link` );
         this.name = name;
         this.content = content;
         this.img = img;
     }
     
-    setActive () {
-        this.heading.textContent = this.heading;
+    setActive( demoUrl, githubUrl ) {
+        this.heading.textContent = this.name;
         this.p.textContent = this.content;
         this.img.setActive();
+        if (this.articleNumber === 1){
+            this.link.setAttribute( "href", demoUrl );
+        }else {
+            this.link.setAttribute("href", githubUrl);
+            this.link.textContent = "Github Link";
+        }
+        
     }
 }
 
 class Img {
     constructor( src, alt, articleNumber ) {
-        this.imgElement = document.getElementById(`article${articleNumber}-img`);
+        this.imgElement = document.getElementById( `article${ articleNumber }-img` );
         this.src = src;
         this.alt = alt;
     }
+    
     setActive() {
-        this.imgElement.setAttribute("src", this.src);
-        this.imgElement.setAttribute('alt', this.alt);
+        this.imgElement.setAttribute( "src", this.src );
+        this.imgElement.setAttribute( "alt", this.alt );
     }
 }
 
@@ -87,7 +98,7 @@ const trillo = new Project(
         "Tablet View",
         "This image shows the site with a tablets viewport size and the navbar below the search" +
         " bar.",
-        new Img( "images/Trillo2.JPG", "Trillo landing page screen shot.", 1),
+        new Img( "images/Trillo2.JPG", "Trillo landing page screen shot.", 1 ),
         1
     ), new Article(
         "Phone View",
@@ -96,7 +107,9 @@ const trillo = new Project(
         " are now in column instead of rows.",
         new Img( "images/Trillo3.JPG", "Trillo landing page phone view screen shot.", 2 ),
         2
-    ) ]
+    ) ],
+    "https://quizzical-kirch-f2239a.netlify.com",
+    "https://github.com/jeremiahtenbrink/Trillo"
 );
 
 const bookr = new Project(
@@ -118,7 +131,9 @@ const bookr = new Project(
         " are now in column instead of rows.",
         new Img( "images/OerBookr3.JPG", "Bookr landing page phone view screen shot.", 2 ),
         2
-    ) ]
+    ) ],
+    "https://gracious-goldstine-d76cfe.netlify.com",
+    "https://github.com/oer-bookr/ui-jeremiah-tenbrink"
 );
 
 const natours = new Project(
@@ -138,8 +153,10 @@ const natours = new Project(
         " below the users bar allowing for more space. Further down the page the user reviews" +
         " are now in column instead of rows.",
         new Img( "images/Natours3.JPG", "Natours landing page phone view screen shot.", 2 ),
-        2
-    ) ]
+        2,
+    ) ],
+    "https://thirsty-nobel-fbd9dc.netlify.com/",
+    "https://github.com/jeremiahtenbrink/Natours"
 );
 
 const nexter = new Project(
@@ -160,7 +177,9 @@ const nexter = new Project(
         " are now in column instead of rows.",
         new Img( "images/Nexter3.JPG", "Nexter landing page phone view screen shot.", 2 ),
         2
-    ) ]
+    ) ],
+    "https://silly-colden-e92063.netlify.com",
+    "https://github.com/jeremiahtenbrink/Nexter"
 );
 
 ( function( $ ) {
@@ -316,9 +335,8 @@ const nexter = new Project(
         
         articles.push( trillo );
         articles.push( bookr );
-        articles.push( nexter);
-        articles.push( natours);
-        
+        articles.push( nexter );
+        articles.push( natours );
         
         // Functions.
         $this._switchTo = function( x, stop ) {
@@ -357,12 +375,11 @@ const nexter = new Project(
                     let content = slides[ pos ].children( ".content" );
                     let h3 = content[ 0 ].children[ 0 ];
                     let slideName = h3.textContent;
-                    articles.forEach((article) => {
-                        debugger;
-                        if(article.name === slideName){
+                    articles.forEach( ( article ) => {
+                        if( article.name === slideName ) {
                             article.setVisible();
                         }
-                    });
+                    } );
                 }, 25 );
                 
                 // Unlock after sort delay.
@@ -435,16 +452,15 @@ const nexter = new Project(
         let h3 = content[ 0 ].children[ 0 ];
         let slideName = h3.textContent;
         articles.map( ( article ) => {
-            debugger;
             if( article.name === slideName ) {
-                article.setVisible(article);
+                article.setVisible( article );
             }
         } );
         let mainContent = document.getElementById( "main-content" );
         
         // Bail if we only have a single slide.
         if( slides.length === 1 ) {
-            return;
+        
         }
         
     };
@@ -496,8 +512,8 @@ const nexter = new Project(
         ._carousel( settings.carousel );
     
     // Menu.
-    $( '#menu' )
-        .append( '<a href="#menu" class="close"></a>' )
+    $( "#menu" )
+        .append( "<a href=\"#menu\" class=\"close\"></a>" )
         .appendTo( $body )
         .panel( {
             delay: 500,
@@ -506,8 +522,8 @@ const nexter = new Project(
             resetScroll: true,
             resetForms: true,
             target: $body,
-            visibleClass: 'is-menu-visible',
-            side: 'right'
+            visibleClass: "is-menu-visible",
+            side: "right"
         } );
     
 } )( jQuery );
