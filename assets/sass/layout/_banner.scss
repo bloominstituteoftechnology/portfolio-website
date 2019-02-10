@@ -38,6 +38,16 @@
       &.accent2 {
         @include color-typography(accent2);
         @include color-button(accent2);
+
+        .social-media {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 3rem;
+          a {
+            border-bottom: none;
+          }
+        }
+
       }
 
       &.accent3 {
@@ -49,6 +59,8 @@
         @include color-typography(accent4);
         @include color-button(accent4);
       }
+
+
     }
   }
 

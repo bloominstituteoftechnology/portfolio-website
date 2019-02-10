@@ -1,83 +1,81 @@
+
+
+
 // Misc.
-	$misc: (
-		z-index-base:				10000
-	);
+$misc: (
+        z-index-base: 10000
+);
 
 // Duration.
-	$duration: (
-		menu:						0.5s,
-		transition:					0.2s,
-		slider:						1.5s
-	);
+$duration: (
+        menu: 0.5s,
+        transition: 0.2s,
+        slider: 1.5s
+);
 
 // Size.
-	$size: (
-		border-radius:				4px,
-		border-width:				1px,
-		element-height:				2.75em,
-		element-margin:				2em
-	);
+$size: (
+        border-radius: 4px,
+        border-width: 1px,
+        element-height: 2.75em,
+        element-margin: 2em
+);
 
 // Font.
-	$font: (
-		family:						('Raleway', sans-serif),
-		family-fixed:				('Courier New', monospace),
-		weight:						300,
-		weight-bold:				500,
-		weight-extrabold:			600,
-		letter-spacing-heading:		0.1em
-	);
+$font: (
+        family: ('Raleway', sans-serif),
+        family-fixed: ('Courier New', monospace),
+        weight: 300,
+        weight-bold: 500,
+        weight-extrabold: 600,
+        letter-spacing-heading: 0.1em
+);
 
 // Palette.
-	$palette: (
-		bg:							#ffffff,
-		fg:							rgba(67,75,86,0.75),
-		fg-bold:					#434b56,
-		fg-light:					rgba(67,75,86,0.5),
-		border:						rgba(67,75,86,0.25),
-		border-bg:					rgba(67,75,86,0.05),
-		border-bg-alt:				rgba(67,75,86,0.1),
+$palette: (
+        bg: #ffffff,
+        fg: rgba(67, 75, 86, 0.75),
+        fg-bold: #434b56,
+        fg-light: rgba(67, 75, 86, 0.5),
+        border: rgba(67, 75, 86, 0.25),
+        border-bg: rgba(67, 75, 86, 0.05),
+        border-bg-alt: rgba(67, 75, 86, 0.1),
+        shadow: rgba(0, 0, 0, 0.1),
+        accent1: (
+                bg: #575b72,
+                fg: rgba(255, 255, 255, 0.75),
+                fg-bold: #ffffff,
+                fg-light: rgba(255, 255, 255, 0.5),
+                border: rgba(255, 255, 255, 0.25),
+                border-bg: rgba(255, 255, 255, 0.05),
+                border-bg-alt: rgba(255, 255, 255, 0.1)
+        ),
+        accent2: (
+                bg: #4cabb1,
+                fg: rgba(255, 255, 255, 0.75),
+                fg-bold: #ffffff,
+                fg-light: rgba(255, 255, 255, 0.5),
+                border: rgba(255, 255, 255, 0.25),
+                border-bg: rgba(255, 255, 255, 0.05),
+                border-bg-alt: rgba(255, 255, 255, 0.1)
+        ),
+        accent3: (
+                bg: #69c7ad,
+                fg: rgba(255, 255, 255, 0.75),
+                fg-bold: #ffffff,
+                fg-light: rgba(255, 255, 255, 0.5),
+                border: rgba(255, 255, 255, 0.25),
+                border-bg: rgba(255, 255, 255, 0.05),
+                border-bg-alt: rgba(255, 255, 255, 0.1)
+        ),
+        accent4: (
+                bg: #fed586,
+                fg: rgba(255, 255, 255, 0.75),
+                fg-bold: #ffffff,
+                fg-light: rgba(255, 255, 255, 0.5),
+                border: rgba(255, 255, 255, 0.25),
+                border-bg: rgba(255, 255, 255, 0.05),
+                border-bg-alt: rgba(255, 255, 255, 0.1)
+        )
+);
 
-		shadow:						rgba(0,0,0,0.1),
-
-		accent1: (
-			bg:						#575b72,
-			fg:						rgba(255,255,255,0.75),
-			fg-bold:				#ffffff,
-			fg-light:				rgba(255,255,255,0.5),
-			border:					rgba(255,255,255,0.25),
-			border-bg:				rgba(255,255,255,0.05),
-			border-bg-alt:			rgba(255,255,255,0.1)
-		),
-
-		accent2: (
-			bg:						#4cabb1,
-			fg:						rgba(255,255,255,0.75),
-			fg-bold:				#ffffff,
-			fg-light:				rgba(255,255,255,0.5),
-			border:					rgba(255,255,255,0.25),
-			border-bg:				rgba(255,255,255,0.05),
-			border-bg-alt:			rgba(255,255,255,0.1)
-		),
-
-		accent3: (
-			bg:						#69c7ad,
-			fg:						rgba(255,255,255,0.75),
-			fg-bold:				#ffffff,
-			fg-light:				rgba(255,255,255,0.5),
-			border:					rgba(255,255,255,0.25),
-			border-bg:				rgba(255,255,255,0.05),
-			border-bg-alt:			rgba(255,255,255,0.1)
-		),
-
-		accent4: (
-			bg:						#fed586,
-			fg:						rgba(255,255,255,0.75),
-			fg-bold:				#ffffff,
-			fg-light:				rgba(255,255,255,0.5),
-			border:					rgba(255,255,255,0.25),
-			border-bg:				rgba(255,255,255,0.05),
-			border-bg-alt:			rgba(255,255,255,0.1)
-		)
-
-	);

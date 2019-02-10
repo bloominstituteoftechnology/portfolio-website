@@ -4,7 +4,10 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import 'font-awesome.min.css';
+@import "font-awesome/fontawesome.scss";
+@import "font-awesome/solid.scss";
+@import "font-awesome/brands.scss";
+@import "font-awesome/regular";
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,600');
 
 // Breakpoints.
@@ -64,3 +67,5 @@
 @import 'layout/banner';
 @import 'layout/footer';
 @import 'layout/page-wrapper';
+
+
