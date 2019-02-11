@@ -43,6 +43,7 @@
           display: flex;
           justify-content: space-around;
           margin-bottom: 3rem;
+
           a {
             border-bottom: none;
           }
@@ -64,6 +65,14 @@
     }
   }
 
+  ul.special {
+    li {
+      a {
+        font-size: .9rem;
+      }
+    }
+  }
+
   > .slider {
     @include vendor('flex-grow', '0');
     @include vendor('flex-shrink', '0');
@@ -71,6 +80,18 @@
     width: 60%;
     opacity: 1;
     position: relative;
+
+    > .slider__pic1 {
+      background-image: url("/images/Gau21-1200w.JPG");
+    }
+
+    > .slider__pic2 {
+      background-image: url("/images/JeremiahNavy-1200w.jpg");
+    }
+
+    > .slider__pic3 {
+      background-image: url("/images/SarJumps-600w.jpeg");
+    }
 
     > article {
       @include vendor('transition', (
@@ -105,11 +126,6 @@
         top: 0;
         width: 100%;
       }
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
     }
   }
 
@@ -136,34 +152,54 @@
   }
 
   @include breakpoint('<=medium') {
-    @include vendor('flex-direction', 'column-reverse');
 
     > .items {
-      @include vendor('flex-direction', 'row');
-      width: 100%;
+      @include vendor('flex-direction', 'column-reverse');
+      width: 40%;
+      section {
+        width: 100%;
+      }
     }
 
     > .slider {
-      height: 40em;
-      max-height: 55vh;
-      width: 100%;
+      background-color: #4e5266;
+      margin: 0 auto;
+      width: 60%;
+
+      .slider__pic1{
+        background-position: top center;
+      }
+
+      .slider__pic2 {
+        background-position: top center;
+      }
+
+      .slider__pic3 {
+        background-position: top center;
+      }
     }
   }
 
   @include breakpoint('<=small') {
+
+    @include vendor('flex-direction', 'column-reverse');
     > .items {
+      @include vendor('flex-direction', 'row');
+      width: 100%;
       section {
+        width: 50%;
         @include padding(3em, 3em);
+        font-size: 1rem;
 
         h1 {
-          font-size: 1.25em;
+          font-size: 1em;
         }
       }
     }
 
     > .slider {
-      height: 30em;
-      max-height: none;
+      width: 100%;
+      height: 30rem;
     }
   }
 
@@ -171,14 +207,16 @@
     > .items {
       @include vendor('flex-direction', 'column');
 
+
       section {
         @include padding(3em, 3em);
+        width: 100%;
       }
     }
 
     > .slider {
-      height: 20em;
-      max-height: 40vh;
+      height: 30rem;
+      max-height: 60vh;
     }
   }
 }

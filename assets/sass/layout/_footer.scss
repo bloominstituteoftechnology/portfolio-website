@@ -32,13 +32,12 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 0 4em 0;
+    border-top: solid 1px _palette(accent1, border);
 
     > div {
       @include padding(2em, 0);
       @include vendor('flex-grow', '0');
       @include vendor('flex-shrink', '0');
-      border-left: solid 1px _palette(accent1, border);
-      border-top: solid 1px _palette(accent1, border);
       width: 33%;
 
       ul {
@@ -88,10 +87,10 @@
   @include breakpoint('<=medium') {
     .links {
       > div {
-        width: 50%;
+        width: 33%;
 
         &:nth-child(4n - 3) {
-          border-left-width: 1px;
+          border-left-width: 0;
         }
 
         &:nth-child(-n + 4) {
@@ -130,7 +129,7 @@
 
       > div {
         border-left: 0;
-        width: 100%;
+        width: 33%;
 
         &:nth-child(2n - 1) {
           border-left-width: 1px;
@@ -141,8 +140,7 @@
         }
 
         &:first-child {
-          border-top-width: 0;
-          padding-top: 0;
+          border-top-width: 1px;
         }
 
         &:last-child {

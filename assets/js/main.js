@@ -527,3 +527,4 @@ const nexter = new Project(
         } );
     
 } )( jQuery );
+
