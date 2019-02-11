@@ -41,6 +41,7 @@
     .content {
       @include padding(3.5em, 5em);
       text-align: center;
+      display: none;
     }
   }
 
@@ -68,7 +69,7 @@
         margin: -1em 0 0 -1em;
         position: absolute;
         text-align: center;
-        top: 50%;
+        top: 115%;
         width: 2em;
       }
 
@@ -187,7 +188,6 @@
       margin: 1.5em 0 0 0;
 
       .image {
-        height: 9em;
       }
     }
   }

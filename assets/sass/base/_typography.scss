@@ -7,7 +7,7 @@
 /* Type */
 
 body {
-  color: _palette(fg);
+  color: _palette(fg-bold);
 }
 
 body, input, select, textarea {
@@ -175,7 +175,7 @@ hr {
 @mixin color-typography($p: null) {
   @if $p != null {
     background-color: _palette($p, bg);
-    color: _palette($p, fg);
+    color: _palette($p, fg-border);
   }
 
   input, select, textarea {

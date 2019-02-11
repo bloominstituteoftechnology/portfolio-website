@@ -64,6 +64,8 @@
 
   .contact-icons {
     display: inline-block;
+    color: _palette(accent1, fg);
+    font-size: 1.2rem;
 
     li {
       display: inline-block;
