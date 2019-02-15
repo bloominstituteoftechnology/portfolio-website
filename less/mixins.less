@@ -1,0 +1,21 @@
+// Mixins Here
+
+.cust-btn(@height:40px,@width:100px){
+    height: @height;
+    width: @width;
+    background: @btn-bg;
+    color: @btn-font;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: 'Russo One', sans-serif;
+
+    @media @mobile {
+        width: 100%;
+        height: 80px;
+    }
+
+    &:hover{
+        background: @btn-font;
+        color: @btn-bg;
+    }
+}
