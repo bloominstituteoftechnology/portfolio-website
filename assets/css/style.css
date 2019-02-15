@@ -1,0 +1,38 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+body{
+	margin: 0px;*/
+}
+h1{
+	font-family: fantasy;
+	font-size: 3em;
+	border-right: 2px solid pink;
+	border-bottom: 2px solid red;
+	width: 500px;
+	text-align: center;
+	margin: 10px;
+	box-shadow: 8px 5px 5px #888888;
+	margin-top: 10px;
+	margin-left: 0px;
+	
+}
+header nav a{
+	display:inline-flex;
+	flex-wrap: wrap;
+	justify-content:flex-end;
+	margin:2% 7%;
+	
+}
+img{
+	width: 300px;
+	height: 250px;
+	margin: 10px;
+	transition: all 1s;
+}
+img:hover{
+	transform: scale(1.2, 1.2);
+}
