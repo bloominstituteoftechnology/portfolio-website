@@ -18,7 +18,12 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 ### Follow these steps to download your template and start the project:
 
 - [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
-- [ ] Pick a template that represents you and download it to your local machine
+- [ ] You make pick any template you like.  Here are some good choices for a portfolio:
+	- [https://html5up.net/story](https://html5up.net/story)
+	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
+	- [https://html5up.net/miniport](https://html5up.net/miniport)
+	- [https://html5up.net/dimension](https://html5up.net/dimension)
+
 - [ ] Unzip the code and copy the site to your git repository that you just set up
   * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
 - [ ] Work on the MVP requirements listed below
