@@ -2054,6 +2054,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 0.375em;
 			display: block;
+			height: 5%;
 		}
 
 		.image.left, .image.right {
@@ -3391,7 +3392,7 @@ input, select, textarea {
 		}
 
 			#banner .image img {
-				height: 100%;
+				height: 90%;
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
