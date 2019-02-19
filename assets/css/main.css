@@ -74,6 +74,8 @@ input, select, textarea {
 
 /* Basic */
 
+/* Below this is responsive */
+
 	@-ms-viewport {
 		width: device-width;
 	}
@@ -90,6 +92,8 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
+/* Box-sizing: inherit is new to me */
+
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
@@ -97,6 +101,8 @@ input, select, textarea {
 	body {
 		background: #1b1f22;
 	}
+
+/*    Never seen this before    */
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -114,6 +120,9 @@ input, select, textarea {
 	html {
 		font-size: 16pt;
 	}
+
+/* I have never seen media screen before */
+/* Responsive */
 
 		@media screen and (max-width: 1680px) {
 
@@ -146,6 +155,8 @@ input, select, textarea {
 		font-size: 1rem;
 		line-height: 1.65;
 	}
+
+/* Never seen transition before */
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
