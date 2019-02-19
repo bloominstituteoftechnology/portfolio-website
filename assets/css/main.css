@@ -2641,19 +2641,19 @@ button:disabled,
 }
 
 .features li:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.035);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .features li:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.17);
 }
 
 .features li:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.105);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .features li:nth-child(4) {
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.37);
 }
 
 .features li:nth-child(5) {
@@ -2886,7 +2886,10 @@ button:disabled,
 }
 
 .wrapper.style1 {
-  background-color: #21b2a6;
+  /* background-color: rgba(103, 129, 201, 0.9); */
+  /* background-image: url("../../images/otsukimi.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; */
   color: #c8ece9;
 }
 
@@ -3056,7 +3059,6 @@ button:disabled,
 }
 
 .wrapper.style3 {
-  background-color: #505393;
   color: #d3d4e4;
 }
 
@@ -3070,7 +3072,7 @@ button:disabled,
 .wrapper.style3 h4,
 .wrapper.style3 h5,
 .wrapper.style3 h6 {
-  color: #ffffff;
+  color: #d3d4e4;
 }
 
 .wrapper.style3 hr {
