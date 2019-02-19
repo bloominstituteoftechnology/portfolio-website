@@ -55,6 +55,9 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+
+
+
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -3342,14 +3345,16 @@ input, select, textarea {
 
 	#banner {
 		padding: 10em 0 4.75em 0 ;
+
 	}
 
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
+			
 		}
 
-		#banner .logo {
+		#banner .logo  {
 			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
 			-ms-transition: opacity 2s ease, -ms-transform 1s ease;
@@ -3360,8 +3365,11 @@ input, select, textarea {
 			transform: translateY(0);
 			opacity: 1;
 			margin: 0 0 1.3em 0;
+			
+			
 		}
 
+	
 			#banner .logo .icon {
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
