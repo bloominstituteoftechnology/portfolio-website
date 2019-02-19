@@ -2042,6 +2042,14 @@ input, select, textarea {
 			display: none;
 		}
 
+		.icon h2 {
+			padding-top: 30%;
+			font-size: 2rem;
+			color: #F5666C;
+			
+
+		}
+
 /* Image */
 
 	.image {
