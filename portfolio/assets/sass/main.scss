@@ -1329,7 +1329,11 @@ body > article {
       margin: 0;
     }
   }
-
+  .p-danger:hover {
+    color: red;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+  }
   /* Copyright */
 
   #copyright {
