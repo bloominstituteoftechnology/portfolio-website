@@ -115,6 +115,7 @@ input, select, textarea {
 
 /* Type */
 
+
 	html {
 		font-size: 18pt;
 	}
@@ -7188,6 +7189,7 @@ input, select, textarea {
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
+		
 		padding: 7rem 3.5rem 5rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
@@ -7195,15 +7197,18 @@ input, select, textarea {
 	}
 
 		.wrapper.style1 > .inner.medium {
+			
 			width: 48rem;
 		}
 
 		.wrapper.style1 > .inner.small {
+			
+		
 			width: 32rem;
 		}
 
 	@media screen and (max-width: 1680px) {
-
+		
 		.wrapper.style1 > .inner {
 			padding: 5rem 2.5rem 3rem 2.5rem ;
 		}
@@ -7211,7 +7216,7 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 1280px) {
-
+		
 		.wrapper.style1 > .inner {
 			padding: 4rem 4rem 2rem 4rem ;
 		}
@@ -7237,11 +7242,13 @@ input, select, textarea {
 /* Wrapper (style2) */
 
 	.wrapper.style2 {
+		
 		padding: 7rem;
 		background-color: #eeeeee;
 	}
 
 		.wrapper.style2 > .inner {
+			
 			padding: 5.25rem 3.5rem 3.25rem 3.5rem ;
 			background-color: #ffffff;
 			border-radius: 0.5rem;
@@ -7253,14 +7260,17 @@ input, select, textarea {
 		}
 
 			.wrapper.style2 > .inner.medium {
+				
 				width: 48rem;
 			}
 
 			.wrapper.style2 > .inner.small {
+				
 				width: 32rem;
 			}
 
 		@media screen and (max-width: 1680px) {
+			
 
 			.wrapper.style2 {
 				padding: 5rem;
@@ -7309,10 +7319,12 @@ input, select, textarea {
 		}
 
 	#wrapper > .wrapper.style2.invert:not(.color1):not(.color2):not(.color3):not(.color4):not(.color5):not(.color6):not(.color7) {
+	
 		background-color: #222222;
 	}
 
 	#wrapper > .wrapper.style2.invert > .inner {
+		
 		background-color: #000000;
 	}
 
@@ -8576,3 +8588,21 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+
+			/*display none for section*/
+			section.wrapper.style1.align-center{
+				display:none;
+			}
+
+			div.content{
+				background-color:#7a7474;
+			}
+
+			
+
+			footer{
+				background-color:#FF5833;
+			}
+
+			
