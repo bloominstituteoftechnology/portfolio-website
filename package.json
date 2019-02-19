@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "With all of the projects you will be working on here at Lambda School, you will need somewhere to house them!  There is no better opportunity to learn and show off your skills than a beautiful portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamConnatser/portfolio-website.git"
+  },
+  "author": "William Connatser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilliamConnatser/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/WilliamConnatser/portfolio-website#readme"
+}
