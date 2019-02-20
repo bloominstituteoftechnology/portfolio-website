@@ -1,5 +1,5 @@
 ///
-/// Story by HTML5 UP
+/// Solid State by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -9,20 +9,20 @@
 	ol {
 		list-style: decimal;
 		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1.25rem;
+		padding-left: 1.25em;
 
 		li {
-			padding-left: 0.25rem;
+			padding-left: 0.25em;
 		}
 	}
 
 	ul {
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1rem;
+		padding-left: 1em;
 
 		li {
-			padding-left: 0.5rem;
+			padding-left: 0.5em;
 		}
 
 		&.alt {
@@ -30,8 +30,8 @@
 			padding-left: 0;
 
 			li {
-				border-top: solid _size(border-width);
-				padding: 0.5rem 0;
+				border-top: solid 1px _palette(border);
+				padding: 0.5em 0;
 
 				&:first-child {
 					border-top: 0;
@@ -53,34 +53,4 @@
 		dd {
 			margin-left: _size(element-margin);
 		}
-
-		&.style2 {
-			dt {
-				width: 25%;
-				float: left;
-			}
-
-			dd {
-				width: 70%;
-				float: left;
-			}
-
-			&:after {
-				content: '';
-				display: block;
-				clear: both;
-			}
-		}
 	}
-
-	@mixin color-list($p: null) {
-		ul {
-			&.alt {
-				li {
-					border-top-color: _palette($p, border);
-				}
-			}
-		}
-	}
-
-	@include color-list;
