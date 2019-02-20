@@ -1,23 +1,17 @@
-Story by HTML5 UP
+Solid State by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-Say hello to Story, a brand new responsive one-pager for HTML5 UP! Inspired by my work
-on Carrd*, Story is built to be extremely modular and tweakable, and as such is entirely
-built on reusable, insanely customizable elements (like "spotlight" and "gallery") that
-can be endlessly duplicated and tweaked into whatever you need to tell your story --
-without, in many cases, touching *any* CSS. Check out index-demo.html for an interactive
-demo, and index.html for the actual template. Enjoy!
+After a somewhat extended break from HTML5 UP (to work on a secret-ish new project --
+more on that later!) I'm back with a brand new design: Solid State, a slick new multi-
+pager that combines some of the ideas I've played with over at Pixelarity with an "angular"
+sort of look. Hope you dig it :)
 
-Demo images** courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.
 
-PS: Delete index-demo.html and assets/js/demo.js when you're done messing with the demo
-as neither are needed in production :)
-
-(* = my other side project -- carrd.co)
-(** = not included)
+(* = not included)
 
 AJ
 aj@lkn.io | @ajlkn
