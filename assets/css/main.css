@@ -684,10 +684,12 @@ input, select, textarea {
 			background-image: url(../../images/globe.jpg);
 			background-attachment: fixed;
 			background-size: cover;
+			background-repeat: no-repeat;
 		}
 		.image.main.work{
 			background-image: url(../../images/matrix.jpg);
 			background-size: cover;
+			background-repeat: no-repeat;
 		}
 		#work div{
 			padding: 0 5px;
