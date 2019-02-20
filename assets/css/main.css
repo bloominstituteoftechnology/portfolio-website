@@ -95,6 +95,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -3431,6 +3432,54 @@ input, select, textarea {
 			line-height: 2;
 			text-transform: uppercase;
 		}
+
+		/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+	
+	
+	white-space: nowrap;
+	color: rgb(20, 199, 74);
+	font-family: monospace;
+	font-size: 1rem;
+	text-transform: lowercase;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	 /* Keeps the content on a single line */
+	margin: 0  3px 20pxpx 0; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .06;
+	animation-delay: 5s; /* Adjust as needed */
+}
+	.typewriter h1{
+	animation: 
+	 
+	  typing 6s steps(90,end),
+	  blink-caret .5s  step-end infinite;
+	  
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+
+  @keyframes blink{
+	to{opacity: .0;}
+  }
+
+  .blink-span{
+
+	  animation: blink 1s infinite;
+  }
+
+ 
+  
+  
+
+  
+
+
+		
+		
 
 		@media screen and (max-width: 1280px) {
 
