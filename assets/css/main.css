@@ -2585,7 +2585,6 @@ input, select, textarea {
 		top: 0;
 		width: 35%;
 	}
-
 		#header > * {
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
@@ -2593,7 +2592,6 @@ input, select, textarea {
 			flex-shrink: 0;
 			width: 100%;
 		}
-
 		#header > .inner {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
@@ -2601,7 +2599,6 @@ input, select, textarea {
 			flex-grow: 1;
 			margin: 0 0 2em 0;
 		}
-		
 		#header strong, #header b {
 			color: #ffffff;
 		}
