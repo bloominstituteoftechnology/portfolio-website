@@ -41,6 +41,14 @@
 		}
 	}
 
+	.langs {
+		color: cyan;
+			li {
+				border-left: 1px solid white;
+				padding-left: 15px;
+			}
+	}
+
 	dl {
 		margin: 0 0 _size(element-margin) 0;
 
