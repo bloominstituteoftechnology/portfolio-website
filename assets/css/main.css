@@ -700,55 +700,55 @@ input, select, textarea {
 		.cf{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/cf.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 			background-attachment: fixed;
 		}
 		.cf:hover{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/cf.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 			background-attachment: fixed;
 		}
 		.scf{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/scf.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 		}
 		.scf:hover{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/scf.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 			background-attachment: fixed;
 		}
 		.giw{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/giw.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 			background-attachment: fixed;
 		}
 		.giw:hover{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/giw.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 			background-attachment: fixed;
 		}
 		.spr{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/spr.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 			background-attachment: fixed;
 		}
 		.spr:hover{
 			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/spr.png) repeat-y;
 			background-attachment: fixed;
-			background-size: auto 75%;
+			background-size: 100vh;
 			background-position: center center;
 			background-attachment: fixed;
 		}
