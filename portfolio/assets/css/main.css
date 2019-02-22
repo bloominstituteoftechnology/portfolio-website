@@ -328,10 +328,6 @@ header > p {
   font-size: 1.25em;
   margin: 0;
 }
-header img.fingers-crossed {
-  width: 20px;
-  height: 10px;
-}
 
 footer {
   margin: 3em 0 0 0;
@@ -1379,6 +1375,11 @@ footer > p {
 
   .row > * {
     box-sizing: border-box;
+  }
+
+  .row img {
+    width: 200px;
+    height: 220px;
   }
 
   .row.gtr-uniform > * > :last-child {
