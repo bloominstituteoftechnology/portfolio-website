@@ -695,37 +695,75 @@ input, select, textarea {
 			padding: 0 5px;
 			margin: 5px 0;
 			text-align: center;
+			width: 100%;
 		}
 		.cf{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/cf.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/cf.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 			background-attachment: fixed;
 		}
 		.cf:hover{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/cf.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/cf.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 			background-attachment: fixed;
 		}
 		.scf{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/scf.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/scf.png) repeat-y;
 			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 		}
 		.scf:hover{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/scf.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/scf.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 			background-attachment: fixed;
 		}
 		.giw{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/giw.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/giw.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 			background-attachment: fixed;
 		}
 		.giw:hover{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/giw.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/giw.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 			background-attachment: fixed;
 		}
 		.spr{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/spr.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/spr.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 			background-attachment: fixed;
 		}
 		.spr:hover{
-			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/spr.png);
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/spr.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
+			background-attachment: fixed;
+		}
+		.resume{
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/resume.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
+			background-attachment: fixed;
+		}
+		.resume:hover{
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/resume.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
 			background-attachment: fixed;
 		}
 
@@ -801,8 +839,6 @@ input, select, textarea {
 			ul.langs li.last {
 				border-right: 1px solid white;
 			}
-			}
-		}
 
 	dl {
 		margin: 0 0 2rem 0;
