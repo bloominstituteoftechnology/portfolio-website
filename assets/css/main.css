@@ -752,6 +752,20 @@ input, select, textarea {
 			background-position: center center;
 			background-attachment: fixed;
 		}
+		.resume{
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/resume.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
+			background-attachment: fixed;
+		}
+		.resume:hover{
+			background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/resume.png) repeat-y;
+			background-attachment: fixed;
+			background-size: 100vh;
+			background-position: center center;
+			background-attachment: fixed;
+		}
 
 		.image.main.about{
 			background-image: url(../../images/pyeong-hwa.jpg);
@@ -825,8 +839,6 @@ input, select, textarea {
 			ul.langs li.last {
 				border-right: 1px solid white;
 			}
-			}
-		}
 
 	dl {
 		margin: 0 0 2rem 0;
