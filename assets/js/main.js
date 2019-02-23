@@ -64,10 +64,10 @@ class Article {
         this.heading.textContent = this.name;
         this.p.textContent = this.content;
         this.img.setActive();
-        if (this.articleNumber === 1){
+        if( this.articleNumber === 1 ) {
             this.link.setAttribute( "href", demoUrl );
         }else {
-            this.link.setAttribute("href", githubUrl);
+            this.link.setAttribute( "href", githubUrl );
             this.link.textContent = "Github Link";
         }
         
@@ -108,7 +108,7 @@ const trillo = new Project(
         new Img( "images/Trillo3.JPG", "Trillo landing page phone view screen shot.", 2 ),
         2
     ) ],
-    "https://quizzical-kirch-f2239a.netlify.com",
+    "https://trillo-jeremiah.netlify.com",
     "https://github.com/jeremiahtenbrink/Trillo"
 );
 
@@ -132,7 +132,7 @@ const bookr = new Project(
         new Img( "images/OerBookr3.JPG", "Bookr landing page phone view screen shot.", 2 ),
         2
     ) ],
-    "https://gracious-goldstine-d76cfe.netlify.com",
+    "https://bookr-jeremiah.netlify.com",
     "https://github.com/oer-bookr/ui-jeremiah-tenbrink"
 );
 
@@ -155,7 +155,7 @@ const natours = new Project(
         new Img( "images/Natours3.JPG", "Natours landing page phone view screen shot.", 2 ),
         2,
     ) ],
-    "https://thirsty-nobel-fbd9dc.netlify.com/",
+    "https://natours-jeremiah.netlify.com",
     "https://github.com/jeremiahtenbrink/Natours"
 );
 
@@ -178,7 +178,7 @@ const nexter = new Project(
         new Img( "images/Nexter3.JPG", "Nexter landing page phone view screen shot.", 2 ),
         2
     ) ],
-    "https://silly-colden-e92063.netlify.com",
+    "https://nexter-jeremiah.netlify.com",
     "https://github.com/jeremiahtenbrink/Nexter"
 );
 
