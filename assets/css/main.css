@@ -83,8 +83,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f4f4;
-		color: #5b5b5b;
+		background: white;
+		color: black;
 		font-size: 15pt;
 		line-height: 1.85em;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -2055,8 +2055,8 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
-		color: #fff;
+		background: black;
+		color: gold;
 		text-align: center;
 		border-radius: 0.5em;
 		text-decoration: none;
@@ -2202,7 +2202,7 @@ input, select, textarea {
 		}
 
 			#header h1 a {
-				color: inherit;
+				color: lightgoldenrodyellow;
 			}
 
 		#header .button {
@@ -2214,6 +2214,8 @@ input, select, textarea {
 			text-align: center;
 			font-size: 1.25em;
 			padding: 0;
+			background-color: black;
+			color: gold;
 		}
 
 		#header hr {
@@ -2327,7 +2329,7 @@ input, select, textarea {
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
-					color: inherit;
+					color: white;
 					text-decoration: none;
 					border: 0;
 					outline: 0;
