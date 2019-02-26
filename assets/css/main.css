@@ -2161,11 +2161,11 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("https://i.ibb.co/MggQLMn/ken-yam-532703-unsplash.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: black;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
