@@ -1,14 +1,16 @@
 // Import your less files here:
-//Variable and Mixins
-@import "variables";
-@import "mixins";
 
 //General Styles
-@import "reset";
-@import "global";
+@import "./general/reset.less";
+@import "./general/global.less";
 
+//Variable and Mixins
+@import "./components/mixins.less";
+@import "./components/variables.less";
+@import "./components/actions.less";
 
 //Components Here
-@import "navigation";
-@import "footer";
-@import "home-page";
+@import "./layout/content.less";
+@import "./layout/footer.less";
+@import "./layout/home-page.less";
+@import "./layout/navigation.less";

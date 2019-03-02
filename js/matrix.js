@@ -1,6 +1,4 @@
 
-
-
   var s = document.documentElement.clientWidth;
   var s2 = document.documentElement.clientHeight;
   var width = q.width = s - 30;

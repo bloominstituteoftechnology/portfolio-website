@@ -1,80 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ethan Baugher Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <script src="js/matrix.js" async></script><!--background-->
-  <script src="js/intro.js" async></script><!--landingpage-->
-  <script src="js/about.js" async></script><!--about-->
-  <script src="js/portfolio.js" async></script><!--portfolio-->
-  <script src="js/contact.js" async></script><!--contact-->
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Baugher Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="js/matrix.js" async></script>
+    <!--background-->
+    <script src="js/intro.js" async></script>
+    <!--landingpage-->
+    <script src="js/main.js" async></script>
+    <!--about-->
+    <script src="js/portfolio.js" async></script>
+    <!--portfolio-->
+    <script src="js/contact.js" async></script>
+    <!--contact-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-  <div class="yw-bg" style="position: relative;z-index: 1;">   
-    <div class="header" style="position: fixed; top: 0; z-index: 8;">
-      <h1>Ethan Baugher</h1>
-    </div>  
-    <div class="container home">
-  
-    <header class="intro">
-      <h2>Welcome</h2>
-    
-      <p>My name is Ethan and I am a Full Stack Web developer.</p>
+  <body>
+    <!-- home -->
+    <div class="container home" style="position: relative; z-index: 1;">
+      <!-- header -->
+      <div class="header" style="position: fixed; top: 0; z-index: 8;">
+        <h1>Ethan Baugher</h1>
+      </div>
+      <!-- intro -->
+      <div id="welcome" class="intro">
+        <div>
+          <h2>Welcome</h2>
+          <p>My name is Ethan and I am a Full Stack Web developer.</p>
+        </div>
 
-      <button onclick="myFunction()" class="btn" id="about-btn">
-        About
-      </button>
-      <button onclick="myFunction2()" class="btn" id="portfolio-btn">
-        Portfolio
-      </button>
-      <button onclick="myFunction3()" class="btn" id="contact-btn">
-        Contact
-      </button>
-    </header>
-   
-    <section  id="about-id" class="about-me">
-     
-      <h3>About Me</h3>
-    
-      <p>I have a wife and 2 kids and I work in a button factory. </p>
-    
-      <p>I happen to be a professional button animator.</p>
-    </section>
-    
-    <section id="port-id" class="port-text">
-    
-      <h3>My Portfolio</h3>
-        
-      <p>I am woke </p>
-        
-      <p>git awesome knowledge at the click of a button...wow...now I know kung fu</p>
-    </section>
+        <div>
+          <button class="link btn" id="about-btn" data-tab="1">
+            About
+          </button>
+          <button class="link btn" id="portfolio-btn" data-tab="2">
+            Portfolio
+          </button>
+          <button class="link btn" id="contact-btn" data-tab="3">
+            Contact
+          </button>
+        </div>
+      </div>
+      <div id="webcont">
+        <!-- about -->
+        <article id="about" class="about-me" data-tab="1">
+          <div class="cont-header">
+            <h3>About Me</h3>
+            <button class="close link" data-tab="1">home</button>
+          </div>
+          <div class="scrl">
+            <p>I have a wife and 2 kids and I work in a button factory.</p>
 
-    <div id="cont-id" class="contact-text">
-      <h3>Contact Me</h3>
-
-      <p>Red Pill</p>
-    
-      <p>Blue Pill</p>
+            <p>I happen to be a professional button animator.</p>
+          </div>
+        </article>
+        <!-- portfolio -->
+        <article id="port" class="port-text" data-tab="2">
+          <div class="cont-header">
+            <h3>My Portfolio</h3>
+            <button class="close link" data-tab="2">home</button>
+          </div>
+          <div class="scrl">
+            <p>
+              git awesome knowledge at the click of a button...wow...now I know
+              kung fu
+            </p>
+          </div>
+        </article>
+        <!-- contact -->
+        <article id="contact" class="contact-text" data-tab="3">
+          <div class="cont-header">
+            <h3>Contact Me</h3>
+            <button class="close link" data-tab="3">home</button>
+          </div>
+          <div class="scrl">
+            <p>Red Pill</p>
+            <p>Blue Pill</p>
+          </div>
+        </article>
+      </div>
+      <!-- footer -->
+      <footer style="position: fixed; bottom: 0; left: 0;">
+        <p>Copyright Ethan Baugher 2019</p>
+      </footer>
     </div>
-      
-    </div>
-    <footer style="position: fixed; bottom: 0; left: 0;">
-      <p>Copyright Ethan Baugher 2019</p>
-    </footer>
-
-    
-  </div>
-  <canvas id="q" style="position: fixed; top: 0; left: 0; z-index: 0;"></canvas>></canvas>
-  
-
-</body>
+    <canvas
+      id="q"
+      class="bg"
+      style="position: fixed; top: 0; left: 0; z-index: 0;"
+    ></canvas>
+  </body>
 </html>
