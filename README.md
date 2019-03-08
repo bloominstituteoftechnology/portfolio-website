@@ -19,7 +19,7 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 ### Follow these steps to download your template and start the project:
 
-- [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
+- [X] Navigate here: [https://html5up.net/](https://html5up.net/)
 - [ ] You make pick any template you like.  Here are some good choices for a portfolio:
 	- [https://html5up.net/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
