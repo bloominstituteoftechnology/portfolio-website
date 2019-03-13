@@ -12,13 +12,12 @@
     <div class="container-child" id="edge-of-content">
     
     <header class="edge-of-content-child" id="download-file-as-pdf">
-      <h1 class="download-file-as-pdf-text">If you would like to download this page as a PDF, please click <button type="button" class="download-file-as-pdf-button"><a href="Insert link to downloadsite as a PDF"></a></button></h1>
+      <h1 class="download-file-as-pdf-text">If you would like to download this page as a PDF, please click <button type="button" class="download-file-as-pdf-button"><a href="Insert link to downloadsite as a PDF">Here</a></button></h1>
     </header>
     <hr>
     <section class="container-child" id="top">
       <section class="top-child" id="top-left">
         <section class="top-left-child" id="contact-info">
-          fieldset
           <p class="contact-info-child" id="contact-info-name">Robert Pedersen</p>
           <p class="contact-info-child" id="contact-info-number"><i class="fas fa-phone fa-sm"></i>My Number: <a href="tel:+1 (385)-200-1510" target="_blank">+1 (385)-200-1510</a></p>
           <p class="contact-info-child" id="contact-info-email"><i class="fas fa-envelope fa-sm"></i>Email: <a href="mailto:contact@robertpedersen.dev" target="_blank">contact@robertpedersen.dev</a></p>
@@ -48,7 +47,8 @@
             <p class="brief-description-child ptag" id="brief-description-p3">I prioritize issues appropriately while maintaining agreed upon completed timeframes. I make sure that everyone I interact with is treated with the upmost respect, and make sure that they and their problems are addressed not only in a timely matter but also in a urgent manner. I place my customers needs and wants first and do everything I can to over deliver</p>
           </section><!-- section class="top-right-child" id="brief-description" -->
         </section><!-- section class="top-child" id="top-right" -->
-      </section><!-- Section id="top"-->
+      </fieldset><!-- fieldset class="contact-info-child" id="contact-info-fieldset -->
+    </section><!-- Section id="top"-->
     </div><!-- div class="container-child" id="edge-of-content" -->
     <div class="container-child" id="decoration-section"></div><!-- "container-child" id="decoration-section" -->
     <section class="container-child" id="bottom">
@@ -379,7 +379,7 @@
 
   </article><!-- class="bottom-child" id="bottom-job-container4" -->
 
-<!-- Job 2 row End -->
+<!-- Job 4 row End -->
 
 
 
@@ -387,13 +387,38 @@
 
     <footer class="container-child" id="footer">
       <section class="footer-child" id="social-media-icons">
-
+          <ul class="social-media-icons-child" id="social-media-icons-ul">
+              <li class="social-media-icons-ul-child"><a href="https://twitter.com/RobPedersenDev" target="_blank" class="icon fab fa-twitter" target="_blank"><span class="label"> Twitter</span></a></li>
+              <li class="social-media-icons-ul-child"><a href="https://www.facebook.com/PedersenDev/"  target="_blank" class="icon fab fa-facebook"> <span class="label" target="_blank">Facebook</span></a></li>
+              <li class="social-media-icons-ul-child"><a href="https://www.youtube.com/channel/UCc9FPf3yA0qAHaKO-6-tRGg" target="_blank" class="icon fab fa-youtube"><span class="label" target="_blank"> Youtube</span></a></li>
+              <li class="social-media-icons-ul-child"><a href="https://github.com/rob84044" target="_blank" class="icon fab fa-github"> <span class="label" target="_blank">GitHub</span></a></li>
+              <li class="social-media-icons-ul-child"><a href="tel:+1-385-200-1510" target="_blank" class="icon fas fa-phone"> <span class="label">(385)-200-1510</span></a></li>
+              <li class="social-media-icons-ul-child"><a href="mailto:contact@robertpedersen.dev" target="_blank" class="icon fas fa-envelope"> <span class="label">contact@robertpedersen.dev</span></a></li>
+              <li class="social-media-icons-ul-child"><a href="https://m.me/PedersenDev" target="_blank" class="icon fab fa-facebook-messenger"> <span class="label">Facebook Messenger Contact</span></a></li>
+            </ul>
       </section><!-- class="footer-child" id="social-media-icons" -->
       <section class="footer-child" id="references-request-form">
+        <form method="post" name="references-request-form-actual" action="#" netflify class="references-request-form-child" id="references-request-form-actual" autocomplete="on">
+          <div class="references-request-form-actual-child" id="references-request-form-actual-checkbox">
+            <input type="checkbox" autofocus name="I am requesting a copy of your references" value="I am requesting a copy of your references"> I would like to request a copy of your referrences
+          </div><!-- div class="references-request-form-actual-child" id="references-request-form-actual-checkbox" -->
+          <div class="references-request-form-actual-child" id="references-request-form-actual-about-requestor">
+              <p class="references-request-form-actual-about-requestor-child">First Name:<input type="text" name="fname" required></p>
+              <p class="references-request-form-actual-about-requestor-child">Last Name: <input type="text" name="lname" required></p>
+              <p class="references-request-form-actual-about-requestor-child">E-mail: <input type="email" name="email" required></p>
+              <p class="references-request-form-actual-about-requestor-child">Company/Project Name: <input type="text" name="company/project-name" required></p>
+              <p class="references-request-form-actual-about-requestor-child">Company/Project Website: <input type="text" name="company-website" ></p>
+              <p class="references-request-form-actual-about-requestor-child">Role/Position you are hiring for: <input type="text" name="job-position" required></p>
+              <p class="references-request-form-actual-about-requestor-child">Business Card Upload: <input type="email" name="business-card-upload"></p>
+          </div><!-- div class="references-request-form-actual-child" id="references-request-form-actual-about-requestor" -->
+          <div class="references-request-form-actual-child" id="references-request-form-actual-text-section">
+            
+          </div><!-- div class="references-request-form-actual-child" id="references-request-form-actual-text-section" -->
+        </form><!-- form method="post" name="references-request-form-actual" action="#" netflify class="references-request-form-child" id="references-request-form-actual" -->
 
       </section><!-- class="footer-child" id="references-request-form" -->
       <section class="footer-child" id="download-file-as-pdf">
-        <h1 class="download-file-as-pdf-text">If you would like to download this page as a PDF, please click <button type="button" class="download-file-as-pdf-button"><a href="Insert link to downloadsite as a PDF"></a></button></h1>
+        <h1 class="download-file-as-pdf-text">If you would like to download this page as a PDF, please click <button type="button" class="download-file-as-pdf-button"><a href="Insert link to downloadsite as a PDF">Here</a></button></h1>
       </section><!-- section class="footer-child" id="download-file-as-pdf" -->
     </footer><!-- class="container-child" id="footer" -->
   </body>
