@@ -398,25 +398,32 @@
             </ul>
       </section><!-- class="footer-child" id="social-media-icons" -->
       <section class="footer-child" id="references-request-form">
-        <form method="post" name="references-request-form-actual" action="#" netflify class="references-request-form-child" id="references-request-form-actual" autocomplete="on">
+        <form method="post" name="references-request-form-actual" action="#" data-netlify="true" class="references-request-form-child" id="references-request-form-actual" autocomplete="on" netlif-honeypot="bot-field" data-netlify-recaptcha="true" subject="Request for your references"> 
           <div class="references-request-form-actual-child" id="references-request-form-actual-checkbox">
             <input type="checkbox" autofocus name="I am requesting a copy of your references" value="I am requesting a copy of your references"> I would like to request a copy of your referrences
           </div><!-- div class="references-request-form-actual-child" id="references-request-form-actual-checkbox" -->
+          <input name="bot-field" type="hidden"/>
           <div class="references-request-form-actual-child" id="references-request-form-actual-about-requestor">
               <p class="references-request-form-actual-about-requestor-child">First Name:<input type="text" name="fname" required></p>
               <p class="references-request-form-actual-about-requestor-child">Last Name: <input type="text" name="lname" required></p>
               <p class="references-request-form-actual-about-requestor-child">E-mail: <input type="email" name="email" required></p>
+              <p class="references-request-form-actual-about-requestor-child">Number: <input type="tel" name="number" required> Extension: <input type="tel" name="extension" size=7 width="10"></p>
               <p class="references-request-form-actual-about-requestor-child">Company/Project Name: <input type="text" name="company/project-name" required></p>
               <p class="references-request-form-actual-about-requestor-child">Company/Project Website: <input type="text" name="company-website" ></p>
               <p class="references-request-form-actual-about-requestor-child">Role/Position you are hiring for: <input type="text" name="job-position" required></p>
-              <p class="references-request-form-actual-about-requestor-child">File Upload: <input type="email" name="business-card-upload"></p>
+              <p class="references-request-form-actual-about-requestor-child">Business Card, Job post, other file Upload: <input type="file" name="file-upload"></p>
           </div><!-- div class="references-request-form-actual-child" id="references-request-form-actual-about-requestor" -->
           <div class="references-request-form-actual-child" id="references-request-form-actual-text-section">
             <p class="references-request-form-actual-text-section-child" id="references-request-form-actual-text-section-text">Due to privacy concerns I require this form to be filled out so I can ensure confidentiality and privacy requests of those that have agreed to be my references. I appreciate your flexibility and your cooperation with this process</p>
           </div><!-- div class="references-request-form-actual-child" id="references-request-form-actual-text-section" -->
-
-
-
+          <div class="references-request-form-actual-child" id="references-request-form-actual-text-area">
+            <textarea class="references-request-form-actual-text-area-child" name="" id="references-request-form-actual-text-area-actual" cols="30" rows="8"></textarea>
+          </div><!-- <div class="references-request-form-actual-child" id="references-request-form-actual-text-area">-->
+          <div class="references-request-form-actual-child" id="references-request-form-actual-buttons"> 
+            <button class="references-request-form-actual-buttons-child" id="references-request-form-actual-buttons-submit" type="submit">Submit</button>
+            <button class="references-request-form-actual-buttons-child" id="references-request-form-actual-buttons-reset" type="reset">Reset</button>
+          </div><!-- div class="references-request-form-actual-child" id="references-request-form-actual-buttons" -->
+          <div data-netlify-recaptcha="true"></div>
         </form><!-- form method="post" name="references-request-form-actual" action="#" netflify class="references-request-form-child" id="references-request-form-actual" -->
 
       </section><!-- class="footer-child" id="references-request-form" -->
