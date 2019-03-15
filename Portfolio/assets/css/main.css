@@ -152,7 +152,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
+		background-color: rgb(97, 95, 95);
 		color: #000000;
 	}
 
@@ -189,6 +189,11 @@ input, select, textarea {
 
 		p.major {
 			font-size: 1.25rem;
+		}
+
+		.major #lambda {
+			font-weight: bold;
+			text-decoration: none;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
