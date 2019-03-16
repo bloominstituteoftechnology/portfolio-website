@@ -225,6 +225,10 @@ input, select, textarea {
 	h6 {
 		font-size: 0.6rem;
 	}
+	.joke {
+		font-size: 130%;
+		color: purple;
+	}
 
 	@media screen and (max-width: 736px) {
 
