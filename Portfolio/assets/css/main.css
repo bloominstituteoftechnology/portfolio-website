@@ -154,8 +154,8 @@ input, select, textarea {
 /* CHanged background color */
 
 	body {
-		/* background-color: #ffffff; */
-		background-color: rgb(97, 95, 95);
+		background-color: #ffffff;
+		/* background-color: rgb(97, 95, 95); */
 		color: #000000;
 	}
 
