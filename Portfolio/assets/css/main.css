@@ -357,6 +357,11 @@ input, select, textarea {
 		border-bottom-color: rgba(0, 0, 0, 0.2);
 	}
 
+	footer p {
+		padding-right: 80px;
+		margin: 0;
+	}
+
 /* Row */
 
 	.row {
