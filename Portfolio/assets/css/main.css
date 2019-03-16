@@ -154,8 +154,8 @@ input, select, textarea {
 /* CHanged background color */
 
 	body {
-		background-color: #ffffff;
-		/* background-color: rgb(97, 95, 95); */
+		/* background-color: #ffffff; */
+		background-color: lightgray;
 		color: #000000;
 	}
 
@@ -2623,6 +2623,18 @@ input, select, textarea {
 		/* filter: blur(1px); */
 	}
 
+	.my-pic {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2.0rem;
+	}
+
+	.my-pic img {
+		border-radius: 20.0rem;
+		height: 20.0rem;
+		width: 20.0rem;
+	}
+
 		.image img {
 			display: block;
 			border-radius: 4px;
@@ -3448,7 +3460,7 @@ input, select, textarea {
 	}
 
 		.banner.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 5rem 7rem 5rem 7rem ;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
@@ -3500,7 +3512,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.banner.style1 .content {
-				padding: 5rem 5rem 3rem 5rem ;
+				padding: 3rem 5rem 3rem 5rem ;
 			}
 
 		}
@@ -3508,7 +3520,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.banner.style1 .content {
-				padding: 4rem 4rem 2rem 4rem ;
+				padding: 3rem 4rem 2rem 4rem ;
 			}
 
 		}
@@ -6371,7 +6383,7 @@ input, select, textarea {
 		}
 
 			.gallery.style1 a:hover {
-				color: #47D3E5;
+				color: darkred;
 			}
 
 		.gallery.style1 strong, .gallery.style1 b {
@@ -8254,7 +8266,7 @@ input, select, textarea {
 			}
 
 				#wrapper > .invert a:hover {
-					color: #47D3E5;
+					color: darkred;
 				}
 
 			#wrapper > .invert strong, #wrapper > .invert b {
@@ -8297,7 +8309,7 @@ input, select, textarea {
 				#wrapper > .invert input[type="button"]:hover,
 				#wrapper > .invert button:hover,
 				#wrapper > .invert .button:hover {
-					box-shadow: inset 0 0 0 1px #47D3E5;
+					box-shadow: inset 0 0 0 1px darkred;
 					color: #47D3E5 !important;
 				}
 
