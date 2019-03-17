@@ -366,7 +366,6 @@ input, select, textarea {
 	}
 
 	footer p {
-		padding-right: 80px;
 		margin: 0;
 	}
 
@@ -2840,6 +2839,10 @@ input, select, textarea {
 		#storyContent .present {
 			max-width: 20.0rem;
 			align-self: flex-end;
+		}
+
+		.content {
+			border-bottom: 0.5px solid black;
 		}
 
 		#storyContent .future {
