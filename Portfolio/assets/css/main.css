@@ -2820,24 +2820,21 @@ input, select, textarea {
 					padding-top: 0;
 				} */
 
-		#storyContent {
+		#pastContent {
 			box-sizing: border-box;
+			border-bottom: solid 1px gray;
 			display: flex;
-			flex-direction: column;
 		}
 
-		#storyContent .past {
+		.present p {
+			margin-bottom: 0;
+		}
+
+		#pastContent .present {
 			display: flex;
-			max-width: 98%;
-			flex-direction: column;
-		}
-
-		.past h2 {
-			
-		}
-
-		.past .image {
-			max-width: 35%;
+			max-width: 45%;
+			width: 45%;
+			flex-direction: row;
 		}
 
 		#storyContent .present {
