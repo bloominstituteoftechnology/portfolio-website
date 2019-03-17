@@ -200,6 +200,14 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+		#lambda {
+			color: darkred;
+			font-weight: bold;
+			text-decoration: none;	
+		}
+
+
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
@@ -2796,13 +2804,39 @@ input, select, textarea {
 			margin-left: 0;
 		}
 
+		ul.actions.stacked {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+
 			ul.actions.stacked li {
 				padding: 1.3rem 0 0 0;
 			}
 
+			/* removed this because it was making my newly made nav bar have no parent on first child*/
+				/*
 				ul.actions.stacked li:first-child {
 					padding-top: 0;
-				}
+				} */
+
+		#storyContent {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#storyContent .past {
+			max-width: 20.0rem;
+		}
+
+		#storyContent .present {
+			max-width: 20.0rem;
+		}
+
+		#storyContent .future {
+			max-width: 20.0rem;
+		}
 
 		ul.actions.fit {
 			width: calc(100% + 1rem);
