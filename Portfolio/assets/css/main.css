@@ -2827,11 +2827,22 @@ input, select, textarea {
 		}
 
 		#storyContent .past {
-			max-width: 20.0rem;
+			display: flex;
+			max-width: 98%;
+			flex-direction: column;
+		}
+
+		.past h2 {
+			
+		}
+
+		.past .image {
+			max-width: 35%;
 		}
 
 		#storyContent .present {
 			max-width: 20.0rem;
+			align-self: flex-end;
 		}
 
 		#storyContent .future {
