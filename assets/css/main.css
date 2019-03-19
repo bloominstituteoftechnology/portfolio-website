@@ -2607,7 +2607,6 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border: solid red 2px;
 		border-radius: 4px;
 		position: relative;
 	}
