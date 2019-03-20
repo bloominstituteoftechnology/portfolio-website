@@ -1636,3 +1636,18 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		####################
+
+		.logo .avatar {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		margin-bottom: 20px;
+		border-radius: 50%;
+		}
+
+		.logo img {
+			max-width: 100%;
+			border-radius: 50%;
+		}
