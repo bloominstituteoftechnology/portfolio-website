@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+.nav a{
+    color:gray;
+    text-decoration:none;
+    background:white;
+    font-size: 15px;
+    margin-right:54px;
+    text-align: center;
+}
+
+
+.nav, .logo-nav{
+    display: inline-block;
+	vertical-align: middle;
+}
+	
+#title-00{
+    font-family: 'Bangers', cursive ;
+    font-size: 75px;
+}
+#title-00, #image-00{
+    display: inline-block;
+	vertical-align: middle;
+    margin-left: 40px;
+    margin-top: 47px;
+    padding: 10px;
+    
+}
+.banner-button{
+    font-size: 20px;
+}
+
+.button00{
+    margin-left: 90px;
+    margin-top: -50px;
+    background: white;
+}
+.second-container{
+	width: 100%;
+	vertical-align: middle;
+    margin-top:40px;
+    
+}
+.section-1 {
+	display: inline-block;
+	text-align: left;
+	max-width: 49%;
+	margin: 0px 5px 25px 0px;
+}
+
+.main-picture .middle-img{
+	padding: 10px;
+    margin-left: -10px;
+    height: 200px;
+    width:820px;
+}
+.image-0{
+    height:100%;
+    margin-left: 37px;
+}
+
+.third-container{
+    width: 100%;
+	vertical-align: middle;
+    margin-top: 30px;
+}
+.selection-2{
+    display: inline-block;
+	text-align: left;
+	max-width: 32%;
+	margin: 0px 5px 25px 0px;
+}
+.first-line{
+    margin-top: 70px;
+}
+footer{
+    margin-top: 25px;
+}
+address{
+    height:30px;
+}
+#number{
+    height: 25px;
+}
+#final-text{
+    height: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 800px){
+	  .container {
+	    width: 750px;
+	    margin: 20px 20px 20px 20px;
+	  }
+    .image-0{
+        display: none;
+    }
+    .logo-nav{
+        display: none;
+    }
+    .logo-nav-tablets{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .nav{
+      
+       display: flex;
+        justify-content: space-between;
+    }
+    #title-00{
+        text-align: center;
+        margin-left: 225px; 
+    }
+    .button00{
+        margin: 10px 0px -20px 300px;
+    }
+    .middle-img{
+        max-width: 103%
+    }
+}
+    
+    @media(max-width:500px){
+        .container{
+            width:500px;
+            margin: 0 auto;
+            padding: 10px 10px 10px 10px;
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .nav a{
+            font-size: 25px;
+            border: 1px solid black;
+            margin:0px 0px 0px -20px;
+            padding: 10px;
+            color:black;
+        }
+        .Banner-container{
+           margin-left: -20px;
+        }
+        #title-00{
+            color: black;
+            margin-left:110px;
+        }
+        .button00{
+        margin-left:190px;
+        }
+        .second-container, .third-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .section-1{
+            max-width: 100%;
+        }
+        .main-picture{
+            margin-left: 5px;
+        }
+        .selection-2{
+            max-width: 100%;
+        }
+    }
+    
