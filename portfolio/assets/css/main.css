@@ -1651,3 +1651,24 @@ input, select, textarea {
 			max-width: 100%;
 			border-radius: 50%;
 		}
+
+
+		#skills>div:nth-child(2)>div {
+			display: inline-flex;
+			flex-grow: 1;
+			flex-basis: 10%;
+			text-align: center;
+			padding: 1vh;
+		}
+
+		svg {
+			fill: #fff;
+			width: 100px;
+			height: 100px;
+		}
+
+		svg:not(:root), symbol, image, marker, pattern, foreignObject {
+			overflow: hidden;
+		}
+
+
