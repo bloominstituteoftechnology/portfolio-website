@@ -1658,7 +1658,7 @@ input, select, textarea {
 			flex-grow: 1;
 			flex-basis: 10%;
 			text-align: center;
-			padding: 1vh;
+			padding: 2vh;
 		}
 
 		svg {
