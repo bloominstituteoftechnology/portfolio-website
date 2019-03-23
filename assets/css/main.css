@@ -877,6 +877,38 @@ input[type="radio"]+label:before {
     background-attachment: fixed;
 }
 
+.sortinghat {
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/sortinghat.png) repeat-y;
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.sortinghat:hover {
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/sortinghat.png) repeat-y;
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.react-todo {
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/react-todo.png) repeat-y;
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.react-todo:hover {
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/react-todo.png) repeat-y;
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 .image.main.about {
     background-image: url(../../images/pyeong-hwa.jpg);
     background-attachment: fixed;
