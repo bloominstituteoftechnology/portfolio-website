@@ -288,7 +288,16 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
+	}
+
+	.height-card section {
+		min-height: 425px !important;
+		height: auto !important;
+	}
+
+	.height-card h3 {
+		min-height: 100px !important;
+		height: 100% !important;
 	}
 
 		.row > * {
