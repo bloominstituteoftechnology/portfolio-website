@@ -290,15 +290,6 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
-	.height-card section {
-		min-height: 425px !important;
-		height: auto !important;
-	}
-
-	.height-card h3 {
-		min-height: 100px !important;
-		height: 100% !important;
-	}
 
 		.row > * {
 			box-sizing: border-box;
@@ -1032,7 +1023,7 @@ input, select, textarea {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
-
+		
 				.row > * {
 					box-sizing: border-box;
 				}
@@ -1928,12 +1919,16 @@ input, select, textarea {
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
+			height: 400px !important;
 		}
 
 			.box.style1 h3 {
 				margin-bottom: 0.5em;
 			}
 
+		.box.style2 {
+			height: 500px;
+		}
 		.box.style2 h3 {
 			margin-bottom: 0.25em;
 		}
