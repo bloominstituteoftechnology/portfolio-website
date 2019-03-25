@@ -42,6 +42,18 @@ const work = document.querySelector('#work'),
             class: 'react-todo',
             description: 'A todo list made using React.'
         },
+        {
+            name: 'React Wars',
+            url: 'https://starwarschars.netlify.com',
+            class: 'rw',
+            description: 'First interaction with Django.'
+        },
+        {
+            name: 'Appraiser BFF',
+            url: 'https://appraiser-ui.netlify.com/',
+            class: 'appraiser-ui',
+            description: 'A User Interface created from scratch for a collaborated project.'
+        },
     ];
 
 class Site {
