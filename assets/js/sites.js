@@ -54,6 +54,12 @@ const work = document.querySelector('#work'),
             class: 'appraiser-ui',
             description: 'A User Interface created from scratch for a collaborated project.'
         },
+        {
+            name: 'Instagram Clone',
+            url: 'https://instagram-clone-wu.netlify.com/',
+            class: 'ig-clone',
+            description: 'Instagram clone that integrates search functionality within React.'
+        },
     ];
 
 class Site {
