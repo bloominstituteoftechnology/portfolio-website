@@ -166,6 +166,7 @@ textarea {
 }
 
 @media screen and (max-width: 480px) {
+
     html,
     body {
         min-width: 320px;
@@ -335,6 +336,7 @@ h6 {
         font-size: 1.75rem;
         line-height: 1.4;
     }
+
     h2 {
         font-size: 1.25em;
         line-height: 1.5;
@@ -454,16 +456,20 @@ form>.fields>.field.quarter {
         width: calc(100% + 3rem);
         margin: -1.5rem 0 2rem -1.5rem;
     }
+
     form>.fields>.field {
         padding: 1.5rem 0 0 1.5rem;
         width: calc(100% - 1.5rem);
     }
+
     form>.fields>.field.half {
         width: calc(100% - 1.5rem);
     }
+
     form>.fields>.field.third {
         width: calc(100% - 1.5rem);
     }
+
     form>.fields>.field.quarter {
         width: calc(100% - 1.5rem);
     }
@@ -787,8 +793,9 @@ input[type="radio"]+label:before {
 
 .image.main.work {
     background-image: url(../../images/matrix.jpg);
+    background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 #work div {
@@ -799,7 +806,7 @@ input[type="radio"]+label:before {
 }
 
 .cf {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/cf.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/cf.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -807,7 +814,7 @@ input[type="radio"]+label:before {
 }
 
 .cf:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/cf.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/cf.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -815,14 +822,14 @@ input[type="radio"]+label:before {
 }
 
 .scf {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/scf.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/scf.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
 }
 
 .scf:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/scf.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/scf.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -830,7 +837,7 @@ input[type="radio"]+label:before {
 }
 
 .giw {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/giw.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/giw.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -838,7 +845,7 @@ input[type="radio"]+label:before {
 }
 
 .giw:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/giw.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/giw.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -846,7 +853,7 @@ input[type="radio"]+label:before {
 }
 
 .spr {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/spr.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/spr.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -854,7 +861,7 @@ input[type="radio"]+label:before {
 }
 
 .spr:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/spr.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/spr.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -862,7 +869,7 @@ input[type="radio"]+label:before {
 }
 
 .resume {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/resume.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/resume.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -870,7 +877,7 @@ input[type="radio"]+label:before {
 }
 
 .resume:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/resume.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/resume.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -878,7 +885,7 @@ input[type="radio"]+label:before {
 }
 
 .sortinghat {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/sortinghat.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/sortinghat.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -886,7 +893,7 @@ input[type="radio"]+label:before {
 }
 
 .sortinghat:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/sortinghat.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/sortinghat.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -894,7 +901,7 @@ input[type="radio"]+label:before {
 }
 
 .react-todo {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/react-todo.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/react-todo.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -902,7 +909,7 @@ input[type="radio"]+label:before {
 }
 
 .react-todo:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/react-todo.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/react-todo.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -910,7 +917,7 @@ input[type="radio"]+label:before {
 }
 
 .rw {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/rw.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/rw.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -918,7 +925,7 @@ input[type="radio"]+label:before {
 }
 
 .rw:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/rw.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/rw.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -926,7 +933,7 @@ input[type="radio"]+label:before {
 }
 
 .appraiser-ui {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/appraiser-ui.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/appraiser-ui.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -934,7 +941,7 @@ input[type="radio"]+label:before {
 }
 
 .appraiser-ui:hover {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/appraiser-ui.png) repeat-y;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/appraiser-ui.png) repeat-y;
     background-attachment: fixed;
     background-size: 100vh;
     background-position: center center;
@@ -943,7 +950,6 @@ input[type="radio"]+label:before {
 
 .image.main.about {
     background-image: url(../../images/pyeong-hwa.jpg);
-    background-attachment: fixed;
     background-size: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -1110,6 +1116,7 @@ ul.actions.fit.stacked {
         margin-left: 0;
         width: 100% !important;
     }
+
     ul.actions:not(.fixed) li {
         -moz-flex-grow: 1;
         -webkit-flex-grow: 1;
@@ -1123,12 +1130,15 @@ ul.actions.fit.stacked {
         text-align: center;
         width: 100%;
     }
+
     ul.actions:not(.fixed) li>* {
         width: 100%;
     }
+
     ul.actions:not(.fixed) li:first-child {
         padding-top: 0;
     }
+
     ul.actions:not(.fixed) li input[type="submit"],
     ul.actions:not(.fixed) li input[type="reset"],
     ul.actions:not(.fixed) li input[type="button"],
@@ -1136,6 +1146,7 @@ ul.actions.fit.stacked {
     ul.actions:not(.fixed) li .button {
         width: 100%;
     }
+
     ul.actions:not(.fixed) li input[type="submit"].icon:before,
     ul.actions:not(.fixed) li input[type="reset"].icon:before,
     ul.actions:not(.fixed) li input[type="button"].icon:before,
@@ -1688,21 +1699,26 @@ body.is-preload #header .content .inner {
     #header>* {
         margin-top: 2rem;
     }
+
     #header>*:before {
         top: calc(-2rem - 1px);
         height: calc(2rem + 1px);
     }
+
     #header .logo {
         width: 4.75rem;
         height: 4.75rem;
         line-height: 4.75rem;
     }
+
     #header .logo .icon:before {
         font-size: 1.75rem;
     }
+
     #header .content .inner {
         padding: 2.5rem 1rem;
     }
+
     #header .content p {
         line-height: 1.875;
     }
@@ -1712,9 +1728,11 @@ body.is-preload #header .content .inner {
     #header {
         padding: 1.5rem 0;
     }
+
     #header .content .inner {
         padding: 2.5rem 0;
     }
+
     #header nav ul {
         -moz-flex-direction: column;
         -webkit-flex-direction: column;
@@ -1723,19 +1741,23 @@ body.is-preload #header .content .inner {
         min-width: 10rem;
         max-width: 100%;
     }
+
     #header nav ul li {
         border-left: 0;
         border-top: solid 1px #ffffff;
     }
+
     #header nav ul li:first-child {
         border-top: 0;
     }
+
     #header nav ul li a {
         height: 3rem;
         line-height: 3rem;
         min-width: 0;
         width: 100%;
     }
+
     #header nav.use-middle:after {
         display: none;
     }
@@ -1843,6 +1865,7 @@ body.is-preload #header .content .inner {
     #main article {
         padding: 3.5rem 2rem 0.5rem 2rem;
     }
+
     #main article .close:before {
         top: 0.875rem;
         left: 0.875rem;
