@@ -1936,7 +1936,7 @@ input, select, textarea {
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
-		border: 1px solid black;
+		
 	}
 
 		#main > .panel {
@@ -2065,7 +2065,8 @@ input, select, textarea {
 					}
 
 					#main{
-						border-radius:10px;
+						border-radius:20px;
+						
 					}
 
 				#main > .panel.intro header {
