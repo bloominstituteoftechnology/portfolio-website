@@ -4108,3 +4108,16 @@ input, select, textarea {
 		}
 
 	}
+/* Editing the tablet and mobile view of text */
+
+@media(max-width: 800px) {
+	br {
+		display: none;
+	}
+}
+
+@media(max-width: 500px) {
+	br {
+		display: none;
+	}
+}
