@@ -1936,6 +1936,7 @@ input, select, textarea {
 		-webkit-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		-ms-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 		transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
+		border: 1px solid black;
 	}
 
 		#main > .panel {
@@ -1947,9 +1948,11 @@ input, select, textarea {
 			position: relative;
 			padding: 3.5em 2.5em 2.5em 2.5em;
 			width: 100%;
+		
 		}
 
 			#main > .panel.inactive {
+				
 				opacity: 0;
 			}
 
@@ -1976,6 +1979,7 @@ input, select, textarea {
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
+				
 			}
 
 				#main > .panel.intro .pic {
@@ -1991,6 +1995,7 @@ input, select, textarea {
 					flex-shrink: 0;
 					width: 17em;
 					height: 100%;
+					
 				}
 
 					#main > .panel.intro .pic:before {
@@ -2057,6 +2062,10 @@ input, select, textarea {
 					#main > .panel.intro .pic:hover .arrow {
 						width: 3em;
 						padding-right: 0.25em;
+					}
+
+					#main{
+						border-radius:10px;
 					}
 
 				#main > .panel.intro header {
