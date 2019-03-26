@@ -1,0 +1,115 @@
+///
+/// Paradigm Shift by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		@include vendor('appearance', 'none');
+		@include vendor('transition', (
+			'background-color #{_duration(transition)} ease-in-out',
+			'box-shadow #{_duration(transition)} ease-in-out',
+			'color #{_duration(transition)} ease-in-out'
+		));
+		background-color: transparent;
+		border-radius: _size(border-radius);
+		border: 0;
+		box-shadow: inset 0 0 0 2px _palette(border);
+		color: _palette(fg-bold) !important;
+		cursor: pointer;
+		display: inline-block;
+		font-family: _font(family-heading);
+		font-size: 0.6rem;
+		font-weight: _font(weight-heading-light);
+		height: (_size(element-height) * 1);
+		letter-spacing: _font(kerning-heading);
+		line-height: (_size(element-height) * 1);
+		padding: 0 2rem;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		&:hover {
+			box-shadow: inset 0 0 0 2px _palette(accent-alt);
+			color: _palette(accent-alt) !important;
+		}
+
+		&:active {
+			background-color: _palette(accent-bg);
+			box-shadow: inset 0 0 0 2px _palette(accent-alt);
+			color: _palette(accent-alt) !important;
+		}
+
+		&.small {
+			font-size: 0.5rem;
+			height: _size(element-height) * 0.75;
+			line-height: _size(element-height) * 0.75;
+			padding: 0 1.25rem;
+		}
+
+		&.large {
+			font-size: 0.7rem;
+			height: _size(element-height) * 1.0875;
+			line-height: _size(element-height) * 1.0875;
+			padding: 0 3.25rem;
+		}
+
+		&.wide {
+			min-width: 13rem;
+		}
+
+		&.icon {
+			&:before {
+				margin-right: 0.5rem;
+			}
+		}
+
+		&.fit {
+			width: 100%;
+		}
+
+		&.disabled,
+		&:disabled {
+			@include vendor('pointer-events', 'none');
+			opacity: 0.25;
+		}
+
+		&.primary {
+			background-color: _palette(accent);
+			box-shadow: none;
+			color: _palette(fg-bold) !important;
+
+			&:hover {
+				background-color: saturate(lighten(_palette(accent), 15), 10);
+			}
+
+			&:active {
+				background-color: desaturate(darken(_palette(accent), 3), 10);
+			}
+		}
+
+		@include breakpoint('<=small') {
+			font-size: 0.7rem;
+			height: (_size(element-height) * 1.1);
+			line-height: (_size(element-height) * 1.1);
+
+			&.large {
+				font-size: 0.8rem;
+				height: _size(element-height) * 1.25;
+				line-height: _size(element-height) * 1.25;
+			}
+
+			&.small {
+				font-size: 0.6rem;
+				height: (_size(element-height) * 1);
+				line-height: (_size(element-height) * 1);
+			}
+		}
+	}
