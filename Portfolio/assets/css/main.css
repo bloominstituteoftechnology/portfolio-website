@@ -3484,15 +3484,15 @@ input, select, textarea {
 		}
 
 		body.is-preload #banner h2 {
-			opacity: 0;
+			opacity: 100;
 			-moz-transform: translateX(0.25em);
 			-webkit-transform: translateX(0.25em);
 			-ms-transform: translateX(0.25em);
 			transform: translateX(0.25em);
-			-moz-filter: blur(2px);
+			/* -moz-filter: blur(2px);
 			-webkit-filter: blur(2px);
 			-ms-filter: blur(2px);
-			filter: blur(2px);
+			filter: blur(2px); */
 		}
 
 		body.is-preload #banner p {
