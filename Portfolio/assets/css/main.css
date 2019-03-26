@@ -4121,3 +4121,11 @@ input, select, textarea {
 		display: none;
 	}
 }
+
+#banner h2 {
+	opacity: 100%;
+}
+
+#banner p {
+	opacity: 100%:
+}
