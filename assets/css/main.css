@@ -76,6 +76,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		font-size: 62.5%;
 	}
 
 	*, *:before, *:after {
@@ -90,7 +91,7 @@ input, select, textarea {
 		background-position: top left, center 0;
 		background-attachment: fixed, fixed;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 18pt;
+		font-size: 1.4rem;
 		line-height: 1.75em;
 		font-weight: 300;
 		letter-spacing: 1px;
@@ -1772,7 +1773,7 @@ input, select, textarea {
 		input[type="reset"].style2,
 		button.style2,
 		.button.style2 {
-			color: #503c3c;
+			color: #615c70;
 			background: #fff;
 			box-shadow: inset 0 0 0 1px #fff;
 		}
