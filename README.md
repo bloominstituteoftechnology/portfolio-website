@@ -17,6 +17,8 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 - [ ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: `git push origin <firstName-lastName>`.
 
+---> initial commit
+
 ### Follow these steps to download your template and start the project:
 
 - [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
