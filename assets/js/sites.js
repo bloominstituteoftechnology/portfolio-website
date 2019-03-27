@@ -13,42 +13,6 @@ const work = document.querySelector('#work'),
             description: 'The second iteration of Chao Fever, before neglecting my dream and joining the army.'
         },
         {
-            name: 'Spacewalkers',
-            url: 'https://brellin.github.io/Sprint-Challenge--Advanced-CSS/',
-            class: 'giw',
-            description: 'My first project to integrate JavaScript.'
-        },
-        {
-            name: 'Lambda School\'s First Sprint',
-            url: 'https://brellin.github.io/Sprint-Challenge--User-Interface/',
-            class: 'spr',
-            description: 'A multi-page website that showcases flex and media queries.'
-        },
-        {
-            name: 'Resume',
-            url: 'https://brellin.github.io/Preprocessing-I/',
-            class: 'resume',
-            description: 'A work in progress, but a good start to a resume.'
-        },
-        {
-            name: 'The Sorting Hat',
-            url: 'https://reactsortinghatwu.netlify.com',
-            class: 'sortinghat',
-            description: 'A React app I made that sorts you into a Hogwarts house!'
-        },
-        {
-            name: 'To-do List',
-            url: 'https://react-todo-wu.netlify.com',
-            class: 'react-todo',
-            description: 'A todo list made using React.'
-        },
-        {
-            name: 'React Wars',
-            url: 'https://starwarschars.netlify.com',
-            class: 'rw',
-            description: 'First interaction with Django.'
-        },
-        {
             name: 'Appraiser BFF',
             url: 'https://appraiser-ui.netlify.com/',
             class: 'appraiser-ui',
