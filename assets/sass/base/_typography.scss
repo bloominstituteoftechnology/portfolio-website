@@ -1,0 +1,218 @@
+///
+/// Paradigm Shift by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Typography */
+
+	html {
+		font-size: 18pt;
+
+		@include breakpoint('<=xlarge') {
+			font-size: 13pt;
+		}
+
+		@include breakpoint('<=medium') {
+			font-size: 14pt;
+		}
+
+		@include breakpoint('<=small') {
+			font-size: 12pt;
+		}
+
+		@include breakpoint('<=xsmall') {
+			font-size: 11pt;
+		}
+	}
+
+	body {
+		background-color: _palette(bg);
+		color: _palette(fg);
+	}
+
+	body, input, select, textarea {
+		color: _palette(fg-bold);
+		font-family: _font(family);
+		font-size: 1rem;
+		font-weight: _font(weight);
+		letter-spacing: _font(kerning);
+		line-height: 2;
+	}
+
+	a {
+		@include vendor('transition', 'border-bottom-color #{_duration(transition)} ease-in-out');
+		text-decoration: none;
+		color: _palette(fg-bold);
+		border-bottom: dotted 1px;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom-color: transparent;
+		}
+	}
+
+	strong, b {
+		font-weight: _font(weight-bold);
+		color: _palette(fg-bold);
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 _size(element-margin) 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: _palette(fg-bold);
+		font-family: _font(family-heading);
+		font-weight: _font(weight-heading-light);
+		letter-spacing: _font(kerning-heading);
+		line-height: 1.75;
+		margin: 0 0 (_size(element-margin) * 0.75) 0;
+		text-transform: uppercase;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+
+	h1 {
+		font-family: _font(family);
+		font-size: 5rem;
+		font-weight: _font(weight-extrabold);
+		letter-spacing: _font(kerning-heading-alt);
+		line-height: 1.1;
+		margin: 0 0 (_size(element-margin) * 0.75) 0;
+		text-transform: none;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		font-weight: _font(weight-heading);
+		margin: 0 0 _size(element-margin) 0;
+	}
+
+	h3 {
+		font-size: 0.875rem;
+	}
+
+	h4 {
+		font-size: 0.875rem;
+	}
+
+	h5 {
+		font-size: 0.75rem;
+	}
+
+	h6 {
+		font-size: 0.625rem;
+	}
+
+	@include breakpoint('<=small') {
+		h1 {
+			font-size: 4.5rem;
+			line-height: 1.1;
+		}
+
+		h2 {
+			font-size: 1.25rem;
+			line-height: 1.7;
+		}
+
+		h3 {
+			font-size: 0.9rem;
+		}
+
+		h4 {
+			font-size: 0.75rem;
+		}
+
+		h5 {
+			font-size: 0.675rem;
+		}
+	}
+
+	@include breakpoint('<=xxsmall') {
+		h1 {
+			font-size: 3.75rem;
+		}
+
+		h2 {
+			font-size: 1.125rem;
+		}
+
+		h3 {
+			font-size: 0.8rem;
+		}
+
+		h4 {
+			font-size: 0.675rem;
+		}
+
+		h5 {
+			font-size: 0.675rem;
+		}
+	}
+
+	sub {
+		font-size: 0.8rem;
+		position: relative;
+		top: 0.5rem;
+	}
+
+	sup {
+		font-size: 0.8rem;
+		position: relative;
+		top: -0.5rem;
+	}
+
+	blockquote {
+		border-left: solid 0.5rem _palette(border);
+		font-style: italic;
+		margin: 0 0 _size(element-margin) 0;
+		padding: (_size(element-margin) * 0.5) 0 (_size(element-margin) * 0.5) _size(element-margin);
+	}
+
+	code {
+		background: _palette(border-bg);
+		border-radius: _size(border-radius);
+		font-family: _font(family-fixed);
+		font-size: 0.9rem;
+		margin: 0 0.25rem;
+		padding: 0.25rem 0.65rem;
+	}
+
+	pre {
+		-webkit-overflow-scrolling: touch;
+		font-family: _font(family-fixed);
+		font-size: 0.9rem;
+		margin: 0 0 _size(element-margin) 0;
+		width: 100%;
+
+		code {
+			display: block;
+			line-height: 1.75;
+			padding: 1rem 1.5rem;
+			overflow-x: auto;
+		}
+	}
+
+	hr {
+		border: 0;
+		border-bottom: solid 2px _palette(border);
+		margin: (_size(element-margin) * 1.5) 0;
+
+		&.major {
+			margin: (_size(element-margin) * 2.5) 0;
+		}
+
+		@include breakpoint('<=small') {
+			&.major {
+				margin: (_size(element-margin) * 1.5) 0;
+			}
+		}
+	}
