@@ -1553,6 +1553,10 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			/*some of me*/
+			border: 2px solid coral;
+			border-radius: 10px;
+			
 		}
 
 		.image.fit {
