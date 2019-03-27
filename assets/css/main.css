@@ -177,8 +177,9 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		color: #ffffff;
+		color: blue;
 		text-decoration: none;
+		margin: 1px;
 	}
 
 		a:hover {
@@ -246,6 +247,14 @@ input, select, textarea {
 				border-radius: 50%;
 				box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.75);
 
+			}
+
+			.fa-phone {
+				margin-top: 20px;
+			}
+
+			.fa-envelope {
+				margin: 5%;
 			}
 
 	strong, b {
@@ -2660,7 +2669,7 @@ input, select, textarea {
 
 		ul.contact li {
 			text-decoration: none;
-			margin: 2.5em 0 0 0;
+			margin: 0 0 0 0;
 			padding: 0 0 0 3.25em;
 			position: relative;
 		}
@@ -2695,7 +2704,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			ul.contact li {
-				margin: 1.5em 0 0 0;
+				/* margin: 1.5em 0 0 0; */
 			}
 
 		}
@@ -3060,6 +3069,10 @@ input, select, textarea {
 		}
 
 /* Header */
+
+    .menu-color {
+		color: white;
+	}
 
 	#header {
 		-moz-transition: background-color 0.2s ease-in-out;
