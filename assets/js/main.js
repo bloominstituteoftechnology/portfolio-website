@@ -24,7 +24,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 500);
+			}, 100);
 		});
 
 	// Hack: Enable IE workarounds.
