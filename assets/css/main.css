@@ -1342,6 +1342,7 @@ button {
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
     background: url(../../images/const-tex.jpg);
     background-position: bottom;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
