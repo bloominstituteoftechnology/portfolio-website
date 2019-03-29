@@ -1,5 +1,5 @@
 ///
-/// Editorial by HTML5 UP
+/// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -12,35 +12,32 @@
 	button,
 	.button {
 		@include vendor('appearance', 'none');
-		@include vendor('transition', (
-			'background-color #{_duration(transition)} ease-in-out',
-			'color #{_duration(transition)} ease-in-out'
-		));
+		@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out');
 		background-color: transparent;
 		border-radius: _size(border-radius);
 		border: 0;
-		box-shadow: inset 0 0 0 2px _palette(accent);
-		color: _palette(accent) !important;
+		box-shadow: inset 0 0 0 _size(border-width) _palette(border);
+		color: _palette(fg-bold) !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: _font(family-heading);
-		font-size: 0.8em;
-		font-weight: _font(weight-heading);
-		height: 3.5em;
-		letter-spacing: _font(kerning-heading);
-		line-height: 3.5em;
-		padding: 0 2.25em;
+		font-size: 0.8rem;
+		font-weight: _font(weight);
+		height: _size(element-height);
+		letter-spacing: _font(letter-spacing);
+		line-height: _size(element-height);
+		outline: 0;
+		padding: 0 1.25rem 0 (1.25rem + (_font(letter-spacing) * 0.5));
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
 
 		&:hover {
-			background-color: transparentize(_palette(accent), 0.95);
+			background-color: _palette(border-bg);
 		}
 
 		&:active {
-			background-color: transparentize(_palette(accent), 0.85);
+			background-color: _palette(border-bg-alt);
 		}
 
 		&.icon {
@@ -54,32 +51,34 @@
 		}
 
 		&.small {
-			font-size: 0.6em;
-		}
-
-		&.large {
-			font-size: 1em;
-			height: 3.65em;
-			line-height: 3.65em;
+			font-size: 0.6rem;
+			height: (_size(element-height) * 0.75);
+			line-height: (_size(element-height) * 0.75);
 		}
 
 		&.primary {
-			background-color: _palette(accent);
-			box-shadow: none;
+			background-color: _palette(fg-bold);
 			color: _palette(bg) !important;
+			font-weight: _font(weight-bold);
 
 			&:hover {
-				background-color: lighten(_palette(accent), 3);
 			}
 
 			&:active {
-				background-color: darken(_palette(accent), 3);
 			}
 		}
 
 		&.disabled,
 		&:disabled {
 			@include vendor('pointer-events', 'none');
+			cursor: default;
 			opacity: 0.25;
 		}
+	}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button {
+		line-height: calc(#{_size(element-height)} - 2px);
 	}

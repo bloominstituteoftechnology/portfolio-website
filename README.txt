@@ -1,12 +1,12 @@
-Editorial by HTML5 UP
+Dimension by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-Say hello to Editorial, a blog/magazine-ish template built around a toggleable "locking"
-sidebar (scroll down to see what I mean) and an accordion-style menu. Not the usual landing
-page/portfolio affair you'd expect to see at HTML5 UP, but I figured for my 41st (!!!)
-template I'd change it up a little. Enjoy :)
+This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
+and a cool depth effect (click on a menu item to see what I mean). Simple, fully
+responsive, and kitted out with all the usual pre-styled elements you'd expect.
+Hope you dig it :)
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.

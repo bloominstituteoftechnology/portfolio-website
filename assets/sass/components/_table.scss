@@ -1,5 +1,5 @@
 ///
-/// Editorial by HTML5 UP
+/// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -17,7 +17,7 @@
 
 		tbody {
 			tr {
-				border: solid 1px _palette(border);
+				border: solid _size(border-width) _palette(border);
 				border-left: 0;
 				border-right: 0;
 
@@ -40,11 +40,11 @@
 		}
 
 		thead {
-			border-bottom: solid 2px _palette(border);
+			border-bottom: solid (_size(border-width) * 2) _palette(border);
 		}
 
 		tfoot {
-			border-top: solid 2px _palette(border);
+			border-top: solid (_size(border-width) * 2) _palette(border);
 		}
 
 		&.alt {
@@ -53,18 +53,18 @@
 			tbody {
 				tr {
 					td {
-						border: solid 1px _palette(border);
+						border: solid _size(border-width) _palette(border);
 						border-left-width: 0;
 						border-top-width: 0;
 
 						&:first-child {
-							border-left-width: 1px;
+							border-left-width: _size(border-width);
 						}
 					}
 
 					&:first-child {
 						td {
-							border-top-width: 1px;
+							border-top-width: _size(border-width);
 						}
 					}
 				}

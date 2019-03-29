@@ -1,5 +1,5 @@
 ///
-/// Editorial by HTML5 UP
+/// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -11,6 +11,21 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
+
+		&:before {
+			@include vendor('pointer-events', 'none');
+			background-image: url('../../images/overlay.png');
+			background-color: _palette(bg-overlay);
+			border-radius: _size(border-radius);
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
 
 		img {
 			border-radius: _size(border-radius);
@@ -50,25 +65,23 @@
 
 		&.main {
 			display: block;
-			margin: 0 0 (_size(element-margin) * 1.5) 0;
+			margin: (_size(element-margin) * 1.25) 0;
 			width: 100%;
 
 			img {
 				width: 100%;
 			}
 		}
-	}
 
-	a.image {
-		overflow: hidden;
-
-		img {
-			@include vendor('transition', 'transform #{_duration(transition)} ease');
+		@include breakpoint('<=small') {
+			&.main {
+				margin: (_size(element-margin) * 1) 0;
+			}
 		}
 
-		&:hover {
-			img {
-				@include vendor('transform', 'scale(1.075)');
+		@include breakpoint('<=xsmall') {
+			&.main {
+				margin: (_size(element-margin) * 0.75) 0;
 			}
 		}
 	}
