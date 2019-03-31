@@ -10,7 +10,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className='smile' />
+        <nav>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <div className='smile' />
+          <Link to='/work'>Work</Link>
+          <Link to='/contact'>Contact</Link>
+        </nav>
         <div className='routes'>
           <AnimatedSwitch
             atEnter={{ opacity: 0 }}
@@ -23,12 +29,6 @@ class App extends Component {
             <Route exact path='/work' component={Work} />
           </AnimatedSwitch>
         </div>
-        <nav>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/work'>Work</Link>
-          <Link to='/contact'>Contact</Link>
-        </nav>
       </div>
     );
   }
