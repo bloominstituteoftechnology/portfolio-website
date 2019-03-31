@@ -1,0 +1,58 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(#00000095, #00000095), url(./images/const-tex.jpg) no-repeat center bottom / cover;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+
+    .smile {
+        margin: 50px 0 -20px 50px;
+        transform: rotate(13deg);
+        padding: 50px;
+        border: 1px groove whitesmoke;
+        border-radius: 50%;
+        background: url(./images/smile.jpg) no-repeat center center / contain;
+        z-index: 1;
+    }
+
+    .routes {
+        padding-bottom: 101px;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .switch-wrapper {
+        transition: all 2s ease-in-out;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 25px 0;
+        background: linear-gradient(transparent, #0f2b2bbb);
+        position: fixed;
+        bottom: 0px;
+        border-top: 2px groove #20383850;
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 15px 75px;
+            background: #203838bb;
+            border-radius: 15px;
+            border: 2px ridge #005a59;
+            transition: all .5s ease-out;
+            font-size: 1.5rem;
+
+            &:hover {
+                background: #203838;
+            }
+        }
+    }
+}

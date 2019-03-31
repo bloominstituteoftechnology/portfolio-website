@@ -1,0 +1,114 @@
+.work {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    background: #203838bb;
+    padding: 0 25px;
+    background-clip: content-box;
+    border-top: 1px ridge whitesmoke;
+    border-bottom: 1px ridge whitesmoke;
+    box-shadow: black 0 0 50px;
+
+    h1 {
+        font-size: 4rem;
+        margin: 33.5px 50px -50px;
+    }
+
+    &.header-img {
+        background: url(../../images/matrix.jpg) repeat-y center center fixed / contain;
+        align-self: center;
+        margin-top: 50px;
+        border: 1px ridge whitesmoke;
+        padding: 0;
+        border-radius: 5px;
+        max-width: 600px;
+        height: 250px;
+    }
+
+    a {
+        padding: 0 5px;
+        margin: 5px 0;
+        text-align: center;
+        width: 575px;
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+        align-self: center;
+
+        &:first-of-type {
+            margin-top: 50px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        &.cf {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/cf.png) repeat-y;
+            background-attachment: fixed;
+            background-size: 100vh;
+            background-position: center center;
+
+            &:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/cf.png) repeat-y;
+                background-attachment: fixed;
+                background-size: 100vh;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+        }
+
+        &.scf {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/scf.png) repeat-y;
+            background-attachment: fixed;
+            background-size: 100vh;
+            background-position: center center;
+
+            &:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/scf.png) repeat-y;
+                background-attachment: fixed;
+                background-size: 100vh;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+        }
+
+        &.appraiser-ui {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/appraiser-ui.png) repeat-y;
+            background-attachment: fixed;
+            background-size: 100vh;
+            background-position: center center;
+
+            &:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/appraiser-ui.png) repeat-y;
+                background-attachment: fixed;
+                background-size: 100vh;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+        }
+
+        &.ig-clone {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../../images/ig-clone.png) repeat-y;
+            background-attachment: fixed;
+            background-size: 100vh;
+            background-position: center center;
+
+            &:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 50, 0.85)), url(../../images/ig-clone.png) repeat-y;
+                background-attachment: fixed;
+                background-size: 100vh;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+        }
+    }
+}
