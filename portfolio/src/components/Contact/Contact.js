@@ -1,0 +1,29 @@
+import React from 'react'
+import './contact.scss'
+
+const Contact = () => {
+    return (
+        <div className='contact'>
+            <h1>Contact</h1>
+            <form method='post' data-netlify='true'>
+                <div className="info">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder='Jordan' />
+                </div>
+                <div className="info">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder='Fisher' />
+                </div>
+                <div className="message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" placeholder='Hey, I really liked your site and wanted to leave some feedback for you!' />
+                </div>
+                <div className='submit'>
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+    )
+}
+
+export default Contact

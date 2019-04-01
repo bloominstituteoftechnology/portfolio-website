@@ -10,10 +10,14 @@
     align-items: center;
     overflow-y: scroll;
 
+    .smileBlank {
+        padding: 50px;
+    }
+
     .smile {
         transform: rotate(13deg);
         position: relative;
-        bottom: -50px;
+        bottom: -120px;
         left: 25px;
         padding: 50px;
         border: 1px groove whitesmoke;
@@ -23,7 +27,7 @@
     }
 
     .routes {
-        padding-top: 150px;
+        margin: 100px 0;
         color: whitesmoke;
         text-align: center;
     }
