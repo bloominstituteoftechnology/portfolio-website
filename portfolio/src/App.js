@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
-import { AnimatedSwitch } from 'react-router-transition'
+import { Link, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Work from './components/Work/Work'
@@ -27,17 +26,12 @@ class App extends Component {
         </nav>
         <div className='smile' />
         <div className='routes'>
-          <AnimatedSwitch
-            atEnter={{ opacity: 0 }}
-            atLeave={{ opacity: 0 }}
-            atActive={{ opacity: 1 }}
-            className="switch-wrapper"
-          >
+          <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/work' component={Work} />
             <Route path='/contact' component={Contact} />
-          </AnimatedSwitch>
+          </Switch>
         </div>
       </div>
     );

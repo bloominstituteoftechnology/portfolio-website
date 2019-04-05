@@ -1,18 +1,24 @@
 import React from 'react'
 import './contact.scss'
 
-const Contact = () => {
+const Contact = props => {
+    console.log(props)
+    const form = e => {
+        e.preventDefault();
+        props.history.push('/')
+    }
+
     return (
         <div className='contact'>
             <h1>Contact</h1>
-            <form method='post' data-netlify='true'>
+            <form method='post' data-netlify='true' onSubmit={form}>
                 <div className="info">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder='Jordan' />
+                    <input type="text" name="name" id="name" placeholder='John' />
                 </div>
                 <div className="info">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder='Fisher' />
+                    <input type="text" name="email" id="email" placeholder='Doe' />
                 </div>
                 <div className="message">
                     <label for="message">Message</label>
