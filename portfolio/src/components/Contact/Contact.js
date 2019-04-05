@@ -11,7 +11,7 @@ const Contact = props => {
     return (
         <div className='contact'>
             <h1>Contact</h1>
-            <form method='post' data-netlify='true' onSubmit={form}>
+            <form method='post' dataSet={{ netlify: 'true' }} onSubmit={form}>
                 <div className="info">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder='John' />
