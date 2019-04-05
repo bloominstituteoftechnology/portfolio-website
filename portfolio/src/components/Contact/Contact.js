@@ -4,7 +4,7 @@ import './contact.scss'
 const Contact = props => {
     console.log(props)
     const form = e => {
-        e.preventDefault();
+        e.persist();
         props.history.push('/')
     }
 
