@@ -35,8 +35,85 @@
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1>hi. i'm <strong>Aileen Berwick</strong>.</h1>
+								<h1 id="fly">hi. i'm Aileen Berwick.</h1>
 							</header>
+							<script type="text/javascript">
+
+								//Flying Letters script- by Matthias (info@freejavascripts.f2s.com)
+								// Modified by Twey for efficiency and compatibility
+								//For this script and more, visit Dynamic Drive: http://www.dynamicdrive.com
+								
+								//Configure message to display. Use "$" for linebreak
+								//By default, set to just grab the text from element with ID="fly"
+								message = document.getElementById("fly").innerHTML; // $ = taking a new line
+								distance = 50; // pixel(s)
+								speed = 200; // milliseconds
+								
+								var txt="",
+									num=0,
+									num4=0,
+									flyofle="",
+									flyofwi="",
+									flyofto="",
+									fly=document.getElementById("fly");
+								
+								
+								function stfly() {
+									for(i=0;i != message.length;i++) {
+										if(message.charAt(i) != "$")
+											txt += "<span style='position:relative;visibility:hidden;' id='n"+i+"'>"+message.charAt(i)+"<\/span>";
+										else
+											txt += "<br>";
+									}
+									fly.innerHTML = txt;
+									txt = "";
+									flyofle = fly.offsetLeft;
+									flyofwi = fly.offsetWidth;
+									flyofto = fly.offsetTop;
+									fly2b();
+								}
+								
+								function fly2b() {
+									if(num4 != message.length) {
+										if(message.charAt(num4) != "$") {
+											var then = document.getElementById("n" + num4);
+											then.style.left = flyofle - then.offsetLeft + flyofwi / 2 + 'px';
+											then.style.top = flyofto - then.offsetTop + distance + 'px';
+											fly3(then.id, parseInt(then.style.left), parseInt(then.style.left) / 5, parseInt(then.style.top), parseInt(then.style.top) / 5);
+										}
+										num4++;
+										setTimeout("fly2b()", speed);
+									}
+								}
+								
+								function fly3(target,lef2,num2,top2,num3) {
+									if((Math.floor(top2) != 0 && Math.floor(top2) != -1) || (Math.floor(lef2) != 0 && Math.floor(lef2) != -1)) {
+										if(lef2 >= 0)
+											lef2 -= num2;
+										else
+											lef2 += num2 * -1;
+										if(Math.floor(lef2) != -1) {
+											document.getElementById(target).style.visibility = "visible";
+											document.getElementById(target).style.left = Math.floor(lef2) + 'px';
+										} else {
+											document.getElementById(target).style.visibility = "visible";
+											document.getElementById(target).style.left = Math.floor(lef2 + 1) + 'px';
+										}
+										if(lef2 >= 0)
+											top2 -= num3
+										else
+											top2 += num3 * -1;
+										if(Math.floor(top2) != -1)
+											document.getElementById(target).style.top = Math.floor(top2) + 'px';
+										else
+											document.getElementById(target).style.top = Math.floor(top2 + 1) + 'px';
+										setTimeout("fly3('"+target+"',"+lef2+","+num2+","+top2+","+num3+")",50)
+									}
+								}
+								
+								stfly()
+								
+								</script>
 							<p>I am obsessed with tech. I love the game of figuring things out.</p>
 							<a href="#work" class="button large scrolly">Learn about what I do</a>
 						</div>
@@ -93,7 +170,7 @@
 								<a href="#" class="image featured"><img  src="images/pic01.jpg" alt="" /></a>
 								<h3><a href="#">Android App</a></h3>
 								<p>Movie Trivia app about James Bond movies</p>
-								<p>https://github.com/afberwick/Movie-Trivia</p>
+								<p><a href = "https://github.com/afberwick/Movie-Trivia">https://github.com/afberwick/Movie-Trivia</a></p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -101,7 +178,7 @@
 								<a href="#" class="image featured"><img  src="images/pic02.jpg" alt="" /></a>
 								<h3><a href="#">Android App</a></h3>
 								<p>Tennis game Score Keeper</p>
-								<p>https://github.com/afberwick/Court-Counter</p>
+								<p><a href = "https://github.com/afberwick/Court-Counter">https://github.com/afberwick/Court-Counter</a></p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -125,7 +202,7 @@
 									<a href="#" class="image featured"><img  src="images/pic05.jpg" alt="" /></a>
 								<h3><a href="#">Web Design</a></h3>
 								<p>A website made while in school at Lambda.</p>
-								<p>https://github.com/afberwick/User-Interface</p>
+								<p>,a href="https://github.com/afberwick/User-Interface">https://github.com/afberwick/User-Interface</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -134,7 +211,7 @@
 								<img  src="images/pic06.jpg" alt="" /></a>
 								<h3><a href="#">UX/UI Design</a></h3>
 								<p>Created for a TopCoder.com competition.</p>
-								<p>https://github.com/afberwick/UX-UI</p>
+								<p><a href = "https://github.com/afberwick/UX-UI">https://github.com/afberwick/UX-UI</a></p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -150,7 +227,7 @@
 								<a href="#" class="image featured"><img  src="images/pic08.jpg" alt="" /></a>
 								<h3><a href="#">UX/UI Design Tablet</a></h3>
 								<p>Created for a TopCoder.com competition.</p>
-								<p>https://github.com/afberwick/Xerox</p>
+								<p><a href ="https://github.com/afberwick/Xerox">https://github.com/afberwick/Xerox</a></p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
@@ -158,7 +235,7 @@
 								<a href="#" class="image featured"><img  src="images/pic09.jpg" alt="" /></a>
 								<h3><a href="#">UX/UI Design</a></h3>
 								<p>Created for a TopCoder.com competition.</p>
-								<p>https://github.com/afberwick/Ski-UX-UI</p>
+								<p><a href="https://github.com/afberwick/Ski-UX-UI">https://github.com/afberwick/Ski-UX-UI</a></p>
 							</article>
 						</div>
 					</div>
