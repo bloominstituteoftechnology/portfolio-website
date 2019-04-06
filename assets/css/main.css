@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("font-awesome.min.css");
+@import url("all.min.css");
 
 /*
 	Miniport by HTML5 UP
@@ -1969,6 +1970,16 @@ input, select, textarea {
 			.icon.featured:before {
 				font-size: 6em;
 			}
+			
+	i.featured {
+		color: #EA8A95;
+		display: block;
+		margin: 0 0 0.25em 0;
+		cursor: default;
+		font-size: 6em;
+	}
+
+		
 
 /* Wrappers */
 
@@ -2093,6 +2104,7 @@ input, select, textarea {
 	#top {
 		padding: 10em 0 10em 0;
 		text-align: left;
+		background-image: url("../img/seagull_clouds.jpg");
 	}
 
 		#top .image {
