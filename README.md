@@ -4,7 +4,7 @@ With all of the projects you will be working on here at Lambda School, you will 
 
 You have the ability to write HTML, CSS, and responsive media queries.  You also know how to identify and write responsive units.  It's time to put that knowledge into action by reading someone else's code and adding your own flavor.  You will be building a portfolio website from a template found on [https://html5up.net/](https://html5up.net/).
 
-## Project Set Up
+
 
 ### Follow these steps to set up and work on your project:
 
