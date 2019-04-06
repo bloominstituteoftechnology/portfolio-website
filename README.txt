@@ -9,7 +9,6 @@ you don't need a half dozen pages to make your point.
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.
 
-(* = Not included)
 
 Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
 
