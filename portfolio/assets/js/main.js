@@ -81,3 +81,11 @@
 		}
 
 })(jQuery);
+
+
+
+// My Script Begin
+const bannerButton = document.querySelector('.actions')
+bannerButton.style.display = 'none';
+console.log(bannerButton)
+

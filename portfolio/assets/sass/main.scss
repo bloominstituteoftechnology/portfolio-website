@@ -1913,4 +1913,8 @@
 				background-color: darken(_palette(bg), 8);
 			}
 		}
-	}
+
+		.inner #mono-text{		
+			font-family: $fontFamily;
+			text-decoration: underline;
+		}
