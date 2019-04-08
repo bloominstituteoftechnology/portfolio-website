@@ -4034,4 +4034,23 @@ input, select, textarea {
 			margin: 2% !important;
 		}
 
+		
+
+		.inner #mono-text{		
+			font-family: 'Space Mono', monospace;
+			text-decoration: underline;
+		}
+
+		@media screen and (max-width: 736px){
+			.inner #mono-text {
+				display:block;
+				text-decoration: none;
+			}
+		}
+
+
+		.inner  .features h3{
+			font-family: 'Space Mono', monospace;
+		}
+
 	/* End My Code Specifications */
