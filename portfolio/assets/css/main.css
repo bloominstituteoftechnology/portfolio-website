@@ -79,6 +79,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		font-size: 62.5%;
 	}
 
 	*, *:before, *:after {
@@ -4051,6 +4052,103 @@ input, select, textarea {
 
 		.inner  .features h3{
 			font-family: 'Space Mono', monospace;
+		}
+
+		.main.hero.image.profile{
+			 width: 75px;
+			 height: 75px;
+			 border-radius: 50%;
+			 opacity: 0.9;;
+			 top:2%;
+			 left:5%;
+			 position: absolute;
+			 z-index:1;
+
+			 
+			
+		}
+
+		.main.hero.image.profile:hover {
+			-webkit-transform: rotateY(360deg);
+			transform: rotateY(360deg);
+			transition-timing-function: ease;
+			transition-duration: 2s;
+			
+		}
+
+		.inner .tool-tip {   /* creating the tool tip main div */
+			display: none;
+			justify-content: center;
+			align-items: center;
+			font-size: 2.0rem;
+			color:yellowgreen;
+			position: absolute;
+			top:4%;
+			left:15%;
+			border-radius: 10px;
+			background-color: rgba(0,0,0, 0.9);
+			width:115px;
+			height:45px;
+			z-index: 1;
+		}
+
+		.inner .tool-tip::before{   /* creating the tool tip triangle*/
+			content: "";
+			position: absolute;
+			left: 0px;
+			margin-left: -20px;
+			border-width: 10px;
+			border-style: solid;
+			border-color: transparent  rgba(0,0,0, 0.9)  transparent  transparent;  /* creating the tool tip point */
+		}
+
+
+
+		#overlay{
+			position:fixed;
+			display:none;
+			width:100vw;
+			height:100vh;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			background-color: rgba(0, 0, 0, 0.9);
+			z-index:9999;
+			cursor: pointer;
+			text-align: center;
+		}
+
+
+		.personal-info.content{
+			width: 80%;
+			line-height: 1.5;
+			margin: 2% auto;
+		}
+
+
+		.personal-info.heading{
+			font-size: 3.0rem;
+			text-align: center;
+			margin:2% auto;
+			width:80%;
+			text-decoration: underline;
+			color: greenyellow;
+			font-family: 'Space Mono', monospace;;
+			line-height: 2;
+		}
+
+		.personal-info.image{
+			background: url("../../images/profile_pic.png") no-repeat;
+			background-size: cover;
+			margin: 2% auto;
+			width:375px;
+			height:375px;
+			border-radius: 100%;
+			
+			
+
+
 		}
 
 	/* End My Code Specifications */

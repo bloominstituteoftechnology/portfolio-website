@@ -85,7 +85,90 @@
 
 
 // My Script Begin
+
+//Start Banner Button Hide
 const bannerButton = document.querySelector('.actions')
 bannerButton.style.display = 'none';
-console.log(bannerButton)
+//End Banner Button Hide
+
+
+// Start Overlay
+const overlay = document.createElement('div');
+overlay.id = "overlay";
+
+document.querySelector('body').append(overlay);
+
+const clickForOverlay = document.querySelector('.image.profile'); // Profile Image In Banner
+
+clickForOverlay.addEventListener('click', (event)=> {
+			on();
+})
+
+ overlay.addEventListener('click', (event)=> {
+ 		off();
+})
+
+function on(){
+	const overlay = document.querySelector("#overlay")
+	overlay.style.display = "block";
+}
+
+function off(){
+	const overlay = document.querySelector("#overlay");
+	overlay.style.display = "none"
+}
+
+// End Overlay
+
+let personalProfileInfoImgDiv = document.createElement('div');
+personalProfileInfoImgDiv.className = "personal-info image";
+overlay.prepend(personalProfileInfoImgDiv);
+
+let personalProfileInfoh1 = document.createElement('h1');
+personalProfileInfoh1.className = "personal-info heading";
+personalProfileInfoh1.textContent = "About Me";
+overlay.append(personalProfileInfoh1);
+
+const personalProfileInfo = document.createElement('p');
+personalProfileInfo.className = "personal-info content";
+personalProfileInfo.textContent = "Please stay tuned for more info about me!"
+overlay.append(personalProfileInfo)
+
+//tooltip
+
+const tooltip = document.querySelector('.tool-tip');
+
+let counter = 0;
+
+
+document.addEventListener('scroll', (event)=>{
+	window.setInterval(function (){
+			if(counter < 2000){
+			counter+=1;
+			console.log(counter);
+			showToolTipOn();
+			}
+			else if(counter >=2000){
+				showToolTipOff();
+				
+			}
+	},100);
+	counter = 0;
+	
+});
+
+function showToolTipOn(){
+	tooltip.style.display = 'flex';
+}
+
+function showToolTipOff(){
+	tooltip.style.display = 'none';
+}
+
+
+
+
+
+
+
 
