@@ -150,7 +150,7 @@ input, select, textarea {
 		}
 
 	#banner .inner p span{
-		font-size: 2rem;
+		font-size: 3.0rem;
 		color: greenyellow;
 	}
 
@@ -4037,7 +4037,8 @@ input, select, textarea {
 
 		
 
-		.inner #mono-text{		
+		.inner #mono-text{	
+			
 			font-family: 'Space Mono', monospace;
 			text-decoration: underline;
 		}
@@ -4083,10 +4084,10 @@ input, select, textarea {
 			font-size: 2.0rem;
 			color:yellowgreen;
 			position: absolute;
-			top:4%;
-			left:15%;
+			top:10px;
+			left:150px;
 			border-radius: 10px;
-			background-color: rgba(0,0,0, 0.9);
+			background-color: rgba(0,0,0, 0.5);
 			width:115px;
 			height:45px;
 			z-index: 1;
@@ -4099,10 +4100,10 @@ input, select, textarea {
 			margin-left: -20px;
 			border-width: 10px;
 			border-style: solid;
-			border-color: transparent  rgba(0,0,0, 0.9)  transparent  transparent;  /* creating the tool tip point */
+			border-color: transparent  rgba(0,0,0, 0.5)  transparent  transparent;  /* creating the tool tip point */
 		}
 
-
+		
 
 		#overlay{
 			position:fixed;
@@ -4117,6 +4118,7 @@ input, select, textarea {
 			z-index:9999;
 			cursor: pointer;
 			text-align: center;
+			overflow:auto;
 		}
 
 
