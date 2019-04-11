@@ -9,7 +9,7 @@ pager that combines some of the ideas I've played with over at Pixelarity with a
 sort of look. Hope you dig it :)
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+you can use for pretty much whatever..
 
 (* = not included)
 
