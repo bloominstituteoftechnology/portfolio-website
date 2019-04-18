@@ -6,10 +6,10 @@ export const sites = [
         description: 'My first masterpiece, made at 15 years of age.'
     },
     {
-        name: 'Silver Chao Fever',
-        url: 'https://brellin.github.io/silvercf/',
-        class: 'scf',
-        description: 'The second iteration of Chao Fever, before neglecting my dream and joining the army.'
+        name: 'Black Hole',
+        url: 'https://black-hole-build-week.netlify.com/',
+        class: 'bh',
+        description: 'A web app that allows you to create an account, log in, and vent about anything that has been troubling you.'
     },
     {
         name: 'Appraiser BFF',
