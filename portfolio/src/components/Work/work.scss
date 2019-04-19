@@ -13,6 +13,10 @@
     border-bottom: 1px ridge whitesmoke;
     box-shadow: black 0 0 50px;
 
+    @media (max-width: 500px) {
+        width: 90%;
+    }
+
     h1 {
         font-size: 4rem;
         margin: 33.5px 50px -50px;
@@ -27,13 +31,19 @@
         border-radius: 5px;
         max-width: 600px;
         height: 250px;
+
+        @media (max-width: 500px) {
+            background-attachment: scroll;
+            background-size: cover;
+            height: 32.5vw;
+        }
     }
 
     a {
         padding: 0 5px;
         margin: 5px 0;
         text-align: center;
-        width: 575px;
+        width: 85%;
         color: white;
         font-size: 2rem;
         text-decoration: none;

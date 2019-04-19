@@ -1,7 +1,7 @@
 .App {
     width: 100vw;
     height: 100vh;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     background: linear-gradient(#00000095, #00000095), url(./images/const-tex.jpg) no-repeat center bottom / cover;
     position: fixed;
     display: flex;
@@ -9,6 +9,10 @@
     justify-content: flex-start;
     align-items: center;
     overflow-y: scroll;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 
     .smileBlank {
         padding: 50px;
@@ -23,6 +27,10 @@
         border-radius: 50%;
         background: url(./images/smile.jpg) no-repeat center center / contain;
         z-index: 1;
+
+        @media (max-width: 500px) {
+            margin-top: 20vh;
+        }
     }
 
     .routes {
@@ -30,10 +38,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
 
-    .switch-wrapper {
-        transition: all 2s ease-in-out;
+        @media (max-width: 500px) {
+            width: 90%;
+            text-align: center;
+        }
     }
 
     nav {
@@ -48,6 +57,12 @@
         border-top: 2px groove #20383850;
         z-index: 50;
 
+        @media (max-width: 500px) {
+            flex-wrap: wrap;
+            position: absolute;
+            height: 30vh;
+        }
+
         span {
             color: whitesmoke;
             text-decoration: none;
@@ -58,6 +73,10 @@
             transition: .5s ease-out;
             font-size: 1.5rem;
             cursor: pointer;
+
+            @media (max-width: 500px) {
+                width: 90%;
+            }
 
             &:hover {
                 background: #203838;

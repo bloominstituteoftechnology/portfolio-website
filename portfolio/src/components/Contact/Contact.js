@@ -5,7 +5,6 @@ const Contact = props => {
     console.log(props)
     const form = e => {
         e.persist();
-        props.history.push('/')
     }
 
     return (
@@ -18,7 +17,7 @@ const Contact = props => {
                 </div>
                 <div className="info">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder='Doe' />
+                    <input type="email" required='true' name="email" id="email" placeholder='someone@something.com' />
                 </div>
                 <div className="message">
                     <label for="message">Message</label>
