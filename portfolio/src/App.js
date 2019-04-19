@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Work from './components/Work/Work'
@@ -10,28 +10,41 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      top: false
+      switch: 'home'
     }
+  }
+
+  click = name => {
+    this.setState({
+      ...this.state,
+      switch: name
+    })
   }
 
   render() {
     return (
       <div className="App">
-        <nav>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <div className='smileBlank' />
-          <Link to='/work'>Work</Link>
-          <Link to='/contact'>Contact</Link>
-        </nav>
+        <Nav
+          switch={this.state.switch}
+          click={this.click}
+        />
         <div className='smile' />
         <div className='routes'>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/work' component={Work} />
-            <Route path='/contact' component={Contact} />
-          </Switch>
+          <div className='smileBlank' />
+          {(() => {
+            switch (this.state.switch) {
+              case 'home':
+                return <Home />
+              case 'about':
+                return <About />
+              case 'work':
+                return <Work />
+              case 'contact':
+                return <Contact />
+              default:
+                return <Home />
+            }
+          })()}
         </div>
       </div>
     );

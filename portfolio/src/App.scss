@@ -17,9 +17,8 @@
     .smile {
         transform: rotate(13deg);
         position: relative;
-        bottom: -120px;
-        left: 25px;
         padding: 50px;
+        top: 120px;
         border: 1px groove whitesmoke;
         border-radius: 50%;
         background: url(./images/smile.jpg) no-repeat center center / contain;
@@ -27,9 +26,10 @@
     }
 
     .routes {
-        margin: 100px 0;
         color: whitesmoke;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .switch-wrapper {
@@ -46,16 +46,18 @@
         position: fixed;
         top: 0px;
         border-top: 2px groove #20383850;
+        z-index: 50;
 
-        a {
+        span {
             color: whitesmoke;
             text-decoration: none;
             padding: 15px 75px;
-            background: #203838bb;
+            background: #20383850;
             border-radius: 15px;
             border: 2px ridge #005a59;
-            transition: all .5s ease-out;
+            transition: .5s ease-out;
             font-size: 1.5rem;
+            cursor: pointer;
 
             &:hover {
                 background: #203838;
