@@ -148,6 +148,11 @@ body {
     width: 90%;
   }
 }
+@media (max-width: 800px) {
+  .navbar {
+    width: 83%;
+  }
+}
 .name {
   font-size: 1.5rem;
   font-weight: bold;
@@ -180,6 +185,11 @@ body {
 @media (max-width: 550px) {
   .main {
     width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .main {
+    width: 83%;
   }
 }
 .main h1 {
@@ -215,6 +225,11 @@ body {
     margin-bottom: 150px;
   }
 }
+@media (max-width: 800px) {
+  .projects {
+    margin-bottom: 220px;
+  }
+}
 .projects .project-container {
   width: 60%;
   margin: auto;
@@ -227,6 +242,12 @@ body {
   .projects .project-container {
     width: 80%;
     margin-bottom: 70px;
+  }
+}
+@media (max-width: 800px) {
+  .projects .project-container {
+    margin-bottom: 85px;
+    width: 70%;
   }
 }
 .projects .project {
