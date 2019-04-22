@@ -100,11 +100,28 @@ body {
 
 .name {
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .social-icons {
 	width: 20%;
+	background-color: rgba(144, 170, 229, 0.2);
+	padding: 15px 20px;
+	border-radius: 40px;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+
+		a:visited {
+			color: hsl(213, 19%, 20%);
+		}
+
+	.fab {
+		&:hover {
+			color: white;
+			cursor: pointer;
+		}	
+	}
 }
 
 .icon {
@@ -129,8 +146,8 @@ body {
 
 	.line {
 		height: 2px;
-		width: 42%;
-		background-color: red;
+		width: 43%;
+		background-color: #90aae5;
 		margin: 20px 0;
 	}
 
@@ -145,18 +162,25 @@ body {
 	}
 }
 
+.logo {
+	width: 60px;
+
+	img {
+		width: 100%;
+	}
+}
+
 .projects {
 	height: 300px;
 }
 
 footer {
-	background-color: #27303B;
+	background-color: #90AAE5;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px 0;
-	border-top: 1px solid gray;
+	padding: 30px 0;
 	color: white;
 
 	h3 {
@@ -165,12 +189,34 @@ footer {
 	}
 	.footer-line {
 		height: 5px;
-		width: 60px;
-		background-color: white;
+		width: 150px;
+		background-color: rgba(255, 255, 255, 0.4);
 		margin: 20px 0;
+		border-radius: 3px;
 	}
 
 	p {
 		font-size: 0.9rem;
+	}
+
+	.icons {
+		background-color: rgba(255, 255, 255, 0.2);
+		width: 220px;
+		padding: 15px 20px;
+		border-radius: 40px;
+		display: flex;
+		justify-content: space-between;
+		margin: 20px 0;
+		
+		a:visited {
+			color: white;
+		}
+		
+		.fab{
+			&:hover {
+				color: hsl(213, 19%, 20%);
+				cursor: pointer;
+			}	
+		}
 	}
 }
