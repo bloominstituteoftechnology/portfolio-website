@@ -52,50 +52,21 @@ table {
     box-sizing: border-box;
 }
 
-/* General */
-// @font-stack: Arial, "sans-serif";
-// @golden: #ae9c78;
-// @blue: #333E50;
-
-// @mobile: ( max-width: 500px );
-
-// .bottom-border() {
-// 	padding: 20px;
-// 	border-bottom: 2px solid @golden;
-// }
-
-// .display-item() {
-// 	display: flex;
-// 	align-items: center;
-// }
-
-// html, body {
-// 	height: 100%;
-// 	font-family: @font-stack;
-// }
-
-// .container {
-// 	width: 700px;
-// 	margin: 40px auto;
-
-// 	@media @mobile {
-// 		width: 400px;
-// 	}
-// }
-
 //variables
 @phone: ~"(max-width: 550px)";
 @tablet: ~"(max-width: 800px)";
 
+//general
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: hsl(213, 19%, 20%);
 }
 
+
+//styling for navigation bar
 .navbar {
 	width: 75%;
 	height: 80px;
-	// background-color: red;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -108,35 +79,40 @@ body {
 	@media @tablet {
 		width: 83%;
 	}
-}
 
-.name {
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.social-icons {
-	width: 200px;
-	background-color: rgba(144, 170, 229, 0.2);
-	padding: 15px 20px;
-	border-radius: 40px;
-	display: flex;
-	justify-content: space-between;
-	margin: 20px 0;
-
-	a:visited {
-		color: hsl(213, 19%, 20%);
+	.logo {
+		width: 60px;
+	
+		img {
+			width: 100%;
+		}
 	}
+	
+	.social-icons {
+		width: 200px;
+		background-color: rgba(144, 170, 229, 0.2);
+		padding: 15px 20px;
+		border-radius: 40px;
+		display: flex;
+		justify-content: space-between;
+		margin: 20px 0;
 
-	.fab {
-		&:hover {
-			color: white;
-			cursor: pointer;
-		}	
+		a:visited {
+			color: hsl(213, 19%, 20%);
+		}
+
+		.fab {
+
+			&:hover {
+				color: white;
+				cursor: pointer;
+			}	
+		}
 	}
 }
 
-//Styling for main section
+
+//Styling for header section
 .main {
 	width: 75%;
 	margin: auto;
@@ -158,6 +134,10 @@ body {
 		font-size: 4.5rem;
 		font-weight: bold;
 		margin-bottom: 10px;
+
+		@media @phone {
+			font-size: 4.2rem;
+		}
 	}
 
 	.line {
@@ -178,14 +158,8 @@ body {
 	}
 }
 
-.logo {
-	width: 60px;
 
-	img {
-		width: 100%;
-	}
-}
-
+//Styling for projects section
 .projects {
 	margin: 0px auto 300px;
 
@@ -251,7 +225,7 @@ body {
 }
 
 
-
+//styling for footer
 footer {
 	background-color: #90AAE5;
 	height: auto;
@@ -291,6 +265,7 @@ footer {
 		}
 		
 		.fab{
+
 			&:hover {
 				color: hsl(213, 19%, 20%);
 				cursor: pointer;
