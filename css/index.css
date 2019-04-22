@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/* General */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(213, 19%, 20%);
+}
+.navbar {
+  width: 75%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.social-icons {
+  width: 20%;
+}
+.icon {
+  width: 2.3rem;
+  margin: 0 6%;
+}
+.main {
+  width: 75%;
+  margin: auto;
+  padding-top: 100px;
+  color: hsl(213, 19%, 20%);
+  font-family: circular std, sans-serif;
+  height: 400px;
+}
+.main h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main .line {
+  height: 2px;
+  width: 42%;
+  background-color: red;
+  margin: 20px 0;
+}
+.main h2 {
+  font-size: 1.5rem;
+  color: gray;
+}
+.main img {
+  width: 20%;
+  margin-top: 30px;
+}
+.projects {
+  height: 300px;
+}
+footer {
+  background-color: #27303B;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid gray;
+  color: white;
+}
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+footer .footer-line {
+  height: 5px;
+  width: 60px;
+  background-color: white;
+  margin: 20px 0;
+}
+footer p {
+  font-size: 0.9rem;
+}
