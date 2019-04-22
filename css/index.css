@@ -143,12 +143,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 550px) {
+  .navbar {
+    width: 90%;
+  }
+}
 .name {
   font-size: 1.5rem;
   font-weight: bold;
 }
 .social-icons {
-  width: 20%;
+  width: 200px;
   background-color: rgba(144, 170, 229, 0.2);
   padding: 15px 20px;
   border-radius: 40px;
@@ -163,10 +168,6 @@ body {
   color: white;
   cursor: pointer;
 }
-.icon {
-  width: 2.3rem;
-  margin: 0 6%;
-}
 .main {
   width: 75%;
   margin: auto;
@@ -175,6 +176,11 @@ body {
   color: hsl(213, 19%, 20%);
   font-family: circular std, sans-serif;
   height: 400px;
+}
+@media (max-width: 550px) {
+  .main {
+    width: 90%;
+  }
 }
 .main h1 {
   font-size: 4.5rem;
@@ -204,16 +210,27 @@ body {
 .projects {
   margin: 0px auto 300px;
 }
+@media (max-width: 550px) {
+  .projects {
+    margin-bottom: 150px;
+  }
+}
 .projects .project-container {
   width: 60%;
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  margin-bottom: 100px;
+}
+@media (max-width: 550px) {
+  .projects .project-container {
+    width: 80%;
+    margin-bottom: 70px;
+  }
 }
 .projects .project {
   width: 100%;
-  margin-top: 20px;
 }
 .projects .project img {
   width: 100%;
