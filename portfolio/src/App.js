@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      switch: 'home'
+      switch: localStorage.getItem('page') !== null ? localStorage.getItem('page') : 'home'
     }
   }
 
@@ -19,6 +19,7 @@ class App extends Component {
       ...this.state,
       switch: name
     })
+    localStorage.setItem('page', name)
   }
 
   render() {

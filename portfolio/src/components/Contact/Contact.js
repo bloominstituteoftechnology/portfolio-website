@@ -7,7 +7,7 @@ const Contact = props => {
         <div className='contact'>
             <h1>Contact</h1>
             <form method='post' name='contact' onSubmit={(e) => {e.preventDefault()}}>
-                <input type='hidden' name='contact' value='contact' />
+                <input type='hidden' name='form-name' value='contact' />
                 <div className="info">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" id="name" placeholder='John' />
