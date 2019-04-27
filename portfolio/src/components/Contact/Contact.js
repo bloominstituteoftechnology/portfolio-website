@@ -10,7 +10,8 @@ const Contact = props => {
     return (
         <div className='contact'>
             <h1>Contact</h1>
-            <form method='post' dataSet={{ netlify: 'true' }} onSubmit={form}>
+            <form method='post' name='contact' onSubmit={form}>
+                <input type='hidden' name='contact' value='contact' />
                 <div className="info">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder='John' />
