@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Nav = props => {
+    console.log(window.location)
     return (
         <nav>
             <span

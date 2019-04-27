@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      switch: localStorage.getItem('page') !== null ? localStorage.getItem('page') : 'home'
+      switch: window.location.pathname !== '/' ? window.location.pathname.split('/')[1] : 'home'
     }
   }
 
@@ -19,7 +19,11 @@ class App extends Component {
       ...this.state,
       switch: name
     })
-    localStorage.setItem('page', name)
+    if (name !== 'home') {
+      window.location.pathname = `/${name}`
+    } else {
+      window.location.pathname = '/'
+    }
   }
 
   render() {
