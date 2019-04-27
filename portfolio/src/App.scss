@@ -22,14 +22,14 @@
         transform: rotate(13deg);
         position: relative;
         padding: 50px;
-        top: 130px;
+        top: 120px;
         border: 1px groove whitesmoke;
         border-radius: 50%;
         background: url(./images/smile.jpg) no-repeat center center / contain;
         z-index: 1;
 
         @media (max-width: 500px) {
-            margin-top: 20vh;
+            margin-top: 22vh;
         }
     }
 
