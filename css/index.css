@@ -142,18 +142,24 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 550px) {
-  .navbar {
-    width: 90%;
-  }
-}
 @media (max-width: 800px) {
   .navbar {
     width: 83%;
   }
 }
+@media (max-width: 550px) {
+  .navbar {
+    width: 90%;
+  }
+}
 .navbar .logo {
   width: 60px;
+}
+@media (max-width: 550px) {
+  .navbar .logo {
+    width: 77px;
+    margin-top: 3px;
+  }
 }
 .navbar .logo img {
   width: 100%;
@@ -167,8 +173,18 @@ body {
   justify-content: space-between;
   margin: 20px 0;
 }
+@media (max-width: 550px) {
+  .navbar .social-icons {
+    width: 261px;
+  }
+}
 .navbar .social-icons a:visited {
   color: hsl(213, 19%, 20%);
+}
+@media (max-width: 550px) {
+  .navbar .social-icons .fab {
+    font-size: 2.7rem;
+  }
 }
 .navbar .social-icons .fab:hover {
   color: white;
@@ -183,14 +199,14 @@ body {
   font-family: circular std, sans-serif;
   height: 400px;
 }
-@media (max-width: 550px) {
-  .main {
-    width: 90%;
-  }
-}
 @media (max-width: 800px) {
   .main {
     width: 83%;
+  }
+}
+@media (max-width: 550px) {
+  .main {
+    width: 90%;
   }
 }
 .main h1 {
@@ -200,7 +216,7 @@ body {
 }
 @media (max-width: 550px) {
   .main h1 {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
   }
 }
 .main .line {
@@ -213,6 +229,11 @@ body {
   font-size: 1.5rem;
   color: gray;
 }
+@media (max-width: 550px) {
+  .main h2 {
+    font-size: 1.6rem;
+  }
+}
 .main img {
   width: 20%;
   margin-top: 30px;
@@ -220,14 +241,14 @@ body {
 .projects {
   margin: 0px auto 300px;
 }
-@media (max-width: 550px) {
-  .projects {
-    margin-bottom: 150px;
-  }
-}
 @media (max-width: 800px) {
   .projects {
     margin-bottom: 220px;
+  }
+}
+@media (max-width: 550px) {
+  .projects {
+    margin-bottom: 150px;
   }
 }
 .projects .project-container {
@@ -238,16 +259,16 @@ body {
   overflow: hidden;
   margin-bottom: 100px;
 }
-@media (max-width: 550px) {
-  .projects .project-container {
-    width: 80%;
-    margin-bottom: 70px;
-  }
-}
 @media (max-width: 800px) {
   .projects .project-container {
     margin-bottom: 85px;
     width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .projects .project-container {
+    width: 90%;
+    margin-bottom: 70px;
   }
 }
 .projects .project {
@@ -266,6 +287,11 @@ body {
   font-weight: bold;
   margin: 10px 0;
 }
+@media (max-width: 550px) {
+  .projects .project-text h2 {
+    font-size: 2.5rem;
+  }
+}
 .projects .project-text .title-line {
   height: 3px;
   background-color: blue;
@@ -275,6 +301,11 @@ body {
 .projects .project-text p {
   font-weight: bold;
   color: gray;
+}
+@media (max-width: 550px) {
+  .projects .project-text p {
+    font-size: 1.4rem;
+  }
 }
 footer {
   background-color: #90AAE5;
@@ -289,6 +320,11 @@ footer h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
+@media (max-width: 550px) {
+  footer h3 {
+    font-size: 2rem;
+  }
+}
 footer .footer-line {
   height: 5px;
   width: 150px;
@@ -299,6 +335,11 @@ footer .footer-line {
 footer p {
   font-size: 0.9rem;
 }
+@media (max-width: 550px) {
+  footer p {
+    font-size: 1.2rem;
+  }
+}
 footer .icons {
   background-color: rgba(255, 255, 255, 0.2);
   width: 220px;
@@ -308,8 +349,18 @@ footer .icons {
   justify-content: space-between;
   margin: 20px 0;
 }
+@media (max-width: 550px) {
+  footer .icons {
+    width: 280px;
+  }
+}
 footer .icons a:visited {
   color: white;
+}
+@media (max-width: 550px) {
+  footer .icons .fab {
+    font-size: 3rem;
+  }
 }
 footer .icons .fab:hover {
   color: hsl(213, 19%, 20%);

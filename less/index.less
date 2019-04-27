@@ -72,16 +72,22 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
-	@media @phone {
-		width: 90%;
-	}
-
 	@media @tablet {
 		width: 83%;
 	}
 
+	@media @phone {
+		width: 90%
+	}
+
 	.logo {
 		width: 60px;
+		
+
+		@media @phone {
+			width: 77px;
+			margin-top: 3px;
+		}
 	
 		img {
 			width: 100%;
@@ -97,11 +103,19 @@ body {
 		justify-content: space-between;
 		margin: 20px 0;
 
+		@media @phone {
+			width: 261px;
+		}
+
 		a:visited {
 			color: hsl(213, 19%, 20%);
 		}
 
 		.fab {
+
+			@media @phone {
+				font-size: 2.7rem;
+			}
 
 			&:hover {
 				color: white;
@@ -122,13 +136,14 @@ body {
 	font-family: circular std, sans-serif;
 	height: 400px;
 
-	@media @phone {
-		width: 90%;
-	}
-	
 	@media @tablet {
 		width: 83%;
 	}
+
+	@media @phone {
+		width: 90%;
+	}
+
 
 	h1 {
 		font-size: 4.5rem;
@@ -136,7 +151,7 @@ body {
 		margin-bottom: 10px;
 
 		@media @phone {
-			font-size: 4.2rem;
+			font-size: 4.5rem;
 		}
 	}
 
@@ -150,6 +165,10 @@ body {
 	h2 {
 		font-size: 1.5rem;
 		color: gray;
+
+		@media @phone {
+			font-size: 1.6rem;
+		}
 	}
 	
 	img {
@@ -163,12 +182,12 @@ body {
 .projects {
 	margin: 0px auto 300px;
 
-	@media @phone {
-		margin-bottom: 150px;
-	}
-
 	@media @tablet {
 		margin-bottom: 220px;
+	}
+
+	@media @phone {
+		margin-bottom: 150px;
 	}
 
 	.project-container {
@@ -179,15 +198,16 @@ body {
 		overflow: hidden;
 		margin-bottom: 100px;
 
-		@media @phone {
-			width: 80%;
-			margin-bottom: 70px;
-		}
-
 		@media @tablet {
 			margin-bottom: 85px;
 			width: 70%;
 		}
+
+		@media @phone {
+			width: 90%;
+			margin-bottom: 70px;
+		}
+
 	}
 	.project {
 		width: 100%;
@@ -207,6 +227,10 @@ body {
 			font-size: 2rem;
 			font-weight: bold;
 			margin: 10px 0;
+
+			@media @phone {
+				font-size: 2.5rem;
+			}
 		}
 
 		.title-line {
@@ -219,6 +243,10 @@ body {
 		p {
 			font-weight: bold;
 			color: gray;
+
+			@media @phone {
+				font-size: 1.4rem;
+			}
 		}
 
 	}
@@ -238,6 +266,10 @@ footer {
 	h3 {
 		font-size: 1.5rem;
 		font-weight: bold;
+
+		@media @phone {
+			font-size: 2rem;
+		}
 	}
 	.footer-line {
 		height: 5px;
@@ -249,6 +281,10 @@ footer {
 
 	p {
 		font-size: 0.9rem;
+
+		@media @phone {
+			font-size: 1.2rem;
+		}
 	}
 
 	.icons {
@@ -259,12 +295,20 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		margin: 20px 0;
+
+		@media @phone {
+			width: 280px;
+		}
 		
 		a:visited {
 			color: white;
 		}
 		
 		.fab{
+
+			@media @phone {
+				font-size: 3rem;
+			}
 
 			&:hover {
 				color: hsl(213, 19%, 20%);
