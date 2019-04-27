@@ -2,15 +2,10 @@ import React from 'react'
 import './contact.scss'
 
 const Contact = props => {
-    console.log(props)
-    const form = e => {
-        e.persist();
-    }
-
     return (
         <div className='contact'>
             <h1>Contact</h1>
-            <form method='post' name='contact' onSubmit={form}>
+            <form method='post' name='contact'>
                 <input type='hidden' name='contact' value='contact' />
                 <div className="info">
                     <label for="name">Name</label>
