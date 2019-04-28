@@ -10,7 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      switch: window.location.pathname !== '/' ? window.location.pathname.split('/')[1] : 'home'
+      switch: window.location.pathname !== '/' ? window.location.pathname.split('/')[1] : 'home',
+      hide: false
     }
   }
 
@@ -26,14 +27,22 @@ class App extends Component {
     }
   }
 
+  hide = bool => {
+    this.setState({
+      ...this.state,
+      hide: bool
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <Nav
           switch={this.state.switch}
           click={this.click}
+          hide={this.hide}
         />
-        <div className='smile' />
+        <div className={`smile ${this.state.hide ? 'top' : ''}`} />
         <div className='routes'>
           <div className='smileBlank' />
           {(() => {

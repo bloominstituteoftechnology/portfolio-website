@@ -28,6 +28,14 @@
         background: url(./images/smile.jpg) no-repeat center center / contain;
         z-index: 1;
 
+        &.top {
+            margin-top: -15vh;
+
+            @media (max-width: 500px) {
+                margin-top: -5rem;
+            }
+        }
+
         @media (max-width: 500px) {
             margin-top: 22vh;
         }
@@ -51,6 +59,11 @@
         top: 0px;
         display: flex;
         flex-direction: column;
+        z-index: 50;
+
+        @media (max-width: 500px) {
+            position: absolute;
+        }
 
         div {
             width: 100%;
@@ -67,8 +80,17 @@
 
             @media (max-width: 500px) {
                 flex-wrap: wrap;
-                position: absolute;
                 height: 30vh;
+            }
+
+            &.hide {
+                top: -15vh;
+                margin-bottom: -15vh;
+
+                @media (max-width: 500px) {
+                    top: -50vh;
+                    margin-bottom: -50vh;
+                }
             }
 
             span {
@@ -90,24 +112,36 @@
                     background: #203838;
                 }
             }
-
-            &.hide {
-                top: -15vh;
-            }
         }
 
         i {
             position: relative;
-            top: 0px;
+            top: -15px;
             align-self: center;
             cursor: pointer;
             transition: 2s ease;
             font-size: 1.5rem;
-            z-index: 55;
+            z-index: 50;
+            color: whitesmoke;
 
             &.hide {
-                position: absolute;
                 top: 0px;
+
+                @media (max-width: 500px) {
+                    position: absolute;
+                }
+            }
+
+            @media (max-width: 500px) {
+                font-size: 5rem;
+            }
+        }
+
+        &.hide {
+            margin-bottom: -15vh;
+
+            @media (max-width: 500px) {
+                margin-bottom: -50vh;
             }
         }
     }

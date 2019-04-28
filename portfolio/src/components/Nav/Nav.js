@@ -1,13 +1,17 @@
-import React, { useState } from 'react'
-import { useCDM } from 'customHooks'
+import React, { useState, useEffect } from 'react'
 
 const Nav = props => {
     const [hide, setHide] = useState(false)
 
-    useCDM(setTimeout(() => setHide(true), 5000))
+    useEffect(() => {
+        setTimeout(() => {
+            setHide(true)
+            props.hide(!hide)
+        }, 5000)
+    }, [])
     
     return (
-        <nav>
+        <nav className={`${hide && 'hide'}`}>
         <div className={`${hide && 'hide'}`}>
             <span
                 style={{
@@ -36,7 +40,10 @@ const Nav = props => {
         </div>
             <i
                 className={`fas fa-chevron-circle-${hide ? 'down' : 'up'} ${hide && 'hide'}`}
-                onClick={() => setHide(!hide)}
+                onClick={() => {
+                    setHide(!hide)
+                    props.hide(!hide)
+                }}
         />
         </nav>
     )
