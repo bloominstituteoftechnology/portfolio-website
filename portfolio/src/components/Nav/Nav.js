@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useCDM } from 'customHooks'
 
 const Nav = props => {
-    console.log(window.location)
+    const [hide, setHide] = useState(false)
+
+    useCDM(setTimeout(() => setHide(true), 5000))
+    
     return (
         <nav>
+        <div className={`${hide && 'hide'}`}>
             <span
                 style={{
                     background: props.switch === 'home' && '#203838'
@@ -28,6 +33,11 @@ const Nav = props => {
                 }}
                 onClick={() => props.click('contact')}
             >Contact</span>
+        </div>
+            <i
+                className={`fas fa-chevron-circle-${hide ? 'down' : 'up'} ${hide && 'hide'}`}
+                onClick={() => setHide(!hide)}
+        />
         </nav>
     )
 }
