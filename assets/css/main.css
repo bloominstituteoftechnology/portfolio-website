@@ -191,7 +191,7 @@ html {
 
 body {
 	background-color: #2e3141;
-	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg1.jpg");
 	background-size: auto, cover;
 	background-attachment: fixed, fixed;
 	background-position: center, center;
@@ -3106,6 +3106,8 @@ button:disabled,
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin: 0 0 2em 0;
+
+
 }
 
 .features article {
@@ -3334,6 +3336,9 @@ button:disabled,
 	-webkit-transition: -webkit-filter 0.25s ease;
 	-ms-transition: -ms-filter 0.25s ease;
 	transition: filter 0.25s ease;
+	background: linear-gradient(rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8), url("../../images/bg1.jpg"));
+	background-image: contain;
+
 
 
 }
@@ -3483,6 +3488,7 @@ body.is-menu-visible #menu .inner {
 
 #banner {
 	padding: 10em 0 4.75em 0;
+
 
 
 }
