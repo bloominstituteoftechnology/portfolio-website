@@ -3362,7 +3362,10 @@ input, select, textarea {
 			font-size: 5rem;
 			line-height: 1;
 		}
-
+		#intro .profile-photo {
+			max-width: 200px;
+			border-radius: 50%;
+		}
 		#intro p {
 			font-size: 1.25rem;
 			font-style: italic;
