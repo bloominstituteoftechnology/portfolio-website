@@ -3365,6 +3365,7 @@ input, select, textarea {
 		#intro .profile-photo {
 			max-width: 200px;
 			border-radius: 50%;
+			margin: 0 0 4% 0;
 		}
 		#intro p {
 			font-size: 1.25rem;
@@ -3439,6 +3440,7 @@ input, select, textarea {
 				#intro + #header {
 					margin-top: -14rem;
 				}
+
 
 		}
 
@@ -4653,4 +4655,8 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+	#intro h1 {
+		line-height: 120%;
 	}
