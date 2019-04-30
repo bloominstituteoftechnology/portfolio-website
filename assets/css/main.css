@@ -142,6 +142,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		font-family: raleway;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -149,6 +150,15 @@
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 0.5em 0;
+	}
+
+	h2 {
+		font-family: Sedgwick Ave;
+	}
+
+	h3 {
+		font-family: Arima Madurai;
+
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3142,7 +3152,7 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), url("../../images/DSC_0645.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
