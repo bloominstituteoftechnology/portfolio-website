@@ -1771,7 +1771,9 @@ input, select, textarea {
 		cursor: default;
 		margin: 0;
 		list-style: none;
-		padding-left: 0;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-around;
 	}
 
 		ul.social li {
