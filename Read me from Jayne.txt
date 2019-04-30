@@ -4,3 +4,6 @@ Added personal photos
 Changed copy text
 
 Changed hover color from blue to orange
+
+Created carousel pictures with copy.
+
