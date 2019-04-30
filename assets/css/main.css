@@ -2985,7 +2985,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 100vh;
+		;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3050,6 +3050,7 @@ input, select, textarea {
 				-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 				transition: opacity 1s ease, transform 1s ease;
 				opacity: 1;
+				min-height: 100vh; 
 			}
 
 		.spotlights > section:nth-child(2) {
