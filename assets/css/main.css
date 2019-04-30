@@ -1280,7 +1280,8 @@ input, select, textarea {
 			}
 
 		.myface{
-		
+			display: flex;
+			align-items: 
 		}
 
 		#header .content {
