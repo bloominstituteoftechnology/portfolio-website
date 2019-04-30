@@ -2177,6 +2177,7 @@ ul.actions.special {
   text-align: center;
   position: relative;
   top: 1.5em;
+  /* background-image: linear-gradient(#bdc3c7, #2c3e50); */
 }
 
 #logo h1 {
@@ -2214,7 +2215,7 @@ ul.actions.special {
   box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
   padding: 0 1.5em 0 1.5em;
   background-color: #89aeab;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #nav > ul > li {
@@ -2231,7 +2232,7 @@ ul.actions.special {
 #nav > ul > li > span {
   display: block;
   color: #eee;
-  color: rgba(255, 255, 255, 0.75);
+  color: #2b2e2d;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 0.7em;

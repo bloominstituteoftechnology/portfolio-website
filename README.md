@@ -48,4 +48,4 @@ You have the ability to write HTML, CSS, and responsive media queries. You also 
 - [ ] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
 - [ ] Download another template and see if you can get the CSS preprocessor working on the project
 
-Notes: colors used #D07435(goldish) #D4B8A3(tan) #2B2E2D(dark slate gray) #906E61 (gray) #89AEAB (light slate gray)
+Notes: colors used #D07435(goldish) #D4B8A3(tan) #2B2E2D(dark slate gray) #906E61 (gray) #89AEAB (light slate gray) #A93F55 (deep red)
