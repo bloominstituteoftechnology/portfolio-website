@@ -2601,6 +2601,8 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			height: 30%;
+			overflow: auto;
 		}
 
 			.image.fit:first-child {
@@ -4660,3 +4662,9 @@ input, select, textarea {
 	#intro h1 {
 		line-height: 120%;
 	}
+
+	/* .posts img {
+		width: 508px;
+		height: 310px;
+		object-fit: contain;
+	} */
