@@ -1275,13 +1275,8 @@ input, select, textarea {
 			border-radius: 100%;
 		}
 
-			#header .logo .icon:before {
-				font-size: 2rem;
-			}
-
 		.myface{
-			display: flex;
-			align-items: 
+			width: 85px;
 		}
 
 		#header .content {
