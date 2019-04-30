@@ -2899,7 +2899,7 @@ input, select, textarea {
 		}
 
 		header > p {
-			font-style: italic;
+			/* font-style: italic; */
 		}
 
 		header > h1 + p {
@@ -3369,7 +3369,7 @@ input, select, textarea {
 		}
 		#intro p {
 			font-size: 1.25rem;
-			font-style: italic;
+			/* font-style: italic; */
 			margin-top: -0.25rem;
 			text-align: center;
 		}
