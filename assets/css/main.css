@@ -2428,4 +2428,10 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
-	}
+    }
+    /*added in to get two icons side by side*/
+    .double-icon{ 
+        display:flex;
+        justify-content: space-evenly;
+    }
+
