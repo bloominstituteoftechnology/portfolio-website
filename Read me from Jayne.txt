@@ -3,7 +3,7 @@ Changes I made:
 Added personal photos
 Changed copy text
 
-Changed hover color from blue to orange
+Changed hover color from blue 47D3E5 to orange
 
 Created carousel pictures with copy.
 
