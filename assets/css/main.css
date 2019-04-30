@@ -300,7 +300,50 @@ input, select, textarea {
 		text-align: right;
 	}
 	/* my code goes here */
+	.tools{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content:space-between;
+		align-items:baseline;
 
+	}
+	
+	.projects_figure{
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		margin-bottom:3%;
+	
+	}
+	.tools_figure{
+		width:30%;
+	}
+	.tools_img{
+		width:100%;
+		height:6rem;
+	}
+	.projects_img{
+		width: 50%;
+		height:10rem;
+	}
+	.project-description{
+		padding-left:10%
+	}
+
+	@media screen and (max-width: 480px){
+		.tools{
+			justify-content:space-evenly;
+		}
+		.tools_figure{
+			width:60%;
+			margin:2em;
+
+		}
+		.projects_img{
+			width: 100%;
+		}
+	}
 /* Form */
 
 	form {
@@ -699,6 +742,10 @@ input, select, textarea {
 
 			.image.main {
 				margin: 1.5rem 0;
+			}
+			/* --- edited --*/
+			.image.main img {
+				height: 10rem
 			}
 
 		}
