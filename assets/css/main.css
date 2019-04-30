@@ -311,7 +311,6 @@ input, select, textarea {
 	.projects_figure{
 		width:100%;
 		display:flex;
-		flex-wrap:wrap;
 		justify-content:space-between;
 		margin-bottom:3%;
 	
@@ -328,12 +327,15 @@ input, select, textarea {
 		height:10rem;
 	}
 	.project-description{
-		padding-left:10%
+		padding-left:10%;
 	}
 
 	@media screen and (max-width: 480px){
 		.tools{
 			justify-content:space-evenly;
+		}
+		.projects_figure{
+			flex-wrap: wrap;
 		}
 		.tools_figure{
 			width:60%;
