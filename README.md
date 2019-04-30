@@ -32,8 +32,8 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 ### Follow these steps for completing your project after your MVP is completed:
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
+- [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your Project Manager as a Reviewer on the Pull-request
 - [ ] PM then will count the HW as done by merging the branch back into master.
 
 ## MVP Requirements
@@ -50,5 +50,5 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 ## Stretch
 
-- [ ] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
+- [x] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
 - [ ] Download another template and see if you can get the CSS preprocessor working on the project
