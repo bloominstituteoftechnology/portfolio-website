@@ -7,3 +7,29 @@ Changed hover color from blue 47D3E5 to orange
 
 Created carousel pictures with copy.
 
+Media queries   
+    There are a lot of media queries for different devices on here.  I will list the ones I spotted with CSS line number:
+    Line 85 - max width 480px
+    Line 122 1680px
+    Line 130 1280px
+    Line 146  360px
+    Line 294 736px
+    Line 1084 980px
+    Line 1574 480px
+    Line 3580 orientation: portrait
+
+List of things I'm going to research
+  moz-appearance
+  webkit-appearance
+  ms-appearance
+  moz-transition
+  transition
+  text-tranform
+  white-space
+  text-overflow
+  overflow
+  input:hover
+  z-index
+  float
+  user-select
+
