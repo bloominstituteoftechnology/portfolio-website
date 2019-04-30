@@ -1,0 +1,6 @@
+Changes I made:
+
+Added personal photos
+Changed copy text
+
+Changed hover color from blue to orange

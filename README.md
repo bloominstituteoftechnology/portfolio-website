@@ -24,7 +24,7 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 	- [https://html5up.net/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
 	- [https://html5up.net/miniport](https://html5up.net/miniport)
-	- [https://html5up.net/dimension](https://html5up.net/dimension)
+	- [https://html5up.net/dimension](https ://html5up.net/dimension)
 
 - [ ] Unzip the code and copy the site to your git repository that you just set up
   * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
