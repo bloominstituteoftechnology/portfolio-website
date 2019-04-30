@@ -299,6 +299,7 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+	/* my code goes here */
 
 /* Form */
 
@@ -677,12 +678,13 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
-			
+			width: 100%;			
 		}
 
 			.image.main img {
 				width: 100%;
+				/*---edited --*/
+				height: 20rem;
 			}
 
 		@media screen and (max-width: 736px) {
