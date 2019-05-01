@@ -24,7 +24,8 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
-	// Play initial animations on page load.
+
+	// Play initial animations on page load.    *** MODIFIED BY JACK FROM 100 > 3000***
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
