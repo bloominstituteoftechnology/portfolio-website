@@ -1,5 +1,5 @@
 ///
-/// Eventually by HTML5 UP
+/// Solid State by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -33,23 +33,20 @@
 			box-sizing: inherit;
 		}
 
-	html, body {
-		height: 100%;
-		overflow-x: hidden;
-		width: 100%;
-
-		@include breakpoint('short') {
-			height: auto;
-			min-height: 100%;
-		}
-	}
-
 	body {
-		@include vendor('display', 'flex');
-		@include vendor('flex-direction', 'column');
-		@include vendor('justify-content', 'center');
-		background-color: _palette(bg);
-		padding: 6em 4em 4em 4em;
+		background-color:		_palette(bg);
+
+		background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
+								url('../../images/bg.jpg');
+
+		background-size:		auto,
+								cover;
+
+		background-attachment:	fixed,
+								fixed;
+
+		background-position:	center,
+								center;
 
 		// Stops initial animations until page loads.
 			&.is-preload {
@@ -59,20 +56,4 @@
 				}
 			}
 
-		> * {
-			position: relative;
-			z-index: 2;
-		}
-
-		@include breakpoint('<=xlarge') {
-			padding: 6em 3.5em 3.5em 3.5em;
-		}
-
-		@include breakpoint('<=small') {
-			padding: 5em 2em 2em 2em;
-		}
-
-		@include breakpoint('<=xxsmall') {
-			padding: 5em 1.25em 1.25em 1.25em;
-		}
 	}
