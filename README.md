@@ -10,23 +10,23 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 
 _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add PM as collaborator on Github.
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
+- [X] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: `git push origin <firstName-lastName>`.
 
 ### Follow these steps to download your template and start the project:
 
-- [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
-- [ ] You make pick any template you like.  Here are some good choices for a portfolio:
+- [X] Navigate here: [https://html5up.net/](https://html5up.net/)
+- [X] You make pick any template you like.  Here are some good choices for a portfolio:
 	- [https://html5up.net/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
 	- [https://html5up.net/miniport](https://html5up.net/miniport)
 	- [https://html5up.net/dimension](https://html5up.net/dimension)
 
-- [ ] Unzip the code and copy the site to your git repository that you just set up
+- [X] Unzip the code and copy the site to your git repository that you just set up
   * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
 - [ ] Work on the MVP requirements listed below
 
