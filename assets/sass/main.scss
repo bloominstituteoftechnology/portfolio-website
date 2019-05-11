@@ -1057,7 +1057,7 @@ $size-header-pad: 4em;
 		@include vendor('justify-content', 'space-between');
 		background-color:		_palette(accent2, bg);
 		background-attachment:	scroll,								scroll;
-		background-image:		url('images/overlay.png'),			url('../../images/stars.jpg');
+		background-image:		url('images/overlay.png'),			url('/images/stars.jpg');
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								150%;
