@@ -3776,7 +3776,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				text-align: left;
+		
 			}
 			.wrapper.spotlight.style1 p {
 				max-width: 270px;
@@ -4110,4 +4110,17 @@ input, select, textarea {
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
 
+	}
+
+
+	#four article {
+		display: none;
+	}
+
+	#four ul {
+		display: none;
+	}
+
+	.remember-me {
+		display: none;
 	}
