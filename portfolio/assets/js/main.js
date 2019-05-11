@@ -1,23 +1,33 @@
 /*
-	Solid State by HTML5 UP
+	Strata by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
-	var	$window = $(window),
+	var $window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
-		$banner = $('#banner');
+		$footer = $('#footer'),
+		$main = $('#main'),
+		settings = {
+
+			// Parallax background effect?
+				parallax: true,
+
+			// Parallax factor (lower = more intense, higher = less intense).
+				parallaxFactor: 20
+
+		};
 
 	// Breakpoints.
 		breakpoints({
-			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
-			medium:	'(max-width: 980px)',
-			small:	'(max-width: 736px)',
-			xsmall:	'(max-width: 480px)'
+			xlarge:  [ '1281px',  '1800px' ],
+			large:   [ '981px',   '1280px' ],
+			medium:  [ '737px',   '980px'  ],
+			small:   [ '481px',   '736px'  ],
+			xsmall:  [ null,      '480px'  ],
 		});
 
 	// Play initial animations on page load.
@@ -27,118 +37,80 @@
 			}, 100);
 		});
 
-	// Header.
-		if ($banner.length > 0
-		&&	$header.hasClass('alt')) {
+	// Touch?
+		if (browser.mobile) {
 
-			$window.on('resize', function() { $window.trigger('scroll'); });
+			// Turn on touch mode.
+				$body.addClass('is-touch');
 
-			$banner.scrollex({
-				bottom:		$header.outerHeight(),
-				terminate:	function() { $header.removeClass('alt'); },
-				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); }
-			});
+			// Height fix (mostly for iOS).
+				window.setTimeout(function() {
+					$window.scrollTop($window.scrollTop() + 1);
+				}, 0);
 
 		}
 
-	// Menu.
-		var $menu = $('#menu');
+	// Footer.
+		breakpoints.on('<=medium', function() {
+			$footer.insertAfter($main);
+		});
 
-		$menu._locked = false;
+		breakpoints.on('>medium', function() {
+			$footer.appendTo($header);
+		});
 
-		$menu._lock = function() {
+	// Header.
 
-			if ($menu._locked)
-				return false;
+		// Parallax background.
 
-			$menu._locked = true;
+			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+				if (browser.name == 'ie'
+				||	browser.mobile)
+					settings.parallax = false;
 
-			window.setTimeout(function() {
-				$menu._locked = false;
-			}, 350);
+			if (settings.parallax) {
 
-			return true;
+				breakpoints.on('<=medium', function() {
 
-		};
-
-		$menu._show = function() {
-
-			if ($menu._lock())
-				$body.addClass('is-menu-visible');
-
-		};
-
-		$menu._hide = function() {
-
-			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
-
-		};
-
-		$menu._toggle = function() {
-
-			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
-
-		};
-
-		$menu
-			.appendTo($body)
-			.on('click', function(event) {
-
-				event.stopPropagation();
-
-				// Hide.
-					$menu._hide();
-
-			})
-			.find('.inner')
-				.on('click', '.close', function(event) {
-
-					event.preventDefault();
-					event.stopPropagation();
-					event.stopImmediatePropagation();
-
-					// Hide.
-						$menu._hide();
-
-				})
-				.on('click', function(event) {
-					event.stopPropagation();
-				})
-				.on('click', 'a', function(event) {
-
-					var href = $(this).attr('href');
-
-					event.preventDefault();
-					event.stopPropagation();
-
-					// Hide.
-						$menu._hide();
-
-					// Redirect.
-						window.setTimeout(function() {
-							window.location.href = href;
-						}, 350);
+					$window.off('scroll.strata_parallax');
+					$header.css('background-position', '');
 
 				});
 
-		$body
-			.on('click', 'a[href="#menu"]', function(event) {
+				breakpoints.on('>medium', function() {
 
-				event.stopPropagation();
-				event.preventDefault();
+					$header.css('background-position', 'left 0px');
 
-				// Toggle.
-					$menu._toggle();
+					$window.on('scroll.strata_parallax', function() {
+						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+					});
 
-			})
-			.on('keydown', function(event) {
+				});
 
-				// Hide on escape.
-					if (event.keyCode == 27)
-						$menu._hide();
+				$window.on('load', function() {
+					$window.triggerHandler('scroll');
+				});
+
+			}
+
+	// Main Sections: Two.
+
+		// Lightbox gallery.
+			$window.on('load', function() {
+
+				$('#two').poptrox({
+					caption: function($a) { return $a.next('h3').text(); },
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: '.work-item a.image',
+					usePopupCaption: true,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: false,
+					usePopupNav: true,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
 
 			});
 
