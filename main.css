@@ -1672,7 +1672,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #C2DFFF url("images/overlay.png");
+			background: #C2DFFF url("overlay.png");
 			color: #333333;
 		}
 
@@ -1723,7 +1723,7 @@ input, select, textarea {
 		input[type="reset"].style3,
 		button.style3,
 		.button.style3 {
-			background: #333333 url("images/overlay.png");
+			background: #333333 url("overlay.png");
 			color: #C2DFFF;
 		}
 
@@ -1859,7 +1859,7 @@ input, select, textarea {
 			.feature-list h3:before {
 				display: block;
 				color: #fff;
-				background: #2f333b url("images/overlay.png");
+				background: #2f333b url("overlay.png");
 				border-radius: 2.5em;
 				text-align: center;
 				width: 2.5em;
@@ -1969,7 +1969,7 @@ input, select, textarea {
 				left: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				background: url("shadow.png");
 			}
 
 			.wrapper .title:after {
@@ -1983,17 +1983,17 @@ input, select, textarea {
 				right: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				background: url("shadow.png");
 			}
 
 		.wrapper.style1 {
-			background: #C2DFFF url("images/overlay.png");
+			background: #C2DFFF url("overlay.png");
 			color: #333333;
 			color:#333333(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #C2DFFF url("images/overlay.png");
+				background: #C2DFFF url("overlay.png");
 				color: #333333;
 			}
 
@@ -2011,11 +2011,11 @@ input, select, textarea {
 			}
 
 		.wrapper.style3 {
-			background: #C2DFFF url("images/overlay.png");
+			background: #C2DFFF url("overlay.png");
 		}
 
 			.wrapper.style3 .title {
-				background: #C2DFFF url("images/overlay.png");
+				background: #C2DFFF url("overlay.png");
 				color: #333333;
 			}
 
@@ -2046,7 +2046,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/desert-sunset.jpg") center center;
+		background: url("desert-sunset.jpg") center center;
 		background-size: cover;
 		padding: 0;
 	}
@@ -2058,7 +2058,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: url("images/overlay.png");
+			background: url("overlay.png");
 		}
 
 		.homepage #header {
@@ -2147,7 +2147,7 @@ input, select, textarea {
 				}
 
 	.dropotron {
-		background: #222835 url("images/overlay.png");
+		background: #222835 url("overlay.png");
 		background-color: rgba(44, 50, 63, 0.925);
 		padding: 1.25em 1em 1.25em 1em;
 		border-radius: 0.35em;
@@ -2257,7 +2257,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #333333 url("images/overlay.png");
+		background: #333333 url("overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
@@ -2324,7 +2324,7 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #333333 url("images/overlay.png");
+			background: #333333 url("overlay.png");
 			color: #C2DFFF;
 		}
 
@@ -2351,7 +2351,7 @@ input, select, textarea {
 			}
 
 			#footer .feature-list h3:before {
-				background: #3d4249 url("images/overlay.png");
+				background: #3d4249 url("overlay.png");
 			}
 
 /* Copyright */
@@ -2647,7 +2647,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: #242730 url("overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
