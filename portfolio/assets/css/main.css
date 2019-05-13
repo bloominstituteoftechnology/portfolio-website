@@ -243,6 +243,21 @@ textarea {
 	line-height: 1.65;
 }
 
+/* Button Links */
+.button-link {
+	border: solid 1px #ffffff;
+	border-radius: 4px;
+	padding: 9px;
+	transition-property: border-radius, background, color;
+	transition-duration: .25s;
+}
+
+.button-link:hover {
+	color: #374a59;
+	background: #f2f2f2;
+	border-radius: 8px;
+}
+
 a {
 	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -308,7 +323,7 @@ h6.major {
 	width: -ms-max-content;
 	width: max-content;
 	padding-bottom: 0.5rem;
-	margin: 0 0 2rem 0;
+	margin: 2rem 0 2rem 0;
 }
 
 h1 {
@@ -864,18 +879,6 @@ dl dt {
 
 dl dd {
 	margin-left: 2rem;
-}
-
-/* Button Links */
-.button-link {
-	border: solid 1px #ffffff;
-	border-radius: 4px;
-	padding: 9px;
-}
-
-.button-link:hover {
-	color: black;
-	background: white;
 }
 
 /* Actions */
@@ -1648,7 +1651,7 @@ body.is-preload #header .content .inner {
 	-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 	-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 	transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-	padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+	padding: 2.5rem 2.5rem 1.5rem 2.5rem;
 	position: relative;
 	width: 40rem;
 	max-width: 100%;
