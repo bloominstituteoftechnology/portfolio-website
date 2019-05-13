@@ -150,7 +150,7 @@ input, select, textarea {
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
 	}
-
+	
 	h3 {
 		font-size: 1.35em;
 		line-height: 1.5em;
@@ -233,6 +233,11 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.k {
+		color: red;
+		font-weight: bold;
 	}
 
 /* Loader */
@@ -3697,6 +3702,10 @@ input, select, textarea {
 					#banner .content .image {
 						margin: 0;
 					}
+
+			#lady {
+				color: red;
+			}
 
 		/* Footer */
 
