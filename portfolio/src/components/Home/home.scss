@@ -11,6 +11,10 @@
     h1 {
         font-size: 5rem;
         margin: 33.5px -50px;
+
+        @media (max-width: 500px){
+            width: 100%;
+        }
     }
 
     h4 {
