@@ -5,113 +5,104 @@
 */
 
 (function($) {
+  var $window = $(window),
+    $body = $("body"),
+    $header = $("#header"),
+    $footer = $("#footer"),
+    $main = $("#main"),
+    settings = {
+      // Parallax background effect?
+      parallax: true,
 
-	var $window = $(window),
-		$body = $('body'),
-		$header = $('#header'),
-		$footer = $('#footer'),
-		$main = $('#main'),
-		settings = {
+      // Parallax factor (lower = more intense, higher = less intense).
+      parallaxFactor: 20
+    };
 
-			// Parallax background effect?
-				parallax: true,
+  // Breakpoints.
+  breakpoints({
+    xlarge: ["1281px", "1800px"],
+    large: ["981px", "1280px"],
+    medium: ["737px", "980px"],
+    small: ["481px", "736px"],
+    xsmall: [null, "480px"]
+  });
 
-			// Parallax factor (lower = more intense, higher = less intense).
-				parallaxFactor: 20
+  // Play initial animations on page load.
+  $window.on("load", function() {
+    window.setTimeout(function() {
+      $body.removeClass("is-preload");
+    }, 100);
+  });
 
-		};
+  // Touch?
+  if (browser.mobile) {
+    // Turn on touch mode.
+    $body.addClass("is-touch");
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:  [ '1281px',  '1800px' ],
-			large:   [ '981px',   '1280px' ],
-			medium:  [ '737px',   '980px'  ],
-			small:   [ '481px',   '736px'  ],
-			xsmall:  [ null,      '480px'  ],
-		});
+    // Height fix (mostly for iOS).
+    window.setTimeout(function() {
+      $window.scrollTop($window.scrollTop() + 1);
+    }, 0);
+  }
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+  // Footer.
+  breakpoints.on("<=medium", function() {
+    $footer.insertAfter($main);
+  });
 
-	// Touch?
-		if (browser.mobile) {
+  breakpoints.on(">medium", function() {
+    $footer.appendTo($header);
+  });
 
-			// Turn on touch mode.
-				$body.addClass('is-touch');
+  // Header.
 
-			// Height fix (mostly for iOS).
-				window.setTimeout(function() {
-					$window.scrollTop($window.scrollTop() + 1);
-				}, 0);
+  // Parallax background.
 
-		}
+  // Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+  if (browser.name == "ie" || browser.mobile) settings.parallax = false;
 
-	// Footer.
-		breakpoints.on('<=medium', function() {
-			$footer.insertAfter($main);
-		});
+  if (settings.parallax) {
+    breakpoints.on("<=medium", function() {
+      $window.off("scroll.strata_parallax");
+      $header.css("background-position", "");
+    });
 
-		breakpoints.on('>medium', function() {
-			$footer.appendTo($header);
-		});
+    breakpoints.on(">medium", function() {
+      $header.css("background-position", "left 0px");
 
-	// Header.
+      $window.on("scroll.strata_parallax", function() {
+        $header.css(
+          "background-position",
+          "left " +
+            -1 * (parseInt($window.scrollTop()) / settings.parallaxFactor) +
+            "px"
+        );
+      });
+    });
 
-		// Parallax background.
+    $window.on("load", function() {
+      $window.triggerHandler("scroll");
+    });
+  }
 
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-				if (browser.name == 'ie'
-				||	browser.mobile)
-					settings.parallax = false;
+  // Main Sections: Two.
 
-			if (settings.parallax) {
+  // Lightbox gallery.
+  // $window.on('load', function() {
 
-				breakpoints.on('<=medium', function() {
+  // 	$('#two').poptrox({
+  // 		caption: function($a) { return $a.next('h3').text(); },
+  // 		overlayColor: '#2c2c2c',
+  // 		overlayOpacity: 0.85,
+  // 		popupCloserText: '',
+  // 		popupLoaderText: '',
+  // 		selector: '.work-item a.image',
+  // 		usePopupCaption: true,
+  // 		usePopupDefaultStyling: false,
+  // 		usePopupEasyClose: false,
+  // 		usePopupNav: true,
+  // 		windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+  // 	});
 
-					$window.off('scroll.strata_parallax');
-					$header.css('background-position', '');
-
-				});
-
-				breakpoints.on('>medium', function() {
-
-					$header.css('background-position', 'left 0px');
-
-					$window.on('scroll.strata_parallax', function() {
-						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-					});
-
-				});
-
-				$window.on('load', function() {
-					$window.triggerHandler('scroll');
-				});
-
-			}
-
-	// Main Sections: Two.
-
-		// Lightbox gallery.
-			// $window.on('load', function() {
-
-			// 	$('#two').poptrox({
-			// 		caption: function($a) { return $a.next('h3').text(); },
-			// 		overlayColor: '#2c2c2c',
-			// 		overlayOpacity: 0.85,
-			// 		popupCloserText: '',
-			// 		popupLoaderText: '',
-			// 		selector: '.work-item a.image',
-			// 		usePopupCaption: true,
-			// 		usePopupDefaultStyling: false,
-			// 		usePopupEasyClose: false,
-			// 		usePopupNav: true,
-			// 		windowMargin: (breakpoints.active('<=small') ? 0 : 50)
-			// 	});
-
-			});
-
+  // });
 })(jQuery);
