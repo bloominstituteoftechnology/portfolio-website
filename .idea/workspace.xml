@@ -53,14 +53,14 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.2802508">
+    <splitter split-orientation="horizontal" split-proportion="0.5088195">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="27">
-                  <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+                <state relative-caret-position="251">
+                  <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -81,8 +81,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="482">
-                  <caret line="1239" column="5" lean-forward="true" selection-start-line="1239" selection-start-column="5" selection-end-line="1239" selection-end-column="5" />
+                <state relative-caret-position="239">
+                  <caret line="1427" column="17" lean-forward="true" selection-start-line="1427" selection-start-column="17" selection-end-line="1427" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -94,6 +94,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>header</find>
+      <find>content</find>
+      <find>.content</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,6 +149,18 @@
               <item name="portfolio-website" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Lambda-School/portfolio-website" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="portfolio-website" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Lambda-School/portfolio-website" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="portfolio-website" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Lambda-School/portfolio-website" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fonts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="portfolio-website" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -205,22 +219,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559661086317</updated>
-      <workItem from="1559661087832" duration="6561000" />
+      <workItem from="1559661087832" duration="8977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6561000" />
+    <option name="totallyTimeSpent" value="8977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="1080" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14523044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21007502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -257,15 +272,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="251">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="1239" column="5" lean-forward="true" selection-start-line="1239" selection-start-column="5" selection-end-line="1239" selection-end-column="5" />
+        <state relative-caret-position="239">
+          <caret line="1427" column="17" lean-forward="true" selection-start-line="1427" selection-start-column="17" selection-end-line="1427" selection-end-column="17" />
         </state>
       </provider>
     </entry>

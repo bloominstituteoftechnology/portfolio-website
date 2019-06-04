@@ -1309,7 +1309,7 @@ input, select, textarea {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
-				line-height: 2;
+				line-height: 1.2;
 			}
 
 		#header nav ul {
@@ -1428,7 +1428,7 @@ input, select, textarea {
 				}
 
 			#header .content .inner {
-				padding: 2.5rem 1rem;
+				padding: 1.5rem 1rem;
 			}
 
 			#header .content p {
