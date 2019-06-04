@@ -3209,7 +3209,7 @@ input, select, textarea {
 			opacity: 0.6;
 			background-color: #212931;
 			background-image: url("../../images/newyork-img.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			background-size: 100%,								100%,														100%, 100%;
+			background-size: cover,								100%,														100%, 100%;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
@@ -3250,10 +3250,11 @@ input, select, textarea {
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: cover,								100%,														auto 100%;
 			}
 
 		}
+
 
 /* Intro */
 
