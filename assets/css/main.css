@@ -1107,6 +1107,7 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
+			max-width: 5826px; /*create max-width to ensure that image doesnt get larger than browser*/
 			height: 100%;
 		}
 
@@ -1119,8 +1120,9 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
+			/* background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png"); */
+			background-image: url(../../images/texas.jpg); /*moving up two directories to link photo from image directory to assets*/
+			background-size: 100%, 256px 256px; /* set border to 100% to make sure that the photo is responsive*/
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
 			z-index: 2;
