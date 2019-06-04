@@ -3435,6 +3435,7 @@ input, select, textarea {
 		position: relative;
 		text-align: left;
 		overflow-x: hidden;
+				
 	}
 
 		.banner.style1 .content {
@@ -3454,6 +3455,7 @@ input, select, textarea {
 			width: 50%;
 			max-width: 48rem;
 			margin: 0 auto;
+			
 		}
 
 		.banner.style1 .image {
