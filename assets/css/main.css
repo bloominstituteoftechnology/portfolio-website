@@ -3312,6 +3312,10 @@ input, select, textarea {
 
 		}
 
+		.projects-headings {
+			font-weight: bold;
+		}
+
 /* Main */
 
 	#main {
