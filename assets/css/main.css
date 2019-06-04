@@ -1119,7 +1119,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/arch-image.jpg");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1135,7 +1135,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/valley-img.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
