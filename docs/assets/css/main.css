@@ -1597,7 +1597,11 @@ body.is-preload #header .content .inner {
     #main article {
         padding: 3rem 1.5rem 0.5rem 1.5rem ;
     }
+}
 
+.small {
+    font-size: smaller;
+    font-style: italic;
 }
 
 /* Footer */
