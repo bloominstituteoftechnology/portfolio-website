@@ -1500,7 +1500,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			width: auto;
+			height: auto;
 		}
 
 		.image.left {
@@ -1851,15 +1852,16 @@ input, select, textarea {
 				top: 0;
 				width: 50%;
 				height: 100%;
-				background: #152E33;
+				background: #25292f;
 				overflow: hidden;
 			}
 
 				.box.style1 .image img {
 					position: absolute;
-					top: 0;
-					height: 100%;
-					width: auto;
+					align-content: center;
+					justify-content: center;
+					height: auto%;
+					width: auto%;
 				}
 
 			.box.style1 .inner > :last-child {
