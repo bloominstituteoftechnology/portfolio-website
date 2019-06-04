@@ -3106,15 +3106,15 @@ input, select, textarea {
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: #59091798;
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
+			border-color: #0d286caf;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #126a458a;
 		}
 
 		.spotlight.inactive .content {
@@ -3168,7 +3168,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: #072b66;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3203,7 +3203,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="button"].primary,
 			.wrapper.style2 .button.primary {
 				background-color: #ffffff;
-				color: #e44c65 !important;
+				color: #0b0a0a !important;
 			}
 
 				.wrapper.style2 input[type="submit"].primary:hover, .wrapper.style2 input[type="submit"].primary:active,
