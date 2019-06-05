@@ -3782,6 +3782,17 @@ input, select, textarea {
 			.wrapper.spotlight:nth-child(2n - 1) .image {
 				margin: 0 0 2em 3em;
 			}
+ 
+			#rig-image {
+
+				transform: rotate(90deg);
+			}
+
+			#wfc_pic {
+
+				transform: scaleY(.50);
+				border-radius: 50% 50% 50% 50% ;
+			}
 
 			.wrapper.spotlight.style2 {
 				background-color: #45558d;
