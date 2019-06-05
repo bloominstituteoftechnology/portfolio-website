@@ -1119,7 +1119,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: radial-gradient( rgba(16, 7, 22, 0.8), rgba(64, 26, 38, 0.49), rgba(254, 229, 120, 0)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1154,7 +1154,7 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: #4f3140;
 		}
 
 /* Wrapper */
