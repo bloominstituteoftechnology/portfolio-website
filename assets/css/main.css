@@ -320,6 +320,9 @@ input, select, textarea {
 		.row > .col-4 {
 			width: 33.3333333333%;
 		}
+		.style1 > .row > .col-4 {
+			width: 50%;
+		}
 
 		.row > .off-4 {
 			margin-left: 33.3333333333%;
