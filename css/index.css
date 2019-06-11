@@ -287,6 +287,15 @@ body {
   font-weight: bold;
   margin: 10px 0;
 }
+.projects .project-text a {
+  color: black;
+}
+
+.projects .project-text a:hover {
+  color: #90AAE5;
+}
+
+
 @media (max-width: 550px) {
   .projects .project-text h2 {
     font-size: 2.5rem;
