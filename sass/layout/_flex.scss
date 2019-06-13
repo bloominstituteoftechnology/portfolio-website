@@ -1,0 +1,112 @@
+.flex {
+    // Parent Properties
+    display: flex;
+    
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+    & > * {
+        padding: .5em;
+    }
+    &-inline {
+        display: inline-flex;
+    }
+    &-column {
+        flex-direction: column;
+        &-reverse {
+            flex-direction: column-reverse;
+        }
+    }
+    &-row-reverse {
+        flex-direction: row-reverse;
+    }
+    &-wrap {
+        flex-wrap: wrap;
+        &-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    }
+    &-justify {
+        &-start {
+            justify-content: flex-start;
+        }
+        &-end {
+            justify-content: flex-end;
+        }
+        &-center {
+            justify-content: center;
+        }
+        &-between {
+            justify-content: space-between;
+        }
+        &-around {
+            justify-content: space-around;
+        }
+        &-even {
+            justify-content: space-evenly;
+        }
+    }
+    &-content {
+        &-start {
+            align-content: flex-start;
+        }
+        &-end {
+            align-content: flex-end;
+        }
+        &-center {
+            align-content: center;
+        }
+        &-stretch {
+            align-content: stretch;
+        }
+        &-around {
+            align-content: space-around;
+        }
+        &-between {
+            align-content: space-between;
+        }
+    }
+    &-items {
+        &-start {
+            align-items: flex-start;
+        }
+        &-end {
+            align-items: flex-end;
+        }
+        &-center {
+            align-items: center;
+        }
+        &-stretch {
+            align-items: stretch;
+        }
+        &-baseline{
+            align-items: baseline;
+        }
+    }
+
+    // Child Properties
+    &-shrink {
+        flex-shrink: 2;
+        &-more {
+            flex-shrink: 3;
+        }
+    }
+    &-grow {
+        flex-grow: 2;
+        &-more {
+            flex-grow: 3;
+        }
+    }
+    &-self {
+        &-start {
+            align-self: flex-start;
+        }
+        &-end {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+
+        
