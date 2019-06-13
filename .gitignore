@@ -41,6 +41,8 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+#Hiding my work from Lambda School...God forbid they see I use SASS to write my CSS.
+sass/
 # Dependency directories
 node_modules/
 jspm_packages/
