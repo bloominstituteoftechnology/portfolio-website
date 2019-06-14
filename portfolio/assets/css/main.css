@@ -3411,6 +3411,21 @@ input, select, textarea {
 				width: 2.25em;
 				background-color: aquamarine;
 			}
+			
+			
+			.personal-heading {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				padding-bottom: 15px;
+		}
+		
+			.personal-heading img {
+				width: 30%;
+				height: auto;
+				border: 2px solid white;
+				border-radius: 85%;
+		}
 
 		#banner h2 {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
@@ -3436,7 +3451,7 @@ input, select, textarea {
 			padding-bottom: 0.4em;
 			color: azure;
 		}
-
+		
 		#banner p {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
