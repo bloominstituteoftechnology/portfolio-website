@@ -53,3 +53,5 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 - [ ] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
 - [x] Download another template and see if you can get the CSS preprocessor working on the project
 .
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ffbcc3f8-f9af-49ed-85a6-f02c83675191/deploy-status)](https://app.netlify.com/sites/epic-tesla-a003b7/deploys)
