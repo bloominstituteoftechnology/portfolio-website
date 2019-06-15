@@ -701,7 +701,8 @@ input, select, textarea {
 		}
 
 			.image.main img {
-				width: 100%;
+				width: 40%;
+				margin: 0 auto;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1628,6 +1629,13 @@ input, select, textarea {
 			}
 
 		}
+
+/* Headings */
+		.headline{
+			color: #26be6c;
+			border-bottom: 2px solid rgba(9, 243, 48, 0.5);
+		}
+
 
 /* Footer */
 
