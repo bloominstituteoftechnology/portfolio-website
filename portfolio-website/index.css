@@ -1,0 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Header elements styling */
+
+body {
+    padding-top: 50px;
+}
+
+header {
+    height: 300px;
+}
+
+.social {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.social img {
+    height: 80px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -99;
+  }
+
+.menu {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  
+  .menu-content {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-content a:hover {
+      background-color: silver;
+    }
+  
+  .menu:hover .menu-content {  
+    display: block;
+}
+  
+  .menu:hover .mnu {
+      background-color: black;
+    }
+
+
+
+.main-heading {
+    font-size: 5em;
+    margin: auto;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+   font-size: 2em;
+   color: silver;
+   font-family: 'Russo One', sans-serif;
+}
+
+p {
+    font-size: 1em;
+    border-radius: 10%;
+    color: silver;
+    opacity: 0.9;
+    font-family: 'Russo One', sans-serif;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+.container {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    opacity: 0.9;
+}
+
+.intro {
+    margin: auto;
+}
+
+
+.intro img {
+    width: 20%;
+    margin: auto;
+    opacity: 0.3;
+}
+
+.header-img {
+    height: 25em;
+    width: 22em;
+}
+
+/* Header elements styling ends */
+
+
+/* Main content and content styling */
+
+.content img {
+    width: 100%;
+    height: 200px;
+}
+
+.social .twitter:hover {
+    background-color:#38A1F3;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    border-radius: 30%;
+}
+
+.social .github:hover {
+    background-color: #F1502F;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    border-radius: 60%;
+}
+
+.social .linkedin:hover {
+    background-color: #0077B5;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    border-radius: 60%;
+}
+
+
+.social .skype:hover {
+    background-color: #00AFF0 ;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    border-radius: 60%;
+}
+
+.social .facebook:hover {
+    background-color: #4267b2;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    border-radius: 60%;
+}
+
+
+
+.main-content1 {
+    text-align: center;
+    display: flex;
+    height: 700px;
+}
+
+.main-content2 {
+    text-align: center;
+    display: flex;
+    height: 700px;
+}
+
+.main-content3 {
+    text-align: center;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+}
+
+.content {
+    width: 33%;
+    height: 300px;
+    margin: 50px;
+}
+
+.contact {
+    width: 100%;
+    color: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.input {
+    background: rgba(0, 0, 0, 0.5);
+    height: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: silver;
+}
+
+.contact-button {
+    background: silver;
+    width: 25%;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.txtarea {
+    height: 100px;
+    display: block;
+    width: 100%;
+    border: 2px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.contact img {
+    width: 20%;
+    height: 200px;
+}
+
+.content p {
+    margin-top: 25px;
+    padding: 20px;
+    background-color:  rgba(0, 0, 0, 0.5);
+}
+
+
+.work-img {
+    border: 20px solid black;
+    opacity: 0.6;
+    border-radius: 10%;
+    height: 300px;
+}
+
+button {
+    background:  rgba(0, 0, 0, 0.5);
+    width: 35%;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid silver;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5%;
+    color: silver;
+}
+
+.about-img img {
+    height: 300px;
+    opacity: 0.6;
+    border: 20px double silver;
+    border-radius: 10%;
+    margin: 10%;
+}
+
+.about-me {
+    margin-top: 50px;
+    background: black;
+}
+
+
+
+.mnu {
+    background: rgba(0, 0, 0, 0.5);
+    color: silver;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    height: auto;
+  }
