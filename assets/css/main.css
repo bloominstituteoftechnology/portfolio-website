@@ -4616,6 +4616,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 	}
 }
 
+.profileImage {
+	height: 500px;
+}
 /* Nav Panel */
 
 /* #navPanelToggle {
@@ -4818,8 +4821,3 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		} */
-
-.profileImage {
-	height: 500px;
-	border-radius: 100px;
-}

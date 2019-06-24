@@ -16,79 +16,56 @@
 
 // Breakpoints.
 
-@include breakpoints(
-	(
-		default: (
-			1681px,
-			null
-		),
-		xlarge: (
-			1281px,
-			1680px
-		),
-		large: (
-			981px,
-			1280px
-		),
-		medium: (
-			737px,
-			980px
-		),
-		small: (
-			481px,
-			736px
-		),
-		xsmall: (
-			361px,
-			480px
-		),
-		xxsmall: (
-			null,
-			360px
-		)
-	)
-);
+	@include breakpoints((
+		default:   (1681px,   null     ),
+		xlarge:    (1281px,   1680px   ),
+		large:     (981px,    1280px   ),
+		medium:    (737px,    980px    ),
+		small:     (481px,    736px    ),
+		xsmall:    (361px,    480px    ),
+		xxsmall:   (null,     360px    )
+	));
 
 // Mixins.
 
-@mixin color($p) {
-	@include color-typography($p);
-	@include color-box($p);
-	@include color-button($p);
-	@include color-form($p);
-	@include color-list($p);
-	@include color-section($p);
-	@include color-table($p);
-	@include color-pagination($p);
-}
+	@mixin color($p) {
+		@include color-typography($p);
+		@include color-box($p);
+		@include color-button($p);
+		@include color-form($p);
+		@include color-list($p);
+		@include color-section($p);
+		@include color-table($p);
+		@include color-pagination($p);
+	}
 
 // Base.
 
-@import 'base/reset';
-@import 'base/page';
-@import 'base/typography';
+	@import 'base/reset';
+	@import 'base/page';
+	@import 'base/typography';
 
 // Component.
 
-@import 'components/row';
-@import 'components/box';
-@import 'components/button';
-@import 'components/form';
-@import 'components/icon';
-@import 'components/image';
-@import 'components/actions';
-@import 'components/icons';
-@import 'components/list';
-@import 'components/section';
-@import 'components/table';
-@import 'components/pagination';
+	@import 'components/row';
+	@import 'components/box';
+	@import 'components/button';
+	@import 'components/form';
+	@import 'components/icon';
+	@import 'components/image';
+	@import 'components/actions';
+	@import 'components/icons';
+	@import 'components/list';
+	@import 'components/section';
+	@import 'components/table';
+	@import 'components/pagination';
 
 // Layout.
 
-@import 'layout/wrapper';
-@import 'layout/intro';
-@import 'layout/header';
-@import 'layout/nav';
-@import 'layout/main';
-@import 'layout/footer';
-@import 'layout/navPanel';
+	@import 'layout/wrapper';
+	@import 'layout/intro';
+	@import 'layout/header';
+	@import 'layout/nav';
+	@import 'layout/main';
+	@import 'layout/footer';
+	@import 'layout/navPanel';
