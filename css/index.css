@@ -182,12 +182,17 @@ body {
   }
 }
 
+.navbar .social-icons .fab {
+  color: hsl(213, 19%, 20%)
+}
+
 .navbar .social-icons a:visited {
   color: hsl(213, 19%, 20%);
 }
 @media (max-width: 550px) {
   .navbar .social-icons .fab {
     font-size: 2.7rem;
+    color: hsl(213, 19%, 20%)
   }
 }
 .navbar .social-icons .fab:hover {
