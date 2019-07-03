@@ -154,6 +154,9 @@ body {
 }
 .navbar .logo {
   width: 60px;
+  height: 59px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 @media (max-width: 550px) {
   .navbar .logo {
