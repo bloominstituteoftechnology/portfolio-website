@@ -178,6 +178,7 @@ body {
     width: 261px;
   }
 }
+
 .navbar .social-icons a:visited {
   color: hsl(213, 19%, 20%);
 }
@@ -239,7 +240,7 @@ body {
   margin-top: 30px;
 }
 .projects {
-  margin: 0px auto 300px;
+  margin: 0px auto;
 }
 @media (max-width: 800px) {
   .projects {
@@ -316,6 +317,42 @@ body {
     font-size: 1.4rem;
   }
 }
+
+/**************styling for Anubhav Who?***********/
+.who {
+  text-align: center;
+}
+
+.about a:link {
+  text-decoration: none;
+}
+.about a:visited {
+  color: hsl(213, 19%, 20%);
+}
+
+.about {
+  display: inline-block;
+  margin: 300px auto;
+  font-size: 6rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.about:after {
+  content: '';
+  width: 0px;
+  height: 10px;
+  display: block;
+  background: #90aae5;
+  transition: 300ms;
+}
+
+.about:hover:after {
+  width: 100%;
+}
+
+/**************styling for footer***********/
 footer {
   background-color: #90AAE5;
   height: auto;
@@ -374,4 +411,43 @@ footer .icons a:visited {
 footer .icons .fab:hover {
   color: hsl(213, 19%, 20%);
   cursor: pointer;
+}
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>*/
+/********************styling for about page*************************/
+.about-main h1{
+  font-size: 5rem;
+  margin-bottom: 0px;
+}
+
+.about-main h2 {
+  font-size: 2rem;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+
+.about-main h1:after {
+  content: '';
+  width: 70%;
+  height: 5px;
+  display: block;
+  background: #90aae5;
+  transition: 300ms;
+  margin: 10px auto 20px;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid gray;
 }
