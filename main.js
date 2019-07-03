@@ -35,7 +35,7 @@ class TypeWriter{
         let typeSpeed = 50;
         
         if(this.isDeleting) {
-            typeSpeed = typeSpeed / 2;
+            typeSpeed = typeSpeed / 3;
         }
         
         // If word is complete

@@ -227,7 +227,7 @@ body {
   margin: 20px 0;
 }
 .main h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: gray;
 }
 @media (max-width: 550px) {
@@ -240,7 +240,7 @@ body {
   margin-top: 30px;
 }
 .projects {
-  margin: 0px auto;
+  margin: 0px auto 300px;
 }
 @media (max-width: 800px) {
   .projects {
@@ -253,9 +253,9 @@ body {
   }
 }
 .projects .project-container {
-  width: 60%;
-  margin: auto;
-  border-radius: 10px;
+  width: 80%;
+  margin: 200px auto;
+  border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   margin-bottom: 100px;
@@ -286,7 +286,7 @@ body {
 .projects .project-text h2 {
   font-size: 2rem;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 20px 0 10px;
 }
 .projects .project-text a {
   color: black;
