@@ -206,6 +206,7 @@ input, select, textarea {
 
 	header {
 		margin: 0 0 3em 0;
+		
 	}
 
 		header > p {
@@ -235,7 +236,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
-		background: beige;
+		/* background: beige;####################################################### */
 	}
 
 /* ********************* */
@@ -306,7 +307,7 @@ input, select, textarea {
 		box-sizing: border-box;
 		align-items: stretch;
 		padding: 5px;
-		border: 2px dashed blue;
+		/* border: 2px dashed blue; ######## */
 	}
 
 		.row > * {
@@ -1652,7 +1653,9 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 		position: relative;
-		border: 4px dashed darkorchid;
+		/* ###################################################################################### */
+		/* border: 4px dashed darkorchid;   */
+		/* ######################################################################################## */
 	}
 
 		.image img {
@@ -1664,12 +1667,12 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 		}
-/* ########  SMALL 6-PHOTO CAROUSEL ######## */
+/* ########  SMALL 6-PHOTO CAROUSEL ############################################## */
 		.image.featured {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
-			border: 3px dashed red;
+			/* border: 3px dashed red;############################################ */
 		}
 
 		.image.left {
@@ -1959,7 +1962,7 @@ input, select, textarea {
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
-		background: lightcoral;
+		/* background: lightcoral;######################################################## */
 			/* width: 250px;
 
 		}
@@ -2109,7 +2112,6 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			background: pink;
 
 		
 
