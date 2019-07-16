@@ -10,23 +10,23 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 
 _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
+- [x] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: `git push origin <firstName-lastName>`.
 
 ### Follow these steps to download your template and start the project:
 
-- [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
-- [ ] You make pick any template you like.  Here are some good choices for a portfolio:
+- [x] Navigate here: [https://html5up.net/](https://html5up.net/)
+- [x] You make pick any template you like.  Here are some good choices for a portfolio:
 	- [https://html5up.net/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
 	- [https://html5up.net/miniport](https://html5up.net/miniport)
 	- [https://html5up.net/dimension](https://html5up.net/dimension)
 
-- [ ] Unzip the code and copy the site to your git repository that you just set up
+- [x] Unzip the code and copy the site to your git repository that you just set up
   * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
 - [ ] Work on the MVP requirements listed below
 
@@ -38,7 +38,7 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 ## MVP Requirements
 
-- [ ] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
+- [x] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
 - [ ] Customize the template to you 
 	- [ ] Update the title tag match your name
 	- [ ] Update the place holder content throughout the template to your information
