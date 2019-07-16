@@ -72,7 +72,9 @@ input, select, textarea {
 	appearance: none;
 }
 
+
 /* Basic */
+
 
 	@-ms-viewport {
 		width: device-width;
