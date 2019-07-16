@@ -15,28 +15,22 @@
 
 .box {
     height: 90%;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
 
 .content {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 500px;
 }
-
-
-
 
 .box2 {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
-
 
 h1 {
     font-weight: 800;
@@ -49,13 +43,11 @@ h1 {
 
 p {
     font-size: 22px;
-    width: 500px;
     margin-top: 10px;
     color: #58626D;
     line-height: 30px;
     text-align: center;
 }
-
 
 a {
     margin: 25px;
@@ -70,23 +62,29 @@ a {
   }
 
 
-  @media (max-width: 500px) {
-    * {
-      background-color: grey;
+  @media (max-width: 550px) {
+    ul { 
+        display: flex;
+        flex-direction: column;
+        align-items; center;
     }
+
+    a {
+        text-align: center;
+    }
+
+
+    .container {
+        height: 100vh;
+        width: 75%;
+        margin: auto;
+    }
+
+    .box {
+        height: 60%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
-
-  a {
-      margin: 25px;
-      text-decoration: none;
-      color: rgb(12, 62, 116);
-      font-size: 16px;
-  }
-
-  .container {
-      margin: 10px;
-  }
-  
-}
-
-
+    }
