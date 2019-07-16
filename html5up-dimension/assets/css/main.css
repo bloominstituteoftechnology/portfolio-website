@@ -1145,8 +1145,7 @@ input, select, textarea {
  256px 256px;
 			background-position: center,
  center;
-			background-repeat: no-repeat,
- repeat;
+			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
 
@@ -1159,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/building.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1294,8 +1293,8 @@ input, select, textarea {
 		#header .logo {
 			width: 5.5rem;
 			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			line-height: 8.5rem;
+			/* border: solid 1px #ffffff; */
 			border-radius: 100%;
 		}
 
@@ -1359,7 +1358,7 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					min-width: 12rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
