@@ -603,7 +603,8 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
-		position: relative;
+		position: relative
+		
 	}
 
 		.icon:before {
@@ -617,6 +618,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			
 		}
 
 		.icon > .label {
@@ -900,6 +902,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		padding: 1rem;
 	}
 
 		ul.icons li {
