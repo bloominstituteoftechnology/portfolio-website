@@ -2634,10 +2634,7 @@ input, select, textarea {
 		position: relative;
 		
 	}
-	.halfdome-img{
-		object-fit: cover;
-  		object-position: -20% 0;
-	}
+	
 		.image img {
 			display: block;
 			border-radius: 4px;
