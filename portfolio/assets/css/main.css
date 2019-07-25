@@ -2777,10 +2777,10 @@ input, select, textarea {
 			width: 2.35em;
 		}
 
-			#header .logo.fa-paper-plane-o:before {
-				left: -0.075em;
-				position: relative;
-			}
+		#header .logo.fa-paper-plane-o:before {
+			left: -0.075em;
+			position: relative;
+		}
 		#header .headshot {
 			height: auto;
 			border-radius: 50%;
