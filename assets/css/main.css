@@ -2078,15 +2078,15 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #00ffcc;
+			color: lightgray;
 		}
 
 		.icon.style2 {
-			color: #00f0ff;
+			color: lightgray;
 		}
 
 		.icon.style3 {
-			color: #76ddff;
+			color: lightgray;
 		}
 
 /* Image */
@@ -2487,7 +2487,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: #008080;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2817,7 +2817,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #D61A3C;
 			color: #c8ece9;
 		}
 
@@ -2980,7 +2980,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #008080;
 			color: #d3d4e4;
 		}
 
