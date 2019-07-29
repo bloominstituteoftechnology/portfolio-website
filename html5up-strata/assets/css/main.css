@@ -2037,6 +2037,11 @@ input, select, textarea {
 
 /* Image */
 
+	/*.sweet {
+		height: 204.94px;
+		width: 348px;
+	}*/
+
 	.image {
 		border-radius: 0.35em;
 		border: 0;
