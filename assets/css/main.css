@@ -3810,6 +3810,17 @@ input, select, textarea {
 					max-width: 20em;
 					width: 100%;
 				}
+				.aboutme {
+					display: flex;
+					flex-direction: column;
+
+				}
+				#family {
+					width: 100%;
+					height: auto;
+					padding: 10%;
+					text-align: center;
+				}
 
 		}
 
