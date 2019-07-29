@@ -1659,3 +1659,19 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+		/* Additions from Josh Luscombe */
+
+		
+		.entry-container {
+
+
+			border-bottom: 1px gray solid;
+			margin-bottom: 1rem;
+		}
+
+		.entry-container p {
+
+			
+		}
