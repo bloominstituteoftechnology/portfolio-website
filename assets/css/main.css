@@ -179,6 +179,7 @@ input, select, textarea {
 	h2 {
 		font-size: 1.35em;
 		line-height: 1.75em;
+		opacity: .75;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -2488,6 +2489,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #008080;
+			opacity: .5
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2497,7 +2499,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #20b2aa !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2847,6 +2849,7 @@ input, select, textarea {
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
 				border-color: rgba(0, 0, 0, 0.125);
+				opacity: 1;
 			}
 
 			.wrapper.style1 header.major p {
@@ -3594,8 +3597,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
-			opacity: 1;
+			font-size: 2.50em;
+			opacity: .5;
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
@@ -3610,7 +3613,6 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background: #fff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3751,6 +3753,15 @@ input, select, textarea {
 	}
 
 /* CTA */
+.aboutme {
+	display: flex;
+	justify-content: center;
+}
+#family {
+	width: 30.25rem;
+	height: auto;
+	padding: 10%;
+}
 
 	#cta .inner {
 		display: -moz-flex;
