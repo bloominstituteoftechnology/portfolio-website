@@ -71,7 +71,9 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
+.justify {
+	text-align: justify;
+}
 /* Basic */
 
 	@-ms-viewport {
@@ -3857,6 +3859,8 @@ input, select, textarea {
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
 			top: 0;
+			padding-left: 10%;
+			padding-right: 10%;
 		}
 
 			#main > header p a {
