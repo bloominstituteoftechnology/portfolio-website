@@ -9,7 +9,8 @@ var settings = {
     slider: {
         
         // Transition speed (in ms)
-        // For timing purposes only. It *must* match the transition speed of ".slider > article".
+        // For timing purposes only. It *must* match the transition speed of
+        // ".slider > article".
         speed: 1500,
         
         // Transition delay (in ms)
@@ -20,37 +21,125 @@ var settings = {
     carousel: {
         
         // Transition speed (in ms)
-        // For timing purposes only. It *must* match the transition speed of ".carousel > article".
-        speed: 350
+        // For timing purposes only. It *must* match the transition speed of
+        // ".carousel > article".
+        speed: 350, width: 0, height: 0, iframeWidth: 0, iframeHeight: 0,
         
     }
     
 };
 
-class Project {
-    constructor( name, title, content, articles, demoUrl = "#", githubUrl = "#" ) {
+class Carosel{
+    constructor(){
+        this.pos = 0;
+        this.projects = [];
+        this.locked = false;
+        
         this.headingElement = document.getElementById( "main-heading" );
         this.p = document.getElementById( "main-p" );
+        this.projectArticle = document.createElement( "article" );
+        this.iframe = document.getElementById( "ifrm" );
+        this.nextButton = document.getElementById( "carousel_next" );
+        this.prevButton = document.getElementById( "carousel_prev" );
+        this.nextButton.addEventListener( "click", this.changeSlide );
+        this.prevButton.addEventListener( "click", this.changeSlide );
+    }
+    
+    changeSlide = ( e ) => {
+        if( this.locked ){
+            return;
+        }
+        
+        this.locked = true;
+        if( e.target.id === "carousel_prev" ){
+            this.pos -= 1;
+            if( this.pos < 0 ){
+                this.pos = this.projects.length - 1;
+            }
+        }else{
+            this.pos += 1;
+            if( this.pos > this.projects.length - 1 ){
+                this.pos = 0;
+            }
+            
+        }
+        
+        this.projectArticle.classList.remove( "visible" );
+        
+        window.setTimeout( () => {
+            this.projects[ this.pos ].setVisible( this.iframe,
+                this.headingElement,
+                this.p
+            );
+            this.projectArticle.classList.add( "visible" );
+            this.locked = false;
+        }, settings.carousel.speed );
+        
+    };
+    
+    addProject = ( project ) => {
+        if( this.projects.length === 0 ){
+            project.setVisible( this.iframe, this.headingElement, this.p );
+        }
+        this.projects.push( project );
+    };
+    
+}
+
+class Project{
+    constructor( name, title, content, articles, videoUrl, demoUrl = "#",
+        githubUrl = "#" ){
+        
         this.name = name;
         this.title = title;
         this.content = content;
         this.articles = articles;
+        this.videoUrl = videoUrl;
         this.demoUrl = demoUrl;
         this.githubUrl = githubUrl;
     }
     
-    setVisible() {
+    setVisible( iframe, headingElement, p ){
         
-        this.headingElement.textContent = this.title;
-        this.p.textContent = this.content;
+        const width = Math.max( document.documentElement.clientWidth,
+            window.innerWidth || 0
+        );
+        const height = Math.max( document.documentElement.clientHeight,
+            window.innerHeight || 0
+        );
+        
+        if( width !== settings.carousel.width || height !==
+            settings.carousel.height ){
+            this.setWidthAndHeight( height, width );
+        }
+        
+        iframe.src = this.videoUrl;
+        iframe.width = settings.carousel.iframeWidth;
+        iframe.height = settings.carousel.iframeHeight;
+        headingElement.textContent = this.title;
+        p.textContent = this.content;
         this.articles.forEach( ( article ) => {
             article.setActive( this.demoUrl, this.githubUrl );
         } );
     }
+    
+    setWidthAndHeight = ( height, width ) => {
+        
+        if( width > 1000 && height > 500 ){
+            settings.carousel.iframeWidth = 560 * 1.25;
+            settings.carousel.iframeHeight = 350 * 1.25;
+        }else if( width > 700 && height > 400 ){
+            settings.carousel.iframeWidth = 560;
+            settings.carousel.iframeHeight = 350;
+        }else{
+            settings.carousel.iframeWidth = 560 * .5;
+            settings.carousel.iframeHeight = 350 * .5;
+        }
+    };
 }
 
-class Article {
-    constructor( name, content, img, articleNumber ) {
+class Article{
+    constructor( name, content, img, articleNumber ){
         this.articleNumber = articleNumber;
         this.heading = document.getElementById( `article${ articleNumber }-heading` );
         this.p = document.getElementById( `article${ articleNumber }-p` );
@@ -60,13 +149,13 @@ class Article {
         this.img = img;
     }
     
-    setActive( demoUrl, githubUrl ) {
+    setActive( demoUrl, githubUrl ){
         this.heading.textContent = this.name;
         this.p.textContent = this.content;
         this.img.setActive();
-        if( this.articleNumber === 1 ) {
+        if( this.articleNumber === 1 ){
             this.link.setAttribute( "href", demoUrl );
-        }else {
+        }else{
             this.link.setAttribute( "href", githubUrl );
             this.link.textContent = "Github Link";
         }
@@ -74,136 +163,101 @@ class Article {
     }
 }
 
-class Img {
-    constructor( src, alt, articleNumber ) {
+class Img{
+    constructor( src, alt, articleNumber ){
         this.imgElement = document.getElementById( `article${ articleNumber }-img` );
         this.src = src;
         this.alt = alt;
     }
     
-    setActive() {
+    setActive(){
         this.imgElement.setAttribute( "src", this.src );
         this.imgElement.setAttribute( "alt", this.alt );
     }
 }
 
-const trillo = new Project(
-    "Trillo",
-    "Trillo hotel landing page.",
-    "This was a landing page I built in the Advanced CSS with SCSS course on Udemy. It was made" +
-    " with flexbox and is fully responsive. It features a side nav bar that is always visible" +
-    " until the viewport size is reduced enough to trigger the media query in which the navbar" +
-    " migrates to the top under the search bar. ",
-    [ new Article(
-        "Tablet View",
-        "This image shows the site with a tablets viewport size and the navbar below the search" +
-        " bar.",
-        new Img( "images/Trillo2.JPG", "Trillo landing page screen shot.", 1 ),
-        1
-    ), new Article(
-        "Phone View",
+const pmDashboard = new Project( "PM/Student Dashboard",
+    "PM Dashboard",
+    "This is a demo of the PM and Student Dashboard another Team Lead" +
+    " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School. I created it because it was a pain for us Team Leads to submit airtable reports. Once I solved the issue for Team Leads, I spread the project out to the student dashboard to give the students the same functionality. ",
+    [
+        new Article( "Tablet View",
+            "This image shows the site with a tablets viewport size and the navbar below the search" +
+            " bar.",
+            new Img( "images/Trillo2.JPG",
+                "Trillo landing page screen shot.",
+                1
+            ),
+            1
+        ), new Article( "Phone View",
         "This is the view of Trillo site from a phones view. The search input is now slightly" +
         " below the users bar allowing for more space. Further down the page the user reviews" +
         " are now in column instead of rows.",
-        new Img( "images/Trillo3.JPG", "Trillo landing page phone view screen shot.", 2 ),
+        new Img( "images/Trillo3.JPG",
+            "Trillo landing page phone view screen shot.",
+            2
+        ),
         2
-    ) ],
-    "https://trillo-jeremiah.netlify.com",
-    "https://github.com/jeremiahtenbrink/Trillo"
+    )
+    ],
+    "https://www.youtube.com/embed/hOsSAvVOYpg?rel=0;&autoplay=1&mute=1",
+    "https://pm-dashboard-ls.netlify.com/",
+    "https://github.com/jeremiahtenbrink/web20",
 );
 
-const bookr = new Project(
-    "OER Bookr",
-    "Bookr landing page.",
-    "This was a landing page I built for a react application while attending Lambda. The project" +
-    " was to build a react application for teachers resources to allow sharing of open source" +
-    " teaching materials.",
-    [ new Article(
-        "Tablet View",
-        "This image shows the site with a tablets viewport size and the navbar below the search" +
-        " bar.",
-        new Img( "images/OerBookr2.JPG", "Bookr landing page screen shot.", 1 ),
-        1
-    ), new Article(
-        "Phone View",
-        "This is the view of OER Bookr site from a phones view. The search input is now slightly" +
+const studentDashbaord = new Project( "PM/Student Dashboard",
+    "Student Dashboard",
+    "This is a demo of the PM and Student Dashboard another Team Lead" +
+    " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School. I created it because it was a pain for us Team Leads to submit airtable reports. Once I solved the issue for Team Leads, I spread the project out to the student dashboard to give the students the same functionality. ",
+    [
+        new Article( "Tablet View",
+            "This image shows the site with a tablets viewport size and the navbar below the search" +
+            " bar.",
+            new Img( "images/Trillo2.JPG",
+                "Trillo landing page screen shot.",
+                1
+            ),
+            1
+        ), new Article( "Phone View",
+        "This is the view of Trillo site from a phones view. The search input is now slightly" +
         " below the users bar allowing for more space. Further down the page the user reviews" +
         " are now in column instead of rows.",
-        new Img( "images/OerBookr3.JPG", "Bookr landing page phone view screen shot.", 2 ),
+        new Img( "images/Trillo3.JPG",
+            "Trillo landing page phone view screen shot.",
+            2
+        ),
         2
-    ) ],
-    "https://bookr-jeremiah.netlify.com",
-    "https://github.com/oer-bookr/ui-jeremiah-tenbrink"
+    )
+    ],
+    "https://www.youtube.com/embed/hOsSAvVOYpg?rel=0;&autoplay=1&mute=1",
+    "https://pm-dashboard-ls.netlify.com/",
+    "https://github.com/jeremiahtenbrink/web20",
 );
 
-const natours = new Project(
-    "Natours",
-    "Natours Project",
-    "This was a landing page I built while taking the Advanced CSS course on Udemy. Its a fully" +
-    " responsive landing page built with no flexbox or css grid. ",
-    [ new Article(
-        "Tablet View",
-        "This image shows the site with a tablets viewport size and the navbar below the search" +
-        " bar.",
-        new Img( "images/Natours2.JPG", "Natours landing page screen shot.", 1 ),
-        1
-    ), new Article(
-        "Phone View",
-        "This is the view of Natours site from a phones view. The search input is now slightly" +
-        " below the users bar allowing for more space. Further down the page the user reviews" +
-        " are now in column instead of rows.",
-        new Img( "images/Natours3.JPG", "Natours landing page phone view screen shot.", 2 ),
-        2,
-    ) ],
-    "https://natours-jeremiah.netlify.com",
-    "https://github.com/jeremiahtenbrink/Natours"
-);
+const carosel = new Carosel();
+carosel.addProject( studentDashbaord );
+carosel.addProject( pmDashboard );
 
-const nexter = new Project(
-    "Nexter",
-    "Nexter Project",
-    "This was a landing page I built while taking the Advanced CSS course on Udemy. Its a fully" +
-    " responsive landing page built with css grid.",
-    [ new Article(
-        "Tablet View",
-        "This image shows the site with a tablets viewport size and the navbar below the search" +
-        " bar.",
-        new Img( "images/Nexter2.JPG", "Nexter landing page screen shot.", 1 ),
-        1
-    ), new Article(
-        "Phone View",
-        "This is the view of Nexter site from a phones view. The search input is now slightly" +
-        " below the users bar allowing for more space. Further down the page the user reviews" +
-        " are now in column instead of rows.",
-        new Img( "images/Nexter3.JPG", "Nexter landing page phone view screen shot.", 2 ),
-        2
-    ) ],
-    "https://nexter-jeremiah.netlify.com",
-    "https://github.com/jeremiahtenbrink/Nexter"
-);
-
-( function( $ ) {
+( function( $ ){
     
-    var $window = $( window ),
-        $body = $( "body" );
+    var $window = $( window ), $body = $( "body" );
     
     /**
      * Custom slider for Altitude.
      * @return {jQuery} jQuery object.
      */
-    $.fn._slider = function( options ) {
+    $.fn._slider = function( options ){
         
-        var $window = $( window ),
-            $this = $( this );
+        var $window = $( window ), $this = $( this );
         
         // Handle no/multiple elements.
-        if( this.length == 0 ) {
+        if( this.length == 0 ){
             return $this;
         }
         
-        if( this.length > 1 ) {
+        if( this.length > 1 ){
             
-            for( var i = 0; i < this.length; i++ ) {
+            for( var i = 0; i < this.length; i++ ){
                 $( this[ i ] )._slider( options );
             }
             
@@ -212,25 +266,22 @@ const nexter = new Project(
         }
         
         // Vars.
-        var current = 0, pos = 0, lastPos = 0,
-            slides = [],
-            $slides = $this.children( "article" ),
-            intervalId,
-            isLocked = false,
+        var current = 0, pos = 0, lastPos = 0, slides = [],
+            $slides = $this.children( "article" ), intervalId, isLocked = false,
             i = 0;
         
         // Functions.
-        $this._switchTo = function( x, stop ) {
+        $this._switchTo = function( x, stop ){
             
             // Handle lock.
-            if( isLocked || pos == x ) {
+            if( isLocked || pos == x ){
                 return;
             }
             
             isLocked = true;
             
             // Stop?
-            if( stop ) {
+            if( stop ){
                 window.clearInterval( intervalId );
             }
             
@@ -245,11 +296,12 @@ const nexter = new Project(
             slides[ pos ].addClass( "visible" ).addClass( "top" );
             
             // Finish hiding last slide after a short delay.
-            window.setTimeout( function() {
+            window.setTimeout( function(){
                 
-                slides[ lastPos ].addClass( "instant" ).removeClass( "visible" );
+                slides[ lastPos ].addClass( "instant" )
+                    .removeClass( "visible" );
                 
-                window.setTimeout( function() {
+                window.setTimeout( function(){
                     
                     slides[ lastPos ].removeClass( "instant" );
                     isLocked = false;
@@ -262,7 +314,7 @@ const nexter = new Project(
         
         // Slides.
         $slides
-            .each( function() {
+            .each( function(){
                 
                 var $slide = $( this );
                 
@@ -279,17 +331,17 @@ const nexter = new Project(
             .addClass( "top" );
         
         // Bail if we only have a single slide.
-        if( slides.length == 1 ) {
+        if( slides.length == 1 ){
             return;
         }
         
         // Main loop.
-        intervalId = window.setInterval( function() {
+        intervalId = window.setInterval( function(){
             
             // Increment.
             current++;
             
-            if( current >= slides.length ) {
+            if( current >= slides.length ){
                 current = 0;
             }
             
@@ -300,170 +352,163 @@ const nexter = new Project(
         
     };
     
-    /**
-     * Custom carousel for Altitude.
-     * @return {jQuery} jQuery object.
-     */
-    $.fn._carousel = function( options ) {
-        
-        var $window = $( window ),
-            $this = $( this );
-        
-        // Handle no/multiple elements.
-        if( this.length == 0 ) {
-            return $this;
-        }
-        
-        if( this.length > 1 ) {
-            
-            for( var i = 0; i < this.length; i++ ) {
-                $( this[ i ] )._slider( options );
-            }
-            
-            return $this;
-            
-        }
-        
-        // Vars.
-        var current = 0, pos = 0, lastPos = 0,
-            slides = [],
-            $slides = $this.children( "article" ),
-            articles = [],
-            intervalId,
-            isLocked = false,
-            i = 0;
-        
-        articles.push( trillo );
-        articles.push( bookr );
-        articles.push( nexter );
-        articles.push( natours );
-        
-        // Functions.
-        $this._switchTo = function( x, stop ) {
-            
-            // Handle lock.
-            if( isLocked || pos == x ) {
-                return;
-            }
-            
-            isLocked = true;
-            
-            // Stop?
-            if( stop ) {
-                window.clearInterval( intervalId );
-            }
-            
-            // Update positions.
-            lastPos = pos;
-            pos = x;
-            
-            // Hide last slide.
-            slides[ lastPos ].removeClass( "visible" );
-            
-            // Finish hiding last slide after a short delay.
-            window.setTimeout( function() {
-                
-                // Hide last slide (display).
-                slides[ lastPos ].hide();
-                
-                // Show new slide (display).
-                slides[ pos ].show();
-                
-                // Show new new slide.
-                window.setTimeout( function() {
-                    slides[ pos ].addClass( "visible" );
-                    let content = slides[ pos ].children( ".content" );
-                    let h3 = content[ 0 ].children[ 0 ];
-                    let slideName = h3.textContent;
-                    articles.forEach( ( article ) => {
-                        if( article.name === slideName ) {
-                            article.setVisible();
-                        }
-                    } );
-                }, 25 );
-                
-                // Unlock after sort delay.
-                window.setTimeout( function() {
-                    isLocked = false;
-                }, options.speed );
-                
-            }, options.speed );
-            
-        };
-        
-        // Slides.
-        $slides
-            .each( function() {
-                
-                var $slide = $( this );
-                
-                // Add to slides.
-                slides.push( $slide );
-                
-                // Hide.
-                $slide.hide();
-                
-                i++;
-                
-            } );
-        
-        // Nav.
-        $this
-            .on( "click", ".next", function( event ) {
-                
-                // Prevent default.
-                event.preventDefault();
-                event.stopPropagation();
-                
-                // Increment.
-                current++;
-                
-                if( current >= slides.length ) {
-                    current = 0;
-                }
-                
-                // Switch.
-                $this._switchTo( current );
-                
-            } )
-            .on( "click", ".previous", function( event ) {
-                
-                // Prevent default.
-                event.preventDefault();
-                event.stopPropagation();
-                
-                // Decrement.
-                current--;
-                
-                if( current < 0 ) {
-                    current = slides.length - 1;
-                }
-                
-                // Switch.
-                $this._switchTo( current );
-                
-            } );
-        
-        // Initial slide.
-        slides[ pos ]
-            .show()
-            .addClass( "visible" );
-        let content = slides[ pos ].children( ".content" );
-        let h3 = content[ 0 ].children[ 0 ];
-        let slideName = h3.textContent;
-        articles.map( ( article ) => {
-            if( article.name === slideName ) {
-                article.setVisible( article );
-            }
-        } );
-        let mainContent = document.getElementById( "main-content" );
-        
-        // Bail if we only have a single slide.
-        if( slides.length === 1 ) {
-        
-        }
-        
-    };
+    // /**
+    //  * Custom carousel for Altitude.
+    //  * @return {jQuery} jQuery object.
+    //  */
+    // $.fn._carousel = function( options ){
+    //
+    //     var $window = $( window ), $this = $( this );
+    //
+    //     // Handle no/multiple elements.
+    //     if( this.length == 0 ){
+    //         return $this;
+    //     }
+    //
+    //     if( this.length > 1 ){
+    //
+    //         for( var i = 0; i < this.length; i++ ){
+    //             $( this[ i ] )._slider( options );
+    //         }
+    //
+    //         return $this;
+    //
+    //     }
+    //
+    //     // Vars.
+    //     var current = 0, pos = 0, lastPos = 0, slides = [],
+    //         $slides = $this.children( "article" ), articles = [], intervalId,
+    //         isLocked = false, i = 0;
+    //
+    //     articles.push( pmDashboard );
+    //     articles.push( studentDashbaord );
+    //
+    //     // Functions.
+    //     $this._switchTo = function( x, stop ){
+    //
+    //         // Handle lock.
+    //         if( isLocked || pos == x ){
+    //             return;
+    //         }
+    //
+    //         isLocked = true;
+    //
+    //         // Stop?
+    //         if( stop ){
+    //             window.clearInterval( intervalId );
+    //         }
+    //
+    //         // Update positions.
+    //         lastPos = pos;
+    //         pos = x;
+    //
+    //         // Hide last slide.
+    //         slides[ lastPos ].removeClass( "visible" );
+    //
+    //         // Finish hiding last slide after a short delay.
+    //         window.setTimeout( function(){
+    //
+    //             // Hide last slide (display).
+    //             slides[ lastPos ].hide();
+    //
+    //             // Show new slide (display).
+    //             slides[ pos ].show();
+    //
+    //             // Show new new slide.
+    //             window.setTimeout( function(){
+    //                 slides[ pos ].addClass( "visible" );
+    //                 let content = slides[ pos ].children( ".content" );
+    //                 let h3 = content[ 0 ].children[ 0 ];
+    //                 let slideName = h3.textContent;
+    //                 articles.forEach( ( article ) => {
+    //                     if( article.name === slideName ){
+    //                         article.setVisible();
+    //                     }
+    //                 } );
+    //             }, 25 );
+    //
+    //             // Unlock after sort delay.
+    //             window.setTimeout( function(){
+    //                 isLocked = false;
+    //             }, options.speed );
+    //
+    //         }, options.speed );
+    //
+    //     };
+    //
+    //     // Slides.
+    //     $slides
+    //         .each( function(){
+    //
+    //             var $slide = $( this );
+    //
+    //             // Add to slides.
+    //             slides.push( $slide );
+    //
+    //             // Hide.
+    //             $slide.hide();
+    //
+    //             i++;
+    //
+    //         } );
+    //
+    //     // Nav.
+    //     $this
+    //         .on( "click", ".next", function( event ){
+    //
+    //             // Prevent default.
+    //             event.preventDefault();
+    //             event.stopPropagation();
+    //
+    //             // Increment.
+    //             current++;
+    //
+    //             if( current >= slides.length ){
+    //                 current = 0;
+    //             }
+    //
+    //             // Switch.
+    //             $this._switchTo( current );
+    //
+    //         } )
+    //         .on( "click", ".previous", function( event ){
+    //
+    //             // Prevent default.
+    //             event.preventDefault();
+    //             event.stopPropagation();
+    //
+    //             // Decrement.
+    //             current--;
+    //
+    //             if( current < 0 ){
+    //                 current = slides.length - 1;
+    //             }
+    //
+    //             // Switch.
+    //             $this._switchTo( current );
+    //
+    //         } );
+    //
+    //     // Initial slide.
+    //     slides[ pos ]
+    //         .show()
+    //         .addClass( "visible" );
+    //     let content = slides[ pos ].children( ".content" );
+    //     let h3 = content[ 0 ].children[ 0 ];
+    //     let slideName = h3.textContent;
+    //     articles.map( ( article ) => {
+    //         if( article.name === slideName ){
+    //             article.setVisible( article );
+    //         }
+    //     } );
+    //     let mainContent = document.getElementById( "main-content" );
+    //
+    //     // Bail if we only have a single slide.
+    //     if( slides.length === 1 ){
+    //
+    //     }
+    //
+    // };
     
     // Breakpoints.
     breakpoints( {
@@ -476,22 +521,23 @@ const nexter = new Project(
     } );
     
     // Play initial animations on page load.
-    $window.on( "load", function() {
-        window.setTimeout( function() {
+    $window.on( "load", function(){
+        window.setTimeout( function(){
             $body.removeClass( "is-preload" );
         }, 100 );
     } );
     
     // Fix: Object-fit (pseudo) polyfill.
-    if( !browser.canUse( "object-fit" ) ) {
-        $( "img[data-position]" ).each( function() {
+    if( !browser.canUse( "object-fit" ) ){
+        $( "img[data-position]" ).each( function(){
             
-            var $this = $( this ),
-                $parent = $this.parent();
+            var $this = $( this ), $parent = $this.parent();
             
             // Apply img's src to parent.
             $parent
-                .css( "background-image", "url(\"" + $this.attr( "src" ) + "\")" )
+                .css( "background-image",
+                    "url(\"" + $this.attr( "src" ) + "\")"
+                )
                 .css( "background-size", "cover" )
                 .css( "background-repeat", "no-repeat" )
                 .css( "background-position", $this.data( "position" ) );

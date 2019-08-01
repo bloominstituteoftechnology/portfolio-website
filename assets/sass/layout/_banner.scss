@@ -82,15 +82,19 @@
     position: relative;
 
     > .slider__pic1 {
-      background-image: url("/images/Gau21-1200w.JPG");
+      background-image: url("/images/JeremiahNavy.jpg");
     }
 
     > .slider__pic2 {
-      background-image: url("/images/JeremiahNavy-1200w.jpg");
+      background-image: url("/images/dhe-haivan-JwLiLq24QbA-unsplash.jpg");
     }
 
     > .slider__pic3 {
-      background-image: url("/images/SarJumps-600w.jpeg");
+      background-image: url("/images/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg");
+    }
+
+    > .slider__pic4 {
+      background-image: url("/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
     }
 
     > article {
@@ -156,6 +160,7 @@
     > .items {
       @include vendor('flex-direction', 'column-reverse');
       width: 40%;
+
       section {
         width: 100%;
       }
@@ -166,16 +171,20 @@
       margin: 0 auto;
       width: 60%;
 
-      .slider__pic1{
+      .slider__pic1 {
         background-position: top center;
       }
 
       .slider__pic2 {
-        background-position: top center;
+        background-position: top right;
       }
 
       .slider__pic3 {
-        background-position: top center;
+        background-position: top right;
+      }
+
+      .slider__pic4 {
+        background-position: top right;
       }
     }
   }
@@ -186,6 +195,7 @@
     > .items {
       @include vendor('flex-direction', 'row');
       width: 100%;
+
       section {
         width: 50%;
         @include padding(3em, 3em);
