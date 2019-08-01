@@ -177,65 +177,39 @@ class Img{
 }
 
 const pmDashboard = new Project( "PM/Student Dashboard",
-    "PM Dashboard",
+    "PM/Student Dashboard",
     "This is a demo of the PM and Student Dashboard another Team Lead" +
-    " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School. I created it because it was a pain for us Team Leads to submit airtable reports. Once I solved the issue for Team Leads, I spread the project out to the student dashboard to give the students the same functionality. ",
+    " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School." +
+    " I created it because it was a pain for us Team Leads to submit airtable reports. " +
+    "Once I solved the issue for Team Leads, I spread the project out to the" +
+    "student dashboard to give the students the same functionality. ",
     [
-        new Article( "Tablet View",
-            "This image shows the site with a tablets viewport size and the navbar below the search" +
-            " bar.",
-            new Img( "images/Trillo2.JPG",
-                "Trillo landing page screen shot.",
-                1
-            ),
+        new Article( "Firebase Api",
+            "We leveraged Google auth and firebase for authentication and" +
+            " storing data.",
+            new Img( "/images/GoogleSignin.JPG", "Google Auth Signin", 1 ),
             1
-        ), new Article( "Phone View",
-        "This is the view of Trillo site from a phones view. The search input is now slightly" +
-        " below the users bar allowing for more space. Further down the page the user reviews" +
-        " are now in column instead of rows.",
-        new Img( "images/Trillo3.JPG",
-            "Trillo landing page phone view screen shot.",
+        ), new Article( "React",
+        "We utilized React, React-Router, and Redux to build out frontend." +
+        " The PM-Dashboard comes with various forms that are to be subbmited on" +
+        " daily and weekly basis. Including daily attendance, end of day" +
+        " retrospective, friday sprint forms, and daily one on one reports." +
+        " For those that have access to the admin section also get access to" +
+        " the course structure and links along with access to a list of all" +
+        " students enrolled into the student dashboard.",
+        new Img( "images/PMDashboard.JPG",
+            "PM Dashboard main dashboard view.",
             2
         ),
         2
     )
     ],
     "https://www.youtube.com/embed/hOsSAvVOYpg?rel=0;&autoplay=1&mute=1",
-    "https://pm-dashboard-ls.netlify.com/",
-    "https://github.com/jeremiahtenbrink/web20",
-);
-
-const studentDashbaord = new Project( "PM/Student Dashboard",
-    "Student Dashboard",
-    "This is a demo of the PM and Student Dashboard another Team Lead" +
-    " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School. I created it because it was a pain for us Team Leads to submit airtable reports. Once I solved the issue for Team Leads, I spread the project out to the student dashboard to give the students the same functionality. ",
-    [
-        new Article( "Tablet View",
-            "This image shows the site with a tablets viewport size and the navbar below the search" +
-            " bar.",
-            new Img( "images/Trillo2.JPG",
-                "Trillo landing page screen shot.",
-                1
-            ),
-            1
-        ), new Article( "Phone View",
-        "This is the view of Trillo site from a phones view. The search input is now slightly" +
-        " below the users bar allowing for more space. Further down the page the user reviews" +
-        " are now in column instead of rows.",
-        new Img( "images/Trillo3.JPG",
-            "Trillo landing page phone view screen shot.",
-            2
-        ),
-        2
-    )
-    ],
-    "https://www.youtube.com/embed/hOsSAvVOYpg?rel=0;&autoplay=1&mute=1",
-    "https://pm-dashboard-ls.netlify.com/",
+    "https://pm-dashboard-ls.netlify.com/start",
     "https://github.com/jeremiahtenbrink/web20",
 );
 
 const carosel = new Carosel();
-carosel.addProject( studentDashbaord );
 carosel.addProject( pmDashboard );
 
 ( function( $ ){
@@ -552,10 +526,6 @@ carosel.addProject( pmDashboard );
     // Sliders.
     $( ".slider" )
         ._slider( settings.slider );
-    
-    // Carousels.
-    $( ".carousel" )
-        ._carousel( settings.carousel );
     
     // Menu.
     $( "#menu" )
