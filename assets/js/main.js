@@ -512,7 +512,7 @@ carosel.addProject( pmDashboard );
                 .css( "background-image",
                     "url(\"" + $this.attr( "src" ) + "\")"
                 )
-                .css( "background-size", "cover" )
+                .css( "background-size", "contain" )
                 .css( "background-repeat", "no-repeat" )
                 .css( "background-position", $this.data( "position" ) );
             

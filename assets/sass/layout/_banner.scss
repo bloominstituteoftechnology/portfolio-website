@@ -90,11 +90,19 @@
     }
 
     > .slider__pic3 {
-      background-image: url("/images/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg");
+      background-image: url("/images/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
     }
 
     > .slider__pic4 {
       background-image: url("/images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg");
+    }
+
+    > .slider__pic5 {
+      background-image: url("/images/daniel-korpai-HyTwtsk8XqA-unsplash.jpg");
+    }
+
+    > .slider__pic6 {
+      background-image: url("/images/tianyi-ma-WiONHd_zYI4-unsplash.jpg");
     }
 
     > article {
@@ -184,6 +192,14 @@
       }
 
       .slider__pic4 {
+        background-position: top right;
+      }
+
+      .slider__pic5 {
+        background-position: top center;
+      }
+
+      .slider__pic6 {
         background-position: top right;
       }
     }
