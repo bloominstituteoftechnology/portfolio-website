@@ -6,7 +6,7 @@
 
 /* Icon */
 
-.icon{
+.icon {
   @include icon;
   border-bottom: none;
   cursor: default;
@@ -82,9 +82,6 @@
 
   &.accent3 {
     color: _palette(accent3, bg);
-    border-radius: 50%;
-    padding: .9rem;
-    box-shadow: -2px 4px 6px 1px #0000001a;
   }
 
   &.accent4 {

@@ -176,13 +176,16 @@ class Img{
     }
 }
 
-const pmDashboard = new Project( "PM/Student Dashboard",
-    "PM/Student Dashboard",
-    "This is a demo of the PM and Student Dashboard another Team Lead" +
+const pmDashboard = new Project( "PM Dashboard",
+    "PM Dashboard",
+    "This is a demo of the PM Dashboard another Team Lead" +
     " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School." +
-    " I created it because it was a pain for us Team Leads to submit airtable reports. " +
-    "Once I solved the issue for Team Leads, I spread the project out to the" +
-    "student dashboard to give the students the same functionality. ",
+    " I created it because Team Leads were spending almost an hour a day" +
+    " trying to submit airtable reports. This web app helped solve this" +
+    " problem by auto populating airtable report with prefilled data such as" +
+    " student names for attendance and for one on one reports. Once I solved" +
+    " this problem for Team Leads we spread the project out to" +
+    " the student dashboard giving students the same functionality. ",
     [
         new Article( "Firebase Api",
             "We leveraged Google auth and firebase for authentication and" +
@@ -204,13 +207,48 @@ const pmDashboard = new Project( "PM/Student Dashboard",
         2
     )
     ],
-    "https://www.youtube.com/embed/hOsSAvVOYpg?rel=0;&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&autoplay=1&mute=1",
     "https://pm-dashboard-ls.netlify.com/start",
     "https://github.com/jeremiahtenbrink/web20",
 );
 
+const studentDashboard = new Project( "Student Dashboard",
+    "Student Dashboard",
+    "Student Dashboard is a web app that was extended from the PM Dashboard. " +
+    "This Student Dashboard is linked to the PM Dashboard. It allows" +
+    " students to input their Team Lead. Their Team Lead can then keep track" +
+    " of the students attendance and the classes they have completed. Each" +
+    " class has links to the Project for the lesson. As well as links to the" +
+    " airtable report the student is to submit at the end of the day. ",
+    [
+        new Article( "Firebase Api",
+            "Login is handled by firebase google auth api.",
+            new Img( "/images/StudentDashboardLogin.JPG",
+                "Google Auth" + " Signin",
+                1
+            ),
+            1
+        ), new Article( "React",
+        "This dashboard is created with React, React Redux, React Router and" +
+        " many other library's. It is linked to the PM Dashboard via the" +
+        " firebase api. It subscribes to the students info so once the info" +
+        " is updated by the Team Lead on the PM Dashboard it is" +
+        " automatically updated on the student dashboard.",
+        new Img( "/images/StudentDashboardMain.JPG",
+            "Student Dashboard Main",
+            2
+        ),
+        2
+    )
+    ],
+    "https://www.youtube.com/embed/TwY_q5fxTEE?rel=0;&autoplay=1&mute=1",
+    "https://ls-student-dashboard.netlify.com",
+    "https://github.com/jeremiahtenbrink/student-dashboard",
+);
+
 const carosel = new Carosel();
 carosel.addProject( pmDashboard );
+carosel.addProject( studentDashboard );
 
 ( function( $ ){
     
