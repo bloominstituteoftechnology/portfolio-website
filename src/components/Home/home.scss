@@ -1,0 +1,24 @@
+.home {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px groove whitesmoke;
+    border-bottom: 1px groove whitesmoke;
+
+    h1 {
+        font-size: 5rem;
+        margin: 33.5px -50px;
+
+        @media (max-width: 500px){
+            width: 100%;
+        }
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 50;
+    }
+}

@@ -1,0 +1,63 @@
+.about {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    background: #203838bb;
+    padding: 0 25px;
+    background-clip: content-box;
+    border-top: 1px ridge whitesmoke;
+    border-bottom: 1px ridge whitesmoke;
+    box-shadow: black 0 0 50px;
+
+    @media (max-width: 500px) {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin: 33.5px 50px -50px;
+    }
+
+    &.header-img {
+        background: url(../../images/globe.jpg) repeat-y center center fixed / contain;
+        align-self: center;
+        margin-top: 50px;
+        border: 1px ridge whitesmoke;
+        padding: 0;
+        border-radius: 5px;
+        max-width: 600px;
+        height: 250px;
+
+        @media (max-width: 500px) {
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            height: 32.5vw;
+        }
+    }
+
+    p {
+        font-size: 2.2rem;
+        padding: 1px 75px;
+
+        @media (max-width: 500px) {
+            padding: 1px 15px;
+        }
+
+        &:first-child {
+            padding-top: 50px;
+        }
+
+        a {
+            color: #f5f5f5;
+            text-decoration: underline dotted;
+
+            &:hover {
+                text-decoration-color: #5f5f5f50;
+            }
+        }
+    }
+}
