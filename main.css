@@ -140,6 +140,8 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.5em;
+		text-shadow: 0 0 3px aquamarine, 0 0 5px slateblue;
+		font-weight: bold;
 	}
 
 	header {
@@ -1764,6 +1766,7 @@ input, select, textarea {
 			.image.avatar48 img {
 				width: 60px;
 				height: 60px;
+				border-radius: 50%;
 			}
 
 		.image.fit {
