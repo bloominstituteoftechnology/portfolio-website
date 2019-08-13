@@ -3218,4 +3218,9 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
-	}
+    }
+    
+/* custom */
+ a.underlined {
+     text-decoration: underline solid;
+ }
