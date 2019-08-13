@@ -143,7 +143,7 @@ input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
-		font-size: 1rem;
+		font-size: 1rem;  /* did not understand rem yesterday 8/12*/
 		line-height: 1.65;
 	}
 
@@ -357,7 +357,7 @@ input, select, textarea {
 
 				form > .fields > .field {
 					padding: 1.5rem 0 0 1.5rem;
-					width: calc(100% - 1.5rem);
+					width: calc(100% - 1.5rem);  /* not sure what cal ...*/
 				}
 
 					form > .fields > .field.half {
