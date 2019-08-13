@@ -1296,6 +1296,10 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+
+		}
+		.log span{
+			width: 200px;
 		}
 
 			#header .logo .icon:before {
