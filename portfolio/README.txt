@@ -1,13 +1,12 @@
-Future Imperfect by HTML5 UP
+Dimension by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-It's been a long time coming, but I've finally gotten around to creating a brand new
-blog-style template (and the first since Striped, which came out waaaaay back in 2013).
-Anyway, Future Imperfect features a clean, expansive layout, a toggleable search box,
-and -- because pretty much all modern browsers can use it now -- a whole lot of flexbox
-action. Enjoy it :)
+This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
+and a cool depth effect (click on a menu item to see what I mean). Simple, fully
+responsive, and kitted out with all the usual pre-styled elements you'd expect.
+Hope you dig it :)
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.
