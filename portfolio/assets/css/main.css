@@ -697,7 +697,7 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
+			width: 73%;
 		}
 
 			.image.main img {
@@ -1179,6 +1179,12 @@ input, select, textarea {
 		body.is-preload #bg:before {
 			background-color: #000000;
 		}
+		#about{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
 
 /* Wrapper */
 
@@ -1306,6 +1312,12 @@ input, select, textarea {
 				font-size: 2rem;
 			}
 
+		#work{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
 		#header .content {
 			border-style: solid;
 			border-color: #ffffff;
@@ -1550,7 +1562,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: #86949ed9;
 			border-radius: 4px;
 			opacity: 0;
 		}
