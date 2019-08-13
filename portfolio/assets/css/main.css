@@ -82,6 +82,7 @@ input, select, textarea {
 
 		html, body {
 			min-width: 320px;
+			height:100%;
 		}
 
 	}
@@ -141,8 +142,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", sans-serif;
-		font-weight: 300;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
 		font-size: 1rem;
 		line-height: 1.65;
 	}
@@ -176,7 +177,8 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: 600;
+		font-family: 'Allan', cursive;
+		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
@@ -1139,27 +1141,31 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
 		#bg:after {
-			-moz-transform: scale(1.125);
-			-webkit-transform: scale(1.125);
-			-ms-transform: scale(1.125);
-			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
-			background-position: center;
+			-moz-transform: cover;
+			-webkit-transform: cover;
+			-ms-transform: cover;
+			transform: cover;
+			/* -moz-transition: -moz-transform 1.025s ease-in-out, -moz-filter 0.025s ease-in-out;
+			-webkit-transition: -webkit-transform 1.025s ease-in-out, -webkit-filter 0.025s ease-in-out;
+			-ms-transition: -ms-transform 0.025s ease-in-out, -ms-filter 0.025s ease-in-out; */
+			/* transition: transform 0.025s ease-in-out, filter 0.025s ease-in-out; */
+			background-image: url("https://images.unsplash.com/photo-1509337613189-68fa9d83d9dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1354&q=80");
+			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
+			background-attachment:fixed;
+			height:100%;
 		}
 
 		body.is-article-visible #bg:after {
@@ -1170,7 +1176,7 @@ input, select, textarea {
 			-moz-filter: blur(0.2rem);
 			-webkit-filter: blur(0.2rem);
 			-ms-filter: blur(0.2rem);
-			filter: blur(0.2rem);
+			filter: blur(2.2rem);
 		}
 
 		body.is-preload #bg:before {
@@ -1251,10 +1257,6 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
 	}
@@ -1366,11 +1368,12 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: #F8F8FF;
+						color:black;
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+						background-color: #F8F8FF
 					}
 
 		#header nav.use-middle:after {
@@ -1543,7 +1546,6 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1656,3 +1658,38 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		.workButtons{
+			background: #44759D;
+			border-radius: 100%;
+			color: #ffffff;
+			height: 2.5em;
+			line-height: 2.5em;
+			width: 2.5em;
+			opacity:0.9;
+			
+		}
+
+		.workSkills{
+			width:40%;
+			margin:2% 0;
+			display:flex;
+			align-content:center;
+			flex-wrap:wrap;
+			justify-content:flex-start;
+			align-items:center;
+		}
+		.workSkills span{
+			margin-left:3%;
+		}
+		.experience{
+			text-align:center;
+			display:flex;
+			flex-direction:row;
+			flex-wrap:wrap;
+			justify-content:space-between;
+			margin-bottom:5%;
+		}
+		
+
+		
