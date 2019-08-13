@@ -2083,6 +2083,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
+		display: none;
 		margin: 2.5em 0 0 0;
 	}
 
@@ -2173,10 +2174,10 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/art.jpg");
 		background-position: center center;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
+		background-size: 80%vh;
+		background-repeat: repeat-x;
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
@@ -2208,6 +2209,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
+		display: none;
 		text-align: center;
 		overflow: hidden;
 	}
@@ -2289,12 +2291,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		
 		position: relative;
 		color: #858484;
 		padding: 4em 0;
 	}
 
 		#footer:before {
+			display: none;
 			content: '';
 			position: absolute;
 			top: 0;
@@ -2307,35 +2311,42 @@ input, select, textarea {
 		}
 
 		#footer a {
+			display: none;
 			color: #c5c4c4;
 		}
 
 		#footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
+			display: none;
 			color: #fff;
 		}
 
 			#footer h2 a, #footer h3 a, #footer h4 a, #footer h5 a, #footer h6 a, #footer strong a, #footer b a {
+				display: none;
 				color: inherit;
 			}
 
 		#footer ul.contact li,
 		#footer ul.dates li,
 		#footer ul.divided li {
+			display: none;
 			border-top-color: #353434;
 			border-top-color: rgba(255, 255, 255, 0.05);
 		}
 
 		#footer header {
+			display: none;
 			margin: 0 0 3em 0;
 		}
 
 			#footer header h2 {
+				display: none;
 				font-size: 1.75em;
 			}
 
 /* Copyright */
 
 	#copyright {
+		
 		text-align: center;
 		margin: 3em 0 2em 0;
 	}
@@ -2905,4 +2916,4 @@ input, select, textarea {
 				padding: 40px 0 20px 0;
 			}
 
-	}
+	} /**************** My code ***********************/
