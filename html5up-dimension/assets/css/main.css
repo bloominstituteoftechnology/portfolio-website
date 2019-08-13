@@ -892,7 +892,11 @@ input, select, textarea {
 						}
 
 		}
-
+		ul.actions:not(.fixed) li input:hover[type="submit"] {
+background: gold;
+		}ul.actions:not(.fixed) li input:hover[type="reset"]{
+			background: red;
+		}
 /* Icons */
 
 	ul.icons {
@@ -1658,4 +1662,8 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+
+		input#name:hover,input#email:hover,#message:hover {
+        border: 1px solid gold;
 		}
