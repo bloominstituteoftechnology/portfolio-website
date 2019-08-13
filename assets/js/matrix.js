@@ -1,7 +1,7 @@
 
   var s = document.documentElement.clientWidth;
   var s2 = document.documentElement.clientHeight;
-  var width = q.width = s - 30;
+  var width = q.width = s;
   var height = q.height = s2;
   var letters = Array(256).join(1).split('');
   var draw = function () {
