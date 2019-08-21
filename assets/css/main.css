@@ -3208,7 +3208,7 @@ input, select, textarea {
 			height: 100%;
 			opacity: 0.5;
 			background-color: #212931;
-			background-image: url("../../images/newyork-img.jpg"), linear-gradient(0deg, rgba(138, 32, 32, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/web-dev7.jpg"), linear-gradient(0deg, rgba(138, 32, 32, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: cover,								100%,														100%, 100%;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
