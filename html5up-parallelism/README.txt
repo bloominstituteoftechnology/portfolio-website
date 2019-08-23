@@ -43,4 +43,4 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		normalizeWheel (@miorel + @pieterv of Facebook)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+		Responsive Tools (github.com/ajlkn/responsive-tools)sssssssssssssssssssssssssssssssssssssssssssssssss
