@@ -296,7 +296,10 @@ input, select, textarea {
 		}
 
 		body.is-poptrox-visible #wrapper {
-			
+			-moz-filter: blur(.25em);
+			-webkit-filter: blur(.25em);
+			-ms-filter: blur(.25em);
+			filter: blur(.25em);
 		}
 
 		@media screen and (max-width: 736px) {
