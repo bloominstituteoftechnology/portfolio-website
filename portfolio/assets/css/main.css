@@ -2109,7 +2109,7 @@ input, select, textarea {
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
 		text-transform: uppercase;
-		background: url("../../images/banner.jpg");
+		background: url("../../images/beachedit.png");
 		background-size: cover;
 		padding: 10em 0;
 	}
@@ -2129,6 +2129,7 @@ input, select, textarea {
 
 		#banner > .container {
 			position: relative;
+			
 		}
 
 			#banner > .container:before, #banner > .container:after {
@@ -2180,6 +2181,7 @@ input, select, textarea {
 			box-shadow: none;
 			margin: 0;
 			padding: 0;
+			display:none;
 		}
 
 /* Sidebar */
@@ -2198,6 +2200,7 @@ input, select, textarea {
 			box-shadow: none;
 			margin: 0;
 			padding: 0;
+			display:none;
 		}
 
 /* Footer */
