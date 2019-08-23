@@ -1940,6 +1940,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
+		display: none;
 		position: absolute;
 		top: 3em;
 		left: 0;
