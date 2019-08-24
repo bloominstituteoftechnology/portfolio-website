@@ -370,7 +370,7 @@ input, select, textarea {
 		}
 
 			#main .items > :last-child {
-				border-right: solid 10px #ffffff;
+				border-right: solid 7px #ffffff;
 			}
 
 		#main .item {
@@ -382,7 +382,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			margin: 5px;
+			margin: 3px;
 			height: 16em;
 			box-shadow: 0 0 0 10px #ffffff;
 		}
