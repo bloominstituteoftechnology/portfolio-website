@@ -1620,6 +1620,7 @@ input, select, textarea {
 	ul.icons {
 		list-style: none;
 		padding-left: 0;
+		display:none;
 	}
 
 		ul.icons > li {
@@ -2292,6 +2293,7 @@ input, select, textarea {
 
 			#nav > ul > li {
 				padding-right: 1.25em;
+				display: none;
 			}
 
 		/* Features */
@@ -2391,6 +2393,7 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
+				display:none;
 			}
 
 				#titleBar .toggle {
