@@ -79,26 +79,27 @@ input, select, textarea {
 	}
 
 	*, *:before, *:after {
-		box-sizing: inherit;
+		box-sizing: inherit;https://html5up.net/uploads/demos/parallelism/assets/css/images/abstract-background.jpg
 	}
 
 	body {
-		
-		background-position: top left, bottom left, auto;
-		background-size: auto, 100% 100%, cover;
-		position: relative;
-		background-color: #150C07;
+		background-position: center;
+		background-size: auto;
+		background-color: black;
 		line-height: 1.75em;
 		overflow-x: hidden;
 		overflow-y: auto;
 	}
 
 	 #wrapper {
+		 position: relative;
+		background-size: 84%;
+		background-position: inherit;
 		background-attachment: fixed;
-		background-repeat: repeat, no-repeat, auto;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg");
-		background-image: url("iimages/abstract-background.jpg"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg");
+		background-repeat: no-repeat;
+		background-image: url("assets/css/images/abstract-background.jpg"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("assets/css/images/abstract-background.jpg"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("assets/css/images/abstract-background.jpg");
+		background-image: url("assets/css/images/abstract-background.jpg"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg");
+		background-image: url("assets/css/images/abstract-background.jpg"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("assets/css/images/abstract-background.jpg");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -193,7 +194,7 @@ input, select, textarea {
 
 	ul.icons {
 		cursor: default;
-		margin: 0 0 0.5em 0;
+		margin: 0 0 1em 0;
 	}
 
 		ul.icons li {
@@ -300,11 +301,11 @@ input, select, textarea {
 		}
 
 		body.is-poptrox-visible #wrapper {
-			-moz-filter: blur(.25em);
-			-webkit-filter: blur(.25em);
-			-ms-filter: blur(.25em);
+			-moz-filter: blur(1em);
+			-webkit-filter: blur(1em);
+			-ms-filter: blur(1em);
 			filter: blur(.25em);
-		}
+		}s
 
 		@media screen and (max-width: 736px) {
 
