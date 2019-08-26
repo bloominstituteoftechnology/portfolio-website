@@ -83,18 +83,22 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/abstract-background x      "), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background");
-		background-image: url("images/abstract-background"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
+		
 		background-position: top left, bottom left, auto;
 		background-size: auto, 100% 100%, cover;
-		background-attachment: fixed;
-		background-repeat: repeat, no-repeat, auto;
 		position: relative;
 		background-color: #150C07;
 		line-height: 1.75em;
 		overflow-x: hidden;
 		overflow-y: auto;
+	}
+
+	 #wrapper {
+		background-attachment: fixed;
+		background-repeat: repeat, no-repeat, auto;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg");
+		background-image: url("iimages/abstract-background.jpg"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("images/abstract-background.jpg");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
