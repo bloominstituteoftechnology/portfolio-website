@@ -13,7 +13,7 @@ const Nav = props => {
                     exact to='/'
                     activeStyle={{
                         background: '#203838',
-                        color: '#20383850',
+                        color: '#f8f8f8aa',
                         cursor: 'default'
                     }}
                 >Home
