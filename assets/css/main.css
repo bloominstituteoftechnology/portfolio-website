@@ -92,7 +92,7 @@ input, select, textarea {
 	}
 
 	 #wrapper {
-		 position: relative;
+	    position: relative;
 		background-size: 84%;
 		background-position: inherit;
 		background-attachment: fixed;
