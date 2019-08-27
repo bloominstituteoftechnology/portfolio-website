@@ -435,6 +435,9 @@ input, select, textarea {
 				}
 
 		.row {
+			display: flex;
+			justify-content: center;
+			align-content: center;
 			margin-top: -50px;
 			margin-left: -50px;
 		}
@@ -1620,13 +1623,14 @@ input, select, textarea {
 	ul.icons {
 		list-style: none;
 		padding-left: 0;
-		display:none;
+		/* display:none; */
 	}
 
 		ul.icons > li {
 			position: relative;
 			padding: 2em 0 0 3em;
 			margin: 0;
+			
 		}
 
 			ul.icons > li:before {
