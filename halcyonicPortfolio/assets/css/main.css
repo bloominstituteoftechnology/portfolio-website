@@ -1470,12 +1470,12 @@ input, select, textarea {
 		}
 
 	.button-large {
-		background-image: -moz-linear-gradient(top, #ed391b, #ce1a00);
-		background-image: -webkit-linear-gradient(top, #ed391b, #ce1a00);
-		background-image: -ms-linear-gradient(top, #ed391b, #ce1a00);
-		background-image: linear-gradient(top, #ed391b, #ce1a00);
+		background-image: -moz-linear-gradient(top, #420a44, #800000); /*#ed391b, #ce1a00*/
+		background-image: -webkit-linear-gradient(top, #420a44, #800000);
+		background-image: -ms-linear-gradient(top, #420a44, #800000);
+		background-image: linear-gradient(top, #420a44, #800000);
 		display: inline-block;
-		background-color: #ed391b;
+		background-color: #420a44;
 		color: #fff;
 		text-decoration: none;
 		font-size: 1.75em;
@@ -1490,20 +1490,20 @@ input, select, textarea {
 	}
 
 		.button-large:hover {
-			background-image: -moz-linear-gradient(top, #fd492b, #de2a10);
-			background-image: -webkit-linear-gradient(top, #fd492b, #de2a10);
-			background-image: -ms-linear-gradient(top, #fd492b, #de2a10);
-			background-image: linear-gradient(top, #fd492b, #de2a10);
-			background-color: #fd492b;
+			background-image: -moz-linear-gradient(top, #800000, #420a44);	/*#fd492b, #de2a10*/
+			background-image: -webkit-linear-gradient(top, #800000, #420a44);
+			background-image: -ms-linear-gradient(top, #800000, #420a44);
+			background-image: linear-gradient(top, #800000, #420a44);
+			background-color: #800000;
 			box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
 		}
 
 		.button-large:active {
-			background-image: -moz-linear-gradient(top, #ce1a00, #ed391b);
-			background-image: -webkit-linear-gradient(top, #ce1a00, #ed391b);
-			background-image: -ms-linear-gradient(top, #ce1a00, #ed391b);
-			background-image: linear-gradient(top, #ce1a00, #ed391b);
-			background-color: #ce1a00;
+			background-image: -moz-linear-gradient(top, #420a44, #5c5c5c);
+			background-image: -webkit-linear-gradient(top, #420a44, #5c5c5c);
+			background-image: -ms-linear-gradient(top, #420a44, #5c5c5c);
+			background-image: linear-gradient(top, #420a44, #5c5c5c);
+			background-color: #420a44;
 			box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.75), inset 0px 2px 0px 0px rgba(255, 192, 192, 0.5), inset 0px 0px 0px 2px rgba(255, 96, 96, 0.85), 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
 		}
 
