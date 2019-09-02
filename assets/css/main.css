@@ -684,6 +684,11 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.image.main .sleep-mood {
+				max-width: 300px;
+				margin: 0 auto;
+			}
+
 		@media screen and (max-width: 736px) {
 
 			.image.main {
