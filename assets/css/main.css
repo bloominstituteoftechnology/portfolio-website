@@ -3778,9 +3778,6 @@ input, select, textarea {
 				flex-direction: row-reverse;
 		
 			}
-			.wrapper.spotlight.style1 p {
-				max-width: 270px;
-			}
 
 			.wrapper.spotlight:nth-child(2n - 1) .image {
 				margin: 0 0 2em 3em;
