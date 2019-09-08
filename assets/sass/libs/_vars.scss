@@ -1,39 +1,54 @@
 // Misc.
 	$misc: (
 		z-index-base:		10000,
-		overlay-opacity:	0.5,
-		lightbox-opacity:	0.75,
-		gallery-limit:		32,
-		items-limit:		16
+		main-layout:		(
+			default:		(
+				rows:		2,
+				columns:	4,
+				pad:		0.5,
+				minHeight:	20em
+			),
+			xlarge:			(
+				rows:		2,
+				columns:	3,
+				pad:		0.5,
+				minHeight:	20em
+			),
+			large:			(
+				rows:		2,
+				columns:	2,
+				pad:		0.5,
+				minHeight:	20em
+			),
+			medium:			(
+				rows:		3,
+				columns:	2,
+				pad:		0.5,
+				minHeight:	18em
+			),
+			xsmall:			(
+				rows:		2,
+				columns:	1,
+				pad:		0.5,
+				minHeight:	18em
+			)
+		)
 	);
 
 // Duration.
 	$duration: (
-		menu:				0.5s,
 		transition:			0.2s,
-		gallery-lightbox:	0.5s,
-		gallery-delay:		0.15s,
-		items-delay:		0.15s,
-		on-load:			0.75s,
-		on-scroll:			0.75s
+		header:				1s,
+		panel:				0.5s,
+		modal:				0.5s,
+		thumb:				0.15s
 	);
 
 // Size.
 	$size: (
-		border-radius:		4px,
-		border-radius-alt:	0.5rem,
-		border-width:		1px,
-		element-height:		2.75rem,
-		element-margin:		2rem,
-		gutter:				3.5rem,
-		inner:				64rem,
-		padding:			(
-			default:		7rem,
-			xlarge:			5rem,
-			large:			4rem,
-			medium:			3rem,
-			small:			2rem
-		)
+		element-height:		2.75em,
+		element-margin:		2em,
+		header:				4em
 	);
 
 // Font.
@@ -41,40 +56,26 @@
 		family:				('Source Sans Pro', Helvetica, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				300,
-		weight-bold:		400,
-		kerning:			-0.05em,
-		kerning-alt:		0.125em
+		weight-bold:		300,
+		weight-extrabold:	400,
+		kerning:			0.025em,
+		kerning-alt:		0.1em
 	);
 
 // Palette.
 	$palette: (
-		color1:				#30363d,
-		color2:				#211fa0,
-		color3:				#9823b6,
-		color4:				#897cad,
-		color5:				#7794ce,
-		color6:				#64abb4,
-		color7:				#18945c,
-
-		bg:					#ffffff,
-		bg-alt:				#eeeeee,
-		fg:					#000000,
-		fg-bold:			#000000,
-		fg-light:			rgba(0,0,0,0.75),
-		border:				rgba(0,0,0,0.2),
-		border-alt:			rgba(0,0,0,0.075),
-		border-bg:			rgba(0,0,0,0.05),
-		accent:				#47D3E5,
-
-		invert: (
-			bg:				#000000,
-			bg-alt:			#222222,
-			fg:				#ffffff,
-			fg-bold:		#ffffff,
-			fg-light:		#ffffff,
-			border:			rgba(255,255,255,1.0),
-			border-alt:		rgba(255,255,255,0.125),
-			border-bg:		rgba(255,255,255,0.125),
-			accent:			#47D3E5
-		),
+		bg:					#242629,
+		bg-alt:				#1f2224,
+		bg-overlay:			transparentize(#242629, 0.75),
+		bg-overlay-alt:		transparentize(#242629, 0.5),
+		bg-ie-overlay:		transparentize(#242629, 0.45),
+		bg-ie-overlay-alt:	transparentize(#242629, 0.2),
+		fg:					#a0a0a1,
+		fg-bold:			#ffffff,
+		fg-medium:			#707071,
+		fg-light:			#505051,
+		border:				#36383c,
+		border-bg:			#34363b,
+		border-bg-alt:		#44464b,
+		accent1:			#34a58e
 	);
