@@ -1,0 +1,36 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
+
+/*
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Banner */
+
+	body.is-preload {
+		#banner {
+			h2 {
+				@include vendor('transform', 'none');
+				opacity: 1;
+
+				&:before, &:after {
+					width: 100%;
+				}
+			}
+
+			.more {
+				@include vendor('transform', 'none');
+				opacity: 1;
+			}
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
