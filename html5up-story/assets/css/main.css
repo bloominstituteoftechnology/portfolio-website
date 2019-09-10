@@ -153,7 +153,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
+		background-color: #edede1;
 		color: #000000;
 	}
 
@@ -3577,17 +3577,17 @@ input, select, textarea {
 		}
 
 		.banner.style1.fullscreen {
-			min-height: 100vh;
+			min-height: 60vh;
 		}
 
 			@media screen and (orientation: portrait) {
 
 				.banner.style1.fullscreen .content {
-					min-height: 50vh;
+					min-height: 35vh;
 				}
 
 				.banner.style1.fullscreen .image {
-					height: 50vh;
+					height: 35vh;
 				}
 
 			}
