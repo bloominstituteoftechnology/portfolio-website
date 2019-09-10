@@ -325,7 +325,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #47D3E5;
+			color: #6e0d9f;
 		}
 
 	strong, b {
@@ -2197,8 +2197,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			box-shadow: inset 0 0 0 1px #5c1082;
+			color: #5c1082 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2207,8 +2207,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(71, 211, 229, 0.2);
-			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			box-shadow: inset 0 0 0 1px #5c1082;
+			color: #5c1082 !important;
 		}
 
 		input[type="submit"].primary,
@@ -2226,7 +2226,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #47D3E5;
+				background-color: #5c1082;
 			}
 
 			input[type="submit"].primary:active,
@@ -2234,7 +2234,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #1ebdd1;
+				background-color: #5c1082;
 			}
 
 /* Form */
@@ -3577,7 +3577,7 @@ input, select, textarea {
 		}
 
 		.banner.style1.fullscreen {
-			min-height: 60vh;
+			min-height: 0vh;
 		}
 
 			@media screen and (orientation: portrait) {
