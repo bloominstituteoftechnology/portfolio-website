@@ -3791,3 +3791,12 @@ input, select, textarea {
 	justify-content: center;
 	box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.493);
 }
+
+#second .features .myskills .button {
+	margin-bottom: 25px;
+	
+}
+
+#second .features .myskills {
+	padding-top: 30px;
+}
