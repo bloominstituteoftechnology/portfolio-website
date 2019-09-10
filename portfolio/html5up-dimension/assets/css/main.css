@@ -722,6 +722,10 @@ input, select, textarea {
 
 /* List */
 
+.worklist {
+	text-decoration: none;
+}
+
 	ol {
 		list-style: decimal;
 		margin: 0 0 2rem 0;
