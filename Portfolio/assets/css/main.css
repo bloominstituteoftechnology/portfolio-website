@@ -41,7 +41,7 @@ blockquote, q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
 	}
@@ -1980,9 +1980,13 @@ input, select, textarea {
 			cursor: default;
 		}
 
-			.icon.featured:before {
+		.icon.featured:before {
 				font-size: 6em;
-			}
+		}
+
+		.iconStyles {
+			font-size: 10rem;
+		}
 
 /* Wrappers */
 
