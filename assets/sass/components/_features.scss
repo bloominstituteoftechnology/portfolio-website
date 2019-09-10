@@ -1,5 +1,5 @@
 ///
-/// Solid State by HTML5 UP
+/// Hyperspace by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -9,63 +9,90 @@
 	.features {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
+		border-radius: _size(border-radius);
+		border: solid 1px _palette(border);
+		background: _palette(border-bg);
 		margin: 0 0 _size(element-margin) 0;
 
-		article {
-			@include padding(1.75em, 1.75em);
-			background-color: desaturate(lighten(_palette(bg), 3), 1.5);
-			border-radius: _size(border-radius);
-			margin: (_size(section-spacing, large) * 0.5) _size(section-spacing, large) (_size(section-spacing, large) * 0.5) 0;
-			width: calc(50% - #{_size(section-spacing, large) * 0.5});
+		section {
+			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
+			width: 50%;
+			border-top: solid 1px _palette(border);
+			position: relative;
 
-			&:nth-child(2n) {
-				margin-right: 0;
+			&:nth-child(-n + 2) {
+				border-top-width: 0;
 			}
 
-			.image {
-				border-radius: _size(border-radius) _size(border-radius) 0 0;
-				display: block;
-				margin-bottom: 1.75em;
-				margin-left: -1.75em;
-				margin-top: -1.75em;
-				position: relative;
-				width: calc(100% + #{3.5em});
+			&:nth-child(2n) {
+				border-left: solid 1px _palette(border);
+			}
 
-				img {
-					border-radius: _size(border-radius) _size(border-radius) 0 0;
-					width: 100%;
+			.icon {
+				@include vendor('transition', (
+					'opacity #{_duration(activation) * 0.5} ease',
+					'transform #{_duration(activation) * 0.5} ease'
+				));
+				@include vendor('transition-delay', '1s');
+				@include vendor('transform', 'scale(1)');
+				position: absolute;
+				left: 3em;
+				top: 3em;
+				opacity: 1;
+			}
+
+			@for $i from 1 through _misc(max-features) {
+				&:nth-child(#{$i}) {
+					.icon {
+						@include vendor('transition-delay', '#{(_duration(transition) * 0.75 * $i)}');
+					}
+				}
+			}
+		}
+
+		&.inactive {
+			section {
+				.icon {
+					@include vendor('transform', 'scale(0.5)');
+					opacity: 0;
 				}
 			}
 		}
 
 		@include breakpoint('<=medium') {
-			article {
-				margin: (_size(section-spacing, medium) * 0.5) _size(section-spacing, medium) (_size(section-spacing, medium) * 0.5) 0;
-				width: calc(50% - #{_size(section-spacing, medium) * 0.5});
+			display: block;
+
+			section {
+				border-top-width: 1px !important;
+				border-left-width: 0 !important;
+				width: 100%;
+
+				&:first-child {
+					border-top-width: 0 !important;
+				}
 			}
 		}
 
 		@include breakpoint('<=small') {
-			article {
-				@include padding(1.5em, 1.5em);
-				margin: (_size(section-spacing, small) * 0.5) _size(section-spacing, small) (_size(section-spacing, small) * 0.5) 0;
-				width: calc(50% - #{_size(section-spacing, small) * 0.5} - 1px);
+			section {
+				@include padding(2em, 1.5em, (0.5em, 0, 0, 4em));
 
-				.image {
-					margin-bottom: 1.5em;
-					margin-left: -1.5em;
-					margin-top: -1.5em;
-					width: calc(100% + #{3em});
+				.icon {
+					left: 1.5em;
+					top: 2em;
 				}
 			}
 		}
 
 		@include breakpoint('<=xsmall') {
-			display: block;
+			section {
+				@include padding(2em, 1.5em, (0, 0, 0, 0));
 
-			article {
-				width: 100%;
-				margin: 0 0 _size(element-margin) 0 !important;
+				.icon {
+					left: 0;
+					position: relative;
+					top: 0;
+				}
 			}
 		}
 	}

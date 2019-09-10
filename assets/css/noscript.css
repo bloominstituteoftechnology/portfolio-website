@@ -1,39 +1,43 @@
 /*
-	Solid State by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Banner */
+/* Spotlights */
 
-	body.is-preload #banner .logo {
-		-moz-transform: none;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-		opacity: 1;
+	.spotlights > section > .image:before {
+		opacity: 0 !important;
 	}
 
-	body.is-preload #banner h2 {
-		opacity: 1;
-		-moz-transform: none;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-		-moz-filter: none;
-		-webkit-filter: none;
-		-ms-filter: none;
-		filter: none;
+	.spotlights > section > .content > .inner {
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+		opacity: 1 !important;
 	}
 
-	body.is-preload #banner p {
-		opacity: 01;
-		-moz-transform: none;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-		-moz-filter: none;
-		-webkit-filter: none;
-		-ms-filter: none;
-		filter: none;
+/* Wrapper */
+
+	.wrapper > .inner {
+		opacity: 1 !important;
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+	}
+
+/* Sidebar */
+
+	#sidebar > .inner {
+		opacity: 1 !important;
+	}
+
+	#sidebar nav > ul > li {
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+		opacity: 1 !important;
 	}

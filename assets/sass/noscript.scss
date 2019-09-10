@@ -6,30 +6,52 @@
 @import 'libs/html-grid';
 
 /*
-	Solid State by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Banner */
+/* Spotlights */
 
-	#banner {
-		body.is-preload & {
-			.logo {
-				@include vendor('transform', 'none');
-				opacity: 1;
+	.spotlights {
+		> section {
+			> .image {
+				&:before {
+					opacity: 0 !important;
+				}
 			}
 
-			h2 {
-				opacity: 1;
-				@include vendor('transform', 'none');
-				@include vendor('filter', 'none');
+			> .content {
+				> .inner {
+					@include vendor('transform', 'none !important');
+					opacity: 1 !important;
+				}
 			}
+		}
+	}
 
-			p {
-				opacity: 01;
-				@include vendor('transform', 'none');
-				@include vendor('filter', 'none');
+/* Wrapper */
+
+	.wrapper {
+		> .inner {
+			opacity: 1 !important;
+			@include vendor('transform', 'none !important');
+		}
+	}
+
+/* Sidebar */
+
+	#sidebar {
+		> .inner {
+			opacity: 1 !important;
+		}
+
+		nav {
+			> ul {
+				> li {
+					@include vendor('transform', 'none !important');
+					opacity: 1 !important;
+				}
 			}
 		}
 	}

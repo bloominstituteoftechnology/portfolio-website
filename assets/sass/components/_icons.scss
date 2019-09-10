@@ -1,5 +1,5 @@
 ///
-/// Solid State by HTML5 UP
+/// Hyperspace by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -13,15 +13,17 @@
 
 		li {
 			display: inline-block;
-			padding: 0 1em 0 0;
+			padding: 0 0.75em 0 0;
 
 			&:last-child {
 				padding-right: 0;
 			}
 
-			.icon {
-				&:before {
-					font-size: 1.25em;
+			> a, > span {
+				border: 0;
+
+				.label {
+					display: none;
 				}
 			}
 		}
