@@ -8603,6 +8603,6 @@ input, select, textarea {
 			}
 
 			.propic{
-				width:10rem;
-				height:10rem;
+				width:10rem!important;
+				height:10rem !important;
 			}
