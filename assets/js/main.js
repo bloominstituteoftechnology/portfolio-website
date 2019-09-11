@@ -6,13 +6,13 @@
 
 (function($) {
 
-	var	$window = $(window),
-		$body = $('body'),
-		$wrapper = $('#wrapper'),
-		$header = $('#header'),
-		$footer = $('#footer'),
-		$main = $('#main'),
-		$main_articles = $main.children('article');
+	// var	$window = $(window),
+	// 	$body = $('body'),
+	// 	$wrapper = $('#wrapper'),
+	// 	$header = $('#header'),
+	// 	$footer = $('#footer'),
+	// 	$main = $('#main'),
+	// 	$main_articles = $main.children('article');
 
 	// Breakpoints.
 		breakpoints({
