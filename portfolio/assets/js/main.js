@@ -13,7 +13,7 @@
 
 	// Breakpoints.
 		breakpoints({
-			xlarge:	'(max-width: 1680px)',
+			xlarge:	'(max-width: 1580px)',
 			large:	'(max-width: 1280px)',
 			medium:	'(max-width: 980px)',
 			small:	'(max-width: 736px)',
@@ -24,7 +24,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 0);
 		});
 
 	// Header.
@@ -56,7 +56,7 @@
 
 			window.setTimeout(function() {
 				$menu._locked = false;
-			}, 350);
+			}, 0);
 
 			return true;
 
@@ -120,7 +120,7 @@
 					// Redirect.
 						window.setTimeout(function() {
 							window.location.href = href;
-						}, 350);
+						}, 0);
 
 				});
 
