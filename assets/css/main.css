@@ -1370,6 +1370,7 @@ input, select, textarea {
 					width: 58.33333%;
 				}
 
+
 				.row > .off-7-small {
 					margin-left: 58.33333%;
 				}
@@ -3484,6 +3485,7 @@ input, select, textarea {
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
+			/* background-image: url("../../dosomethinggreat.jpg"); */
 		}
 
 			#banner.major.alt {
