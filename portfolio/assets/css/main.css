@@ -2544,7 +2544,10 @@ input, select, textarea {
 	}
 
 /* Icon */
-
+	
+	.icon img {
+		height: 70px;
+	}
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
