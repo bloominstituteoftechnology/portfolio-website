@@ -2643,3 +2643,13 @@ input, select, textarea {
 			}
 
 	}
+
+
+	/* MY UPDATES */
+
+	.GithubImage img{
+		height: 400px;
+		border-radius: 50%;
+
+		
+	}
