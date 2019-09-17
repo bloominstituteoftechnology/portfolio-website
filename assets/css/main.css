@@ -2648,7 +2648,8 @@ input, select, textarea {
 	/* MY UPDATES */
 
 	.GithubImage img{
-		height: 400px;
+		height: 20rem;
+		width: 20rem;
 		border-radius: 50%;
 
 		
