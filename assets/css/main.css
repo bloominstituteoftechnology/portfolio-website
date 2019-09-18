@@ -3008,7 +3008,7 @@ input, select, textarea {
 			background-color: #353849;
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
-			width: 40%;
+			width: 100%;
 		}
 
 			.features article:nth-child(2n) {
