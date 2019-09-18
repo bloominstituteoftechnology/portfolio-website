@@ -1,80 +1,53 @@
 // Misc.
 	$misc: (
-		z-index-base:		10000,
-		overlay-opacity:	0.5,
-		lightbox-opacity:	0.75,
-		gallery-limit:		32,
-		items-limit:		16
+		z-index-base:				10000,
+		gallery-lightbox-opacity:	0.875
 	);
 
 // Duration.
 	$duration: (
-		menu:				0.5s,
-		transition:			0.2s,
-		gallery-lightbox:	0.5s,
-		gallery-delay:		0.15s,
-		items-delay:		0.15s,
-		on-load:			0.75s,
-		on-scroll:			0.75s
+		transition:					0.25s,
+		gallery-lightbox-fadein:	0.5s
 	);
 
 // Size.
 	$size: (
-		border-radius:		4px,
-		border-radius-alt:	0.5rem,
-		border-width:		1px,
-		element-height:		2.75rem,
-		element-margin:		2rem,
-		gutter:				3.5rem,
-		inner:				64rem,
-		padding:			(
-			default:		7rem,
-			xlarge:			5rem,
-			large:			4rem,
-			medium:			3rem,
-			small:			2rem
-		)
+		border-radius:			0.325rem,
+		element-height:			3rem,
+		element-margin:			2rem,
+		header-width:			25rem,
+		subheader-width:		22rem,
+		content-width:			60rem,
+		line-width:				2px,
+		form-gutter:			2rem,
+		gallery-gutter:			1.25rem,
 	);
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				300,
-		weight-bold:		400,
-		kerning:			-0.05em,
-		kerning-alt:		0.125em
+		family:					('Source Sans Pro', Helvetica, sans-serif),
+		family-fixed:			('Courier New', monospace),
+		family-heading:			('Raleway', Helvetica, sans-serif),
+		weight:					300,
+		weight-bold:			600,
+		weight-extrabold:		700,
+		weight-heading:			800,
+		weight-heading-light:	600,
+		kerning:				0.0375em,
+		kerning-heading:		0.175em,
+		kerning-heading-alt:	-0.05em
 	);
 
 // Palette.
 	$palette: (
-		color1:				#30363d,
-		color2:				#db8992,
-		color3:				#ab7aad,
-		color4:				#897cad,
-		color5:				#7794ce,
-		color6:				#64abb4,
-		color7:				#6ba78c,
-
-		bg:					#ffffff,
-		bg-alt:				#eeeeee,
-		fg:					#000000,
-		fg-bold:			#000000,
-		fg-light:			rgba(0,0,0,0.75),
-		border:				rgba(0,0,0,0.2),
-		border-alt:			rgba(0,0,0,0.075),
-		border-bg:			rgba(0,0,0,0.05),
-		accent:				#47D3E5,
-
-		invert: (
-			bg:				#000000,
-			bg-alt:			#222222,
-			fg:				#ffffff,
-			fg-bold:		#ffffff,
-			fg-light:		#ffffff,
-			border:			rgba(255,255,255,1.0),
-			border-alt:		rgba(255,255,255,0.125),
-			border-bg:		rgba(255,255,255,0.125),
-			accent:			#47D3E5
-		),
+		bg:						#ffffff,
+		fg:						#000000,
+		fg-bold:				#000000,
+		fg-light:				rgba(0,0,0,0.25),
+		border:					rgba(144,144,144,0.25),
+		border-bg:				rgba(144,144,144,0.1),
+		accent:					#49fcd4,
+		accent-border:			desaturate(darken(#49fcd4, 8), 30),
+		accent-alt:				desaturate(darken(#49fcd4, 10), 20),
+		accent-bg:				transparentize(#49fcd4, 0.75)
 	);

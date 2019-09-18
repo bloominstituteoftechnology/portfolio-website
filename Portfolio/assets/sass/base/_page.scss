@@ -1,5 +1,5 @@
 ///
-/// Story by HTML5 UP
+/// Paradigm Shift by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -33,8 +33,13 @@
 			box-sizing: inherit;
 		}
 
+	html {
+		overflow-x: hidden;
+	}
+
 	body {
 		background: _palette(bg);
+		overflow-x: hidden;
 
 		// Stops initial animations until page loads.
 			&.is-preload {
