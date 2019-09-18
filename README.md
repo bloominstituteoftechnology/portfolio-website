@@ -15,7 +15,7 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 - [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [x] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
 - [x] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [x] Push commits: `git push origin <firstName-lastName>`.
 
 ### Follow these steps to download your template and start the project:
 
@@ -51,4 +51,4 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 ## Stretch
 
 - [x] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
-- [ ] Download another template and see if you can get the CSS preprocessor working on the project
+- [x] Download another template and see if you can get the CSS preprocessor working on the project
