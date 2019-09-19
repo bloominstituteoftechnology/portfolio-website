@@ -1,5 +1,5 @@
 ///
-/// Paradigm Shift by HTML5 UP
+/// Stellar by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -33,13 +33,12 @@
 			box-sizing: inherit;
 		}
 
-	html {
-		overflow-x: hidden;
-	}
-
 	body {
-		background: _palette(bg);
-		overflow-x: hidden;
+		background-color: _palette(bg);
+		@include vendor('background-image', (
+			'url("images/overlay.png")',
+			'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
+		));
 
 		// Stops initial animations until page loads.
 			&.is-preload {

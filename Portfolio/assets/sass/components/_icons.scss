@@ -1,5 +1,5 @@
 ///
-/// Paradigm Shift by HTML5 UP
+/// Stellar by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -13,27 +13,10 @@
 
 		li {
 			display: inline-block;
+			padding: 0 0.65em 0 0;
 
 			&:last-child {
-				padding-right: 0;
-			}
-
-			.icon {
-				@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
-				width: 2.25rem;
-				height: 2.25rem;
-				text-align: center;
-				line-height: 2.25rem;
-				border-radius: 2.25rem;
-				display: inline-block;
-
-				&:before {
-					font-size: 1.25rem;
-				}
-
-				&:hover {
-					background-color: _palette(border-bg);
-				}
+				padding-right: 0 !important;
 			}
 		}
 	}

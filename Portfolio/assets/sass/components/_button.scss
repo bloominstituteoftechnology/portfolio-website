@@ -1,5 +1,5 @@
 ///
-/// Paradigm Shift by HTML5 UP
+/// Stellar by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -14,65 +14,39 @@
 		@include vendor('appearance', 'none');
 		@include vendor('transition', (
 			'background-color #{_duration(transition)} ease-in-out',
-			'box-shadow #{_duration(transition)} ease-in-out',
 			'color #{_duration(transition)} ease-in-out'
 		));
-		background-color: transparent;
 		border-radius: _size(border-radius);
 		border: 0;
-		box-shadow: inset 0 0 0 2px _palette(border);
-		color: _palette(fg-bold) !important;
 		cursor: pointer;
 		display: inline-block;
-		font-family: _font(family-heading);
-		font-size: 0.6rem;
-		font-weight: _font(weight-heading-light);
-		height: (_size(element-height) * 1);
-		letter-spacing: _font(kerning-heading);
-		line-height: (_size(element-height) * 1);
-		padding: 0 2rem;
+		font-weight: _font(weight);
+		height: 2.75em;
+		line-height: 2.75em;
+		min-width: 9.25em;
+		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
 		white-space: nowrap;
 
-		&:hover {
-			box-shadow: inset 0 0 0 2px _palette(accent-alt);
-			color: _palette(accent-alt) !important;
-		}
-
-		&:active {
-			background-color: _palette(accent-bg);
-			box-shadow: inset 0 0 0 2px _palette(accent-alt);
-			color: _palette(accent-alt) !important;
-		}
-
-		&.small {
-			font-size: 0.5rem;
-			height: _size(element-height) * 0.75;
-			line-height: _size(element-height) * 0.75;
-			padding: 0 1.25rem;
-		}
-
-		&.large {
-			font-size: 0.7rem;
-			height: _size(element-height) * 1.0875;
-			line-height: _size(element-height) * 1.0875;
-			padding: 0 3.25rem;
-		}
-
-		&.wide {
-			min-width: 13rem;
-		}
-
 		&.icon {
+			padding-left: 1.35em;
+
 			&:before {
-				margin-right: 0.5rem;
+				margin-right: 0.5em;
 			}
 		}
 
 		&.fit {
 			width: 100%;
+		}
+
+		&.small {
+			font-size: 0.8em;
+		}
+
+		&.large {
+			font-size: 1.35em;
 		}
 
 		&.disabled,
@@ -81,35 +55,55 @@
 			opacity: 0.25;
 		}
 
-		&.primary {
-			background-color: _palette(accent);
-			box-shadow: none;
-			color: _palette(fg-bold) !important;
+		@include breakpoint('<=small') {
+			min-width: 0;
+		}
+	}
+
+	@mixin color-button($p: null) {
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		button,
+		.button {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 1px _palette($p, border);
+			color: _palette($p, fg-bold) !important;
 
 			&:hover {
-				background-color: saturate(lighten(_palette(accent), 15), 10);
+				background-color: _palette($p, border-bg);
 			}
 
 			&:active {
-				background-color: desaturate(darken(_palette(accent), 3), 10);
-			}
-		}
-
-		@include breakpoint('<=small') {
-			font-size: 0.7rem;
-			height: (_size(element-height) * 1.1);
-			line-height: (_size(element-height) * 1.1);
-
-			&.large {
-				font-size: 0.8rem;
-				height: _size(element-height) * 1.25;
-				line-height: _size(element-height) * 1.25;
+				background-color: _palette($p, border2-bg);
 			}
 
-			&.small {
-				font-size: 0.6rem;
-				height: (_size(element-height) * 1);
-				line-height: (_size(element-height) * 1);
+			&.icon {
+				&:before {
+					color: _palette($p, fg-light);
+				}
+			}
+
+			&.primary {
+				background-color: _palette(accent);
+				color: _palette(invert, bg) !important;
+				box-shadow: none;
+
+				&:hover {
+					background-color: lighten(_palette(accent), 3);
+				}
+
+				&:active {
+					background-color: darken(_palette(accent), 3);
+				}
+
+				&.icon {
+					&:before {
+						color: _palette(invert, bg) !important;
+					}
+				}
 			}
 		}
 	}
+
+	@include color-button;

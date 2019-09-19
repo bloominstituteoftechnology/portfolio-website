@@ -5,10 +5,10 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800');
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
-	Paradigm Shift by HTML5 UP
+	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -16,14 +16,27 @@
 // Breakpoints.
 
 	@include breakpoints((
-		default:   (1681px,   null     ),
-		xlarge:    (1281px,   1920px   ),
-		large:     (1153px,   1280px   ),
-		medium:    (737px,    1152px   ),
-		small:     (481px,    736px    ),
-		xsmall:    (361px,    480px    ),
-		xxsmall:   (null,     360px    )
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  )
 	));
+
+// Mixins.
+
+	@mixin color($p) {
+		@include color-typography($p);
+		@include color-box($p);
+		@include color-button($p);
+		@include color-form($p);
+		@include color-icon($p);
+		@include color-list($p);
+		@include color-section($p);
+		@include color-table($p);
+		@include color-spotlight($p);
+	}
 
 // Base.
 
@@ -42,11 +55,16 @@
 	@import 'components/list';
 	@import 'components/actions';
 	@import 'components/icons';
+	@import 'components/section';
 	@import 'components/table';
-	@import 'components/arrow';
-	@import 'components/gallery';
-	@import 'components/feature-icons';
+	@import 'components/features';
+	@import 'components/statistics';
+	@import 'components/spotlight';
 
 // Layout.
 
+	@import 'layout/header';
+	@import 'layout/nav';
+	@import 'layout/main';
+	@import 'layout/footer';
 	@import 'layout/wrapper';
