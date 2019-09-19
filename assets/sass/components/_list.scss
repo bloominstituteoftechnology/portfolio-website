@@ -1,5 +1,5 @@
 ///
-/// Solid State by HTML5 UP
+/// Massively by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -9,29 +9,29 @@
 	ol {
 		list-style: decimal;
 		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1.25em;
+		padding-left: 1.25rem;
 
 		li {
-			padding-left: 0.25em;
+			padding-left: 0.25rem;
 		}
 	}
 
 	ul {
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1em;
+		padding-left: 1rem;
 
 		li {
-			padding-left: 0.5em;
+			padding-left: 0.5rem;
 		}
 
-		&.alt {
+		&.divided {
 			list-style: none;
 			padding-left: 0;
 
 			li {
-				border-top: solid 1px _palette(border);
-				padding: 0.5em 0;
+				border-top: solid 1px;
+				padding: 0.5rem 0;
 
 				&:first-child {
 					border-top: 0;
@@ -54,3 +54,45 @@
 			margin-left: _size(element-margin);
 		}
 	}
+
+	@mixin color-list($p: null) {
+		ul {
+			&.divided {
+				li {
+					border-top-color: _palette($p, border);
+				}
+			}
+
+			&.icons {
+				li {
+					a.icon {
+						&:hover {
+							&:before {
+								color: _palette($p, accent);
+							}
+						}
+					}
+				}
+
+				&.alt {
+					li {
+						.icon {
+							&:before {
+								box-shadow: inset 0 0 0 2px _palette($p, border);
+							}
+						}
+
+						a.icon {
+							&:hover {
+								&:before {
+									box-shadow: inset 0 0 0 2px _palette($p, accent);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include color-list;

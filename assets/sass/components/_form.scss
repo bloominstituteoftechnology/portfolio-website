@@ -1,5 +1,5 @@
 ///
-/// Solid State by HTML5 UP
+/// Massively by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -69,56 +69,48 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
 		display: block;
 		font-family: _font(family-heading);
-		font-size: 0.8em;
-		font-weight: _font(weight-heading-bold);
-		letter-spacing: _font(kern-heading);
-		margin: 0 0 (_size(element-margin) * 0.35) 0;
+		font-weight: _font(weight-heading);
+		line-height: 1.5;
+		letter-spacing: 0.075em;
+		font-size: 0.8rem;
 		text-transform: uppercase;
+		margin: 0 0 (_size(element-margin) * 0.375) 0;
+
+		@include breakpoint('<=medium') {
+			font-size: 0.9rem;
+		}
 	}
 
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
-	input[type="tel"],
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
-		border-radius: _size(border-radius);
-		border: none;
-		border: solid 2px _palette(border);
+		background: transparent;
+		border-radius: 0;
+		border: solid 2px;
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 1em;
+		padding: 0 1rem;
 		text-decoration: none;
 		width: 100%;
 
 		&:invalid {
 			box-shadow: none;
 		}
-
-		&:focus {
-			border-color: desaturate(lighten(_palette(accent), 6), 3);
-		}
 	}
 
 	select {
-		background-image: svg-url("<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{_palette(border)}' /></svg>");
 		background-size: 1.25rem;
 		background-repeat: no-repeat;
 		background-position: calc(100% - 1rem) center;
 		height: _size(element-height);
 		padding-right: _size(element-height);
 		text-overflow: ellipsis;
-
-		option {
-			color: _palette(fg-bold);
-			background: _palette(bg);
-		}
 
 		&:focus {
 			&::-ms-value {
@@ -139,7 +131,7 @@
 	}
 
 	textarea {
-		padding: 0.75em 1em;
+		padding: 0.75rem 1rem;
 	}
 
 	input[type="checkbox"],
@@ -147,54 +139,43 @@
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
-		margin-right: -2em;
+		margin-right: -2rem;
 		opacity: 0;
-		width: 1em;
+		width: 1rem;
 		z-index: -1;
 
 		& + label {
 			@include icon(false, solid);
-			color: _palette(fg);
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1em;
+			font-size: 1rem;
+			letter-spacing: 0;
 			font-family: _font(family);
 			text-transform: none;
-			letter-spacing: 0;
 			font-weight: _font(weight);
-			padding-left: (_size(element-height) * 0.6) + 0.75em;
-			padding-right: 0.75em;
+			padding-left: (_size(element-height) * 0.6) + 1rem;
+			padding-right: 1rem;
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
-				border-radius: _size(border-radius);
-				border: solid 2px _palette(border);
+				border-radius: 0;
+				border: solid 2px;
 				content: '';
 				display: inline-block;
-				font-size: 0.8em;
-				height: (_size(element-height) * 0.75);
+				font-size: 0.8rem;
+				height: (_size(element-height) * 0.6);
 				left: 0;
-				line-height: (_size(element-height) * 0.75);
+				line-height: (_size(element-height) * 0.55);
 				position: absolute;
 				text-align: center;
-				top: 0;
-				width: (_size(element-height) * 0.75);
+				top: -0.125rem;
+				width: (_size(element-height) * 0.6);
 			}
 		}
 
 		&:checked + label {
 			&:before {
-				background: _palette(fg-bold);
-				border-color: _palette(fg-bold);
 				content: '\f00c';
-				color: _palette(bg);
-			}
-		}
-
-		&:focus + label {
-			&:before {
-				border-color: _palette(accent);
 			}
 		}
 	}
@@ -202,7 +183,7 @@
 	input[type="checkbox"] {
 		& + label {
 			&:before {
-				border-radius: _size(border-radius);
+				border-radius: 0;
 			}
 		}
 	}
@@ -216,21 +197,97 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
 		opacity: 1.0;
 	}
+
+	@mixin color-form($p: null) {
+		label {
+			color: _palette($p, fg-bold);
+		}
+
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		select,
+		textarea {
+			border-color: _palette($p, border);
+
+			&:focus {
+				border-color: _palette($p, accent);
+			}
+		}
+
+		select {
+			background-image: svg-url("<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#{_palette($p, border)}' /></svg>");
+
+			option {
+				background-color: _palette($p, bg);
+				color: _palette($p, fg);
+			}
+		}
+
+		.select-wrapper {
+			&:before {
+				color: _palette($p, border);
+			}
+		}
+
+		input[type="checkbox"],
+		input[type="radio"], {
+			& + label {
+				color: _palette($p, fg);
+
+				&:before {
+					border-color: _palette($p, border);
+				}
+			}
+
+			&:checked + label {
+				&:before {
+					background-color: _palette($p, fg-bold);
+					border-color: _palette($p, fg-bold);
+					color: _palette($p, bg);
+				}
+			}
+
+			&:focus + label {
+				&:before {
+					border-color: _palette($p, accent);
+				}
+			}
+		}
+
+		::-webkit-input-placeholder {
+			color: _palette($p, fg-light) !important;
+		}
+
+		:-moz-placeholder {
+			color: _palette($p, fg-light) !important;
+		}
+
+		::-moz-placeholder {
+			color: _palette($p, fg-light) !important;
+		}
+
+		:-ms-input-placeholder {
+			color: _palette($p, fg-light) !important;
+		}
+
+		.formerize-placeholder {
+			color: _palette($p, fg-light) !important;
+		}
+	}
+
+	@include color-form;
