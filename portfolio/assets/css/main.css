@@ -238,6 +238,7 @@ input, select, textarea {
 		width: 1200px;
 	}
 
+	/* Break Points */
 		@media screen and (max-width: 1280px) {
 
 			.container {
@@ -521,6 +522,7 @@ input, select, textarea {
 					padding-top: 100px;
 				}
 
+		/* Break Points */
 		@media screen and (max-width: 1280px) {
 
 			.row {
@@ -2091,6 +2093,8 @@ input, select, textarea {
 			box-shadow: inset 0px 0px 0px 1px #e8e8e8;
 			background: #f6f8fb url("images/image-wrapper.svg");
 		}
+
+	
 
 	#header-wrapper {
 		position: relative;
