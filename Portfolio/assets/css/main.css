@@ -85,7 +85,7 @@ input, select, textarea {
 	html {
 		background-color: #0a252e;
 		background-attachment: fixed,						fixed;
-		background-image: url("../../images/overlay.png"), url("../../images/cycling.jpg");
+		background-image: url("../../images/overlay.png"), url("../../images/trees.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -135,7 +135,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #4d947c !important;
+			color: #000000 !important;
 			text-decoration: none;
 		}
 
@@ -205,7 +205,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #dddddd;
+		border-bottom: solid 1px #3c8f7a;
 		margin: 2em 0;
 	}
 
@@ -2809,7 +2809,7 @@ input, select, textarea {
 		}
 
 			#header header h1, #header header h2, #header header h3, #header header h4, #header header h5, #header header h6, #header header strong, #header header b {
-				color: #000000;
+				color: #ffffff;
 			}
 
 			#header header a {
@@ -2831,7 +2831,7 @@ input, select, textarea {
 				}
 
 			#header header p {
-				color: #000000;
+				color: #ffffff;
 				font-weight: 700;
 				margin: 1.5em 0 0 0;
 			}
