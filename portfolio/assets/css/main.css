@@ -2079,6 +2079,7 @@ input, select, textarea {
 		.image-wrapper .image {
 			position: relative;
 			z-index: 2;
+			
 		}
 
 		.image-wrapper.first:before {
@@ -2090,8 +2091,7 @@ input, select, textarea {
 			left: -1000%;
 			top: 0;
 			z-index: 1;
-			box-shadow: inset 0px 0px 0px 1px #e8e8e8;
-			background: #f6f8fb url("images/image-wrapper.svg");
+			background: rgba(0, 0, 0, 0.1);
 		}
 
 	
