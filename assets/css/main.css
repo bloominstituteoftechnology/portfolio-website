@@ -119,7 +119,7 @@ input, select, textarea {
 		font-size: 18pt;
 	}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 800px) {
 
 			html {
 				font-size: 14pt;
@@ -127,7 +127,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 500px) {
 
 			html {
 				font-size: 12pt;
