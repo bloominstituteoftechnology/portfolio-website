@@ -10,17 +10,17 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 
 _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
+- [ x] Create a forked copy of this project.
+- [ x] Add PM as collaborator on Github.
+- [ x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [ x] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
+- [x ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: `git push origin <firstName-lastName>`.
 
 ### Follow these steps to download your template and start the project:
 
-- [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
-- [ ] You make pick any template you like.  Here are some good choices for a portfolio:
+- [ x] Navigate here: [https://html5up.net/](https://html5up.net/)
+- [ x] You make pick any template you like.  Here are some good choices for a portfolio:
 	- [https://html5up.net/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
 	- [https://html5up.net/miniport](https://html5up.net/miniport)
@@ -38,9 +38,9 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 ## MVP Requirements
 
-- [ ] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
+- [ x] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
 - [ ] Customize the template to you 
-	- [ ] Update the title tag match your name
+	- [ x] Update the title tag match your name
 	- [ ] Update the place holder content throughout the template to your information
 		* Some templates are much larger than others, you don't need to fill in every little div with information, just try to get the site representing you and your work 
 		* You can use sites like [https://www.pexels.com/](https://www.pexels.com/) for free images to fill in place holders
