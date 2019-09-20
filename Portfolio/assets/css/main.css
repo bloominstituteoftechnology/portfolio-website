@@ -83,9 +83,9 @@ input, select, textarea {
 	}
 
 	html {
-		background-color: #313a3d;
+		background-color: #0a252e;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("../../images/overlay.png"), url("../../images/cycling.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -116,7 +116,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #6f7577;
+		color: #000000;
 		font-family: "Raleway", "Helvetica", sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
@@ -135,12 +135,12 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #8cd1a8 !important;
+			color: #4d947c !important;
 			text-decoration: none;
 		}
 
 	strong, b {
-		color: #61686b;
+		color: #000000;
 		font-weight: 700;
 	}
 
@@ -153,7 +153,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #61686b;
+		color: #000000;
 		font-weight: 800;
 		letter-spacing: 0.075em;
 		line-height: 1em;
@@ -1862,7 +1862,7 @@ input, select, textarea {
 			-webkit-transform-origin: 50% 50%;
 			-ms-transform-origin: 50% 50%;
 			transform-origin: 50% 50%;
-			color: #464e50;
+			color: #000000;
 			content: '\f1ce';
 			cursor: default;
 			display: block;
@@ -1928,7 +1928,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #a8b0b3;
+		color: #000000;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 	}
@@ -1981,7 +1981,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #61686b;
+		color: #000000;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 700;
@@ -2035,7 +2035,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #61686b;
+			color: #000000;
 			background: #fff;
 		}
 
@@ -2117,7 +2117,7 @@ input, select, textarea {
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			background: #313a3d;
-			color: #ffffff;
+			color: #000000;
 			content: '\f00c';
 		}
 
@@ -2809,7 +2809,7 @@ input, select, textarea {
 		}
 
 			#header header h1, #header header h2, #header header h3, #header header h4, #header header h5, #header header h6, #header header strong, #header header b {
-				color: #ffffff;
+				color: #000000;
 			}
 
 			#header header a {
@@ -2817,7 +2817,7 @@ input, select, textarea {
 			}
 
 				#header header a:hover {
-					color: #ffffff !important;
+					color: #000000 !important;
 				}
 
 			#header header h1 {
@@ -2831,7 +2831,7 @@ input, select, textarea {
 				}
 
 			#header header p {
-				color: #ffffff;
+				color: #000000;
 				font-weight: 700;
 				margin: 1.5em 0 0 0;
 			}
@@ -2886,7 +2886,7 @@ input, select, textarea {
 			}
 
 				#footer footer a:hover {
-					color: #ffffff !important;
+					color: #000000 !important;
 				}
 
 			#footer footer .copyright {
