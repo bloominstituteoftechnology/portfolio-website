@@ -190,7 +190,9 @@ input, select, textarea {
 	}
 
 	.features {
-		margin-bottom: 1.5em;
+		/* margin-bottom: 1.5em; */
+		border-bottom: 2px solid #bbb;
+		padding-bottom: 5%;
 	}
 
 	.feature {
@@ -228,6 +230,11 @@ input, select, textarea {
 
 		header.major {
 			text-align: center;
+		}
+
+		/* Custom CSS */
+		.mb {
+			margin-bottom: 5%;
 		}
 
 /* Container */
