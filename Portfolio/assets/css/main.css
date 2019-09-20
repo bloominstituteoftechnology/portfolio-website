@@ -85,7 +85,7 @@ input, select, textarea {
 	html {
 		background-color: #0a252e;
 		background-attachment: fixed,						fixed;
-		background-image: url("../../images/overlay.png"), url("../../images/trees.jpg");
+		background-image: url("../../images/overlay.png"), url("../../images/mountains.jpg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2340,10 +2340,15 @@ input, select, textarea {
 	}
 
 		ul.icons-grid li {
-			display: block;
-			float: left;
+			display: inline-block;
+			float: ;
 			padding: 3em 0;
 			width: 50%;
+		}
+
+		ul.icons-grid li span img {
+			width: 100%;
+			height: 50%;
 		}
 
 			ul.icons-grid li h3 {
@@ -2351,14 +2356,13 @@ input, select, textarea {
 			}
 
 			ul.icons-grid li:nth-child(2n + 1) {
-				box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
+				box-shadow: ;
 			}
 
 			ul.icons-grid li:nth-child(2n + 3):before {
 				background: #dddddd;
 				content: '';
 				display: block;
-				height: 2px;
 				margin-top: -3em;
 				position: absolute;
 				width: 100%;
@@ -2657,7 +2661,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #8cd1a8;
+			background-color: #030303;
 			border: 0;
 			box-shadow: none;
 			color: #ffffff !important;
