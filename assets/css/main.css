@@ -1729,6 +1729,7 @@ table.default thead {
 /* List */
 
 ul {
+	background: pink;
  list-style: disc;
 		padding-left: 1em;
 }
