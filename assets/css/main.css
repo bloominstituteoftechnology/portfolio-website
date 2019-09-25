@@ -1668,7 +1668,7 @@ table.default thead {
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
 		background-color: #43B3E0;
-		padding: 1em 2.35em 1em 2.35em;
+		padding: 20px;
 		font-size: 1.1em;
 		max-width: 24em;
 	}
@@ -1688,14 +1688,14 @@ table.default thead {
 	button:active,
 	.button:active {
 		background-color: #3BA8D3;
-		top: 1px;
+		top: 0px;
 	}
 
 	input[type="button"].large,
 	input[type="submit"].large,
 	input[type="reset"].large,
-	button.large,
-	.button.large {
+	button.small,
+	.button.small {
 		font-size: 1.5em;
 		letter-spacing: -0.025em;
 	}
@@ -2088,8 +2088,8 @@ body > article {
 
 #top .image {
 	border-radius: 100%;
-	width: 20em;
-	height: 20em;
+	width: 15em;
+	height: 10em;
 	margin: 0;
 }
 
