@@ -1,4 +1,4 @@
-# Build A Portfolio Website
+# Build A Portfolio Website - ISAAC ADEROGBA - TAKETWO
 
 With all of the projects you will be working on here at Lambda School, you will need somewhere to house them!  There is no better opportunity to learn and show off your skills than a beautiful portfolio website.  
 
@@ -52,3 +52,27 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 - [ ] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
 - [ ] Download another template and see if you can get the CSS preprocessor working on the project
+
+## Studying the Code Base
+
+HTML Interesting Points
+> 183 LOC
+> Header area suprisingly only 6 LOC - refers only to menu
+> Section is self-contained
+> Link to a no-script css stylesheet - perhaps for old browsers that don't support js
+> Use of UL and LI for header links
+> I'm interested in how the slanted border is done (LOC responsible: 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+)
+> I like how the word "wrapper" is used for self-contained areas
+> Footer tag encompasses a large amount
+
+CSS Interesting Points
+> Desktop-first approach (use of max-width breakpoints)
+> Breakpoints at 1680px, 1280px, 980px, 736px, 480px
+> Interesting use of linear gradients
+> Using pt instead of pixel - first adjusts font size based on media width, and then h1-h6 uses em.
+> Flexbox being used at points 
+> ton of code used to control how rows appear
+> CSS formatted quite cleverly (see lines 2450 - 2473) <- Lines are idented logically.
+
+876a3c
