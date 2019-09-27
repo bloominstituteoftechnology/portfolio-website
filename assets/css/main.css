@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-	line-height: 1;
+	line-height: 1.2;
 }
 
 ol, ul {
@@ -160,7 +160,7 @@ input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
-		line-height: 1.65;
+		/* line-height: 1.65; */
 	}
 
 	a {
@@ -184,7 +184,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 		p.major {
@@ -193,7 +193,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		line-height: 1.375;
+		line-height: 1;
 		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
 	}
@@ -205,7 +205,7 @@ input, select, textarea {
 
 	h1 {
 		font-size: 3.5rem;
-		line-height: 1.2;
+		/* line-height: 1.2; */
 	}
 
 	h2 {
