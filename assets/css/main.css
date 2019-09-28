@@ -152,7 +152,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: lightcyan;
+		background-color:lightpink;
 		color: #000000;
 	}
 
@@ -173,6 +173,7 @@ input, select, textarea {
 
 		a:hover {
 			text-decoration: none;
+			text-emphasis-color: lightgreen;
 		}
 
 	strong, b {
