@@ -39,13 +39,6 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 ## MVP Requirements
 
 - [ ] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
-whole lot of -moz/-webkit/-ms
-media: 81, 118, 126, 134, 229, 351, 707, 715, 845...
-	- why does it use "@media screen" vs. "@media only screen"??
-	- 1463 - when page is less than 480px, nav bar goes vertical.
-
-relative: 
-	- 201 changes the "hello" to different relative size based on contents
 	
 
 - [ ] Customize the template to you 
