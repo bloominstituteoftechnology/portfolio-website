@@ -142,17 +142,7 @@ overlay.append(personalProfileInfoh1);
 
 const personalProfileInfo = document.createElement('p');
 personalProfileInfo.className = "personal-info content";
-personalProfileInfo.textContent = "Hi, my name is Joseph Luna! Born and raised here in the great state of Texas, I’m on an exciting journey
- to build upon my career as a Full Stack Web Developer. I have always been interested in computers and have spent the better part of my time 
- learning and developing skills to effectively contribute to the Technology Industry. 
- My skill sets in language and development methodologies are a mixture of formal and self-taught
-  with a fiery ambition to learn more and keep on evolving my knowledge. 
-  It has always been intriguing me how technology can be so helpful in our everyday lives and how yet, 
-  there are so many ways left to integrate useful software to make our personal and professional lifestyles easier. 
-   Communication is the life line of business and the need to have a website or SPA  that is visually appealing, intuitive, and reactive is just as important as a brick and mortar store. 
-   I too have been an entrepreneur and understand the necessity of trafficking customers to something that represents the culture of your business. 
-   This is my driving force, this symbiosis of user interactions with company products and services while making the user experience enjoyable. I know I can bring value to whatever you are working on with my skill sets. So let’s team up, and together I we can accomplish great things. Thank you for reading!"
-   
+personalProfileInfo.textContent = "Hi, my name is Joseph Luna! Born and raised here in the great state of Texas, I’m on an exciting journey to build upon my career as a Full Stack Web Developer. I have always been interested in computers and have spent the better part of my time learning and developing skills to effectively contribute to the Technology Industry. My skill sets in language and development methodologies are a mixture of formal and self-taught with a fiery ambition to learn more and keep on evolving my knowledge. It has always been intriguing me how technology can be so helpful in our everyday lives and how yet, there are so many ways left to integrate useful software to make our personal and professional lifestyles easier. Communication is the life line of business and the need to have a website or SPA  that is visually appealing, intuitive, and reactive is just as important as a brick and mortar store. I too have been an entrepreneur and understand the necessity of trafficking customers to something that represents the culture of your business. This is my driving force, this symbiosis of user interactions with company products and services while making the user experience enjoyable. I know I can bring value to whatever you are working on with my skill sets. So let’s team up, and together I we can accomplish great things. Thank you for reading!";
 overlay.append(personalProfileInfo);
 personalProfileInfo.style.border = "2px solid white";
 personalProfileInfo.style.borderRadius = "8%";
