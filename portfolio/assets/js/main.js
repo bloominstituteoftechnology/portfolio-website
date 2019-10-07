@@ -151,9 +151,9 @@ personalProfileInfo.textContent = "Hi, my name is Joseph Luna! Born and 
   there are so many ways left to integrate useful software to make our personal and professional lifestyles easier. 
    Communication is the life line of business and the need to have a website or SPA  that is visually appealing, intuitive, and reactive is just as important as a brick and mortar store. 
    I too have been an entrepreneur and understand the necessity of trafficking customers to something that represents the culture of your business. 
-   This is my driving force, this symbiosis of user interactions with company products and services while making the user experience enjoyable. I know I can bring value to whatever you are working on with my skill sets. So let’s team up, and together I we can accomplish great things. Thank you for reading!
+   This is my driving force, this symbiosis of user interactions with company products and services while making the user experience enjoyable. I know I can bring value to whatever you are working on with my skill sets. So let’s team up, and together I we can accomplish great things. Thank you for reading!"
    
-overlay.append(personalProfileInfo)
+overlay.append(personalProfileInfo);
 personalProfileInfo.style.border = "2px solid white";
 personalProfileInfo.style.borderRadius = "8%";
 personalProfileInfo.style.padding = "2%";
