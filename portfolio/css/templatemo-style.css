@@ -315,6 +315,29 @@ header .social-icon li a
 	padding-bottom: 12px;
 }
 
+/* .projectList .team-wrapper .frameCont{
+	width: 100%;
+	padding-top:100%;
+	position: relative;
+} */
+
+.projectList .team-wrapper iframe, .projectList .team-wrapper img{
+	width: 100%;
+	/*padding-top:100%; */
+
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0; */
+}
+
+/* .projectList .flexCont{
+	border: 1px solid pink;
+	display: flex;
+	justify-content: space-evenly;
+} */
+
 #projects{
 	background:#404040;
 }
@@ -543,15 +566,15 @@ header .social-icon li a
 	}
 /* end social icon */
 
-@media only screen and (max-width: 1199px) and (min-width: 992px) {
+/* @media only screen and (max-width: 1199px) and (min-width: 992px) {
 	#portfolio .portfolio-thumb .portfolio-overlay {
 		padding: 0px 8px;
 	}
-}
+} */
 
 /* start 980 media quires */
 @media only screen and ( max-width: 980px ) {
-	#team .team-wrapper
+	.projectList .team-wrapper
 		{
 			margin-top: 40px;
 		}
