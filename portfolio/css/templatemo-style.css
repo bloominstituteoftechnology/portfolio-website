@@ -210,7 +210,8 @@ header .social-icon li a
 #home
 	{
 		background: url('../images/PP2.png') no-repeat;
-		background-size: cover;
+		background-size: auto auto;
+		background-position: center top;
 		padding-top: 160px;
 		padding-bottom: 100px;
 		min-height: 650px;
@@ -258,7 +259,7 @@ header .social-icon li a
 /* end home */
 
 /* start projects */
-#projects .media-heading-wrapper
+/* #projects .media-heading-wrapper
 	{
 		padding-bottom: 32px;
 	}
@@ -281,38 +282,62 @@ header .social-icon li a
 		font-weight: bold;
 		padding-top: 20px;
 		padding-left: 52px;
-	}
+	} */
 /* end about */
 
-/* start team */
-#team .team-wrapper
-	{
-		background: #404040;
-		padding-bottom: 10px;
-		-webkit-transition: all 0.4s ease-in-out;
-		        transition: all 0.4s ease-in-out;
-		position: relative;
-	}
-#team .team-wrapper:hover
-	{
-		cursor: pointer;
-		opacity: 0.4;
-		bottom: 4px;
-	}
-#team .team-wrapper .team-des
-	{
-		padding: 20px;
-	}
-#team .team-wrapper .team-des span
-	{
-		color: mediumpurple;
-		display: block;
-		font-weight: bold;
-		padding-bottom: 12px;
-	}
-/* end team */
+/* start projects */
+.projectList{
+	padding: 40px 0;
+}
+
+.projectList .team-wrapper
+{
+	padding-bottom: 10px;
+	-webkit-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+	position: relative;
+}
+.projectList .team-wrapper:hover
+{
+	cursor: pointer;
+	opacity: 0.4;
+	bottom: 4px;
+}
+.projectList .team-wrapper .team-des
+{
+	padding: 20px;
+}
+.projectList .team-wrapper .team-des span
+{
+	color: mediumpurple;
+	display: block;
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+#projects{
+	background:#404040;
+}
+
+#projects .team-wrapper{
+	background: #5c5c5c;
+}
+
+#moreProjects{
+	background:#5c5c5c;
+}
+
+#moreProjects .team-wrapper{
+	background: #404040;
+}
+
+/* end projects */
 
 /* start service */
+#service{
+	display: none;
+}
+/* 
 #service .col-md-4
 	{
 		padding: 40px;
@@ -345,14 +370,16 @@ header .social-icon li a
 		font-weight: 600;
 		padding-top: 10px;
 		padding-bottom: 14px;
-	}
+	} */
 /* end service */
 
 /* start portfolio */
-#portfolio
+ #portfolio
 	{
 		padding-bottom: 80px;
+		display: none;
 	}
+/*
 #portfolio .col-md-3
 	{
 		padding: 0px;
@@ -401,7 +428,7 @@ header .social-icon li a
 	{
 		cursor: pointer;
 		opacity: 0.8;
-	}
+	} */
 /* end portfolio */
 
 /* start contact */
