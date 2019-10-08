@@ -651,7 +651,7 @@ input, select, textarea {
 			border-radius: 4px;
 			content: '';
 			display: block;
-			height: 100%;
+			/* height: 100%; */
 			left: 0;
 			opacity: 0.5;
 			position: absolute;
@@ -782,6 +782,8 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1rem;
 		padding-left: 0;
+		display: flex;
+		justify-content: center;
 	}
 
 		ul.actions li {
@@ -899,6 +901,8 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		display: flex;
+		justify-content: center;
 	}
 
 		ul.icons li {
@@ -1140,9 +1144,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1155,7 +1162,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/tennesee.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1499,6 +1506,19 @@ input, select, textarea {
 		}
 
 /* Main */
+/* WORK CONTAINER */
+#work .card{
+	padding: 2% 0;
+}
+#work .card img {
+	width: 65%;
+	height: auto;
+	
+}
+#work .card img:hover {
+	width: 100%;
+	height: auto;
+  }
 
 	#main {
 		-moz-flex-grow: 1;
@@ -1529,7 +1549,7 @@ input, select, textarea {
 		max-width: 100%;
 		z-index: 3;
 	}
-
+		 
 		#main article {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
@@ -1609,7 +1629,11 @@ input, select, textarea {
 					height: 2.25rem;
 					background-size: 14px 14px;
 				}
-
+				#work .card img {
+					width: 75%;
+					height: auto;
+					
+				}		
 		}
 
 		@media screen and (max-width: 480px) {
