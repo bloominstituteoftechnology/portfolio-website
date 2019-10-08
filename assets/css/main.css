@@ -1546,7 +1546,9 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			
+			border: 2px solid rgba(117, 116, 116, 0.897);
+  			opacity: 0.6;
 			border-radius: 4px;
 			opacity: 0;
 		}
