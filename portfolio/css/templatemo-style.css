@@ -3,6 +3,10 @@ Awesome Template
 http://www.templatemo.com/preview/templatemo_450_awesome
 */
 
+html{
+	font-size: 62.5%;
+}
+
 body
 	{
  		background: #303030;
@@ -13,23 +17,23 @@ body
 	}
 	
 a {
-	color: #47C6F8;
+	color: mediumpurple;
 }
 	
 a:hover {
-	color: #0FF;
+	color: mediumpurple;
 }
 
 /* start h2 */
 h2
 	{
 		text-align: center;
-		font-size: 40px;
+		font-size: 4rem;
 		padding-bottom: 40px;
 	}	
 h2 span
 	{
-		color: #28a7e9;
+		color: mediumpurple;
 		font-weight: bold;
 	}
 /* end h2 */
@@ -132,10 +136,11 @@ header
 		min-height: 20px;
 		padding-top: 18px;
 		padding-bottom: 10px;
+		display:none;
 	}
 header .fa
 	{
-		color: #28a7e9;
+		color: mediumpurple;
 	}
 header span
 	{
@@ -187,7 +192,7 @@ header .social-icon li a
 	}
 
 .navbar-default .navbar-nav > li > a.current { 
-	color: #28A7E9; 
+	color: mediumpurple; 
 }
 .templatemo-nav {
 	border-radius: 0;	
@@ -204,7 +209,7 @@ header .social-icon li a
 /* start home */
 #home
 	{
-		background: url('../images/home-bg.jpg') no-repeat;
+		background: url('../images/PP2.png') no-repeat;
 		background-size: cover;
 		padding-top: 160px;
 		padding-bottom: 100px;
@@ -213,12 +218,12 @@ header .social-icon li a
 #home h1
 	{
 		font-weight: 300;
-		font-size: 70px;
+		font-size: 3rem;
 		padding-bottom: 10px;
 	}
 #home h1 span
 	{
-		color: #28a7e9;
+		color: mediumpurple;
 		font-weight: bold;
 	}
 #home .btn
@@ -237,21 +242,27 @@ header .social-icon li a
 	}
 #home .btn:hover
 	{
-		background: #28a7e9;
+		background: mediumpurple;
 		border-color: transparent;
 	}
 .element {
 	height: 60px;
 	font-size: 16px;
+	width:100%;
 }
+
+#home .container .row{
+	width: 90%;
+}
+
 /* end home */
 
-/* start about */
-#about .media-heading-wrapper
+/* start projects */
+#projects .media-heading-wrapper
 	{
 		padding-bottom: 32px;
 	}
-#about .media-heading-wrapper .fa
+#projects .media-heading-wrapper .fa
 	{
 		border: 1px solid #fff;
 		border-radius: 2px;
@@ -264,7 +275,7 @@ header .social-icon li a
 		margin-bottom: 20px;
 		margin-right: 20px;
 	}
-#about .media-heading-wrapper h3
+#projects .media-heading-wrapper h3
 	{
 		font-size: 18px;
 		font-weight: bold;
@@ -294,7 +305,7 @@ header .social-icon li a
 	}
 #team .team-wrapper .team-des span
 	{
-		color: #28a7e9;
+		color: mediumpurple;
 		display: block;
 		font-weight: bold;
 		padding-bottom: 12px;
@@ -330,7 +341,7 @@ header .social-icon li a
 	}
 #service h4
 	{
-		color: #28a7e9;
+		color: mediumpurple;
 		font-weight: 600;
 		padding-top: 10px;
 		padding-bottom: 14px;
@@ -358,7 +369,7 @@ header .social-icon li a
 	}
 #portfolio .portfolio-thumb .portfolio-overlay
 	{
-		background: #28a7e9;
+		background: mediumpurple;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -401,7 +412,7 @@ header .social-icon li a
 #contact .form-control
 	{
 		background: transparent;
-		border: 1px solid #28a7e9;
+		border: 1px solid mediumpurple;
 		border-radius: 2px;
 		box-shadow: none;
 		color: #fff;
@@ -418,7 +429,7 @@ header .social-icon li a
 	}
 #contact input[type="submit"]
 	{
-		background: #28a7e9;
+		background: mediumpurple;
 		font-weight: bold;
 		-webkit-transition: all 0.4s ease-in-out;
 		        transition: all 0.4s ease-in-out;
@@ -500,7 +511,7 @@ header .social-icon li a
 	}
 .social-icon li a:hover
 	{
-		background: #28a7e9;
+		background: mediumpurple;
 		border-color: transparent;
 	}
 /* end social icon */
@@ -519,7 +530,7 @@ header .social-icon li a
 		}
 	#portfolio .portfolio-thumb .portfolio-overlay
 	{
-		background: #28a7e9;
+		background: mediumpurple;
 		top: 0;
 		left: 0;
 		right: 0;
