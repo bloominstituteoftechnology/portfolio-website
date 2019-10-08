@@ -1512,8 +1512,7 @@ input, select, textarea {
 }
 #work .card img {
 	width: 65%;
-	height: auto;
-	
+	height: auto;	
 }
 #work .card img:hover {
 	width: 100%;
