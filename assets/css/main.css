@@ -212,6 +212,7 @@ input, select, textarea {
 			font-size: 1.25em;
 			margin: 0;
 		}
+		
 
 	footer {
 		margin: 3em 0 0 0;
@@ -1630,13 +1631,20 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
-		}
+			/* height: 100%; */
 
+		}
+		/* */
 		.image.fit {
 			display: block;
 			width: 100%;
-		}
+			/* margin-bottom: 10%; */
+			/* margin-top: -10%; */
 
+		}
+		.BelowImage {
+			margin-top: 10%;
+		}
 		.image.featured {
 			display: block;
 			width: 100%;
