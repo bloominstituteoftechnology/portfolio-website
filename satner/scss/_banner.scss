@@ -1,0 +1,140 @@
+/* Home Banner Area css
+============================================================================================ */
+
+.home_banner_area {
+	z-index: 1;
+	background: url(../img/banner/home-banner.png) no-repeat top center;
+	background-position: center;
+	background-size: cover;
+	.banner_inner {
+		width: 100%;
+		.home_right_img {
+			padding-top: 197px;
+			@media (max-width: 1480px) {
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		.col-lg-7 {
+			vertical-align: middle;
+			align-self: center;
+		}
+		.banner_content {
+			text-align: left;
+			@media (max-width: 991px) {
+				margin-top: 150px;
+			}
+			h3 {
+				font-size: 40px;
+				margin-bottom: 20px;
+				position: relative;
+				&:after {
+					content: '';
+					width: 410px;
+					height: 2px;
+					position: absolute;
+					top: 50%;
+					left: 23%;
+					background: $title-color;
+					@media (max-width: 575px) {
+						display: none;
+					}
+				}
+			}
+			h1 {
+				margin-top: 20px;
+				font-size: 70px;
+				line-height: 60px;
+				margin-bottom: 25px;
+				@media (max-width: 1024px) {
+					font-size: 60px;
+				}
+				@media (max-width: 767px) {
+					font-size: 50px;
+				}
+			}
+			h5 {
+				font-size: 24px;
+				margin-bottom: 35px;
+			}
+			.primary_btn {
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+.banner_area {
+	position: relative;
+	z-index: 1;
+	min-height: 485px;
+	@media (max-width: 1199px) {
+		min-height: 350px;
+	}
+	.banner_inner {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		min-height: 485px;
+		background: url(../img/banner/common-banner.png) no-repeat right bottom;
+		background-size: 90% 85%;
+		width: 98%;
+		z-index: 1;
+		@media (max-width: 1199px) {
+			min-height: 350px;
+		}
+		@media (max-width: 991px) {
+			background: $primary-color2;
+			width: 100%;
+		}
+		.banner_content {
+			margin-left: 50px;
+			margin-top: 100px;
+			@media (max-width: 991px) {
+				margin-left: 0px;
+				margin-top: 50px;
+			}
+			h2 {
+				color: #fff;
+				font-size: 50px;
+				font-family: $title-font;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				font-weight: 700;
+				@media (max-width: 991px) {
+					font-size: 30px;
+				}
+			}
+			.page_link {
+				a {
+					font-size: 14px;
+					color: #fff;
+					font-family: $primary-font;
+					margin-right: 20px;
+					position: relative;
+					&:before {
+						content: "-";
+						position: absolute;
+						right: -14px;
+						top: 50%;
+						@include transform(translateY(-50%));
+					}
+					&:last-child {
+						margin-right: 0px;
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End Home Banner Area css
+============================================================================================ */

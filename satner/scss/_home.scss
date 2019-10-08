@@ -1,0 +1,482 @@
+/* Start About Us Area css
+============================================================================================ */
+.about_area {
+	position: relative;
+	.main_title {
+		margin-bottom: 0px;
+		p {
+			margin-bottom: 20px;
+		}
+	}
+	.primary_btn {
+		margin-top: 20px;
+	}
+	.about_img {
+		position: relative;
+		right: 250px;
+		@media (max-width: 1480px) {
+			right: 0;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+/* End About Us Area css
+============================================================================================ */
+
+/* Start Barand Area css
+============================================================================================ */
+.brand_area {
+	padding-bottom: 170px;
+	@media (max-width: 1199px) {
+		padding-bottom: 80px;
+	}
+}
+/* End Barand Area css
+============================================================================================ */
+
+/* Start Features Area css
+============================================================================================ */
+.features_area {
+	padding-bottom: 170px;
+	@media (max-width: 1199px) {
+		padding-bottom: 50px;
+	}
+}
+.feature_item {
+	padding: 45px 25px;
+	text-align: center;
+	background: #f9f9fd;
+	cursor: pointer;
+	margin-bottom: 30px;
+	@include transition;
+	img {
+		margin-bottom: 35px;
+	}
+	h4 {
+		font-size: 20px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+	}
+	p {
+		margin-bottom: 0px;
+	}
+	&:hover {
+		box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+		background: #fff;
+	}
+}
+
+/* End Features Area css
+============================================================================================ */
+
+/* Start Brand Area css
+============================================================================================ */
+.single-brand-item {
+	width: 170px;
+	height: 100px;
+	cursor: pointer;
+	margin-bottom: 30px;
+	border: 1px solid #eeeeee;
+	box-shadow: none;
+	@include transition();
+	@media only screen and (max-width: 767px) {
+		height: 100px;
+		width: 140px;
+	}
+	@media (max-width: 575px) {
+		margin: 0px auto;
+		margin-bottom: 30px;
+	}
+	.d-table-cell {
+		vertical-align: middle;
+	}
+	img {
+		max-width: 80px;
+		margin: 0 auto;
+		@include transition();
+		@media only screen and (max-width: 767px) {
+			max-width: 100px;
+		}
+	}
+	&:hover {
+		border: 1px solid transparent;
+		box-shadow: 0px 8px 30px rgba(118, 85, 225, 0.15);
+		img {
+			@include filter(brightness(0%));
+		}
+	}
+}
+.client-info {
+	padding: 25px 30px;
+	background: #faf8ff;
+	text-align: center;
+	position: relative;
+	margin-top: 25px;
+	@media only screen and (max-width: 991px) {
+		margin-top: 50px;
+	}
+	@media (max-width: 575px) {
+		padding-top: 50px;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: -25px;
+		left: -50px;
+		background: url(../img/client-info-bg.png) no-repeat;
+		height: 175px;
+		width: 175px;
+		@media (max-width: 575px) {
+			background: none;
+		}
+	}
+	.d-flex {
+		@media (max-width: 575px) {
+			-ms-flex-align: center;
+			align-items: center;
+		}
+	}
+	.lage {
+		color: $primary-color2;
+		font-family: $title-font;
+		font-size: 100px;
+		font-weight: 700;
+		line-height: 85px;
+		position: relative;
+		z-index: 9;
+	}
+	.smll {
+		text-align: left;
+		color: $title-color;
+		font-family: $title-font;
+		font-size: 20px;
+		margin-left: 20px;
+	}
+}
+.call-now {
+	padding-top: 50px;
+	text-align: left;
+	margin-bottom: 40px;
+	@media (max-width: 575px) {
+		padding-top: 0px;
+	}
+	h3 {
+		@media (max-width: 480px) {
+			font-size: 17px;
+		}
+	}
+	p {
+		color: $primary-color2;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+	span {
+		font-size: 60px;
+		font-weight: 700;
+		color: $title-color;
+	}
+}
+/* End Brand Area css
+============================================================================================ */
+
+/* Start Portfolio Area css
+============================================================================================ */
+.portfolio_area {
+	padding-bottom: 120px;
+	@media (max-width: 991px) {
+		padding-bottom: 50px;
+	}
+	.filters {
+		ul {
+			padding-left: 0;
+			margin-bottom: 50px;
+			@media (max-width: 991px) {
+				margin-bottom: 20px;
+			}
+			li {
+				display: inline-block;
+				margin-right: 50px;
+				font-size: 14px;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: #222222;
+				cursor: pointer;
+				@include transition();
+				&:hover,
+				&.active {
+					color: $primary-color2;
+				}
+				@media (max-width: 767px) {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
+.portfolio_box {
+	margin-bottom: 80px;
+	@media (max-width: 767px) {
+		margin-bottom: 35px;
+	}
+	.short_info {
+		margin-top: 30px;
+		@media (max-width: 767px) {
+			margin-top: 20px;
+		}
+		h4 {
+			text-transform: uppercase;
+			font-size: 20px;
+			margin-bottom: 0px;
+			a {
+				color: $title-color;
+			}
+		}
+	}
+}
+.single_portfolio {
+	position: relative;
+	.overlay {
+		@include transition();
+	}
+	.icon {
+		position: absolute;
+		top: 25%;
+		left: 25%;
+		@include transform(translate(-50%, -50%));
+		opacity: 0;
+		visibility: hidden;
+		@include transition();
+		span {
+			font-size: 100px;
+			display: inline-block;
+			@include transform(rotate(135deg));
+			color: #ffffff;
+			cursor: pointer;
+		}
+	}
+	&:hover {
+		.overlay {
+			background: rgba(77, 87, 222, 0.5);
+		}
+		.icon {
+			opacity: 1;
+			visibility: visible;
+			top: 50%;
+			left: 50%;
+		}
+	}
+}
+.portfolio_details_area {
+}
+
+.portfolio_details_inner {
+	.row {
+		margin-bottom: 65px;
+		@media (max-width: 480px) {
+			margin-bottom: 30px;
+		}
+	}
+	p {
+		margin-bottom: 30px;
+		font-size: 14px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+	.portfolio_right_text {
+		margin-top: 50px;
+		h4 {
+			font-size: 20px;
+			margin-bottom: 18px;
+		}
+		p {
+			margin-bottom: 25px;
+			font-size: 14px;
+		}
+		.list {
+			li {
+				margin-bottom: 7px;
+				span {
+					font-family: $title-font;
+					color: #000000;
+					font-size: 16px;
+					font-weight: 500;
+					width: 97px;
+					display: inline-block;
+				}
+				font-weight: normal;
+				font-size: 14px;
+				&:last-child {
+					margin-bottom: 0px;
+				}
+				i {
+					color: #f1cd09;
+				}
+			}
+		}
+	}
+}
+/* End Portfolio Area css
+============================================================================================ */
+
+/* Start Testimonial Area css
+============================================================================================ */
+.testimonial_area {
+	.owl-carousel {
+		.owl-dots {
+			display: block !important;
+			text-align: center;
+			.owl-dot {
+				height: 10px;
+				width: 10px;
+				background: #d8d8d8;
+				border-radius: 17px;
+				display: inline-block;
+				margin-right: 10px;
+				@include transition();
+				&.active {
+					height: 12px;
+					width: 12px;
+					background: $primary-color2;
+				}
+			}
+			@media (max-width: 991px) {
+				display: none !important;
+			}
+		}
+		.owl-item {
+			img {
+				width: auto !important;
+			}
+		}
+	}
+}
+.testi_item {
+	padding: 50px 55px;
+	margin-bottom: 200px;
+	margin-left: 10px;
+	margin: 0px 10px 80px;
+	box-shadow: 0px 15px 30px 0px rgba(221, 221, 221, 0.3);
+	@include transition();
+	@media (max-width: 991px) {
+		margin-bottom: 0px;
+	}
+	@media (max-width: 575px) {
+		padding: 30px 20px;
+	}
+	img {
+		border-radius: 5px;
+	}
+	.col-lg-8 {
+		vertical-align: middle;
+		align-self: center;
+	}
+	.testi_text {
+		@media (max-width: 991px) {
+			margin-top: 50px;
+		}
+		h4 {
+			font-size: 20px;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+		p {
+			margin-bottom: 0px;
+		}
+	}
+	&:hover {
+		box-shadow: 0px 10px 20px 0px rgba(118, 85, 225, 0.1);
+	}
+}
+/* End Testimonial Area css
+============================================================================================ */
+
+/* Start Newsletter Area css
+============================================================================================ */
+.newsletter_area {
+	color: #ffffff;
+}
+
+.subscription_box {
+	background: url(../img/subscribe-bg.png) no-repeat center;
+	padding: 150px 0px;
+	@media (max-width: 767px) {
+		padding: 50px 20px;
+	}
+	h2 {
+		font-weight: 700;
+		margin-bottom: 20px;
+		@media (max-width: 767px) {
+			font-size: 30px;
+		}
+	}
+	p {
+		margin-bottom: 0;
+	}
+	.subscription {
+		input {
+			min-width: 380px;
+			max-width: 380px;
+			line-height: 48px;
+			padding: 0 25px;
+			border: 1px solid #ffffff;
+			background: transparent;
+			font-weight: 400;
+			border-radius: 5px;
+			color: #ffffff;
+			&:focus {
+				outline: none;
+			}
+			@media (max-width: 420px) {
+				min-width: 250px;
+			}
+			@include placeholder {
+				color: #ffffff;
+				font-weight: 400;
+			}
+		}
+	}
+	.primary-btn {
+		margin-left: 10px;
+		background: #ffffff;
+		text-transform: uppercase;
+		color: #222222;
+		border-radius: 5px;
+		line-height: 48px;
+		font-size: 14px;
+		font-family: $title-font;
+		padding: 0px 38px;
+		cursor: pointer;
+		@media (max-width: 767px) {
+			margin-top: 20px;
+		}
+	}
+	.subcribe-form {
+		margin-top: 45px;
+	}
+}
+
+.subscription .info {
+	color: #fff;
+	width: 100%;
+	font-size: 12px;
+	background: transparent;
+}
+
+.subscription .info.valid {
+	color: green;
+}
+
+.subscription .info.error {
+	color: red;
+}
+
+/* End Newsletter Area css
+============================================================================================ */

@@ -1,0 +1,145 @@
+.section_gap {
+	padding: 200px 0;
+	@media (max-width: 1199px) {
+		padding: 80px 0;
+	}
+}
+
+.section_gap_top {
+	padding-top: 200px;
+	@media (max-width: 1199px) {
+		padding-top: 80px;
+	}
+}
+
+.section_gap_bottom {
+	padding-bottom: 200px;
+	@media (max-width: 1199px) {
+		padding-bottom: 80px;
+	}
+}
+
+/* Main Title Area css
+============================================================================================ */
+
+.main_title {
+	text-align: center;
+	margin-bottom: 100px;
+	@media (max-width: 1199px) {
+		margin-bottom: 50px;
+	}
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		line-height: 50px;
+		text-transform: uppercase;
+		br {
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		@media (max-width: 767px) {
+			font-size: 30px;
+			line-height: 34px;
+		}
+	}
+	p {
+		margin-bottom: 0px;
+		br {
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+	&.white {
+		h2 {
+			color: #fff;
+		}
+		p {
+			color: #fff;
+			opacity: .6;
+		}
+	}
+}
+
+/* End Main Title Area css
+============================================================================================ */
+
+/* Start Gradient Area css
+============================================================================================ */
+
+.gradient-bg {
+	@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.border-gradient {
+	@include border-gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-bg2 {
+	@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-color {
+	@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* End Gradient Area css
+============================================================================================ */
+
+.primary_btn {
+	display: inline-block;
+	color: #fff;
+	letter-spacing: 0px;
+	font-family: $title-font;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 46px;
+	outline: none !important;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-image: linear-gradient(to right, $primary-color 0%, $primary-color2 100%),
+		radial-gradient(circle at top left, $primary-color, $primary-color2);
+	border: double 2px transparent;
+	box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+	span {
+		padding: 0 42px;
+	}
+	&.tr-bg {
+		background-image: linear-gradient(#ffffff, #ffffff),
+			radial-gradient(circle at top left, $primary-color, $primary-color2);
+		border: 2px solid transparent;
+		color: #222222;
+		box-shadow: none;
+		&:hover {
+			background-image: linear-gradient(to right, $primary-color 0%, $primary-color2 100%),
+				radial-gradient(circle at top left, $primary-color, $primary-color2);
+			border: double 2px transparent;
+			color: #ffffff;
+			box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+		}
+	}
+	&:hover {
+		background-image: linear-gradient(#ffffff, #ffffff),
+			radial-gradient(circle at top left, $primary-color, $primary-color2);
+		border: 2px solid $primary-color2;
+		color: #222222;
+		box-shadow: none;
+		background-clip: border-box;
+	}
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
