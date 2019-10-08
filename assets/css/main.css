@@ -3396,6 +3396,7 @@ input, select, textarea {
 			-ms-transform: translateY(0);
 			transform: translateY(0);
 			opacity: 1;
+			size:10px;
 			margin: 0 0 1.3em 0;
 		}
 
