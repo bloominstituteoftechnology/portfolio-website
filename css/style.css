@@ -1322,3 +1322,26 @@ ul.portfolio-image li .desc {
 .skillst .count-bar .count span:after {
   border-top: 4px solid #818181;
 }
+
+.creativecommons {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f2f2f;
+  color: lightgrey;
+  padding: 5%;
+}
+
+.creativecommons span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.creativecommons span a {
+  color: lightgrey;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}

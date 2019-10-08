@@ -144,13 +144,13 @@
     });
 
     //pop up porfolio
-    $(".portfolio-image li a").magnificPopup({
+    /*$(".portfolio-image li a").magnificPopup({
       type: "image",
       gallery: {
-        enabled: true
+        enabled: false
       }
       // other options
-    });
+    });*/
 
     //Skill
     jQuery(".skillbar").each(function() {
