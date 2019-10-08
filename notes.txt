@@ -1,0 +1,5 @@
+NOTES OF THINGS I DON'T UNDERSTAND 
+
+1. Several images were linked in the CSS.
+
+2. There were multiple JS files that I did not understand what they did.
