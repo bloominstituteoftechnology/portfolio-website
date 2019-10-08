@@ -1,0 +1,13 @@
+Interesting Points
+
+- the site looks like it was made for a tablet or a phone, the space on the sides is too big. 
+-not sure what  (content: ''; means)
+-interesting to see the transparent value
+-color: inherit , what is this?
+-responsive units are used throughout the CSS 
+-why use PT for font size ?
+-what is spinner-show
+-interesting different animation properties
+
+
+media queries at max-width 1680px, 980px, 736px, 480px, 
