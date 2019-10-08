@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bgR.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1672,7 +1672,7 @@ input, select, textarea {
 
 		article h4.major, h5.major, h6.major {
 			border-bottom: solid 0px #ffffff;
-			margin: 0 0 0.1rem 0;
+			margin: 5.0rem 0 0.1rem 0;
 		}
 
 
@@ -1680,4 +1680,8 @@ input, select, textarea {
 
 			background-image: none;
 			background-color: transparent;
+		}
+
+		article p{
+			margin: 0 0 4rem 0;
 		}
