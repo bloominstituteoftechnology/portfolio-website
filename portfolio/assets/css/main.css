@@ -1396,7 +1396,7 @@ body.is-preload #bg:before {
   position: relative;
   margin-top: 3.5rem;
 }
-
+/* this is the line that goes to the logo
 #header > *:before {
   content: "";
   display: block;
@@ -1405,8 +1405,8 @@ body.is-preload #bg:before {
   left: calc(50% - 1px);
   width: 1px;
   height: calc(3.5rem + 1px);
-  background: #ffffff;
 }
+*/
 
 #header > :first-child {
   margin-top: 0;
@@ -1422,6 +1422,7 @@ body.is-preload #bg:before {
   line-height: 5.5rem;
   border: solid 1px #ffffff;
   border-radius: 100%;
+  display: none;
 }
 
 #header .logo .icon:before {
@@ -1476,9 +1477,7 @@ body.is-preload #bg:before {
   border: solid 1px #ffffff;
   border-radius: 4px;
 }
-.aboutA {
-  display: none;
-}
+
 #header nav ul li {
   padding-left: 0;
   border-left: solid 1px #ffffff;
