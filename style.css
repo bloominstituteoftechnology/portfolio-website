@@ -1,11 +1,11 @@
 * {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Aleo', serif;
 }
 
 body {
 	width: 100%;
 	margin: 0px;
-	background-image: url(img/bg.jpg);
+	background-image: url(/img/erol-ahmed-XsQ8nUKpAO4-unsplash.jpg);
 	background-repeat: repeat-y no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -94,7 +94,7 @@ body {
 	body {
 		width: 100%;
 		margin: 0px;
-		background: url(img/bg.jpg) fixed no;
+		background: url(/img/erol-ahmed-XsQ8nUKpAO4-unsplash.jpg) fixed no;
 		overflow-x: hidden;
 	}
 	hr {
@@ -162,7 +162,7 @@ body {
 	body {
 		width: 100%;
 		margin: 0px;
-		background: url(img/bg.jpg) fixed no;
+		background: url(/img/erol-ahmed-XsQ8nUKpAO4-unsplash.jpg) fixed no;
 		overflow-x: hidden;
 	}
 	hr {
@@ -230,7 +230,7 @@ body {
 	body {
 		width: 100%;
 		margin: 0px;
-		background: url(img/bg.jpg) fixed no;
+		background: url(/img/erol-ahmed-XsQ8nUKpAO4-unsplash.jpg) fixed no;
 		overflow-x: hidden;
 	}
 	hr {
