@@ -246,21 +246,12 @@ header {
 
 /* __________ Logo __________ */
 .logo {float:left;}
-.logo a {
+.logo p {
 	text-transform:uppercase;
 	line-height:80px;
 	font-size:26px;
 	color:#333;
 }
-.logo a span {
-	display:inline-block;
-	padding-right:18px;
-}
-.logo a span.b1 {font-weight:900;}
-.logo a span.b2 {font-weight:700;}
-.logo a span.b3 {font-weight:400;}
-.logo a span.b4 {font-weight:300;}
-.logo a span.b5 {font-weight:100;}
 
 
 
