@@ -325,13 +325,13 @@ html[xmlns] .slides {display: block;}
 	width:100%;
 	margin-left:-585px;
 	color:#333;
+	text-shadow: 1px 1px #333;
 	transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 }
 .top_slider .slide1 .flex_caption1 .title1 {margin-bottom:15px; display:inline-block; font-weight:500; line-height:80px; font-size:80px;}
-.top_slider .slide1 .flex_caption1 .title2 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;}
 .top_slider .slide1 .flex_caption1 .title3 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;}
 .top_slider .slide1 .flex_caption1 .title4 {margin-bottom:15px; width:680px; font-weight:300; line-height:34px; font-size:26px;}
 
@@ -352,6 +352,7 @@ html[xmlns] .slides {display: block;}
 	width:100%;
 	margin-left:-585px;
 	color:#fff;
+	text-shadow: 1px 1px #fff;
 	transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -377,7 +378,8 @@ html[xmlns] .slides {display: block;}
 	top:45%;
 	width:100%;
 	margin-left:-585px;
-	color:#fff;
+	color:#333;
+	text-shadow: 1px 1px #333;
 	transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
