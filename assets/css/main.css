@@ -650,6 +650,10 @@ input, select, textarea {
 		position: relative;
 	}
 
+		.res-img {
+			border-radius: 10px;
+		}
+
 		.image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
