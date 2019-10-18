@@ -2443,3 +2443,21 @@ input, select, textarea {
 					}
 
 	}
+
+	/* #top{
+		background-color: rgba(184, 231, 89, 0.767);
+	}
+
+	#work{
+	 	background-color: rgb(122, 240, 240);
+	}
+
+	.box.style1{
+		background-color: rgb(155, 219, 219);
+	} */
+
+
+	.box.style2 img {
+		width: 100%;
+		height: 100%;
+	}
