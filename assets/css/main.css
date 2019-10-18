@@ -3300,3 +3300,9 @@ input, select, textarea {
 				}
 
 	}
+
+	.img-bot{
+		display:flex;
+		justify-content: center;
+		overflow: hidden;
+	}
