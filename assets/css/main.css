@@ -33,6 +33,7 @@ body {
 	line-height: 1;
 }
 
+
 ol, ul {
 	list-style: none;
 }
@@ -458,7 +459,7 @@ input, select, textarea {
 		}
 	}
 
-	@-moz-keyframes nav-icons {
+	/* @-moz-keyframes nav-icons {
 		0% {
 			-moz-transform: translate3d(0,1em,0);
 			-webkit-transform: translate3d(0,1em,0);
@@ -474,9 +475,9 @@ input, select, textarea {
 			transform: translate3d(0,0,0);
 			opacity: 1;
 		}
-	}
+	} */
 
-	@-webkit-keyframes nav-icons {
+	/* @-webkit-keyframes nav-icons {
 		0% {
 			-moz-transform: translate3d(0,1em,0);
 			-webkit-transform: translate3d(0,1em,0);
@@ -492,9 +493,9 @@ input, select, textarea {
 			transform: translate3d(0,0,0);
 			opacity: 1;
 		}
-	}
+	} */
 
-	@-ms-keyframes nav-icons {
+	/* @-ms-keyframes nav-icons {
 		0% {
 			-moz-transform: translate3d(0,1em,0);
 			-webkit-transform: translate3d(0,1em,0);
@@ -510,9 +511,9 @@ input, select, textarea {
 			transform: translate3d(0,0,0);
 			opacity: 1;
 		}
-	}
+	} */
 
-	@keyframes nav-icons {
+	/* @keyframes nav-icons {
 		0% {
 			-moz-transform: translate3d(0,1em,0);
 			-webkit-transform: translate3d(0,1em,0);
@@ -528,7 +529,10 @@ input, select, textarea {
 			transform: translate3d(0,0,0);
 			opacity: 1;
 		}
-	}
+	} */
+
+
+
 
 	#header {
 		-moz-animation: header 1s 2.25s forwards;
@@ -662,7 +666,7 @@ input, select, textarea {
 					animation-delay: 4.75s;
 				}
 
-			#header nav a {
+			/* #header nav a {
 				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 				-webkit-touch-callout: none;
 				border: 0;
@@ -707,6 +711,22 @@ input, select, textarea {
 
 				#header nav a span {
 					display: none;
+				} */
+				#header nav {
+					display: flex;
+					justify-content: space-evenly;
+					flex-direction: row;
+					align-content: center;
+					
+				}
+				.nav-link {
+					border: 1px solid black;
+					font-size: 2rem;
+					margin: 5%;
+					vertical-align: center;
+					padding-top: 2.5%;					
+					height: 15vh;
+					
 				}
 
 /* Footer */
@@ -1079,3 +1099,6 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+
+
