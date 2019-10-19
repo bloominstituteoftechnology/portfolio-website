@@ -1021,10 +1021,23 @@ input, select, textarea {
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
-
+		#header nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			
+			
+		}			
+		.nav-link {
+					font-size: 1rem;
+					vertical-align: middle !important;
+							
+					
+				}
 		/* BG */
 
-			@-moz-keyframes bg {
+			/* @-moz-keyframes bg {
 				0% {
 					-moz-transform: translate3d(0,0,0);
 					-webkit-transform: translate3d(0,0,0);
@@ -1039,9 +1052,9 @@ input, select, textarea {
 					transform: translate3d(-412.5px,0,0);
 				}
 
-	}
+	} */
 
-		@-webkit-keyframes bg {
+		/* @-webkit-keyframes bg {
 			0% {
 				-moz-transform: translate3d(0,0,0);
 				-webkit-transform: translate3d(0,0,0);
@@ -1055,9 +1068,9 @@ input, select, textarea {
 				-ms-transform: translate3d(-412.5px,0,0);
 				transform: translate3d(-412.5px,0,0);
 			}
-			}
+			} */
 
-		@-ms-keyframes bg {
+		/* @-ms-keyframes bg {
 			0% {
 				-moz-transform: translate3d(0,0,0);
 				-webkit-transform: translate3d(0,0,0);
@@ -1071,9 +1084,9 @@ input, select, textarea {
 				-ms-transform: translate3d(-412.5px,0,0);
 				transform: translate3d(-412.5px,0,0);
 			}
-		}
+		} */
 
-		@keyframes bg {
+		/* @keyframes bg {
 			0% {
 				-moz-transform: translate3d(0,0,0);
 				-webkit-transform: translate3d(0,0,0);
@@ -1087,7 +1100,7 @@ input, select, textarea {
 				-ms-transform: translate3d(-412.5px,0,0);
 				transform: translate3d(-412.5px,0,0);
 			}
-		}
+		} */
 
 		#bg {
 			background-size: 412.5px auto;
