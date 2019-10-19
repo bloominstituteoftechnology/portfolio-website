@@ -15,7 +15,7 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 - [ x] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ x] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
 - [ x] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [ x] Push commits: `git push origin <firstName-lastName>`.
 
 ### Follow these steps to download your template and start the project:
 
