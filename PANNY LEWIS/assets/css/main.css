@@ -1628,6 +1628,7 @@ input, select, textarea {
 	}
 
 		.image img {
+			max-height: 212px;
 			display: block;
 			width: 100%;
 		}
