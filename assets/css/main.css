@@ -215,6 +215,7 @@ input, select, textarea {
 
 	footer {
 		margin: 3em 0 0 0;
+		align-items: center;
 	}
 
 		footer > p {
@@ -227,6 +228,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
+		background-color:lightseagreen;
 	}
 
 		.container.medium {
@@ -1686,7 +1688,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: lightgray;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1697,7 +1699,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color:lightsteelblue;
 			color: #fff !important;
 		}
 
@@ -1974,7 +1976,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color:gray;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
