@@ -1052,7 +1052,8 @@ input, select, textarea {
 				font-size: 1.4rem;
 				align-items: middle;
 				width: 100vw;
-				height: 10vh;					
+				height: 10vh;
+				padding-bottom: 10vh;					
 					
 				}
 		/* BG */
