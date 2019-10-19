@@ -727,7 +727,7 @@ input, select, textarea {
 					padding-top: 5vh;					
 					height: 15vh;
 					font-weight: bold;
-					color: darkorange;
+					color: rgb(238, 132, 2);
 					
 				}
 				.nav-link:hover {
@@ -1043,12 +1043,16 @@ input, select, textarea {
 			flex-direction: column;
 			justify-content: center;
 			align-content: center;
+			margin:auto;
+			
 			
 			
 		}			
 		.nav-link {
-				font-size: 1.2rem;
-				padding-top: 5vh;						
+				font-size: 1.4rem;
+				align-items: middle;
+				width: 100vw;
+				height: 10vh;					
 					
 				}
 		/* BG */
