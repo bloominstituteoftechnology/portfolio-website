@@ -721,12 +721,17 @@ input, select, textarea {
 				}
 				.nav-link {
 					border: 1px solid black;
-					font-size: 2rem;
+					font-size: 1.8rem;
 					margin: 5%;
 					vertical-align: center;
-					padding-top: 2.5%;					
+					padding-top: 5vh;					
 					height: 15vh;
+					font-weight: bold;
+					color: darkorange;
 					
+				}
+				.nav-link:hover {
+					background-color: black;
 				}
 
 /* Footer */
@@ -833,6 +838,10 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		/* Basic */
+			.nav-link {
+				font-size: 1rem;
+				width: 15vw;
+			}
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -915,6 +924,14 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+			nav {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.nav-link {
+				font-size: 1rem;
+				width: 25vw;
+			}
 
 			body {
 				min-width: 320px;
@@ -1030,9 +1047,8 @@ input, select, textarea {
 			
 		}			
 		.nav-link {
-					font-size: 1rem;
-					vertical-align: middle !important;
-							
+				font-size: 1.2rem;
+				padding-top: 5vh;						
 					
 				}
 		/* BG */
