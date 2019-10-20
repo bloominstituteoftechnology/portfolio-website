@@ -1427,6 +1427,7 @@ body.is-preload #bg:before {
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
     line-height: 2;
+    font-weight: 425;
 }
 
 #header nav ul {
@@ -1460,6 +1461,7 @@ body.is-preload #bg:before {
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
     border-bottom: 0;
+    font-weight: 425;
 }
 
 #header nav ul li a:hover {
@@ -1542,6 +1544,7 @@ body.is-preload #header .content .inner {
     }
     #header .content p {
         line-height: 1.875;
+        font-weight: 425;
     }
 }
 
@@ -1572,6 +1575,7 @@ body.is-preload #header .content .inner {
         line-height: 3rem;
         min-width: 0;
         width: 100%;
+        font-weight: 425;
     }
     #header nav.use-middle:after {
         display: none;
