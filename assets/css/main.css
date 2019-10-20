@@ -317,6 +317,14 @@ h2 {
     letter-spacing: 0.5rem;
 }
 
+h2.major.pagehead {
+    color: lightskyblue; 
+}
+
+h2.major.pagehead:hover {
+    color: whitesmoke; 
+}
+
 h3 {
     font-size: 1rem;
 }
@@ -1018,6 +1026,7 @@ ul.icons li a {
 
 ul.icons li a:hover {
     background-color: rgba(255, 255, 255, 0.075);
+    color: lightskyblue;
 }
 
 ul.icons li a:active {
@@ -1466,6 +1475,7 @@ body.is-preload #bg:before {
 
 #header nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.075);
+    color: lightskyblue;
 }
 
 #header nav ul li a:active {
