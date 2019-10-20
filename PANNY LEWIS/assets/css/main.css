@@ -1620,7 +1620,13 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
+	
+
 /* Image */
+
+	i {
+		font-size: 2em;
+	}
 
 	.image {
 		display: inline-block;
@@ -1935,7 +1941,7 @@ input, select, textarea {
 			left: 2em;
 			top: 2em;
 			margin: -4em 0 4em -4em;
-			width: auto;
+			width: inherit;
 		}
 
 /* Icons */
