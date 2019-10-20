@@ -60,6 +60,13 @@ input, select, textarea {
   -ms-appearance: none;
   appearance: none; }
 
+  img{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+
 /* Basic */
 @-ms-viewport {
   width: device-width; }
