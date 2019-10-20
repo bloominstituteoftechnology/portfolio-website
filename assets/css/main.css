@@ -748,7 +748,7 @@ input[type="radio"]+label:before {
 
 .image:before {
     pointer-events: none;
-    background-image: url("../../images/kommetjie.jpg");
+    background-image: url("../../images/kommetjiebg.jpg");
     background-color: rgba(19, 21, 25, 0.5);
     border-radius: 4px;
     content: '';
@@ -1240,7 +1240,7 @@ button {
     -webkit-transition-delay: 0.75s;
     -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
-    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/kommetjie.jpg");
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/kommetjiebg.jpg");
     background-size: auto, 256px 256px;
     background-position: center, center;
     background-repeat: no-repeat, repeat;
