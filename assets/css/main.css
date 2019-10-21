@@ -99,9 +99,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-color: beige;
+		background-image: linear-gradient(to top, #793802,#793802), url("https://imgur.com/bOFsOxH");
 		background-size: auto,
+
  cover;
 		background-attachment: fixed,
  fixed;
@@ -123,7 +124,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: beige;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: 300;
@@ -175,14 +176,14 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		border-bottom: dotted 1px goldenrod;
+		color: beige;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			color: beige !important;
 		}
 
 		a.special:not(.button) {
@@ -216,7 +217,7 @@ input, select, textarea {
 				-ms-transition: background-color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 2px goldenrod;
 				content: '\f105';
 				display: inline-block;
 				font-size: 1.25em;
@@ -230,15 +231,15 @@ input, select, textarea {
 			}
 
 			a.special:not(.button):hover:before {
-				background-color: rgba(255, 255, 255, 0.025);
+				background-color: brown;
 			}
 
 			a.special:not(.button):active:before {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: brown;
 			}
 
 	strong, b {
-		color: #ffffff;
+		color: beige;
 		font-weight: 600;
 	}
 
@@ -251,7 +252,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: beige;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -271,7 +272,7 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			padding-bottom: 1em;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px goldenrod;
 		}
 
 	h2 {
@@ -319,16 +320,16 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px rgba(255, 255, 255, 0.125);
+		border-left: solid 4px beige;
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
 
 	code {
-		background: rgba(255, 255, 255, 0.025);
+		background: #B3672B;
 		border-radius: 5px;
-		border: solid 2px rgba(255, 255, 255, 0.125);
+		border: solid 2px goldenrod;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -351,7 +352,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+		border-bottom: solid 2px goldenrod;
 		margin: 2.5em 0;
 	}
 
@@ -2165,7 +2166,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: beige;
 		display: block;
 		font-family: Raleway, Helvetica, sans-serif;
 		font-size: 0.8em;
@@ -2185,11 +2186,11 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: rgba(255, 255, 255, 0.025);
+		background: beige;
 		border-radius: 5px;
 		border: none;
-		border: solid 2px rgba(255, 255, 255, 0.125);
-		color: inherit;
+		border: solid 2px brown;
+		color: black;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -2212,7 +2213,7 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #5b6ba6;
+			border-color: 793802;
 		}
 
 	select {
@@ -2226,8 +2227,8 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
-			background: #2e3141;
+			color: beige;
+			background: #798302;
 		}
 
 		select:focus::-ms-value {
@@ -2266,7 +2267,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #ffffff;
+			color: beige;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2295,9 +2296,9 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				background: rgba(255, 255, 255, 0.025);
+				background: #EB9605;
 				border-radius: 5px;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 2px brown;
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2312,15 +2313,15 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #ffffff;
-			border-color: #ffffff;
+			background: beige;
+			border-color: #793807;
 			content: '\f00c';
-			color: #2e3141;
+			color: goldenrod;
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4c5c96;
+			border-color: goldenrod;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2332,22 +2333,22 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: beige!important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: beige !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: #EB9605 !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.35) !important;
+		color: #EB9605 !important;
 		opacity: 1.0;
 	}
 
@@ -2355,7 +2356,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 5px;
-		border: solid 2px rgba(255, 255, 255, 0.125);
+		border: solid 2px goldenrod;
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -2491,7 +2492,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px rgba(255, 255, 255, 0.125);
+				border-top: solid 1px gold;
 				padding: 0.5em 0;
 			}
 
@@ -2686,7 +2687,7 @@ input, select, textarea {
 
 			ul.contact li:before {
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 2px goldenrod;
 				display: inline-block;
 				font-size: 0.8em;
 				height: 2.5em;
@@ -2741,11 +2742,11 @@ input, select, textarea {
 			}
 
 				ul.pagination li > .page:hover {
-					background-color: rgba(255, 255, 255, 0.025);
+					background-color: #EB9605;
 				}
 
 				ul.pagination li > .page.active {
-					background-color: #4c5c96;
+					background-color: #EB9605;
 				}
 
 			ul.pagination li:first-child {
@@ -2799,7 +2800,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.025);
+				background-color: #798302;
 			}
 
 		table td {
@@ -2807,7 +2808,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: beige;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2815,11 +2816,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px goldenrod;
 		}
 
 		table tfoot {
-			border-top: solid 2px rgba(255, 255, 255, 0.125);
+			border-top: solid 2px goldenrod;
 		}
 
 		table.alt {
@@ -2827,7 +2828,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px rgba(255, 255, 255, 0.125);
+				border: solid 1px goldenrod;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -2866,8 +2867,8 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 5px;
 		border: 0;
-		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 2px #fd6a02;
+		color: beige!important;
 		cursor: pointer;
 		display: inline-block;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -2888,7 +2889,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.025);
+			background-color: maroon;
 		}
 
 		input[type="submit"]:active,
@@ -2896,7 +2897,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: maroon;
 		}
 
 		input[type="submit"].icon:before,
@@ -2905,7 +2906,7 @@ input, select, textarea {
 		button.icon:before,
 		.button.icon:before {
 			margin-right: 0.5em;
-			color: rgba(255, 255, 255, 0.35);
+			color: #798302;
 		}
 
 		input[type="submit"].primary,
@@ -2913,7 +2914,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #4c5c96;
+			background-color: #EB9605;
 			box-shadow: none;
 		}
 
@@ -2922,7 +2923,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #53639e;
+				background-color: beige;
 			}
 
 			input[type="submit"].primary:active,
@@ -2930,7 +2931,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #45558d;
+				background-color: #798302;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -2938,7 +2939,7 @@ input, select, textarea {
 			input[type="button"].primary.icon:before,
 			button.primary.icon:before,
 			.button.primary.icon:before {
-				color: #7985b0;
+				color: #793807
 			}
 
 		input[type="submit"].fit,
@@ -3005,7 +3006,7 @@ input, select, textarea {
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
+			background-color: #B3672B;
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -3076,7 +3077,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		background-color: goldenrod;
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3134,7 +3135,7 @@ input, select, textarea {
 					-ms-transition: background-color 0.2s ease-in-out;
 					transition: background-color 0.2s ease-in-out;
 					border-radius: 5px;
-					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+					box-shadow: inset 0 0 0 2px brown;
 					padding: 0 1.35em;
 				}
 
@@ -3157,11 +3158,11 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"]:hover {
-						background-color: rgba(255, 255, 255, 0.025);
+						background-color:#B3672B;
 					}
 
 					#header nav a[href="#menu"]:active {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: #B3672B;
 					}
 
 		#header.alt {
@@ -3257,8 +3258,8 @@ input, select, textarea {
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-		background: rgba(46, 49, 65, 0.8);
+		-webkit-tap-highlight-color: #798302;
+		background:transparent;
 		cursor: default;
 		height: 100%;
 		left: 0;
@@ -3281,7 +3282,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
+			background: #B3672B;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3291,7 +3292,7 @@ input, select, textarea {
 		}
 
 		#menu h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px goldenrod;
 			padding-bottom: 1em;
 		}
 
@@ -3337,8 +3338,7 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #45558d;
-					}
+						background: brown;					}
 
 		@media screen and (max-width: 736px) {
 
@@ -3401,7 +3401,7 @@ input, select, textarea {
 
 			#banner .logo .icon {
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 2px goldenrod;
 				cursor: default;
 				display: inline-block;
 				font-size: 2em;
@@ -3429,7 +3429,7 @@ input, select, textarea {
 			-ms-filter: blur(0);
 			filter: blur(0);
 			opacity: 1;
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px goldenrod;
 			font-size: 2.25em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3465,8 +3465,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-color: #eb9605;
+				background-image: linear-gradient(to top, beige,beige), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3558,7 +3558,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			border-bottom: solid 2px #793807;
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3577,8 +3577,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-color: beige;
+			background-image: linear-gradient(to top, rgba(228, 146, 109, 0.8), rgba(228, 146, 109, 0.8)), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4070,7 +4070,7 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, #eb9605, #eb9605), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
