@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "With all of the projects you will be working on here at Lambda School, you will need somewhere to house them! There is no better opportunity to learn and show off your skills than a beautiful portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/main.scss assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coffeelabor/portfolio-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coffeelabor/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/coffeelabor/portfolio-website#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
