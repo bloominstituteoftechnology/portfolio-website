@@ -102,12 +102,7 @@ input, select, textarea {
 		background-color: beige;
 		background-image: linear-gradient(to top, #793802,#793802), url("https://imgur.com/bOFsOxH");
 		background-size: auto,
-
- cover;
-		background-attachment: fixed,
- fixed;
-		background-position: center,
- center;
+ 
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -166,7 +161,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 12pt;	
 			}
 
 		}
@@ -1354,7 +1349,6 @@ input, select, textarea {
 
 			.row {
 				display: flex;
-				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -1599,7 +1593,7 @@ input, select, textarea {
 
 			.row {
 				display: flex;
-				flex-wrap: wrap;
+				flex-direction: column;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -1844,7 +1838,7 @@ input, select, textarea {
 
 			.row {
 				display: flex;
-				flex-wrap: wrap;
+				flex-direction: column;
 				box-sizing: border-box;
 				align-items: stretch;
 			}
@@ -2586,17 +2580,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
-
-			ul.actions:not(.fixed) {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				margin-left: 0;
-				width: 100% !important;
-			}
-
 				ul.actions:not(.fixed) li {
 					-moz-flex-grow: 1;
 					-webkit-flex-grow: 1;
@@ -2635,7 +2618,7 @@ input, select, textarea {
 							margin-left: -0.5rem;
 						}
 
-		}
+		
 
 /* Icons */
 
@@ -3015,7 +2998,7 @@ input, select, textarea {
 			.features article:nth-child(2n) {
 				margin-right: 0;
 			}
-
+		
 			.features article .image {
 				border-radius: 5px 5px 0 0;
 				display: block;
@@ -3060,7 +3043,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.features {
-				display: block;
+				display: flex;
 			}
 
 				.features article {
@@ -3235,6 +3218,7 @@ input, select, textarea {
 		-ms-transition: -ms-filter 0.25s ease;
 		transition: filter 0.25s ease;
 	}
+
 
 	#menu {
 		-moz-align-items: center;
@@ -3465,8 +3449,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #eb9605;
-				background-image: linear-gradient(to top, beige,beige), url("../../images/bg.jpg");
+				background-color: #eb9605; 
+				background-image: linear-gradient(to top brown, brown), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3821,14 +3805,28 @@ input, select, textarea {
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
 			}
+			@media screen and (max-width: 980px){
+				.wrapper.spotlight:nth-child(2n - 1) .inner {
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+			  }
+			}	
 
 			.wrapper.spotlight:nth-child(2n - 1) .image {
 				margin: 0 0 2em 3em;
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #45558d;
+				background-color: #eb9605;
 			}
+			@media screen and (max-width: 980px){
+				.wrapper.spotlight.style2 {
+					display: flex;
+					flex-direction: column;
+				  }
+				}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");
@@ -3928,6 +3926,7 @@ input, select, textarea {
 				.wrapper .inner {
 					padding: 3em 3em 1em 3em ;
 					width: 100%;
+					flex-direction: column;
 				}
 
 				.wrapper.spotlight .image {
@@ -3945,6 +3944,7 @@ input, select, textarea {
 
 			.wrapper {
 				margin: 2.5em 0;
+				flex-direction: column;
 			}
 
 				.wrapper:before, .wrapper:after {
@@ -3970,6 +3970,11 @@ input, select, textarea {
 					-ms-align-items: -ms-flex-start;
 					align-items: flex-start;
 				}
+				@media screen and (max-width: 980px){
+					.wrapper.spotlight .inner {
+						flex-direction: column;
+					}
+					}
 
 				.wrapper.spotlight .image {
 					width: 19em;
@@ -3985,7 +3990,8 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.wrapper.spotlight .inner {
-				display: block;
+				display: flex;
+				flex-direction: column;
 			}
 
 			.wrapper.spotlight .image {
@@ -4000,6 +4006,7 @@ input, select, textarea {
 
 			.wrapper .inner {
 				padding: 2em 1.5em 0.1em 1.5em ;
+				flex-direction: column;
 			}
 
 		}
@@ -4023,7 +4030,14 @@ input, select, textarea {
 		margin: 0 auto;
 		width: 55em;
 	}
-
+	@media screen and (max-width: 980px) {
+		#footer .inner {
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+		}
+	}	
 		#footer .inner > * {
 			width: 100%;
 		}
@@ -4156,3 +4170,55 @@ input, select, textarea {
 	.logo{
 		border-radius: 50%;
 	}
+	@media screen and (max-width: 980px){
+		#wrapper{
+			flex-direction: column;
+		}
+	}
+	@media screen and (max-width: 980px) {
+		.features{
+		display: flex;
+		flex-direction: column;
+		width: 200%;
+		margin: 10px;
+		padding: 0;
+	}
+}
+	@media screen and (max-width: 736px) {
+		.features{
+		display: flex;
+		flex-direction: column;
+		width: 200%;
+		margin: 0;
+		padding: 0;
+	}
+	@media screen and (max-width: 480px) {
+		.features{
+		display: flex;
+		flex-direction: column;
+		width: 20rem;
+		margin: 0;
+		padding: 0;
+	}
+ }
+}
+@media (max-width: 980px){
+	html,body{
+		max-width:100%;
+		overflow-x: hidden;
+	}
+  }
+  @media (max-width: 736px){
+	html,body{
+		max-width:100%;
+		overflow-x: hidden;
+	}
+  }
+  @media (max-width: 480px){
+	html,body{
+		max-width:100%;
+		overflow-x: hidden;
+	}
+  }
+
+
