@@ -1284,7 +1284,7 @@ body.is-article-visible #bg:after {
 }
 
 body.is-preload #bg:before {
-    background-color: #000000;
+    background-color: rgb(89, 98, 111); 
 }
 
 
