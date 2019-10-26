@@ -1747,3 +1747,11 @@ body.is-article-visible #footer {
 body.is-preload #footer {
     opacity: 0;
 }
+
+/* Mini Footer*/
+
+.minifooter {
+    text-align: center;
+    color: lightskyblue; 
+
+}
