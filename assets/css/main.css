@@ -1670,7 +1670,6 @@ input, select, textarea {
 			flex-direction: column;
 		}
 
-
 		#intro .main {
 			max-width: 70%;
 			max-height: 70%;
@@ -1682,6 +1681,83 @@ input, select, textarea {
 			display: flex;
 			flex-direction: column;
 		}
+	
+		#work >p {
+			font-size: 1.3rem;
+		}
+		#work >.resumeContainer{
+			display:flex;
+			flex-direction: column;
+			line-height: 2.3em;
+
+		}
+
+		#work .resumeContainer >.experience {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			border-bottom: 2px solid gray;
+			margin-top: 5%;
+		}
+		#work >.textContainer {
+			margin-top: 4%;
+			border-bottom: 2px dashed red;
+		}
+		#work .textContainer >p {
+			font-size: 1.3rem;
+			font-weight: 501;
+		}
+		#work .textContainer >.note {
+			margin-top: -2%;
+			font-size: 1rem;
+			font-weight: 400;
+		}
+
+		#work img {
+			width: 100%;
+			margin-top: 50px;
+		}
+		#work >h3 {
+			font-size: 2rem;
+			text-align: center;
+			text-decoration: underline;
+			text-decoration-style: wavy;
+			text-decoration-color: burlywood;
+			font-style: italic;
+		}
+		#work .experience >h4 {
+			font-size: 1.1rem;
+			font-style: oblique;
+		}
+		#work .experience >h5 {
+			font-size: 1.4rem;
+			border: 2px solid gray;
+			padding: 0 2%;
+		}
+		#work .experience >p {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		#work .experience li >p {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		#work .experience >address {
+			font-size: 1.5rem;
+			color: rgb(255, 236, 126);
+			font-weight: 550;
+			text-decoration: underline;
+			text-align: center;
+		}
+		#work .experience >address:hover {
+			color: dodgerblue;
+		}
+		#work .experience span {
+			font-size: 1rem;
+			font-style: italic;
+			font-weight: 500;
+			
+		}
 
 		#about {
 			display: flex;
@@ -1689,6 +1765,7 @@ input, select, textarea {
 		}
 
 		p {
+			text-align: center;
 			letter-spacing: .4rem;
 		}
  h6 {
@@ -1698,3 +1775,4 @@ input, select, textarea {
  li {
 	 letter-spacing: .4rem;
  }
+
