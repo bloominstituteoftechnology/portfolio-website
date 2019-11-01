@@ -1424,6 +1424,7 @@ body.is-preload #bg:before {
   border-radius: 100%;
   display: none;
 }
+/* ====  i put the display none to hide it. ===== */
 
 #header .logo .icon:before {
   font-size: 2rem;
