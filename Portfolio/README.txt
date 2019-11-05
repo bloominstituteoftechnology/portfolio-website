@@ -1,18 +1,19 @@
-Dopetrope by HTML5 UP
+Helios by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-A spiffy new blog/magazine style responsive site template with a flat/minimal
-design aesthetic.
+This is Helios, a brand new site template for HTML5 UP. It's clean, modern, and designed
+to take advantage of larger (well, wider) displays while still being capable of gracefully
+scaling down to fit all manner of smaller ones.
 
-Demo images* are courtesy of the incredibly talented Janine Pring aka Dreametry Doodle.
-See more of her amazing work (and her awesome t-shirt line) @ dreametrydoodle.com
+Demo images* courtesy of Michael Domaradzki, an awesome photographer I met over at
+deviantART. Check out his portfolio here:
+
+http://md.photomerchant.net/
 
 (* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Janine's work without her explicit permission!)
-
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+and/or use any of Michaels's work without his explicit permission!)
 
 AJ
 aj@lkn.io | @ajlkn
@@ -21,11 +22,12 @@ aj@lkn.io | @ajlkn
 Credits:
 
 	Demo Images:
-		Dreametry Doodle (dreametrydoodle.com)
+		Michael Domaradzki (md.photomerchant.net)
 
 	Icons:
 		Font Awesome (fontawesome.io)
 
 	Other:
 		jQuery (jquery.com)
+		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
