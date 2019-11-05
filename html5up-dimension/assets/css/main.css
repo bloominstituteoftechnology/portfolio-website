@@ -1670,13 +1670,31 @@ input, select, textarea {
 
 /* PORTFOLIO GRID */
 
-		.portfolioBox {
-			border: 1px white solid;
-			padding: 20px;
-			width: 30%;
-		}
+	.portfolioGrid {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+	}
+	.portfolioBox {
+		border: 1px white solid;
+		padding: 20px;
+		width: 30%;
+		margin-bottom: 20px;
 
-		#main article#work {
-			
-			width: 65rem;
+
+	}
+
+	#main article#work {
+		
+		width: 65rem;
+	}
+	@media (max-width: 980px) {
+		.portfolioBox {
+			width: 45%;
 		}
+	}
+	@media (max-width: 736px) {
+		.portfolioBox {
+			width: 90%;
+		}
+	}
