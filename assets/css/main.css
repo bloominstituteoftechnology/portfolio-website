@@ -2174,6 +2174,10 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	#banner .inner ul li {
+		list-style: none;
+		margin-bottom: 2em;
+	}
 /* Actions */
 
 	ul.actions {
@@ -2487,7 +2491,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: rgb(13, 126, 41);
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -2497,7 +2501,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: rgb(33, 173, 68) !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2505,8 +2509,39 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
+				background-color: rgb(13, 126, 41) !important;
 			}
+
+		input[type="submit"].secondary,
+		input[type="reset"].secondary,
+		input[type="button"].secondary,
+		button.secondary,
+		.button.secondary {
+			background-color: rgb(81, 13, 126);
+			box-shadow: none !important;
+			color: #ffffff !important;
+		}
+
+			input[type="submit"].secondary:hover,
+			input[type="reset"].secondary:hover,
+			input[type="button"].secondary:hover,
+			button.secondary:hover,
+			.button.secondary:hover {
+				background-color: rgb(145, 74, 228) !important;
+			}
+
+			input[type="submit"].secondary:active,
+			input[type="reset"].secondary:active,
+			input[type="button"].secondary:active,
+			button.secondary:active,
+			.button.secondary:active {
+				background-color: rgb(81, 13, 126) !important;
+			}
+		.content a {
+
+			border: none;
+
+		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
@@ -2817,8 +2852,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
-			color: #c8ece9;
+			background-color: #88d479;
+			color: #c8eccd;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2842,7 +2877,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header p {
-				color: #a6e0db;
+				color: #a6e0b4;
 			}
 
 			.wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
@@ -2850,7 +2885,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: #062e10;
 			}
 
 			.wrapper.style1 label {
@@ -3996,4 +4031,18 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	.headshot {
+		width: 30%;
+	}
+	.TitleTwo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.TitleTwo h1 {
+		padding: 5%;
+		font-size: 2rem;
+		margin: 0;
 	}
