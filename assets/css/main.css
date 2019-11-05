@@ -2541,11 +2541,17 @@ input, select, textarea {
 			.button.secondary:active {
 				background-color: rgb(81, 13, 126) !important;
 			}
-		.content a {
+		a {
 
 			border: none;
 
 		}
+		
+		.center {
+			display: flex;
+			justify-content: center;
+		}
+
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
