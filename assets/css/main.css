@@ -8605,10 +8605,10 @@ input, select, textarea {
 
 /* My Custom CSS */
 
-#first{
+.invert{
 	background:black;
 	color:white;
 }
-#first h2{
+.invert h2{
 	color:white;
 }
