@@ -188,6 +188,13 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+		.projectslink{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			border-bottom: 0;
+		}
+
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			border-bottom: solid 1px #ffffff;
 			width: -moz-max-content;
