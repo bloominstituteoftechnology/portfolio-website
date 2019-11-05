@@ -1680,8 +1680,9 @@ input, select, textarea {
 		padding: 20px;
 		width: 30%;
 		margin-bottom: 20px;
-
-
+	}
+	.portfolioBox:hover {
+		background: #cccccc1a;
 	}
 
 	#main article#work {
