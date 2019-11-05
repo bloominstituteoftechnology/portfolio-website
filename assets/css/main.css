@@ -2174,6 +2174,10 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	#banner .inner {
+		background-image: url(images/fancyheadshot.jpg);
+	}
+
 	#banner .inner ul li {
 		list-style: none;
 		margin-bottom: 2em;
@@ -4036,6 +4040,7 @@ input, select, textarea {
 	.headshot {
 		width: 30%;
 	}
+
 	.TitleTwo {
 		display: flex;
 		justify-content: center;
@@ -4046,3 +4051,5 @@ input, select, textarea {
 		font-size: 2rem;
 		margin: 0;
 	}
+
+	
