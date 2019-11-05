@@ -2174,13 +2174,10 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-<<<<<<< Updated upstream
 	#banner .inner {
 		background-image: url(images/fancyheadshot.jpg);
 	}
 
-=======
->>>>>>> Stashed changes
 	#banner .inner ul li {
 		list-style: none;
 		margin-bottom: 2em;
