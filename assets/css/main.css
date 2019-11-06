@@ -8653,11 +8653,10 @@ nav a{
 .philosophy{
 
 	background: url('/images/philosophy.jpg');
-	opacity:.25;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color:black;
+
 
 }
