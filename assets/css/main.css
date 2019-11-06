@@ -8648,3 +8648,16 @@ nav a{
 	justify-content: space-evenly;
 	width: 50%;
 }
+
+/* Philosophy Section*/
+.philosophy{
+
+	background: url('/images/philosophy.jpg');
+	opacity:.25;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color:black;
+
+}
