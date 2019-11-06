@@ -8618,6 +8618,13 @@ input, select, textarea {
 	text-align:left;
 	width:100%;
 	display:flex;
-	justify-content:flex-start;
+	justify-content:space-evenly;
 
+}
+.skills h3{
+	text-align:left;
+	text-decoration: underline;
+}
+.skills li{
+	list-style: none;
 }
