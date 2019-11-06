@@ -285,7 +285,6 @@ body.homepage.is-preload #header:after {
 /* Button */
 
 .button-header {
-	display: inline-block;
 	background: #660033;
 	color: #fff;
 	text-align: center;
@@ -296,7 +295,7 @@ body.homepage.is-preload #header:after {
 	width: 15rem;
 	height: 3.25rem;
 	font-size: 3em;
-	margin-top:20%;
+	padding:2%;
 }
 
 #footer{
@@ -328,4 +327,49 @@ span{
 	border-radius: 100%;
 	stroke: #fff;
 	text-align: left;
+}
+
+@media (max-width:800px){
+
+	.main{
+		display: flex;
+		flex-direction: column;
+		border-top:10px solid #660033;
+		border-top:5px solid white;
+		background-image: url("images/header.jpg");
+		justify-content: center;
+		align-content: center;
+	}
+	#wrapper{
+		width: 60%;
+		border:none;
+	}
+	
+header h2 a{
+	cursor: pointer;
+	font-size:2rem;
+
+}
+header .info h2{
+	width: 80%;
+	margin-left: 10%;
+}
+
+header .port img{
+	width:100%;
+	cursor: pointer;
+}
+span{
+	cursor: pointer;
+}
+}
+
+@media(max-width:500px){
+	.button-header{
+		display: none;
+	}
+	header .port img{
+		width:100%;
+		cursor: pointer;
+	}
 }
