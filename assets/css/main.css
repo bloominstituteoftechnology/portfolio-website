@@ -8628,3 +8628,23 @@ input, select, textarea {
 .skills li{
 	list-style: none;
 }
+
+/* Nav CSS */
+nav{
+	display:flex;
+	justify-content:center;
+	margin: .5% 0;
+	
+}
+nav a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight:500;
+
+}
+
+.nav_links{
+	display:flex;
+	justify-content: space-evenly;
+	width: 50%;
+}
