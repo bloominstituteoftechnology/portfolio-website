@@ -151,37 +151,22 @@ body.is-preload *:after {
 
 
 
-/* Image */
-
-.image {
-	position: relative;
-	display: inline-block;
-	outline: 0;
-	margin:0;
-}
-
-.image img {
-	display: block;
-	width: 100%;
-	margin:0;
-	background-color: red;
-	width:50%;
-}
-
-
-
-
-
-
-
 /* Main */
 
 .main{
 	display: flex;
 	flex-wrap: wrap;
 	border-top:10px solid #660033;
+	border-top:5px solid white;
+	background-image: url("images/header.jpg");
 }
 
+.port img{
+	width:80%;
+	height: 50vh;
+	top:0;
+	margin-left: 10%;;
+}
 
 
 /* Header */
@@ -197,6 +182,7 @@ body.is-preload *:after {
 	padding: 7.5em 0 2em 0;
 	cursor: default;
 	height:100vh;
+	
 }
 
 
@@ -216,7 +202,7 @@ body.is-preload *:after {
 	line-height: 1em;
 	font-size:6rem;
 	font-weight: bold;
-	font-family: "Indie Flower";
+	font-famifly: "Indie Flower";
 
 }
 
@@ -229,6 +215,17 @@ body.is-preload *:after {
 	margin-bottom:5%;
 
 
+}
+
+
+
+header h2 a{
+	color: white;
+	line-height: 1em;
+	font-size:2.5rem;
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 20%;;
 }
 
 #header h3 {
@@ -273,13 +270,16 @@ body.homepage.is-preload #header:after {
 /* Wrapper */
 
 #wrapper {
-	background: #fff;
+
 	color:#660033;
-	width:50%;
+	width:45%;
+	margin:2%;
+	border:5px solid white;
 	display: flex;
+	height: 61vh;
 	flex-direction: column;
 	align-content: flex-start;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 /* Button */
@@ -292,10 +292,40 @@ body.homepage.is-preload #header:after {
 	border-radius: 0.5em;
 	text-decoration: none;
 	cursor: pointer;
-	font-weight: 300;
+	font-weight: 500;
 	width: 15rem;
 	height: 3.25rem;
 	font-size: 3em;
 	margin-top:20%;
 }
 
+#footer{
+	background-color: #b30059;background-image: url('https://www.transparenttextures.com/patterns/black-orchid.png')
+}
+
+.copyright p{
+	font-size: 1rem;
+	color:white;
+	text-align: center;
+}
+a{
+	color: white;
+	cursor: pointer;
+}
+
+.info{
+	display: flex;
+
+}
+
+.info h2{
+	width: 60%;
+	margin-left: 2%;
+}
+
+span{
+	padding:4px;
+	border-radius: 100%;
+	stroke: #fff;
+	text-align: left;
+}
