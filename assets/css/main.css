@@ -88,6 +88,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		font-size: 62.5%;
 	}
 
 	*, *:before, *:after {
@@ -111,9 +112,6 @@ input, select, textarea {
 
 /* Type */
 
-	html {
-		font-size: 16pt;
-	}
 
 		@media screen and (max-width: 1680px) {
 
@@ -1669,7 +1667,36 @@ input, select, textarea {
 			display: flex;
 			flex-direction: column;
 		}
+		#intro p {
+			font-size: 1.4rem;
+			
+		}
+		#intro ul {
+			list-style: none;
+		}
+		#intro ul li >a {
+			text-decoration: none;
+		}
+		#intro ul li >.introLogo {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-top: 2px solid white;
+			padding-top: 2em;
+		}
 
+		#intro ul li .introLogo >i {
+			font-size: 3rem;
+		}
+
+		#intro ul li >p:hover {
+			font-size: 2rem;
+			text-decoration: underline;
+		}
+		#intro ul li .introLogo >h4 {
+			font-size: 3rem;
+		}
 		#intro .main {
 			max-width: 70%;
 			max-height: 70%;
@@ -1704,7 +1731,7 @@ input, select, textarea {
 			border-bottom: 2px dashed red;
 		}
 		#work .textContainer >p {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 			font-weight: 501;
 		}
 
@@ -1714,13 +1741,21 @@ input, select, textarea {
 		}
 		#work .textContainer >.note {
 			margin-top: -2%;
-			font-size: 1rem;
+			font-size: 1.3rem;
 			font-weight: 400;
 		}
-
+		#work .textContainer p a {
+			text-decoration: underline;
+		}
+		#work .textContainer p >a:hover {
+			font-size:2rem;
+		}
 		#work img {
 			width: 100%;
 			margin-top: 50px;
+		}
+		#work >.youtube {
+			border-radius: 50px;
 		}
 		#work >h3 {
 			font-size: 2rem;

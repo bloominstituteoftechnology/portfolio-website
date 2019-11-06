@@ -10,6 +10,7 @@
 		<meta lang ="en" charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://kit.fontawesome.com/ee153959f6.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="is-preload">
 
@@ -45,9 +46,40 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/Me.jpg" alt="" /></span>
-								<p>Hey, name is Issac. Currently 23 years old, I made a choice to go down the path of a Web Developer. Check out some of my <a href="https://github.com/Issac909?tab=repositories">work</a>.</p>
-								<p>I currently reside in California, it's both a curse and a gift. </p>
+								<p>My name is Issac Moreno. I currently reside in California. I have recently started attending school at Lambda to learn how to code.</p>
+								<p> <a href="https://github.com/Issac909?tab=repositories">Check out some of my work on GitHub</a></p>
+								<p>So far, my experience with coding consists of:</p>
+								<ul>
+									<li>
+										<div class = "introLogo">
+											<i class="fas fa-code"></i>
+											<h4>HTML</h4>
+										</div>
+
+										<p><a href="https://github.com/Issac909/User-Interface">Semantic HTML</a> </p>
+										<p><a href="https://github.com/Issac909/User-Interface">Accessibility</a> </p>										
+									</li>
+
+									<li>
+										<div class = "introLogo">
+											<i class="fab fa-css3"></i>
+											<h4>CSS</h4>
+										</div>
+
+										<p><a href="https://github.com/Issac909/Sprint-Challenge--User-Interface">CSS Reset/CSS Normalize</a></p>
+										<p><a href="https://github.com/Issac909/Preprocessing-I">Preprocessing (LESS)</a></p>
+										<p><a href="https://github.com/Issac909/responsive-web-design-I">Responsive Design</a></p>
+									</li>
+
+									<li>
+										<div class = "introLogo">
+											<i class="fab fa-js-square"></i>
+											<h4>JavaScript</h4>
+										</div>
+										<p><a href="https://github.com/Issac909/JavaScript-I">JS Fundamentals</a></p>
+										<p><a href="https://github.com/Issac909/JavaScript-III">ES6</a></p>
+									</li>
+								</ul>
 							</article>
 
 						<!-- Work -->
@@ -118,9 +150,10 @@
 
 
 
-										<img src="images/youtube.png" alt="Youtube logo in Neon" />
+										<img class = "youtube" src="images/youtube.png" alt="Youtube logo in Neon" />
 										<div class = "textContainer">
-											<p>I made the picture posted above using nothing but HTML/CSS. <a href="https://github.com/Issac909/Neon-Banner">Here is a link to try out the code yourself.</a></p>
+											<p>I made the logo posted above using nothing but HTML/CSS. 
+											<p><a href="https://github.com/Issac909/Neon-Banner">Here is a link to try out the code yourself.</a></p>
 										</div>
 
 										<img src = "images/uncomment.png" alt = "Screenshot showing where to delete to uncomment.">
@@ -128,10 +161,16 @@
 											<p class = "note">NOTE: If you want to mess with the YouTube logo, simply uncomment the grayed out text in both HTML and CSS files.</p>
 										</div>
 
-										<div class = "bottomPic">
-											<p>To change the letters that are displayed in Neon, see picutre below:</p>
+										<div class= "textContainer">
+											<p>To change the letters or words that are displayed in Neon, see picture below:</p>
 										
 											<img src = "images/letters.png" alt="Screenshot of HTML example">
+										</div>
+
+										<div class = "textContainer bottomPic">
+											<p>To change the colors of the letters or logo, select the color your looking to change in the CSS. See below:</p>
+											<img src="images/cssExplain.png" alt="Screenshot showing where to adjust color values">
+											<p class="note">NOTE: For example, if you wanted to change yellow to blue, start with changing the yellow color value in "neon-wrapper"(Border Colors) first, then you would change the CSS for all visible yellow boxes in the "neon-text" element (Word/Letter Color) <b>OR</b> you can copy one of the "word/letter color" elements and its properties, (ex. "neon-text-yellow{ }") then paste it to the bottom of the CSS file and change the name to "neon-text-blue" along with the colors to shades of blue. <b>Makes sure to change the class name to "neon-text-blue" in HTML as well!</b> </p>
 										</div>
 
 							</article>
@@ -139,7 +178,7 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/ExSaviorOG.png" alt="" /></span>
+								<span class="image main"><img src="images/Me.jpg" alt="" /></span>
 								<h6>Above is the most common display name for games I play.</h6>
 								<p>Some of my favorite things:</p>
 								<ul>
