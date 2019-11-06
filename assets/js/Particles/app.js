@@ -23,13 +23,13 @@ particlesJS('particles-js',
           }
         },
         "color": {
-          "value": "#ffbe00"
+          "value": "#1e7199"
         },
         "shape": {
           "type": "circle",
           "stroke": {
             "width": 1,
-            "color": "#ffbe00"
+            "color": "#1e7199"
           },
           "polygon": {
             "nb_sides": 5

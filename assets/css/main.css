@@ -8636,6 +8636,9 @@ input, select, textarea {
 .border22{
 	border:solid 22px white;
 }
+.transparent{
+	background-color:transparent !important;
+}
 nav{
 	display:flex;
 	justify-content:center;
@@ -8674,4 +8677,13 @@ nav a{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+/* Particle JS */
+#particles-js{
+	height: 100vh;
+	width:100%;
+	position:absolute;
+	background-color:#30363d;
+  }
 
+  
+  /* Particles CSS End*/
