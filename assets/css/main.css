@@ -8685,5 +8685,11 @@ nav a{
 	background-color:#30363d;
   }
 
-  
-  /* Particles CSS End*/
+  /* Media Queries */
+
+  @media (max-width: 999px){
+	header{
+		display:none;
+	}
+
+  }
