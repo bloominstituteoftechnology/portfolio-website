@@ -8661,7 +8661,7 @@ nav a{
 /* Philosophy Parallax*/
 .philosophy{
 
-	background: url('/images/philosophy.jpg');
+	background: url('https://alexisdavalos.github.io/portfolio-website/images/philosophy.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -8671,7 +8671,7 @@ nav a{
 }
 /* Contact Parallax */
 #contact{
-	background: url('/images/graphic-art.jpg');
+	background: url('https://alexisdavalos.github.io/portfolio-website/images/graphic-art.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
