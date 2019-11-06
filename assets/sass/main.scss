@@ -97,13 +97,13 @@
 
 	// Set box model to border-box.
 	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-		html {
-			box-sizing: border-box;
-		}
+	html {
+		box-sizing: border-box;
+	}
 
-		*, *:before, *:after {
-			box-sizing: inherit;
-		}
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
 
 	body {
 		background-color: #183026;
@@ -133,7 +133,6 @@
 					@include vendor('transition', 'none !important');
 				}
 			}
-
 	}
 
 	input, textarea, select {
