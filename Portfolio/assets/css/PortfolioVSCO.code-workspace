@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "/Users/lambda_school_loaner_167/Desktop/Git26/portfolio-website"
+		},
+		{
+			"path": "/Users/lambda_school_loaner_167/Desktop/Git26/portfolio-website/Portfolio/assets"
+		},
+		{
+			"path": "/Users/lambda_school_loaner_167/Desktop/Git26/portfolio-website/Portfolio/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio-website",
+		"liveServer.settings.port": 5502
+	}
+}
