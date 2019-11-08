@@ -2762,6 +2762,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.me_picture {
+				width: 100%;
+			}
+
 		.main .goto-next {
 			-moz-transition: background-color 0.2s ease-in-out;
 			-webkit-transition: background-color 0.2s ease-in-out;
