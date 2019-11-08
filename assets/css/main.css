@@ -2758,6 +2758,10 @@ input, select, textarea {
 				width: calc(100% - 10px);
 			}
 
+			.farm-photo {
+				width: 100%;
+			}
+
 		.main .goto-next {
 			-moz-transition: background-color 0.2s ease-in-out;
 			-webkit-transition: background-color 0.2s ease-in-out;
