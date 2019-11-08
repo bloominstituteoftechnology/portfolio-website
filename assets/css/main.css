@@ -1482,7 +1482,9 @@ input, select, textarea {
 	}
 
 /* Image */
-
+	#appstore{
+		width: 100%;
+	}
 	.image {
 		display: inline-block;
 		border: 0;
