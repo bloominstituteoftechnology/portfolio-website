@@ -228,7 +228,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.container {
-				width: 960px;
+				width: 1000px;
 			}
 
 		}
@@ -2338,7 +2338,7 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				background-color: #7a7777;
+				/* background-color: #7a7777; */
 				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
