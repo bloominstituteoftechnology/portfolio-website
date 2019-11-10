@@ -1630,7 +1630,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
-		background: #f1f1f1;
+		background: #9CADA2;
 		width: 100%;
 		padding: 0.75em;
 	}
@@ -1640,7 +1640,8 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			background-color: #f8f8f8;
+			outline: none;
+			background-color: rgb(216, 236, 223);
 		}
 
 	form input[type="text"],
@@ -2081,7 +2082,7 @@ input, select, textarea {
 		background: #dd5018 url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
-		background-size: 125% auto;
+		background-size: 175% auto;
 	}
 
 		#banner .button {
