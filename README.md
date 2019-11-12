@@ -39,6 +39,8 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 ## MVP Requirements
 
 - [ ] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
+	
+
 - [ ] Customize the template to you 
 	- [ ] Update the title tag match your name
 	- [ ] Update the place holder content throughout the template to your information
