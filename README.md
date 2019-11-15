@@ -1,4 +1,4 @@
-# Build A Portfolio Website
+  # Build A Portfolio Website
 
 With all of the projects you will be working on here at Lambda School, you will need somewhere to house them!  There is no better opportunity to learn and show off your skills than a beautiful portfolio website.  
 
@@ -10,7 +10,7 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 
 _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
-- [ ] Create a forked copy of this project.
+	- [ ] Create a forked copy of this project.
 - [ ] Add PM as collaborator on Github.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
