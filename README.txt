@@ -10,14 +10,6 @@ a pop-up gallery, styling for all basic page elements, a handy configuration
 (see the top of js/init.js), and some experimental stuff I've been messing with
 lately (like the parallax background effect).
 
-Demo images* courtesy of the talented, the awesome, THE one and only Felicia Simion,
-a photographer whose works will make your head spin in awe. See more of it here:
-
-http://ineedchemicalx.deviantart.com/
-
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
-
 AJ
 aj@lkn.io | @ajlkn
 
