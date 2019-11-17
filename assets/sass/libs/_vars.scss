@@ -1,81 +1,49 @@
 // Misc.
 	$misc: (
-		z-index-base:		10000,
-		main-layout:		(
-			default:		(
-				rows:		2,
-				columns:	4,
-				pad:		0.5,
-				minHeight:	20em
-			),
-			xlarge:			(
-				rows:		2,
-				columns:	3,
-				pad:		0.5,
-				minHeight:	20em
-			),
-			large:			(
-				rows:		2,
-				columns:	2,
-				pad:		0.5,
-				minHeight:	20em
-			),
-			medium:			(
-				rows:		3,
-				columns:	2,
-				pad:		0.5,
-				minHeight:	18em
-			),
-			xsmall:			(
-				rows:		2,
-				columns:	1,
-				pad:		0.5,
-				minHeight:	18em
-			)
-		)
+		z-index-base:					10000,
+		gallery-lightbox-opacity:		0.875
 	);
 
 // Duration.
 	$duration: (
-		transition:			0.2s,
-		header:				1s,
-		panel:				0.5s,
-		modal:				0.5s,
-		thumb:				0.15s
+		transition:						0.2s,
+		gallery-lightbox-fadein:		0.5s
 	);
 
 // Size.
 	$size: (
-		element-height:		2.75em,
-		element-margin:		2em,
-		header:				4em
+		border-radius:					0.25rem,
+		element-height:					2.5rem,
+		element-margin:					1.5rem,
+		pad:							3.5rem,
+		pad-small-tb:					3.5rem * 0.825,
+		pad-small-lr:					3.5rem * 0.5,
+		span-fixed:						10rem,
+		span-variable:					10%
 	);
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				300,
-		weight-bold:		300,
-		weight-extrabold:	400,
-		kerning:			0.025em,
-		kerning-alt:		0.1em
+		family:							('Source Sans Pro', Helvetica, sans-serif),
+		family-heading:					(Arial, Helvetica, sans-serif),
+		family-fixed:					('Courier New', monospace),
+		weight:							300,
+		weight-bold:					400,
+		weight-heading:					700
 	);
 
 // Palette.
 	$palette: (
-		bg:					#242629,
-		bg-alt:				#1f2224,
-		bg-overlay:			transparentize(#242629, 0.75),
-		bg-overlay-alt:		transparentize(#242629, 0.5),
-		bg-ie-overlay:		transparentize(#242629, 0.45),
-		bg-ie-overlay-alt:	transparentize(#242629, 0.2),
-		fg:					#a0a0a1,
-		fg-bold:			#ffffff,
-		fg-medium:			#707071,
-		fg-light:			#505051,
-		border:				#36383c,
-		border-bg:			#34363b,
-		border-bg-alt:		#44464b,
-		accent1:			#34a58e
+		bg:								#2e2b37,
+		bg-alt:							#e1e6e1,
+		fg:								rgba(255,255,255,0.75),
+		fg-bold:						rgba(255,255,255,0.875),
+		fg-light:						rgba(255,255,255,0.5),
+		border:							rgba(255,255,255,0.25),
+		border-bg:						rgba(255,255,255,0.075),
+		border-bg-alt:					rgba(255,255,255,0.125),
+		accent1:						#726193,
+		accent2:						#e37b7c,
+		accent3:						#ffe4b4,
+		accent4:						#353865
 	);
