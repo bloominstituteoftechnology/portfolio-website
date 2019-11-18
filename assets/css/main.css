@@ -401,7 +401,7 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-color: #d64760;
+				background-color: #9e9596;
 				background-image: url("images/overlay.png");
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -615,6 +615,7 @@ input, select, textarea {
 /* Header */
 
 	#footer {
+		font-size: x-small ;
 		width: 100%;
 		padding: 1.5em;
 		display: -moz-flex;
@@ -641,7 +642,7 @@ input, select, textarea {
 		}
 
 		#footer h2 {
-			font-size: 2.25em;
+			font-size: 1.25em;
 			margin: 0 0 1em 0;
 		}
 
