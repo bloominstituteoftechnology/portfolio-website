@@ -3455,7 +3455,7 @@ input, select, textarea {
 		justify-content: flex-end;
 		position: relative;
 		text-align: left;
-		overflow-x: hidden;
+        overflow-x: hidden;
 	}
 
 		.banner.style1 .content {

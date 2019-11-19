@@ -96,9 +96,19 @@ video {
   vertical-align: center;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
 body {
   line-height: 1;
@@ -154,12 +164,29 @@ textarea {
 
 #start-div {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row-wrap;
+  align-items: flex-end;
   width: 15rem;
   height: 100%;
   z-index: 0;
+  padding: 0 2rem;
+  white-space: nowwrap;
+  font-size: 1.11rem;
+  font-weight: 300;
+  margin-right: 2rem;
+}
+
+#start-div .actions {
+  display: block;
+  height: auto;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  color: #ffffff;
 }
 
 #end-div {
@@ -170,7 +197,6 @@ textarea {
   width: 15rem;
   height: 100%;
   padding-top: 2rem;
-
 }
 
 .small-div {
@@ -188,17 +214,23 @@ textarea {
   display: flex;
 }
 
-#gallery-intro {
-  width: 130rem;
-  height: 40rem;
-  position: relative;
-}
-
 .content.span-7 {
   height: 70%;
 }
 
-/* @media screen and (max-width: 736px) {
+#contact-page {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-content: center;
+  margin-left: 2rem;
+}
+
+#contact-page h2 {
+  margin-left: 11rem;
+}
+
+@media screen and (max-width: 736px) {
   .small-div {
     width: 6rem;
     z-index: 1;
@@ -208,7 +240,6 @@ textarea {
     width: 6rem;
     z-index: 1;
   }
-
 
   #first {
     width: 40rem;
@@ -236,7 +267,7 @@ textarea {
     margin: 15rem 1rem 0 1rem;
     z-index: 4;
   }
-} */
+}
 
 @-moz-keyframes load-spinner {
   0% {
@@ -1316,8 +1347,8 @@ ul.contact-icons.color4 > li:before {
   opacity: 0.7;
   font-size: 0.7rem;
   width: 35%;
-  margin-left: 0.9rem;
-  margin-top: 1.7rem;
+  margin-right: 25rem;
+  margin-top: 3.7rem;
 }
 a {
   text-decoration: none;
@@ -1338,17 +1369,17 @@ button,
   -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: transparent;
-  border: 0;
-  border-radius: 0.25rem;
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+  border: 0.12rem solid #08cbee;
+  border-radius: 0.29rem;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.25);
   color: rgba(255, 255, 255, 0.875) !important;
   cursor: pointer;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.6rem;
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 500;
   height: 2.75rem;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.25rem;
   line-height: 2.75rem;
   padding: 0 1.5rem 0 1.65rem;
   text-align: center;
@@ -1493,7 +1524,7 @@ input[type="reset"].primary.color2,
 input[type="button"].primary.color2,
 button.primary.color2,
 .button.primary.color2 {
-  color: #e37b7c !important;
+  color: #08cbee !important;
 }
 
 input[type="submit"].primary.color3,
@@ -1514,10 +1545,10 @@ button.primary.color4,
 
 input[type="submit"].primary:hover,
 input[type="reset"].primary:hover,
-input[type="button"].primary:hover,
-button.primary:hover,
-.button.primary:hover {
-  background-color: #ffe4b4;
+input[type="button"].primary.color2:hover,
+button.primary.color2:hover,
+.button.primary.color2:hover {
+  background-color: #c834ec;
 }
 
 input[type="submit"].primary:active,
@@ -3295,6 +3326,7 @@ button:disabled,
   -webkit-align-items: -webkit-stretch;
   -ms-align-items: -ms-stretch;
   align-items: stretch;
+  font-size: 1.1rem;
 }
 
 .panel.banner .content {
@@ -3533,10 +3565,10 @@ button:disabled,
   -ms-flex-shrink: 1;
   flex-shrink: 1;
   height: 100%;
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 0.6rem 1.1rem 1.5rem 0.6rem;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) {0
   #page-wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -3557,6 +3589,7 @@ button:disabled,
 
 @media screen and (max-width: 736px) {
   #page-wrapper {
+    flex-flow: column wrap;
     height: auto;
     padding: 1rem;
   }
@@ -3589,14 +3622,14 @@ button:disabled,
   transition-delay: 0.25s;
   cursor: default;
   position: relative;
-  height: 35rem;
+  height: 40rem;
   width: auto;
-  box-shadow: 0 0.5rem 2rem 0.25rem #4e0e0e;
-  margin: 0 2rem;
+  box-shadow: 0.87rem 0.87rem 1.4rem 0.42rem #380909;
   color: #000001;
   font-weight: 500;
   align-items: center;
   justify-content: space-evenly;
+  margin: 0 3rem;
 }
 
 #wrapper > .scrollZone {
@@ -3626,7 +3659,6 @@ button:disabled,
   font-size: 0.8rem;
   color: rgba(19, 2, 2, 0.375);
 }
-
 
 #wrapper > .copyright a:hover {
   color: inherit;
