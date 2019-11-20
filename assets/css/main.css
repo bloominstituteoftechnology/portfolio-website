@@ -1710,7 +1710,12 @@ body.is-preload #header .content .inner {
     }
 }
 
+/* Projects Page */
 
+#projects span>a:hover {
+    color: lightskyblue;
+ }
+ 
 /* Footer */
 
 #footer {
