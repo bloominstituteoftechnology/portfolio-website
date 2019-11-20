@@ -1174,7 +1174,8 @@ body.is-preload #bg:before {
   #wrapper {
     padding: 1rem;
   }
-}
+  }
+
 
 /* Header */
 #header {
@@ -1396,7 +1397,7 @@ body.is-preload #header .content .inner {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   #header {
     padding: 1.5rem 0;
   }
@@ -1432,6 +1433,9 @@ body.is-preload #header .content .inner {
 
   #header nav.use-middle:after {
     display: none;
+  }
+  .logo{
+    display:none
   }
 }
 
