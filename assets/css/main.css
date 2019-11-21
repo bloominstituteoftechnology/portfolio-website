@@ -27,7 +27,9 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+	vertical-align: baseline;
+	}
 
 body {
 	line-height: 1;
@@ -334,14 +336,13 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.scrollZone {
+			/*.scrollZone {
 				display: none;
-			}
+			}*/
 
 		}
 
 /* Main */
-
 	#main {
 		-moz-transition: opacity 1s ease-in-out;
 		-webkit-transition: opacity 1s ease-in-out;
@@ -362,6 +363,8 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		padding: 5px;
 	}
+
+
 
 		#main .items {
 			display: -moz-flex;
@@ -536,11 +539,11 @@ input, select, textarea {
 				}
 
 				#main .item.span-2 {
-					width: 25.5em;
+					width: 17em;
 				}
 
 				#main .item.span-3 {
-					width: 34em;
+					width: 17em;
 				}
 
 		}
@@ -599,7 +602,7 @@ input, select, textarea {
 						}
 
 					#main .item.thumb h2 {
-						display: none;
+						align-items: center;
 					}
 
 		}
