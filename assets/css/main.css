@@ -422,12 +422,12 @@ input, select, textarea {
 			}
 
 				#main .item.intro h1 {
-					font-size: 3em;
+					font-size: 2em;
 					line-height: 1em;
 				}
 
 				#main .item.intro p {
-					font-size: 1.25em;
+					font-size: 1em;
 					line-height: 1.5em;
 					margin: 0.5em 0 0 0;
 					opacity: 0.65;
