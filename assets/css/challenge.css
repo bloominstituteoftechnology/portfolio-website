@@ -1,0 +1,61 @@
+/* Universal "Wild-card , least specific*/"
+* {
+  font-size:16px;
+}
+/*element selecttor will override Universal*/
+* a{text-decoration: none;
+}
+.main-header{
+  font-size:30px;
+  color:crimson;
+  border: solid;
+  background:navy;
+  padding: 20px;
+  text-align: center;
+  
+ }
+.nav-item{
+  padding: 5px 20px; /*top-bottom, left-right*/
+  background: lightgray;
+  border: 1px sold gray
+  margin: 10px;
+  border-radius:5px; /*roundout border*/
+  display: inline-block;
+  color: black;
+}
+.nav-item:hover {
+  background: #e3f3e3;
+}
+#apply{
+  background:#176433;
+  color:red;
+  font-size: 20px;
+  
+}
+* h1{
+  font-size: 50px;
+}
+
+* h2{
+  color: blue;
+  padding: 10px ;
+}
+
+* h3{
+  color:green;
+ /* display: inline-block;*/
+  border:1px solid red;
+  background-color: skyblue
+}
+
+.foot-item {
+  padding:10px 20px;
+  border: 1px solid purple;
+    display: inline-block;
+  margin: 10px;
+  border-radius:20px;
+  background:#991321;
+}
+.foot-item:hover{
+  background: #ff1245;
+}
