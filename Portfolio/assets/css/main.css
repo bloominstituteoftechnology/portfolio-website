@@ -1697,7 +1697,7 @@ input, select, textarea {
 		input[type="reset"].style2,
 		button.style2,
 		.button.style2 {
-			background: none;
+			background: #333333;
 			color: #C2DFFF;
 			box-shadow: inset 0px 0px 2px 0px #a0a1a7;
 		}
