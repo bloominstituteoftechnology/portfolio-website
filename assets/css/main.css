@@ -174,11 +174,27 @@ textarea {
   font-size: 1.11rem;
   font-weight: 300;
   margin-right: 2rem;
+       border-radius: 5px;
+}
+#start-div p {
+    letter-spacing:1pt;
+    white-space: nowrap;
 }
 
 #start-div .actions {
   display: block;
   height: auto;
+}
+
+#intro-div {
+    border-radius: 5px;
+
+text-align: center;
+}
+
+#intro-div-int {
+    border-radius: 5px;
+    padding-top:4.75rem;
 }
 
 ul li {
@@ -200,7 +216,7 @@ ul li {
 }
 
 .small-div {
-  width: 10rem;
+  width: auto;
   height: 100%;
 }
 
@@ -220,14 +236,29 @@ ul li {
 
 #contact-page {
   display: flex;
-  flex-flow: row wrap;
   justify-items: center;
-  align-content: center;
+  align-items: center;
   margin-left: 2rem;
+  background-image: url(../../images/socal-mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 5px;
+  margin-right: 2rem;
+  width: 40rem;
+  padding-bottom: 6rem;
+  text-align: center;
 }
 
 #contact-page h2 {
-  margin-left: 11rem;
+  /* margin-left: 11rem; */
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+
+.email-button {
+    background-color: #1a1717;
+    opacity: .9;
+    width: 10rem;
 }
 
 @media screen and (max-width: 736px) {
@@ -370,6 +401,7 @@ body {
   height: 100%;
   min-height: 30rem;
   overflow: hidden;
+
 }
 
 body:before {
@@ -412,10 +444,8 @@ body:after {
   height: 100%;
   z-index: -1;
   background-attachment: fixed;
-  background-color: #e1e6e1;
-  background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
-  background-repeat: repeat, repeat-x;
-  background-size: 128px 128px, cover;
+  background-color: #160422;
+
 }
 
 body.is-preload *,
@@ -523,6 +553,7 @@ i {
 p {
   margin: 1rem 0 0 0;
   line-height: 1.5;
+  color: #ffffff;
 }
 
 body.is-ie p {
@@ -571,7 +602,6 @@ h3.major:after {
   left: 0;
   margin-bottom: -1.3rem;
   height: 0.1rem;
-  background-color: rgb(41, 40, 40);
 }
 
 h1 {
@@ -1645,6 +1675,7 @@ button:disabled,
   -webkit-align-items: -webkit-stretch;
   -ms-align-items: -ms-stretch;
   align-items: stretch;
+  flex-flow: row wrap;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -2071,7 +2102,7 @@ button:disabled,
 }
 
 .panel > *.color0 {
-  background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+  background-image: url("../../images/overlay.png"), url('../../images/california-palms.jpg');
   background-size: 128px 128px, auto;
 }
 
@@ -2424,7 +2455,8 @@ button:disabled,
 }
 
 .panel.small {
-  width: 35rem;
+  width: 10rem;
+  margin-right: 2rem;
 }
 
 .panel.medium {
@@ -3565,7 +3597,7 @@ button:disabled,
   -ms-flex-shrink: 1;
   flex-shrink: 1;
   height: 100%;
-  padding: 0.6rem 1.1rem 1.5rem 0.6rem;
+  padding: 1rem 2rem 1rem 1rem;
 }
 
 @media screen and (orientation: portrait) {0
