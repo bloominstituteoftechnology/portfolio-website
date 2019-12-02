@@ -261,6 +261,22 @@ ul li {
     width: 10rem;
 }
 
+.music-player p{
+    text-align: center;
+margin-bottom: 1rem;
+    font-size: 10pt;
+}
+
+#gallery-intro {
+    display: flex;
+
+}
+
+#gallery-main {
+    height: 45rem;
+}
+
+
 @media screen and (max-width: 736px) {
   .small-div {
     width: 6rem;
@@ -1682,6 +1698,8 @@ button:disabled,
   display: flex;
   height: 100%;
   width: 100rem;
+  margin-left: 1rem;
+  overflow: visible;
 }
 
 .gallery > * {
@@ -3584,6 +3602,7 @@ button:disabled,
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  margin-top: 4rem;
   -moz-justify-content: -moz-flex-start;
   -webkit-justify-content: -webkit-flex-start;
   -ms-justify-content: -ms-flex-start;
