@@ -59,7 +59,7 @@
           <div id="small-div" class="image filtered span-0-25"><img class="small-div-img" src="./images/pic01.jpg" /></div>
         </section>
 
-        <!-- Panel -->
+        <!-- Gallery -->
 
         <section class="panel" id="gallery-intro">
           <div class="intro color2">
@@ -70,81 +70,86 @@
               specifications. Feel free to contact me if you see something that you like, and I'd be happy to make it work for
               your project's needs!
             </p>
+          </div>
+          <p>Some music to listen while you peruse...</p>
+        </section>
 
-              <p>Some music to listen while you peruse...</p>
+        <!--  Web Audio API Audio Player Element -->
 
-<!--  Web Audio API Audio Player Element -->
+        <section id="audio-player">
+          <div class="master-controls">
+            <input
+              type="range"
+              id="volume"
+              class="control-volume"
+              min="0"
+              max="2"
+              value="1"
+              list="gain-vals"
+              step="0.01"
+              data-action="volume"
+            />
+            <datalist id="gain-vals">
+              <option value="0" label="min"> </option>
+              <option value="2" label="max"> </option>
+            </datalist>
 
-<div id='audio-player'>
-     <div class='player-body'>
-<section class='master-controls'>
-<input
-type='range'
-id='volume'
-class='control-volume'
-min='0'
-max='2'
-value='1'
-list='gain-vals'
-step='0.01'
-data-action='volume'
-/>
-<datalist id='gain-vals'>
-    <option value='0' label='min'>
-    <option value='2' label='max'>
-</datalist>
-<label for='volume'>VOL</label>
+            <label for="volume">VOL</label>
 
-<button class='control-power' role='switch' aria-checked='false' data-power='on'>
-</section>
-<section class='player-body'>
-<audio>
-    <source src='/assets/Music/3PointsMakeAPlane.mp3'/>
-    <source src='/assets/Music/TrapBeat.mp3'/>
-</audio>
+            <button class="control-power" role="switch" aria-checked="false" data-power="on">PWR</button>
+          </div>
+          <div class="player-body">
+            <audio>
+              <source src="/assets/Music/3PointsMakeAPlane.mp3" />
+              <source src="/assets/Music/TrapBeat.mp3" />
+            </audio>
 
-<button data-playing='false' class='player-controls-play' role='switch' aria-checked='false'>
-    <span>Play/Pause</span>
-</button>
-</section>
-<script>
+            <button data-playing="false" class="player-controls-play" role="switch" aria-checked="false">
+              <span>Play/Pause</span>
+            </button>
+          </div>
+          <div class="player-logic">
+            <script>
+              //   Create new Audio Context
+              const audioContext = window.AudioContext || window.webkitAudioContext;
+              const audioCtx = new AudioContext();
 
+              //  Load Sound
 
-                //   Create new Audio Context
-                const audioContext = window.AudioContext ||
-                window.webkitAudioContext;
-                const audioCtx = new AudioContext();
+              const audioElement = document.querySelector('track-01');
+              const track1 = audioCtx.createMediaElementSource(audioElement);
+              const playButton = document.querySelector('player-controls-play');
 
-                //  Load Sound
+              playButton.addEventListener(
+                'click',
+                function() {
+                  if (audioContext.state === 'suspended') {
+                    audioContext.resume();
+                  }
 
-                const audioElement = document.querySelector('track-01');
-                const track1 = audioCtx.createMediaElementSource(audioElement);
-const playButton = document.querySelector('player-controls-play');
+                  if (this.dataset.playing === 'false') {
+                    audioElement.play();
+                    this.dataset.playing = 'true';
+                  } else if (this.dataset.palying === 'true') {
+                    audioElement.pause();
+                    this.dataset.plauying = 'false';
+                  }
+                },
+                false
+              );
 
-playButton.addEventListener('click', function() {
+              audioElement.addEventListener(
+                'ended',
+                () => {
+                  playButton.dataset.playing = 'false';
+                },
+                false
+              );
 
-    if (audioContext.state === 'suspended') {
-        audioContext.resume();
-    }
-
-    if (this.dataset.playing === 'false') {
-        audioElement.play();
-        this.dataset.playing = 'true';
-    } else if (this.dataset.palying === 'true') {
-        audioElement.pause();
-        this.dataset.plauying = 'false';
-    }
-    }, false);
-
-    audioElement.addEventListener('ended', () => {
-        playButton.dataset.playing = 'false';
-    }, false);
-
-
-                track1.connect(audioContext.destination);
-</script>
-     </div>
-    </div>
+              track1.connect(audioContext.destination);
+            </script>
+          </div>
+        </section>
 
         <section class="panel span-9 top" id="gallery-main">
           <div class="gallery">
@@ -195,11 +200,12 @@ playButton.addEventListener('click', function() {
         </section>
 
         <!-- Scripts -->
-
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <div class="scripts">
+          <script src="assets/js/jquery.min.js"></script>
+          <script src="assets/js/browser.min.js"></script>
+          <script src="assets/js/breakpoints.min.js"></script>
+          <script src="assets/js/main.js"></script>
+        </div>
       </div>
     </div>
   </body>
