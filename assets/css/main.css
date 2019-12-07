@@ -208,7 +208,9 @@ input, select, textarea {
 			margin: 0.5em 0 0 0;
 			padding: 0 0 1.5em 0;
 		}
-
+		header.name {
+			margin-bottom: 9em;
+		}
 	footer {
 		margin-top: 1em;
 	}
