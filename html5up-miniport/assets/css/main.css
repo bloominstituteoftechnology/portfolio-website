@@ -1150,6 +1150,13 @@ input, select, textarea {
 
 				.row > .col-12-medium {
 					width: 100%;
+					border-radius: 50%;
+					height: 100px;
+					width: 100px;
+					overflow: hidden;
+					display: flex;
+					justify-content: center;
+					align-items: center;	
 				}
 
 				.row > .off-12-medium {
@@ -1635,6 +1642,8 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			border-radius: 50%;
+			height: 50%;
 		}
 
 		.image.featured {
