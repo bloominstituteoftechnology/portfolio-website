@@ -813,6 +813,8 @@ input[type='radio'] + label:before {
     display: block;
     margin: 2.5rem 0;
     width: 100%;
+    height: 18vh;
+    overflow: hidden;
 }
 
 .image.main img {
@@ -1785,4 +1787,15 @@ body.is-article-visible #footer {
 
 body.is-preload #footer {
     opacity: 0;
+}
+
+/* start of code */
+.workOne {
+    border-bottom: 1px dashed white;
+    margin-bottom: 10%;
+}
+
+.fa-angellist {
+    font-size: 3rem;
+    margin-top: 21.5%;
 }
