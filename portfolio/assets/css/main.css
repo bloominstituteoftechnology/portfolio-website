@@ -2596,7 +2596,13 @@ input, select, textarea {
 			}
 
 			.features li:nth-child(10) {
-				background-color: rgba(0, 0, 0, 0.35);
+				background-color: rgba(0, 0, 0, 0.40);
+			}
+			.features li:nth-child(11) {
+				background-color: rgba(0, 0, 0, 0.445);
+			}
+			.features li:nth-child(12) {
+				background-color: rgba(0, 0, 0, 0.495);
 			}
 
 			.features li:before {
@@ -4055,29 +4061,51 @@ input, select, textarea {
 			font-family: 'Space Mono', monospace;
 		}
 
-		.main.hero.image.profile{
-			 width: 75px;
-			 height: 75px;
+		.main.hero.image.profile {
+			 width: 200px;
+			 height: 200px;
+			 background-image: url("../../images/profile.jpeg");
+			 background-repeat: no-repeat;
+			 background-position: center;
+			 background-size: cover;
 			 border-radius: 50%;
-			 opacity: 0.9;;
+			 opacity:1.0;;
 			 top:2%;
 			 left:5%;
 			 position: absolute;
 			 z-index:1;
-
+			 border:1px solid black;
+			 box-shadow:  0px 5px 10px 0px rgba(0,0,0,0.5);
 			 
 			
 		}
 
-		.main.hero.image.profile:hover {
+		@media screen and (max-width:736px){
+			.main.hero.image.profile{
+			width: 100%;
+			height:300px;
+			margin: 0 auto 5% auto;
+			display:inline-block;
+			position: relative;
+			border-radius:8px;
+			border:0;
+			z-index:0;
+			left:0;
+			opacity: 0.9;
+			background-size:cover;
+			}
+			
+		}
+
+	 /*	.main.hero.image.profile:hover {
 			-webkit-transform: rotateY(45deg);
 			transform: rotateY(45deg);
 			transition-timing-function: ease;
 			transition-duration: 1s;
 			
-		}
+		}*/
 
-		.inner .tool-tip {   /* creating the tool tip main div */
+		 /*.inner .tool-tip {    creating the tool tip main div 
 			display: none;
 			justify-content: center;
 			align-items: center;
@@ -4093,15 +4121,15 @@ input, select, textarea {
 			z-index: 1;
 		}
 
-		.inner .tool-tip::before{   /* creating the tool tip triangle*/
+		.inner .tool-tip::before{    creating the tool tip triangle
 			content: "";
 			position: absolute;
 			left: 0px;
 			margin-left: -20px;
 			border-width: 10px;
 			border-style: solid;
-			border-color: transparent  rgba(0,0,0, 0.5)  transparent  transparent;  /* creating the tool tip point */
-		}
+			border-color: transparent  rgba(0,0,0, 0.5)  transparent  transparent;   creating the tool tip point 
+		}  */
 
 		
 
@@ -4150,6 +4178,15 @@ input, select, textarea {
 			border-radius: 100%;
 		
 
+		}
+
+		.code-links {
+			color: yellowgreen;
+			font-family: 'Space Mono', monospace;
+		}
+
+		.content #recent-projects{
+			
 		}
 
 	/* End My Code Specifications */

@@ -131,6 +131,8 @@ function off(){
 
 // End Overlay
 
+/*
+
 let personalProfileInfoImgDiv = document.createElement('div');
 personalProfileInfoImgDiv.className = "personal-info image";
 overlay.prepend(personalProfileInfoImgDiv);
@@ -180,7 +182,7 @@ function showToolTipOff(){
 }
 
 
-
+*/
 
 
 
