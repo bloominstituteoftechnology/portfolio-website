@@ -1,5 +1,5 @@
 ///
-/// Editorial by HTML5 UP
+/// Story by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -8,9 +8,9 @@
 
 	.box {
 		border-radius: _size(border-radius);
-		border: solid 1px _palette(border);
+		border: solid _size(border-width);
 		margin-bottom: _size(element-margin);
-		padding: 1.5em;
+		padding: 1.5rem;
 
 		> :last-child,
 		> :last-child > :last-child,
@@ -24,3 +24,11 @@
 			padding: 0;
 		}
 	}
+
+	@mixin color-box($p: null) {
+ 		.box {
+ 			border-color: _palette($p, border);
+ 		}
+	}
+
+	@include color-box;

@@ -1,5 +1,5 @@
 ///
-/// Editorial by HTML5 UP
+/// Story by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -7,19 +7,20 @@
 /* Image */
 
 	.image {
-		border-radius: _size(border-radius);
 		border: 0;
+		border-radius: _size(border-radius);
 		display: inline-block;
 		position: relative;
 
 		img {
-			border-radius: _size(border-radius);
 			display: block;
+			border-radius: _size(border-radius);
 		}
 
 		&.left,
 		&.right {
-			max-width: 40%;
+			width: 40%;
+			max-width: 10rem;
 
 			img {
 				width: 100%;
@@ -28,14 +29,14 @@
 
 		&.left {
 			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
+			margin: 0 1.5rem 1rem 0;
+			top: 0.25rem;
 		}
 
 		&.right {
 			float: right;
-			padding: 0 0 1em 1.5em;
-			top: 0.25em;
+			margin: 0 0 1rem 1.5rem;
+			top: 0.25rem;
 		}
 
 		&.fit {
@@ -55,20 +56,6 @@
 
 			img {
 				width: 100%;
-			}
-		}
-	}
-
-	a.image {
-		overflow: hidden;
-
-		img {
-			@include vendor('transition', 'transform #{_duration(transition)} ease');
-		}
-
-		&:hover {
-			img {
-				@include vendor('transform', 'scale(1.075)');
 			}
 		}
 	}
