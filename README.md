@@ -21,7 +21,8 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 - [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
 - [ ] You make pick any template you like.  Here are some good choices for a portfolio:
-	- [https://html5up.net/story](https://html5up.net/story)
+	- [https://html5up.ne
+	t/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
 	- [https://html5up.net/miniport](https://html5up.net/miniport)
 	- [https://html5up.net/dimension](https://html5up.net/dimension)
