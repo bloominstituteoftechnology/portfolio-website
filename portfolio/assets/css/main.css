@@ -101,9 +101,12 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -254,13 +257,31 @@ input, select, textarea {
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
+		border-top: 2px solid blue;
+		animation-name: switch;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+	}
+	@keyframes switch {
+		5% {border-top: 2px solid red;}
+		10% {border-top: 2px dotted green;}
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 			border-bottom: 0;
-		}
+			animation-name: switch;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+	}
+	@keyframes switch {
+		5% {border-bottom: 2px solid red; display: none;}
+		10% {border-bottom: 2px dotted green; display:none;}
+	}
+		
 
 		h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 			font-weight: 200;
@@ -3464,8 +3485,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3574,8 +3597,10 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3585,8 +3610,10 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3600,7 +3627,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -4062,8 +4090,10 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
