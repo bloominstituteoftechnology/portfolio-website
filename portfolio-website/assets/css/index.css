@@ -1,0 +1,430 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Solway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Solway Regular'), local('Solway-Regular'), url(https://fonts.gstatic.com/s/solway/v1/AMOQz46Cs2uTAOCmhXo5.ttf) format('truetype');
+}
+.paddingSelect {
+  padding-bottom: 8%;
+  padding-right: 8%;
+  padding-left: 8%;
+}
+.contentBox {
+  padding: 4% 9%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  height: fit-content;
+  width: 100%;
+  margin-top: 0.4%;
+}
+.titleFont {
+  font-size: 3.6rem;
+  padding-bottom: 2%;
+  color: #1995AD;
+}
+.beveledBoxes {
+  border: 3px outset #F1F1F2;
+  padding: 2%;
+  font-size: 2rem;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin: 0 auto;
+  width: 900px;
+  font-family: 'Solway', serif;
+}
+@media (max-width: 786px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Solway', serif;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Solway', serif;
+  }
+}
+header {
+  width: 100%;
+}
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+}
+header .topNav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+@media (max-width: 786px) {
+  header .topNav {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  header .topNav {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+  }
+}
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1995AD;
+  text-decoration: none;
+  font-size: 2rem;
+  background: #F1F1F2;
+  width: 18%;
+  height: 42px;
+  border-top: 3px solid #82b3c9;
+  font-family: 'Solway', serif;
+  border-radius: 5px;
+  border-right: 1px solid lightcyan;
+  border-left: 1px solid lightcyan;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 786px) {
+  header a {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  header a {
+    width: 55%;
+  }
+}
+header a:hover {
+  color: #F1F1F2;
+  background-color: #82b3c9;
+}
+header a:active {
+  color: #F1F1F2;
+  background: #1995AD;
+}
+/* The hero image */
+.heroImg {
+  background-image: url('/images/heroImg2.jpg');
+  height: 350px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px outset lightcyan;
+  border-bottom: none;
+}
+.heroSection {
+  width: 100%;
+  height: 350px;
+  border: 3px outset lightcyan;
+  border-top: none;
+  border-radius: 5px;
+}
+.heroSection .heroTxt {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size: 3.6rem;
+  line-height: 3.8rem;
+  width: 100%;
+  border-bottom: 3px inset lightcyan;
+  padding: 3%;
+  background: #82b3c9;
+  font-weight: bolder;
+  font-family: 'Solway', serif;
+  border-radius: 5px;
+}
+@media (max-width: 786px) {
+  .heroSection .heroTxt {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .heroSection .heroTxt {
+    text-align: center;
+    width: 100%;
+  }
+}
+.mainContent {
+  border: 3px outset lightcyan;
+  border-bottom: 3px inset lightcyan;
+  padding: 2% 5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  height: fit-content;
+}
+.mainContent .introBox {
+  border: 3px outset #82b3c9;
+}
+@media (max-width: 786px) {
+  .mainContent .introBox {
+    border: none;
+  }
+}
+.mainContent h2 {
+  font-size: 3.6rem;
+  padding-bottom: 2%;
+  color: #1995AD;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+@media (max-width: 480px) {
+  .mainContent h2 {
+    text-align: center;
+  }
+}
+.mainContent p {
+  font-size: 1.8rem;
+  padding-bottom: 8%;
+  padding-right: 8%;
+  padding-left: 8%;
+}
+.skillsList {
+  padding: 4% 9%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  height: fit-content;
+  width: 100%;
+  margin-top: 0.4%;
+}
+.skillsList h2 {
+  font-size: 3.6rem;
+  padding-bottom: 2%;
+  color: #1995AD;
+}
+@media (max-width: 480px) {
+  .skillsList h2 {
+    text-align: center;
+  }
+}
+.skillsList ul {
+  border: 3px groove #82b3c9;
+  margin-left: 2%;
+}
+.skillsList li {
+  border: 3px outset #F1F1F2;
+  padding: 2%;
+  font-size: 2rem;
+}
+.expSec {
+  padding: 4% 9%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  height: fit-content;
+  width: 100%;
+  margin-top: 0.4%;
+  margin-bottom: 15%;
+}
+.expSec h2 {
+  font-size: 3.6rem;
+  padding-bottom: 2%;
+  color: #1995AD;
+}
+@media (max-width: 480px) {
+  .expSec h2 {
+    text-align: center;
+  }
+}
+.expSec .topExp {
+  background-color: #82b3c9;
+  display: flex;
+  justify-content: space-around;
+  border: 3px outset #F1F1F2;
+  padding: 2%;
+  font-size: 2rem;
+  width: 100%;
+}
+.expSec .jobBox {
+  border: 3px outset #F1F1F2;
+  padding: 2%;
+  font-size: 2rem;
+}
+.expSec p {
+  margin: 3%;
+}
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-self: baseline;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-top: 1px inset #82b3c9;
+}
+footer .contactInfo {
+  width: 100%;
+  background: white;
+  padding-top: 2%;
+  font-size: 1.6rem;
+}
+footer .bottomNav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background: white;
+  padding-top: 1%;
+}
+footer a {
+  text-decoration: none;
+  color: #1995AD;
+  margin-bottom: 2%;
+  font-size: 1.6rem;
+}

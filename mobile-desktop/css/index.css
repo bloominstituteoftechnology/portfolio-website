@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+
+body{
+    line-height: 2;
+}
+
+section{
+    padding: 4% 0;
+}
+
+/* Main Content Start here */
+html {
+    width: 480px;
+    margin: 0 2%;
+} 
+
+body {
+    width: 100%;
+}
+
+h1 {
+    text-decoration: overline underline;
+    margin: 15% 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -.25%;
+    color: indigo;
+    border: 5px ridge forestgreen;
+}
+
+
+nav {
+    border-right: 3px solid green;
+    border-left: 3px solid green;
+    border-bottom: 5px double green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -15%;
+
+}
+nav a {
+    color: purple;
+    text-decoration: none;
+    margin: 0 5%;
+    font-size: 20px;
+
+}
+
+nav a:first-child, nav a:nth-child(2n), nav a:nth-child(3n) {
+    border-bottom: 2px dotted indigo;
+}
+
+nav a:last-child {
+    border-bottom: none;
+}
+
+h2:first-child {
+    border-bottom: 2px dotted purple;
+}
+
+h2:last-child {
+    border-top: 2px dotted purple;
+}
+
+.introContent {
+    border-right: 2px solid green;
+    border-left: 2px solid green;
+}
+
+
+.introContent div {
+    margin: -2.75% 2%;
+}
+
+#about {
+    border-right: 3px solid lawngreen;
+    border-left: 3px solid lawngreen;
+    height: fit-content;
+}
+
+#about h3 {
+    display: flex;    
+    justify-content: center;
+    align-content: center;
+    color: indigo;
+    border: 5px ridge forestgreen;
+    width: 100%;
+}
+
+#about div {
+    margin-top: -5%;
+}
+
+#about p {
+    margin:5% 3%;
+    padding: 3%;
+    border: 5px outset forestgreen;
+}
+
+#skills {
+    height: fit-content;
+}
+
+#skills h3 {
+        border: 5px ridge forestgreen;
+        text-align: center;
+        color: indigo;
+}
+
+#skills div {
+    margin-top: -4%;
+    border-right: 2px solid green;
+    border-left: 2px solid green;
+}
+
+ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    list-style: none;
+}
+
+li:first-child, li:nth-child(2n) {
+    border-bottom: 2px dotted purple;
+}
+
+#contact {
+    border-right: 3px ridge lawngreen;
+    border-left: 3px ridge lawngreen;
+    border-bottom: 3px ridge lawngreen;
+    margin-top: -5%;
+
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -4%;
+
+}
+
+.contactInfo h4 {
+    border: 5px ridge green;
+}
+
+.contactInfo div {
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    margin-top: 3%;
+}
+
+@media(min-width:768px){
+
+}
