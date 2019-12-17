@@ -1,7 +1,7 @@
 ---
 deployment:
       tasks:
-        - export DEPLOYPATH=/home/anthrmzw/public_html/
+        - export DEPLOYPATH=/home/anthrmzw/public_html/portfolio
         - /bin/cp index.html $DEPLOYPATH
         - /bin/cp /<sub_folder>/<file_name> $DEPLOYPATH
         - /bin cp * $DEPLOYPATH
