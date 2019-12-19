@@ -1,0 +1,12 @@
+// {
+//   "version": 2,
+//   "name": "portfolio",
+//   "builds": [
+//     {
+//       "src": "portfolio/package.json",
+//       "use": "@now/build",
+//       "config": { "distDir": "build" }
+//     }
+//   ],
+//   "routes": [{ "src": "/(.*)", "dest": "portfolio/$1" }]
+// }
