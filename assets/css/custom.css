@@ -1,6 +1,7 @@
 header h1 {
     margin-bottom: 0;
     text-transform: capitalize;
+    font-size: 2rem;
 }
 
 header .saying {
