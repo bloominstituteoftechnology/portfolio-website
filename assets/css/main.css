@@ -110,12 +110,12 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
+		color: grey;
 		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: grey !important;
 		}
 
 		a img {
@@ -220,6 +220,12 @@ input, select, textarea {
 		footer > p {
 			font-size: 1.25em;
 		}
+
+	.wallpaper {
+		display: flex;
+		justify-content: center;
+		image-resolution: 100dpi; 
+	}
 
 /* Container */
 
@@ -1542,7 +1548,7 @@ input, select, textarea {
 		form select:focus,
 		form textarea:focus {
 			background: #fafafa;
-			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
+			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px grey;
 		}
 
 	form textarea {
@@ -1686,7 +1692,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: grey;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1697,7 +1703,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #43bff0;
+			background-color: grey;
 			color: #fff !important;
 		}
 
@@ -1706,7 +1712,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #3BA8D3;
+			background-color: grey;
 			top: 1px;
 		}
 
@@ -1974,7 +1980,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color: #grey;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
