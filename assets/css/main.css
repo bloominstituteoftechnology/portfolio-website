@@ -222,9 +222,10 @@ input, select, textarea {
 		}
 
 	.wallpaper {
+		max-width: 100%;
 		display: flex;
 		justify-content: center;
-		image-resolution: 100dpi; 
+		image-resolution: 300dpi; 
 	}
 
 /* Container */
