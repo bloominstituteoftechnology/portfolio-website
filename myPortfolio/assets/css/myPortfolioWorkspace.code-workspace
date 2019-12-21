@@ -1,0 +1,11 @@
+{
+    "folders": [
+		{
+			"name": "portfolio-website",
+			"path": "C:\\Users\\Darkn\\Lambda\\portfolio-website"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "portfolio-website"
+    }
+}
