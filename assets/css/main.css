@@ -3078,7 +3078,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("../img/5.2.session-4309-Edit.jpg");
+				background-image: url("../../img/overlay.png"), url("../../img/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
