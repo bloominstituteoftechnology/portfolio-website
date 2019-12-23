@@ -998,6 +998,11 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+		.from-left {
+  			bottom: .5%;
+  			background-color: #99ccff;
+  			color: pink;
+		}	
 
 /* List */
 
@@ -2043,11 +2048,11 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				background: #94b8b8;
 			}
 
 			.main.style3.secondary {
-				background: #f5f6f7;
+				background:#f5f6f7;
 			}
 
 		.main.dark {
@@ -2254,10 +2259,12 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		/* background: url("images/overlay.png"), url("../../images/one.jpg"); */
+		background:url("https://images.unsplash.com/photo-1552337125-0c43e12efec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"); 
+		background-size: 100% 100%;
+		/* background-attachment: fixed, fixed;
+		background-position: top left, center center; */
+		/* background-size: cover; */
 	}
 
 /* Two */
