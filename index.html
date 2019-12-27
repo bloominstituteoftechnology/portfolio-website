@@ -31,7 +31,10 @@
                 this.contact_number.value = Math.random() * 100000 | 0;
 				emailjs.sendForm('aol', 'template_VCr2g5DT', this)
 				.then((results) => {
-					console.log(results.text), alert(`Your Email is sent Thank you`), document.getElementById('contact-form').reset();
+					console.log(results.text), setTimeout(function(){
+					alert(`Your Email is sent Thank you`), document.getElementById('contact-form').reset();
+						
+					},800); 
 				}, (error) => {
 					console.log(error.text), alert(`Problem sending email, please try again later`);
 				}
