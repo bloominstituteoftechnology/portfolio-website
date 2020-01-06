@@ -2496,4 +2496,10 @@ input, select, textarea {
 					font-size: 1.25em;
 				}
 
-	}
+			}
+
+			.beach {
+				padding-top: 5%;
+				height: 75%;
+				width: 75%;
+			}
