@@ -115,6 +115,7 @@ input, select, textarea {
 
 /* Type */
 
+
 	html {
 		font-size: 18pt;
 	}
@@ -8250,9 +8251,11 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background-color: inherit;
+		background-color: blueviolet;
 		width: 100%;
 		overflow-x: hidden;
+		height: 100%;
+    
 	}
 
 		#wrapper > .invert {
