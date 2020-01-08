@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "/Users/sayadi/Lambda/portfolio-website"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio-website"
+	}
+}
