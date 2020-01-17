@@ -10,7 +10,7 @@
 		@include color(alt);
 		@include vendor('display', 'flex');
 		background-color: _palette(alt, bg);
-		color: _palette(fg-light);
+		color: black;
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
