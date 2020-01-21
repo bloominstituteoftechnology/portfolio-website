@@ -1128,8 +1128,10 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
+			background-image: url("../../images/California-img.jpg");
 		}
 
+			
 		#bg:before {
 			-moz-transition: background-color 2.5s ease-in-out;
 			-webkit-transition: background-color 2.5s ease-in-out;
@@ -1139,11 +1141,8 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
-			z-index: 2;
+			background-image: url("../../images/California-img.jpg");
+			background-size: auto;
 		}
 
 		#bg:after {
@@ -1155,12 +1154,10 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			z-index: 1;
+			background-image:url("../../images/California-img.jpg");
+			background-size: auto;
 		}
+		
 
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
