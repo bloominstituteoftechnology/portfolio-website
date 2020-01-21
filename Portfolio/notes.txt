@@ -1,0 +1,22 @@
+Notes for Responsive Design II Project
+
+// HTML
+          Things that are confusing
+1. It looks like there is a lot of HTML that isn't being displayed. Why is it there and what is it? 
+  - Line 101 and 340
+  - Line 101 to 119 (Article?)
+  - Line 130 to 162 (List?)
+  - Line 164 to 173 (Actions?)
+  - Etc.
+
+I deleted lines 128-340 and it didn't seem to brick the website. Could this be because those are hidden elements or just not used in any way?
+
+2. What are scripts?
+  - Client-side JS
+  - Points to external script file through SRC attribute.
+
+3. What is the div on   line 352 used for ? It's an empty div with an id of "bg".
+
+// CSS
+1. What is a z-index?
+    -looked it up
