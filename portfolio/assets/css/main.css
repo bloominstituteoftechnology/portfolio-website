@@ -139,7 +139,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		text-shadow: 2px 2px black;
+		text-shadow: 1px 1px black;
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
@@ -1547,7 +1547,6 @@ input, select, textarea {
 
 		.anchorlinks {
 			border: none;
-			text-decoration: underline;
 			color: lightblue;
 		}
 
