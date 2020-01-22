@@ -1106,7 +1106,7 @@ input, select, textarea {
 
 /* BG */
 
-	body {
+	body {		
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
