@@ -1,0 +1,21 @@
+header h1 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+header .saying {
+    font-weight: 600;
+}
+
+header .saying > span {
+    color: #6dadd1;
+}
+
+.stack-used i {
+    margin-right: 5px;
+}
+
+#footer {
+    padding: 3em 0 2em 0;
+}
