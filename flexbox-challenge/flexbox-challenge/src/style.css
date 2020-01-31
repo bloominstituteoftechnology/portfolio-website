@@ -1,0 +1,56 @@
+/* Create 10 boxes, each different colors and labeled Box 1 through 10, arrange them with flexbox into 4 rows, stretched, so Box 1 is in the bottom left */
+
+
+.parent1 {
+  display: flex;
+  flex-wrap: wrap-reverse ;
+  width: 95%;
+  height: auto;
+  margin: 20px;
+  background: gray;
+  border: 2px solid #444444;
+}
+
+.parent1 div {
+  width: 275px;
+  height: 300px;
+  margin: 20px;
+  border: 2px solid #444444;
+
+}
+
+.child1{
+  background: red;
+
+  
+}
+.child2{
+  background: green;
+}
+.child3{
+  background: seagreen;
+}
+.child4{
+  background: blue;
+}
+.child5{
+  background: black;
+  color: white;
+}
+.child6{
+  background: orange;
+}
+.child7{
+  background: gold;
+}
+.child8{
+  background: aquamarine;
+}
+.child9{
+  background: tan;
+}
+.child10{
+  background: pink;
+    order; -10;
+  
+}
