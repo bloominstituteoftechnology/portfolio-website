@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+#page_container {
+	position: relative;
+	width:780px;
+	margin: 0 auto;
+	padding: 135px 0px 0 0px;
+}
+
+header {
+	/* Stretch Goal One: Added background color to nav and set to fixed position */
+	background: linear-gradient(90deg, #02ADFD 0%, #00254c 45%, #00254c 55%, #02ADFD 100%);
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+nav { 
+	width: 764px; 
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+    padding: 25px 0px;
+    padding-right: 25px;
+}
+
+nav div {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+nav a {
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 0px;
+	/* padding-right: 45px; */
+
+} 
+
+#full-page-nav a.logo-link,
+#mobile-nav a.logo-link {
+	
+	position: relative;
+    padding: 0;
+	margin-top: -2px; 
+	text-align: right;
+	background: url('../img/logo.png') no-repeat center;
+	background-position-x: 0px;
+    
+    width: 159px;
+	height: 45px;
+	filter: invert(1); 
+}
+.logo-link img {
+	position: absolute;
+	margin-left: 0px;
+	object-fit: cover;
+	object-position: 102% 4px;
+	width: 28px;
+	height: 42px; 
+}
+
+.logo-link:hover img {
+	animation-name: idea;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+} 
+
+/* Stretch Goal 5: Researched Animation and implemented on the logo:hover */
+@keyframes idea {
+	from {filter: invert(1);}
+	to {filter: invert(0);}
+}
+
+
+nav a:hover {
+	color: black;
+	font-weight: bold;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+
+.hero_header {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.hero_header div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	width: 50%;
+    height: 380px;
+    
+	
+}
+.hero-title {
+	text-align: center;
+    padding: 80px 10px;
+    
+}
+
+.hero-title h1 {
+	font-size: 70px;
+}
+
+#get_started {
+	display: block;
+	background: none;
+	border: 1px solid black;
+	position: relative;
+	margin-right: 70px;
+	width: 150px;
+	padding: 7px;
+	text-decoration: none;
+	color: black;
+}
+#get_started:hover {
+	cursor: pointer;
+	background: #ccc;
+}
+
+.hero-img {
+	position: relative;
+	/* margin-left: 6px; */
+    text-align: left;
+	/* background: url('../img/header-img.png') no-repeat center; 
+    background-size: 80%;	*/
+    
+}
+
+.hero-img img {
+    width: 82%;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+p, a {
+	font-size: 12px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.3;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+	height: 590px;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	padding: 40px 0;
+	/* background: url('../img/mid-page-accent.jpg') no-repeat center; */
+	background-size: contain;
+}
+
+#content div article {
+	padding: 10px;
+	text-align: justify;
+}
+
+.content-top {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+.content-top article {
+	display: block;
+	width: 48%;
+}
+
+.mid-page-img {
+    width: 100%;
+}
+
+.content-bottom {
+	display:flex;
+}
+
+.content-bottom article {
+	
+	width: 33%;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	padding: 40px 0;
+}
+
+footer a {
+	color: black;
+	text-decoration: none;
+}
+
+#copyright {
+	text-align: center;
+	position: relative;
+	top: 40px;
+	padding-bottom: 40px; 
+	font-size: 13px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 140px;
+        margin-bottom: 40px;
+    }
+	header nav {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    header nav div {
+        width: 100%;
+    }
+
+    #page_container {
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    #page_container .hero_header .hero-img {
+        display: none;
+    }
+
+    .hero_header .hero-title {
+        align-items: center;
+    }
+
+    #get_started {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+	header {
+        height: auto;
+        position: relative;
+    }
+
+    header nav {
+        padding: 30px 0;
+        padding-bottom: 0;
+    }
+
+    header nav .logo-link {
+        margin-bottom: 10px;
+    }
+    header nav div {
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid #ccc;
+    }
+    header nav div a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding: 20px 0;
+    }
+
+    header nav div a:hover {
+        background: #ccc;
+    }
+
+    #page_container {
+        padding: 0 15px;
+    }
+    
+
+    #content {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    #content div {
+        flex-direction: column;
+    }
+
+    #content div article {
+        width: 100%;
+        padding: 30px 0;
+    }
+}

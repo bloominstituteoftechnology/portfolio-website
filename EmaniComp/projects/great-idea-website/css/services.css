@@ -1,0 +1,138 @@
+p {
+    line-height: 1.5;
+}
+
+#page_container {
+    padding-top: 87px;
+}
+
+.services_header {
+    padding-bottom: 36px;
+}
+
+.services-header-img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#services_content {
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    height: 918px;
+    padding: 40px 0;
+    padding-bottom: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: space-around;
+}
+
+.service_card {
+    width: 48%;
+    height: 250px;
+    background: #F4F3F4;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.learn_more_link {
+    display: block;
+    background: #fff;
+    width: 155px;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-top: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.learn_more_link:hover {
+    background: #ccc;
+}
+
+.facts {
+    padding: 40px 0;
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+
+.facts p {
+    padding-right: 20px;
+}
+
+.facts div ul {
+    list-style-type: disc;
+    margin: 10px;
+    padding: 10px;
+    line-height: 2;
+}
+
+.services-info-img {
+    width: 310px;
+}
+
+@media screen and (max-width: 800px) {
+    #page_container {
+        padding: 157px 10px;
+    }
+    #services_content {
+        height: auto;
+        align-content: space-around;
+        padding-bottom: 30px;
+    }
+    .service_card {
+        width: 48%;
+        height: auto;
+        margin: 10px 0; 
+    }
+    .service_card p {
+        font-size: 11px;
+    }
+
+    .facts div p {
+        font-size: 11px;
+    }
+
+    .facts div {
+        width: 100%;
+        padding: 10px;
+    } 
+
+    .facts div ul li {
+        font-size: 11px;
+    }
+
+    
+    .services-info-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #page_container {
+        padding: 0 15px;
+    }
+    #services_content {
+        height: auto;
+        flex-direction: column;
+    }
+    .service_card {
+        
+        width: 100%
+    }
+    .service_card a {
+        width: 100px;
+        padding: 5px 0;
+        font-size: 11px;
+    }
+
+    .facts {
+        flex-direction: column;
+    }
+}
+
+
+
