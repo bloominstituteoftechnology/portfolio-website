@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.topnav {
+	display: flex;
+	justify-content: space-between;
+	margin: 2%;
+	width: auto;
+}
+
+.top-menu {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 15px;
+	color: gray;
+}
+
+.top-menu a{
+	font-size: 15px;
+	color: gray;
+	text-decoration: none;
+}
+.logo{
+	width: 150px;
+		
+}
+.topheader {
+  	display: none;
+}
+
+.services-header-img{
+	width: 96%;
+	margin: 2%;
+}
+.topsection {
+	width: auto;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2%;
+	
+}
+h1 {
+	font-size: 75px;
+	width: 48%;
+	height: 35%;
+	margin: 1%;
+	color: black;
+	text-align: center;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+ 
+.getstarted-button{
+	width: 100px;
+	font-size: 10px;
+	color: #000000;
+	text-align: center;
+	padding: 10px 20px;
+	border: 1px solid black;
+	margin: 2% 0;
+}
+.innovationimg {
+  width: 300px;
+  margin: 1%,
+  
+}
+.middlesection {
+	width: auto;
+	border-bottom: 1px solid black;
+	margin: 1% 2%;
+	display: flex;
+	flex-direction: column;
+}
+.middlesection1{
+	display: flex;
+	margin: 1% 0;
+
+}
+.box1{
+	width: 49%;
+	margin: 1% 0;
+  	
+}
+.box2{
+	width: 49%;
+	margin: 1% 0;
+  }
+.middleimg {
+	width: 96%;
+}
+.middlesection3 {
+	display: flex;
+	flex-direction: row;
+	margin: 1% 0;
+	padding: 1% 0;
+}
+.box3, .box4, .box5 {
+	width: 30%;
+}
+
+.contactinfo {
+	padding: 5px;
+}
+footer {
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+
+.side-page-title{
+	font-size: 30px;
+	text-align: left; 
+ }
+
+ .full-page-box-container{
+	width: auto;
+	border-bottom: 1px solid black;
+	margin: 2%;
+ }
+
+ .box-full{
+	width: auto;
+	margin: 2% 0 2% 0;
+ }
+ .gray-background-box{
+	 background-color: #CFD8DC;
+	 border: 1px solid black;
+ }
+ .two-column-boxes {
+	 display: flex;
+	 justify-content: space-between;
+ }
+ ul {
+	list-style-type: square;
+	line-height: initial;
+  }
+  .services-info-img{
+	  width: 400px;
+  }
+  .margin2{
+	margin: 2%;
+  }
+  .button{
+	border-radius: 7px;
+	width: 100px;
+	font-size: 10px;
+	color: #000000;
+	text-align: center;
+	padding: 10px 20px;
+	border: 1px solid black;
+	margin: 2% 0;
+	background-color: white;
+  }
+  .padding1{
+	  padding: 1%;
+  }
+
+  @media (max-width:800px){
+	  .topnav{
+		  flex-direction: column-reverse;
+		  align-items: center;
+	 }
+	 .top-menu{
+		 width: 100%;
+	 }
+	 .logo{
+		 margin: 20px 0;
+	 }
+	 .innovationimg{
+		 display: none;
+	 }
+	 .topsection{
+		 justify-content: center;
+	 }
+  }
+
+  @media (max-width:500px){
+		.top-menu{
+			width: 100%;
+			margin: 0 2%;
+			flex-direction: column;
+			border-top: 1px solid gray;
+			
+		}
+
+		.top-menu a{
+			width: 100%;
+			margin: 0;
+			padding: 2%;
+			text-align: center;
+			border-bottom: 1px solid gray;
+		}
+
+		.middlesection1, .middlesection3, .two-column-boxes{
+			flex-direction: column;
+			
+		}
+
+		.box1, .box2, .box3, .box4, .box5 {
+			width: 100%;
+			margin: 2% 0;
+		}
+
+
+  }
