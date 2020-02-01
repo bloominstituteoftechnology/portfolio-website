@@ -48,6 +48,8 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 - [x] Implement proper attribution: Attribution is required under the [creative commons license](https://html5up.net/license) that came with the website files you downloaded.  Be sure to provide attribution somewhere in the site.  The templates should already come with attribution found in most footers but double check to be sure.
 - [x] Host your website for the world to see. Follow the instructions found here [https://pages.github.com/](https://pages.github.com/).  Once you have hosted your web page, share it for your peers to see.  This is not a small feat!
 
+	- Hosted Portfolio Website: [http://www.emanicomputers.com/](http://www.emanicomputers.com/)
+
 ## Stretch
 
 - [ ] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
