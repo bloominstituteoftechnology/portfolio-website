@@ -95,7 +95,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #424755;
+		background-image: url("images/sean-pierce-YLYfwyPJl-o-unsplash.jpg");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1139,9 +1140,8 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto,
- 256px 256px;
+			background-image: url("../../images/sean-pierce-YLYfwyPJl-o-unsplash.jpg");
+			background-size: contain;
 			background-position: center,
  center;
 			background-repeat: no-repeat,
@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("images/sean-pierce-YLYfwyPJl-o-unsplash.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1177,7 +1177,7 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: #c1c1c1;
 		}
 
 /* Wrapper */
