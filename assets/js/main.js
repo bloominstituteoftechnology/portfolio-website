@@ -104,6 +104,7 @@
     });
     // Modal
     $("#fade").modal({
-        fadeDuration: 500
+        fadeDuration: 500,
+        fadeDelay: 0.50
     });
 })(jQuery);
