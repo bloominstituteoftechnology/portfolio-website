@@ -2061,14 +2061,6 @@ body.is-preload #header footer {
     font-size: 0.8em;
 }
 
-.modal {
-    /*Overide CDN values*/
-    max-width: 1080px!important;
-}
-
-
-/* Banner */
-
 
 /* Poptrox */
 

@@ -34,7 +34,7 @@
         <header>
             <h2>JS and CSS Snippets</h2>
         </header>
-        <p>A collection of ideas to aid the internet of things.<br /> This site was developed by AJ and will be used as an example of deployment.</p>
+        <p>A collection of ideas to aid the internet of things.<br /> This site was developed by <a href="http://twitter.com/ajlkn" target="_blank" class="attr">AJ</a> and will be used as an example of deployment.</p>
         <footer>
             <a href="#first" class="button style2 scrolly">Andre Colon Bio</a>
         </footer>
@@ -42,7 +42,9 @@
 
     <!-- Feature 1 -->
     <article id="first" class="container box style1 right">
-        <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+        <div class="col-3 col-12-mobile">
+            <a href="images/fulls/me-oo.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a>
+        </div>
         <div class="inner">
             <header>
                 <h2>Future<br /> Andre Colon</h2>
@@ -54,13 +56,15 @@
     </article>
 
     <!-- Feature 2 -->
-    <article class="container box style1 left">
-        <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+    <article class="container box style1 left gallery">
+        <div class="col-3 col-12-mobile">
+            <a href="images/fulls/me.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a>
+        </div>
         <div class="inner">
             <header>
                 <h2>Past<br /> Work History</h2>
             </header>
-            <p>Currently a freelance designer devevloping website using wordpress. From concept to deployment. Semi-Custom Php Development
+            <p>Currently a freelance designer; devevloping website using wordpress. From concept to deployment. Semi-Custom Php Development
             </p>
         </div>
     </article>
@@ -68,8 +72,9 @@
     <!-- Portfolio -->
     <article class="container box style2">
         <header>
-            <h2>Gradients + Texture</h2>
-            <p>Cool pics of Gradients<br /> Artist unknown.</p>
+            <h2>Gradients + Links</h2>
+            <p>Gradients Artist unknown.</p>
+            <p>Click for demo links<br /> Links appear to be randomizing <br />(Jquery conflict?)</p>
         </header>
 
         <div class="work-examples-grid inner ">
@@ -88,7 +93,7 @@
                     </div>
                     <!-- Link to open the modal -->
                     <p>
-                        <h3 class="example-title">Codpen</h3>
+                        <h3 class="example-title">Flexbox</h3>
                         <a href="#ex1" rel="modal:open " class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a>
                     </p>
                 </div>
@@ -122,6 +127,7 @@
                                 href='https://codepen.io'>CodePen</a>.
                         </iframe>
                         <a href="#" rel="modal:close">Close</a>
+
                     </div>
 
                     <!-- Link to open the modal -->
