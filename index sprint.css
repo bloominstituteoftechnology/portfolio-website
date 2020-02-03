@@ -60,9 +60,14 @@ html, body {
     justify-content:space-evenly;
     width: 100%;
     flex-wrap: nowrap;
+    align-items: center;;
 
 }
 
+.navigation a{
+    text-decoration: none;
+    color: black;
+}
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
