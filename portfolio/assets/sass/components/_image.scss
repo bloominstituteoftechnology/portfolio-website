@@ -1,0 +1,170 @@
+///
+/// Paradigm Shift by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Image */
+
+	.image {
+		border: 0;
+		display: inline-block;
+		position: relative;
+
+		img {
+			display: block;
+		}
+
+		&[data-position] {
+			img {
+				@include vendor('object-fit', 'cover');
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&[data-position="top left"] {
+			img {
+				@include vendor('object-position', 'top left');
+			}
+		}
+
+		&[data-position="top"] {
+			img {
+				@include vendor('object-position', 'top');
+			}
+		}
+
+		&[data-position="top right"] {
+			img {
+				@include vendor('object-position', 'top right');
+			}
+		}
+
+		&[data-position="right"] {
+			img {
+				@include vendor('object-position', 'right');
+			}
+		}
+
+		&[data-position="bottom right"] {
+			img {
+				@include vendor('object-position', 'bottom right');
+			}
+		}
+
+		&[data-position="bottom"] {
+			img {
+				@include vendor('object-position', 'bottom');
+			}
+		}
+
+		&[data-position="bottom left"] {
+			img {
+				@include vendor('object-position', 'bottom left');
+			}
+		}
+
+		&[data-position="left"] {
+			img {
+				@include vendor('object-position', 'left');
+			}
+		}
+
+		&[data-position="center"] {
+			img {
+				@include vendor('object-position', 'center');
+			}
+		}
+
+		&[data-position="25% 25%"] {
+			img {
+				@include vendor('object-position', '25% 25%');
+			}
+		}
+
+		&[data-position="75% 25%"] {
+			img {
+				@include vendor('object-position', '75% 25%');
+			}
+		}
+
+		&[data-position="75% 75%"] {
+			img {
+				@include vendor('object-position', '75% 75%');
+			}
+		}
+
+		&[data-position="25% 75%"] {
+			img {
+				@include vendor('object-position', '25% 75%');
+			}
+		}
+
+		&.left,
+		&.right {
+			max-width: 40%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.left {
+			float: left;
+			margin: 0 2rem 2rem 0;
+			top: 0.25rem;
+		}
+
+		&.right {
+			float: right;
+			margin: 0 0 2rem 2rem;
+			top: 0.25rem;
+		}
+
+		&.fit {
+			display: block;
+			margin: 0 0 _size(element-margin) 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.main {
+			display: block;
+			margin: (_size(element-margin) * 1.5) 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		&.fill {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+
+			img {
+				//@include vendor('object-fit', 'cover');
+				//@include vendor('object-position', 'center');
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+		}
+	}
