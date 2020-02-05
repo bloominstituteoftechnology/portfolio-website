@@ -65,7 +65,6 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-
 input, select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -2705,7 +2704,7 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: red);
+			background-color: red;
 		}
 
 		.spotlight:nth-child(2) {
