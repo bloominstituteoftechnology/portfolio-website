@@ -3840,6 +3840,10 @@ input, select, textarea {
 			width: 100%;
 			padding: 0;
 		}
+		.bakery-img{
+			max-height:257px;
+			
+		}
 
 			#main > .posts > * {
 				-moz-flex-shrink: 1;
