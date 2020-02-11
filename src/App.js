@@ -13,9 +13,12 @@ const App = () => {
 
     <div className="App">
       <Nav hide={hide} setHide={setHide} />
+
       <div className={`smile ${hide ? 'top' : ''}`} />
+
       <div className='routes'>
         <div className='smileBlank' />
+
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />

@@ -3,7 +3,13 @@ import { NavLink } from 'react-router-dom'
 
 const Nav = props => {
 
-    useEffect(() => setTimeout(() => props.setHide(!props.hide), 5000), [])
+    useEffect(() => { setTimeout(() => props.setHide(!props.hide), 5000) }, [])
+
+    const activeStyle = {
+        background: '#203838',
+        color: 'white',
+        cursor: 'default'
+    }
 
     return (
         <nav className={`${props.hide && 'hide'}`}>
@@ -11,41 +17,25 @@ const Nav = props => {
 
                 <NavLink
                     exact to='/'
-                    activeStyle={{
-                        background: '#203838',
-                        color: '#f8f8f8aa',
-                        cursor: 'default'
-                    }}
+                    activeStyle={activeStyle}
                 >Home
                 </NavLink>
 
                 <NavLink
                     to='/about'
-                    activeStyle={{
-                        background: '#203838',
-                        color: '#20383850',
-                        cursor: 'default'
-                    }}
+                    activeStyle={activeStyle}
                 >About
                 </NavLink>
 
                 <NavLink
                     to='/work'
-                    activeStyle={{
-                        background: '#203838',
-                        color: '#20383850',
-                        cursor: 'default'
-                    }}
+                    activeStyle={activeStyle}
                 >Work
                 </NavLink>
 
                 <NavLink
                     to='/contact'
-                    activeStyle={{
-                        background: '#203838',
-                        color: '#20383850',
-                        cursor: 'default'
-                    }}
+                    activeStyle={activeStyle}
                 >Contact
                 </NavLink>
 

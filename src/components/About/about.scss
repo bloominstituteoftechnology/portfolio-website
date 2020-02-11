@@ -1,4 +1,4 @@
-.about {
+div.about {
     width: 100%;
     max-width: 700px;
     display: flex;
@@ -39,16 +39,13 @@
         }
     }
 
-    p {
+    p.about_text {
+        white-space: pre-line;
         font-size: 2.2rem;
-        padding: 1px 75px;
+        padding: 0 75px;
 
         @media (max-width: 500px) {
-            padding: 1px 15px;
-        }
-
-        &:first-child {
-            padding-top: 50px;
+            padding: 0 15px;
         }
 
         a {
@@ -58,6 +55,9 @@
             &:hover {
                 text-decoration-color: #5f5f5f50;
             }
+
         }
+
     }
+
 }
