@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import 'variables';
 
 html {
     font-size: 62.5%;
@@ -7,7 +7,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro';
+    background: linear-gradient($bg-header, $bg-header, whitesmoke) fixed;
+    font-family: $body-font;
+    color: #001a1a;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

@@ -1,7 +1,9 @@
-import Nav from './Nav'
-import Home from './Home'
-import Work from './Work'
-import Contact from './Contact'
-import About from './About'
+import Home from './Home/Home'
+import About from './About/About'
+import Work from './Work/Work'
 
-export { Nav, Home, Work, Contact, About }
+export {
+    Home,
+    About,
+    Work
+}

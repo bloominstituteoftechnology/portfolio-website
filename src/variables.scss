@@ -1,0 +1,12 @@
+$bg-header: #099;
+$accent: #03D4FE;
+
+$header-font: 'Gugi', cursive;
+$body-font: 'Do Hyeon', sans-serif;
+
+@mixin flex($align: flex-start, $justify: flex-start, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

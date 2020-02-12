@@ -1,24 +1,47 @@
-.home {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px groove whitesmoke;
-    border-bottom: 1px groove whitesmoke;
-
-    h1 {
-        font-size: 5rem;
-        margin: 33.5px -50px;
-
-        @media (max-width: 500px){
-            width: 100%;
+@import '../../variables.scss';
+    
+div.Home {
+    @include flex($align: center, $justify: space-between);
+    width: 96.35%;
+    user-select: none;
+    
+    div.Intro {
+        @include flex($direction: column);
+        width: max-content;
+        
+        h1 {
+            font-family: $header-font;
+            font-size: 40px;
+            margin: 0;
         }
+        
+        h3, h4 {
+            color: $accent;
+            font-size: 25px;
+            padding: 0 5px;
+            transition: 1s ease-out;
+        }
+        
+        h3 {
+            border-bottom: 1px solid #001a1a;
+        }
+        
+        h4 {
+            border-top: 1px solid #001a1a;
+            align-self: flex-end;
+        }
+        
     }
-
-    h4 {
-        font-size: 2rem;
-        font-weight: 50;
+    
+    div.Skills {
+        transition: 1s ease-out;
+        
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+        
     }
+    
 }
