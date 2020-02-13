@@ -14,9 +14,9 @@ div.Work {
     
     div.Project {
         width: 100%;
-        background-size: contain;
+        background-size: cover;
         text-align: center;
-        height: 150px;
+        min-height: 150px;
         cursor: pointer;
         background-attachment: fixed;
         background-position: center;

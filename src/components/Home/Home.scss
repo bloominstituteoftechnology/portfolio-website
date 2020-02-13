@@ -4,6 +4,10 @@ div.Home {
     @include flex($align: center, $justify: space-between);
     width: 96.35%;
     user-select: none;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
     
     div.Intro {
         @include flex($direction: column);
@@ -14,6 +18,11 @@ div.Home {
             font-family: $header-font;
             font-size: 40px;
             margin: 0;
+
+            @media (max-width: 500px) {
+                font-size: 20px;
+            }
+            
         }
         
         h3, h4 {
@@ -21,6 +30,11 @@ div.Home {
             font-size: 25px;
             padding: 0 5px;
             transition: 1s ease-out;
+
+            @media (max-width: 500px) {
+                font-size: 15px;
+            }
+
         }
         
         h3 {
@@ -41,6 +55,12 @@ div.Home {
             width: 100px;
             height: 100px;
             object-fit: contain;
+
+            @media (max-width: 500px) {
+                width: 75px;
+                height: 75px;
+            }
+
         }
         
     }

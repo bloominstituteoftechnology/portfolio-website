@@ -6,6 +6,10 @@ div.App {
     padding: 0 25px;
     width: 96.3%;
 
+    @media (max-width: 500px) {
+        width: 87.5%;
+    }
+
     nav {
         margin: 20px auto 0;
         @include flex($justify: space-evenly);
