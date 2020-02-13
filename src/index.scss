@@ -7,9 +7,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient($bg-header, $bg-header, whitesmoke) fixed;
+    background: linear-gradient($mid, $dark) fixed;
     font-family: $body-font;
-    color: #001a1a;
+    color: $accent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

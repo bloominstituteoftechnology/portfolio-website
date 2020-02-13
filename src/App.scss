@@ -14,16 +14,20 @@ div.App {
             font-size: 2rem;
             color: whitesmoke;
             text-decoration: none;
-            background: $bg-header;
-            transition: .7s ease;
+            transition: .3s ease;
+            background: transparent;
             border-radius: 50px;
             padding: 5px 15px;
             margin: 0 5px;
             
             &:hover, &.active {
                 background: whitesmoke;
-                color: $bg-header;
+                color: $mid;
                 transform: scale(1.1);
+            }
+
+            &.active {
+                cursor: default;
             }
 
         }
@@ -41,14 +45,15 @@ div.App {
         width: 50%;
         margin: 0 auto 20px;
         transition: 1s ease-out;
-
+        
         h2 {
             width: 100%;
             text-align: center;
         }
-
+        
         svg.Link {
             font-size: 5rem;
+            transition: .3s ease-out;
             cursor: pointer;
 
             &:hover {
