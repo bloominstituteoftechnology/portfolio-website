@@ -19,8 +19,27 @@ div.About {
         font-size: 2rem;
 
         a {
-            color: #75e8ff;
-            mix-blend-mode: difference;
+            color: whitesmoke;
+            text-decoration: none;
+            position: relative;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                transform: translate(-700%, 20px);
+                transition: .3s ease;    
+            }
+            
+            &:hover {
+                &::before {
+                    background: whitesmoke;
+                    transform: translateY(20px);
+                }
+            }
+            
+
         }
 
     }

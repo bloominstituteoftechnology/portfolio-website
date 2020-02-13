@@ -14,22 +14,43 @@ div.App {
             font-size: 2rem;
             color: whitesmoke;
             text-decoration: none;
-            transition: .3s ease;
-            background: transparent;
-            border-radius: 50px;
             padding: 5px 15px;
             margin: 0 5px;
+
+            &.home.active ~ hr, 
+            &.home:hover ~ hr {
+                margin-left: 0;
+            }
             
-            &:hover, &.active {
-                background: whitesmoke;
-                color: $mid;
-                transform: scale(1.1);
+            &.about {
+                &:hover ~ hr, 
+                &.active ~ hr {
+                    margin-left: 87.5px;
+                }
+            }
+            
+            &.work {
+                &:hover ~ hr, 
+                &.active ~ hr {
+                    margin-left: 174px;
+                    width: 42.5px;    
+                }
+            } 
+
+            &:nth-child(4).active ~ hr, 
+            &:nth-child(4):hover ~ hr {
+                margin-left: 268px;
+                width: 70px;
             }
 
-            &.active {
-                cursor: default;
-            }
+        }
 
+        hr {
+            width: 50px;
+            position: absolute;
+            border: 1px solid white;
+            transform: translate(-139px, 21px);
+            transition: .5s ease-in-out;
         }
 
     }
