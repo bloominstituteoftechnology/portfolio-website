@@ -20,6 +20,7 @@ div.Work {
         cursor: pointer;
         background-attachment: fixed;
         background-position: center;
+        transition: .5s ease-out;    
         
         p {
             color: whitesmoke;
@@ -27,6 +28,33 @@ div.Work {
             padding: 0 20%;
             white-space: pre-line;
             user-select: none;
+            text-shadow: 5px 5px 25px black, 5px 5px 25px black;
+
+            a {
+                color: $accent;
+                text-decoration: none;
+                position: relative;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 0px;
+                    transform: translate(-50vw, 20px);
+                    transition: .5s ease-out;    
+                }
+                
+                &:hover {
+                    &::before {
+                        width: 100%;
+                        background: $accent;
+                        transform: translateY(20px);
+                    }
+                }
+                
+
+            }
+
         }
         
         &.BlackHole {
