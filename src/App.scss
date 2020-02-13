@@ -17,20 +17,28 @@ div.App {
             padding: 5px 15px;
             margin: 0 5px;
 
-            &.home.active ~ hr, 
-            &.home:hover ~ hr {
-                margin-left: 0;
+            &.home{
+                &:hover ~ hr {
+                    margin-left: 0 !important;
+                }
+
+                &.active ~ hr{
+                    margin-left: 0;
+                }
             }
             
             &.about {
-                &:hover ~ hr, 
+                &:hover ~ hr {
+                    margin-left: 87.5px !important;
+                }
+
                 &.active ~ hr {
                     margin-left: 87.5px;
                 }
             }
             
             &.work {
-                &:hover ~ hr, 
+                &:hover ~ hr,
                 &.active ~ hr {
                     margin-left: 174px;
                     width: 42.5px;    
