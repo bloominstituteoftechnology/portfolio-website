@@ -24,8 +24,9 @@ div.App {
             &.home{
                 &:hover ~ hr {
                     margin-left: 0 !important;
+                    width: 50px !important;
                 }
-
+                
                 &.active ~ hr{
                     margin-left: 0;
                 }
@@ -34,6 +35,7 @@ div.App {
             &.about {
                 &:hover ~ hr {
                     margin-left: 87.5px !important;
+                    width: 50px !important;
                 }
 
                 &.active ~ hr {
