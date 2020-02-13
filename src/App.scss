@@ -1,0 +1,100 @@
+@import 'variables';
+
+div.App {
+    @include flex($direction: column, $align: center);
+    flex-wrap: wrap;
+    padding: 0 25px;
+    width: 96.3%;
+
+    @media (max-width: 500px) {
+        width: 87.5%;
+    }
+
+    nav {
+        margin: 20px auto 0;
+        @include flex($justify: space-evenly);
+
+        a {
+            font-size: 2rem;
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 5px 15px;
+            margin: 0 5px;
+
+            &.home{
+                &:hover ~ hr {
+                    margin-left: 0 !important;
+                }
+
+                &.active ~ hr{
+                    margin-left: 0;
+                }
+            }
+            
+            &.about {
+                &:hover ~ hr {
+                    margin-left: 87.5px !important;
+                }
+
+                &.active ~ hr {
+                    margin-left: 87.5px;
+                }
+            }
+            
+            &.work {
+                &:hover ~ hr,
+                &.active ~ hr {
+                    margin-left: 174px;
+                    width: 42.5px;    
+                }
+            } 
+
+            &:nth-child(4).active ~ hr, 
+            &:nth-child(4):hover ~ hr {
+                margin-left: 268px;
+                width: 70px;
+            }
+
+        }
+
+        hr {
+            width: 50px;
+            position: absolute;
+            border: 1px solid white;
+            transform: translate(-139px, 21px);
+            transition: .5s ease-in-out;
+        }
+
+    }
+
+    div.Routes {
+        min-height: 70vh;
+        width: 100%;
+    }
+
+    footer {
+        @include flex($justify: space-around);
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto 20px;
+        transition: 1s ease-out;
+        
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+        
+        svg.Link {
+            font-size: 5rem;
+            transition: .3s ease-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+        }
+
+    }
+    
+}

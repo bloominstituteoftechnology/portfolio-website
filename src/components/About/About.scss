@@ -1,0 +1,47 @@
+@import '../../variables';
+
+div.About {
+    @include flex($direction: column, $align: center);
+    width: 100%;
+    
+    h1 {
+        font-size: 5rem;
+    }
+    
+    img {
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 150px;
+    }
+    
+    p {
+        white-space: pre-line;
+        font-size: 2rem;
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            position: relative;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                transform: translate(-700%, 20px);
+                transition: .3s ease;    
+            }
+            
+            &:hover {
+                &::before {
+                    background: whitesmoke;
+                    transform: translateY(20px);
+                }
+            }
+            
+
+        }
+
+    }
+
+}

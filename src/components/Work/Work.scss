@@ -1,0 +1,89 @@
+@import '../../variables';
+
+div.Work {
+    @include flex($direction: column, $align: center);
+    margin-bottom: 50px;
+    
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    div.Project {
+        width: 100%;
+        background-size: cover;
+        text-align: center;
+        min-height: 150px;
+        cursor: pointer;
+        background-attachment: fixed;
+        background-position: center;
+        transition: .5s ease-out;    
+        
+        p {
+            color: whitesmoke;
+            font-size: 2rem;
+            padding: 0 20%;
+            white-space: pre-line;
+            user-select: none;
+            text-shadow: 5px 5px 25px black, 5px 5px 25px black;
+
+            a {
+                color: $accent;
+                text-decoration: none;
+                position: relative;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 0px;
+                    transform: translate(-50vw, 20px);
+                    transition: .5s ease-out;    
+                }
+                
+                &:hover {
+                    &::before {
+                        width: 100%;
+                        background: $accent;
+                        transform: translateY(20px);
+                    }
+                }
+                
+
+            }
+
+        }
+        
+        &.BlackHole {
+            background-image: linear-gradient(#000000aa, #000000aa), url(../../images/blackhole.png);
+            
+            &:hover {
+                background-image: linear-gradient(#00000080, #00000080), url(../../images/blackhole.png);
+            }
+            
+        }
+        
+        &.Howl {
+            background-image: linear-gradient(#000000aa, #000000aa), url(../../images/howl.png);
+            
+            &:hover {
+                background-image: linear-gradient(#00000080, #00000080), url(../../images/howl.png);
+            }
+
+        }
+
+        &.Chao {
+            background-image: linear-gradient(#000000aa, #000000aa), url(../../images/chao.png);
+            
+            &:hover {
+                background-image: linear-gradient(#00000080, #00000080), url(../../images/chao.png);
+            }
+
+        }
+
+    }
+
+}
