@@ -64,6 +64,8 @@ div.App {
             position: absolute;
             border: 1px solid white;
             transform: translate(-139px, 21px);
+            user-select: none;
+            z-index: -1;
             transition: .5s ease-in-out;
         }
 
