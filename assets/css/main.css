@@ -600,7 +600,7 @@ input, select, textarea {
 
 /* Icon */
 
-	.icon {
+	/* .icon {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
@@ -633,7 +633,7 @@ input, select, textarea {
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
-		}
+		} */
 
 /* Image */
 
@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1268,7 +1271,7 @@ input, select, textarea {
 			margin-top: 3.5rem;
 		}
 
-			#header > *:before {
+			/* #header > *:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -1277,27 +1280,27 @@ input, select, textarea {
 				width: 1px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
-			}
+			} */
 
 		#header > :first-child {
-			margin-top: 0;
+			display: none;
 		}
 
 			#header > :first-child:before {
 				display: none;
 			}
 
-		#header .logo {
+		/* #header .logo {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
-		}
+		} */
 
-			#header .logo .icon:before {
+			/* #header .logo .icon:before {
 				font-size: 2rem;
-			}
+			} */
 
 		#header .content {
 			border-style: solid;
@@ -1321,9 +1324,9 @@ input, select, textarea {
 				overflow: hidden;
 			}
 
-				#header .content .inner > :last-child {
+				/* #header .content .inner > :last-child {
 					margin-bottom: 0;
-				}
+				} */
 
 			#header .content p {
 				text-transform: uppercase;
