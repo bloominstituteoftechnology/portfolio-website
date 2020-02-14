@@ -18,6 +18,7 @@ const Work = props => {
                     href="https://github.com/black-hole-lambda-build-week/front-end"
                     target='_blank'
                     rel='noopener noreferrer'
+                    onClick={e => e.stopPropagation()}
                 >GitHub Repository</a></p>
         </div>
 
@@ -31,6 +32,7 @@ const Work = props => {
                     href="https://bitbucket.org/hfc-wolfpack/howlforchange/"
                     target='_blank'
                     rel='noopener noreferrer'
+                    onClick={e => e.stopPropagation()}
                 >Bitbucket Repository</a></p>
         </div>
 
@@ -44,6 +46,7 @@ const Work = props => {
                     target='_blank'
                     rel='noopener noreferrer'
                     href="https://github.com/brellin/chaofever"
+                    onClick={e => e.stopPropagation()}
                 >GitHub Repository</a></p>
         </div>
     </div>
