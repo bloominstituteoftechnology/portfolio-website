@@ -41,23 +41,32 @@ const App = () => {
     <footer style={links}>
       <h2>My links:</h2>
 
-      <FontAwesomeIcon
-        icon={['fab', 'github']}
-        className='Link'
-        onClick={() => window.open('https://github.com/brellin')}
-      />
+      <div>
+        <FontAwesomeIcon
+          icon={['fab', 'github']}
+          className='Link'
+          onClick={() => window.open('https://github.com/brellin')}
+        />
+        GitHub
+      </div>
 
-      <FontAwesomeIcon
-        icon={['fab', 'linkedin']}
-        className='Link'
-        onClick={() => window.open('https://linkedin.com/in/brellin')}
-      />
+      <div>
+        <FontAwesomeIcon
+          icon={['fab', 'linkedin']}
+          className='Link'
+          onClick={() => window.open('https://linkedin.com/in/brellin')}
+        />
+        LinkedIn
+      </div>
 
-      <FontAwesomeIcon
-        icon='at'
-        className='Link'
-        onClick={() => window.location = 'mailto: will@willujr.com'}
-      />
+      <div>
+        <FontAwesomeIcon
+          icon='at'
+          className='Link'
+          onClick={() => window.location = 'mailto: will@willujr.com'}
+        />
+        Email
+      </div>
     </footer>
 
   </div>

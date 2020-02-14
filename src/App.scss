@@ -86,13 +86,17 @@ div.App {
             text-align: center;
         }
         
-        svg.Link {
-            font-size: 5rem;
+        div {
+            @include flex($direction: column, $align: center);
             transition: .3s ease-out;
-            cursor: pointer;
 
             &:hover {
                 transform: scale(1.2);
+            }
+
+            svg.Link {
+                font-size: 5rem;
+                cursor: pointer;
             }
 
         }
