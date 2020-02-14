@@ -36,15 +36,15 @@ const Work = props => {
 
         <h2>Chao Fever</h2>
         <div className="Project Chao">
-            <p on
-                Click={() => window.open('https://chaofever.willujr.com')}
-                target='_blank'
-                rel='noopener noreferrer'
-            >{`My first maserpiece, made at 15 years of age - 2008
+            <p onClick={() => window.open('https://chaofever.willujr.com')}>{`My first maserpiece, made at 15 years of age - 2008
             
             The website is focused on a side-story of the Sonic Adventure series...Chao!
             
-            `}<a href="https://github.com/brellin/chaofever">GitHub Repository</a></p>
+            `}<a
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href="https://github.com/brellin/chaofever"
+                >GitHub Repository</a></p>
         </div>
     </div>
 
