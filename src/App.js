@@ -39,7 +39,7 @@ const App = () => {
     </div>
 
     <footer style={links}>
-      <h2>My links:</h2>
+      <h2>Get in touch</h2>
 
       <div>
         <FontAwesomeIcon
