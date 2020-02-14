@@ -13,6 +13,7 @@ div.App {
     nav {
         margin: 20px auto 0;
         @include flex($justify: space-evenly);
+        position: relative;
 
         a {
             font-size: 2rem;
@@ -23,37 +24,37 @@ div.App {
 
             &.home{
                 &:hover ~ hr {
-                    margin-left: 0 !important;
-                    width: 50px !important;
+                    @include transform(translate(-139px, 21px) !important);
+                    width: 5rem !important;
                 }
                 
                 &.active ~ hr{
-                    margin-left: 0;
+                    @include transform(translate(-139px, 21px));
                 }
             }
             
             &.about {
                 &:hover ~ hr {
-                    margin-left: 87.5px !important;
-                    width: 50px !important;
+                    @include transform(translate(-52.5px, 21px) !important);
+                    width: 5rem !important;
                 }
-
+                
                 &.active ~ hr {
-                    margin-left: 87.5px;
+                    @include transform(translate(-52.5px, 21px));
                 }
             }
             
             &.work {
                 &:hover ~ hr,
                 &.active ~ hr {
-                    margin-left: 174px;
-                    width: 42.5px;    
+                    @include transform(translate(33px, 21px));
+                    width: 4.25rem;    
                 }
             } 
-
+            
             &:nth-child(4).active ~ hr, 
             &:nth-child(4):hover ~ hr {
-                margin-left: 268px;
+                @include transform(translate(128px, 21px));
                 width: 70px;
             }
 
@@ -63,7 +64,7 @@ div.App {
             width: 50px;
             position: absolute;
             border: 1px solid white;
-            transform: translate(-139px, 21px);
+            @include transform(translate(-139px, 21px));
             user-select: none;
             z-index: -1;
             transition: .5s ease-in-out;
@@ -93,7 +94,7 @@ div.App {
             transition: .3s ease-out;
 
             &:hover {
-                transform: scale(1.2);
+                @include transform(scale(1.2));
             }
 
             svg.Link {

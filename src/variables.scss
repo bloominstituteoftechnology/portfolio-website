@@ -11,3 +11,10 @@ $body-font: 'Do Hyeon', sans-serif;
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
