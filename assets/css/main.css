@@ -72,6 +72,12 @@ input, select, textarea {
 	appearance: none;
 }
 
+.blue {
+	color: lightblue;
+	text-decoration: underline;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
