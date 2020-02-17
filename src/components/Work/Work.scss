@@ -5,12 +5,14 @@ div.Work {
     margin-bottom: 50px;
 
     div.Buttons {
+        @include flex();
         border: 2px ridge $dark;
         margin: 50px auto 25px;
         border-radius: 5px;
         
-        button {
+        a {
             font-size: 4rem;
+            text-decoration: none;
             color: $accent;
             padding: 25px 50px;
             background: $dark;
@@ -22,7 +24,7 @@ div.Work {
             
             &.active, &:hover {
                 color: $dark;
-                background: $mid;
+                background: $accent;
             }
             
         }

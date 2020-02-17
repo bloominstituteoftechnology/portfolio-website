@@ -1,22 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Route, NavLink } from 'react-router-dom'
 
+import GitHub from 'react-github-calendar'
 import './Work.scss'
 
 const Work = props => {
 
-    const [activity, setActivity] = useState(false)
-
-    if (!activity) return <div className="Work">
+    return <div className="Work">
         <div className="Buttons">
-            <button
-                className={!activity && 'active'}
-                onClick={() => setActivity(false)}
-            >Projects</button>
-            <button
-                onClick={() => setActivity(true)}
-            >Activity</button>
+            <NavLink exact to='/work'>Projects</NavLink>
+            <NavLink to='/work/activity'>Activity</NavLink>
         </div>
+        <Route exact path='/work' component={Projects} />
+        <Route path='/work/activity' component={Activity} />
+    </div>
 
+}
+
+const Projects = props => {
+    return <>
         <h2>Black Hole</h2>
         <div className="Project BlackHole">
             <p onClick={() => window.open('https://blackhole.willujr.com')}>{`A web app that allows the user to create an account, log in, and vent about anything that has been troubling you - without the worry of anybody finding out about what you said.
@@ -58,22 +60,25 @@ const Work = props => {
                     onClick={e => e.stopPropagation()}
                 >GitHub Repository</a></p>
         </div>
-    </div>
+    </>
+}
 
-    else return <div className="Work">
-        <div className="Buttons">
-            <button
-                onClick={() => setActivity(false)}
-            >Projects</button>
-            <button
-                className={activity && 'active'}
-                onClick={() => setActivity(true)}
-            >Activity</button>
-        </div>
-
+const Activity = props => {
+    return <>
+        <h2>WakaTime</h2>
         <figure><embed src="https://wakatime.com/share/@brellin/486bd322-98a8-4e1a-a9a0-30c55d351ec5.svg" /></figure>
-    </div>
 
+        <h2>GitHub</h2>
+        <GitHub username='brellin' theme={{
+            background: 'none',
+            text: '#03D4FE',
+            grade4: '#03D4FE',
+            grade3: '#055',
+            grade2: '#099',
+            grade1: '#001a1a',
+            grade0: 'none',
+        }} />
+    </>
 }
 
 export default Work
