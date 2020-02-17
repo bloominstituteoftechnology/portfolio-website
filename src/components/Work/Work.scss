@@ -3,13 +3,39 @@
 div.Work {
     @include flex($direction: column, $align: center);
     margin-bottom: 50px;
+
+    div.Buttons {
+        border: 2px ridge $dark;
+        margin: 50px auto 25px;
+        border-radius: 5px;
+        
+        button {
+            font-size: 5rem;
+            color: $accent;
+            padding: 25px 50px;
+            background: $dark;
+            outline: none;
+            border: none;
+            transition: .3s ease-in-out;
+            font-family: $header-font;
+            cursor: pointer;
+            
+            &.active, &:hover {
+                color: $dark;
+                background: $mid;
+            }
+            
+        }
+        
+    }
     
-    h1 {
-        font-size: 5rem;
+    h2 {
+        font-family: $header-font;
+        font-size: 3rem;
     }
 
-    h2 {
-        font-size: 3rem;
+    figure {
+        width: 50%;
     }
     
     div.Project {

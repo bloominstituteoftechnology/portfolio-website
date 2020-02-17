@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './Work.scss'
 
 const Work = props => {
 
-    return <div className="Work">
+    const [activity, setActivity] = useState(false)
 
-        <h1>Work</h1>
+    if (!activity) return <div className="Work">
+        <div className="Buttons">
+            <button
+                className={!activity && 'active'}
+                onClick={() => setActivity(false)}
+            >Projects</button>
+            <button
+                onClick={() => setActivity(true)}
+            >Activity</button>
+        </div>
 
         <h2>Black Hole</h2>
         <div className="Project BlackHole">
@@ -49,6 +58,20 @@ const Work = props => {
                     onClick={e => e.stopPropagation()}
                 >GitHub Repository</a></p>
         </div>
+    </div>
+
+    else return <div className="Work">
+        <div className="Buttons">
+            <button
+                onClick={() => setActivity(false)}
+            >Projects</button>
+            <button
+                className={activity && 'active'}
+                onClick={() => setActivity(true)}
+            >Activity</button>
+        </div>
+
+        <figure><embed src="https://wakatime.com/share/@brellin/486bd322-98a8-4e1a-a9a0-30c55d351ec5.svg" /></figure>
     </div>
 
 }
