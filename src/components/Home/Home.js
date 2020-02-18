@@ -36,7 +36,7 @@ const Home = props => {
 
         <div className='Skills' style={skills}>
             <h2>Specializing in:</h2>
-            <img src={js} alt='Javascript' title='Javascript' />
+            <img src={js} alt='JavaScript' title='JavaScript' />
             <img src={python} alt='Python' title='Python' />
             <img src={php} alt='PHP' title='PHP' />
             <img src={sql} alt='SQL' title='SQL' />

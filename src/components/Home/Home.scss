@@ -53,17 +53,24 @@ div.Home {
     }
     
     div.Skills {
-        max-width: 40%;
+        @include flex($justify: flex-end);
+        flex-wrap: wrap;
+        max-width: 42%;
         transition: 1.5s ease-out;
 
         @media (max-width: 500px) {
             margin-top: 50px;
+        }
+
+        h2 {
+            width: 100%;
         }
         
         img {
             width: 100px;
             height: 100px;
             object-fit: contain;
+            margin: 2.5px;
 
             @media (max-width: 500px) {
                 width: 75px;
