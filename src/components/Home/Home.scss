@@ -1,7 +1,7 @@
 @import '../../variables.scss';
     
 div.Home {
-    @include flex($align: center, $justify: space-between);
+    @include flex($align: flex-start, $justify: space-between);
     width: 96.35%;
     user-select: none;
 
@@ -53,7 +53,8 @@ div.Home {
     }
     
     div.Skills {
-        transition: 1s ease-out;
+        max-width: 40%;
+        transition: 1.5s ease-out;
 
         @media (max-width: 500px) {
             margin-top: 50px;

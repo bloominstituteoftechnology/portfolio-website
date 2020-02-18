@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { hooks, redux, node, python } from '../../images'
+import { hooks, redux, node, python, js, mdb, gql, php, sass, sql } from '../../images'
 import './Home.scss'
 
 const Home = props => {
@@ -36,10 +36,16 @@ const Home = props => {
 
         <div className='Skills' style={skills}>
             <h2>Specializing in:</h2>
+            <img src={js} alt='Javascript' title='Javascript' />
+            <img src={python} alt='Python' title='Python' />
+            <img src={php} alt='PHP' title='PHP' />
+            <img src={sql} alt='SQL' title='SQL' />
+            <img src={sass} alt='SASS' title='SASS' />
             <img src={hooks} alt='React Hooks' title='React Hooks' />
             <img src={redux} alt='Redux' title='Redux' />
             <img src={node} alt='Node' title='Node' />
-            <img src={python} alt='Python' title='Python' />
+            <img src={mdb} alt='MongoDB' title='MongoDB' />
+            <img src={gql} alt='GraphQL' title='GraphQL' />
         </div>
     </div>
 
