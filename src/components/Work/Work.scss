@@ -6,7 +6,7 @@ div.Work {
 
     div.Buttons {
         @include flex();
-        margin: 50px auto 25px;
+        margin: 50px auto;
         
         a {
             font-size: 4rem;
@@ -39,18 +39,14 @@ div.Work {
         
     }
     
-    h2 {
-        font-family: $header-font;
-        font-size: 3rem;
-    }
-
+    
     figure {
         width: 50%;
-
+        
         @media (max-width: 500px) {
             width: 90%;
         }
-
+        
     }
     
     div.Project {
@@ -61,8 +57,20 @@ div.Work {
         cursor: pointer;
         background-attachment: fixed;
         background-position: center;
-        transition: .5s ease-out;    
+        margin-bottom: 50px;
+        border-radius: 50px;
+        transition: .5s ease-out;
         
+        @media (max-width: 500px) {
+            border-radius: 25%;
+        }
+
+        h2 {
+            font-family: $header-font;
+            font-size: 3rem;
+            text-shadow: 5px 5px 25px black, 5px 5px 25px black;
+        }
+
         p {
             color: whitesmoke;
             font-size: 2rem;
