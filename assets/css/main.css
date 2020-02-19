@@ -704,6 +704,7 @@ input, select, textarea {
 
 			.image.main img {
 				width: 100%;
+				height: 60vh;
 			}
 
 		@media screen and (max-width: 736px) {
