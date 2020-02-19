@@ -1641,3 +1641,12 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		.image.main.mydish {
+			display: flex;
+		}
+		.mydish {
+			width: 50%;
+			max-height: 400px;
+			object-fit: contain;
+		}
