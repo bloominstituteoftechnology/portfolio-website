@@ -1,0 +1,160 @@
+
+* {
+    color:#3C373B;
+}
+
+
+h1 {
+  font-family: 'Gaegu', cursive;
+  margin: 20px 0;
+  font-size: 60px;
+  tex-align: center;
+  border: 2px dashed #fefbd8; 
+  background-color: #F87B99;
+  color: #36486b;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Gaegu', cursive;
+  margin-bottom: 0;
+  padding: 0 10px;
+  /*=======  Update the font size to 30px */
+  font-size: 30px;
+}
+
+/*======= Create a selector for ALL p tags in the site to have the following styles: ==============*/
+*.p{
+font-size: 16px;
+font-family: roboto;
+padding: 10px;
+line-height: 1.4;
+}
+
+
+
+/*======= Create a selector for ALL images in the site to have the following styles:*/
+
+img{
+  border-radius: 10px;
+}
+
+
+.content-row {
+  display: flex;
+}
+
+.content-row div {margin: 20px;
+  /*======= create a margin propery.  Set the value to 20px */
+}
+
+.container {width: 600px;
+  /*======= create a width property. Set the value to 600px */
+  margin: 0 auto;
+}
+
+.container header nav a {
+  margin: 0 10px;
+  border: 2px dashed #fefbd8;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #36486b;
+  text-decoration: none;
+  margin-bottom: 20px;
+  background-color: #F87B99;
+   /*======= create a background property. Set the value to #F87B99 */
+  
+}
+
+.container header nav a:hover {background-color:#36486b;
+  color: pink;
+/*======= create a background property and set it to white.  Then create a color property and set it's value to pink. */
+}
+
+/*======= Create a selector for the about section to have the following styles:
+  margin-top: 20px;
+*/
+
+.contact-section {
+  border-top: 1px dashed black;
+  padding: 20px 0;
+}
+
+.contact-section h2 {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+address.contact-section{ 
+  line-height:2;
+}
+/*======= Create a selector for the address tag in the contact-section class to have the following styles:
+   line-height: 2;
+*/
+
+footer {
+  display: flex;  
+  width: 100%;
+  background: #F87B99;
+  border-top: 1px dashed white;
+  justify-content: space-evenly;
+}
+
+footer nav{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+footer nav a { 
+    border: solid 1px #fefbd8; 
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+footer .footer-content { 
+  margin: 0 auto; 
+  widthL: 600px;
+  /*======= create a width property. Set the value to 600px */
+  
+}
+
+footer .footer-content h3 {
+  padding: 0;
+  margin: 20px 0;
+}
+
+footer nav {
+  display: flex;
+}
+
+footer.a{
+  margin: 10px;
+  color: black;
+  text-decoration: underline;
+}
+/*======= Create a selector for the anchor tag in the footer to have the following styles:
+  margin: 10px;
+  color: black;
+  text-decoration: underline;
+*/
+
+
+footer nav a:first-child {
+  margin-left: 0;
+}
+
+footer a:hover {
+  color: white;}
+/*======= Create a hover state for the anchor tag in the footer nav to have the following styles:
+  color: white;
+*/
+
+footer .footer-content .copyright {
+  padding: 20px 0;
+  text-align: center;
+}
