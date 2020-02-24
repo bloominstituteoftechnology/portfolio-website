@@ -46,7 +46,6 @@ const App = () => {
           className='Link'
           onClick={() => window.open('https://github.com/brellin')}
         />
-        GitHub
       </div>
 
       <div>
@@ -55,7 +54,6 @@ const App = () => {
           className='Link'
           onClick={() => window.open('https://linkedin.com/in/brellin')}
         />
-        LinkedIn
       </div>
 
       <div>
@@ -64,7 +62,6 @@ const App = () => {
           className='Link'
           onClick={() => window.location = 'mailto: will@willujr.com'}
         />
-        Email
       </div>
     </footer>
 
