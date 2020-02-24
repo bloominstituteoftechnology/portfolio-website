@@ -2,8 +2,8 @@
 
 div.Work {
     @include flex($direction: column, $align: center);
-    margin-bottom: 50px;
-
+    margin: 0 auto 50px;
+    
     div.Buttons {
         @include flex();
         margin: 50px auto;
@@ -35,10 +35,19 @@ div.Work {
                 background: $dark;
             }
             
+            @media (max-width: 500px) {
+                font-size: 2rem;
+            }
+            
         }
         
     }
     
+    h2 {
+        font-family: $header-font;
+        font-size: 3rem;
+        text-shadow: 5px 5px 25px black, 5px 5px 25px black;
+    }
     
     figure {
         width: 50%;
@@ -64,13 +73,8 @@ div.Work {
         @media (max-width: 500px) {
             border-radius: 25%;
         }
-
-        h2 {
-            font-family: $header-font;
-            font-size: 3rem;
-            text-shadow: 5px 5px 25px black, 5px 5px 25px black;
-        }
-
+        
+        
         p {
             color: whitesmoke;
             font-size: 2rem;
@@ -78,7 +82,7 @@ div.Work {
             white-space: pre-line;
             user-select: none;
             text-shadow: 5px 5px 25px black, 5px 5px 25px black;
-
+            
             a {
                 color: $accent;
                 text-decoration: none;
@@ -101,9 +105,9 @@ div.Work {
                     }
                 }
                 
-
+                
             }
-
+            
         }
         
         &.BlackHole {
@@ -121,18 +125,18 @@ div.Work {
             &:hover {
                 background-image: linear-gradient(#00000080, #00000080), url(../../images/howl.png);
             }
-
+            
         }
-
+        
         &.Chao {
             background-image: linear-gradient(#000000aa, #000000aa), url(../../images/chao.png);
             
             &:hover {
                 background-image: linear-gradient(#00000080, #00000080), url(../../images/chao.png);
             }
-
+            
         }
-
+        
     }
-
+    
 }

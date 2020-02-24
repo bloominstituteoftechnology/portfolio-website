@@ -1,19 +1,19 @@
 @import 'variables';
 
+
 div.App {
     @include flex($direction: column, $align: center);
     flex-wrap: wrap;
     padding: 0 25px;
-    width: 96.3%;
-
-    @media (max-width: 500px) {
-        width: 87.5%;
-    }
 
     nav {
         margin: 20px auto 0;
         @include flex($justify: space-evenly);
         position: relative;
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
 
         a {
             font-size: 2rem;
@@ -84,6 +84,10 @@ div.App {
         width: 50%;
         margin: 0 auto 20px;
         transition: 1s ease-out;
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
         
         h2 {
             font-family: $header-font;

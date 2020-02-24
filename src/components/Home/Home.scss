@@ -2,7 +2,7 @@
     
 div.Home {
     @include flex($align: flex-start, $justify: space-between);
-    width: 96.35%;
+    width: 100%;
     user-select: none;
 
     @media (max-width: 500px) {
@@ -59,9 +59,10 @@ div.Home {
         transition: 1.5s ease-out;
 
         @media (max-width: 500px) {
-            margin-top: 50px;
+            max-width: 100%;
+            margin: 25px auto 0;
         }
-
+        
         h2 {
             width: 100%;
         }
@@ -71,10 +72,13 @@ div.Home {
             height: 100px;
             object-fit: contain;
             margin: 2.5px;
+            flex-basis: 17%;
 
             @media (max-width: 500px) {
-                width: 75px;
-                height: 75px;
+                width: 50px;
+                height: 50px;
+                border-radius: 5px;
+                margin: 2.5px auto;
             }
 
         }

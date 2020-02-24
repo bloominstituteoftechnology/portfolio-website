@@ -69,7 +69,7 @@ const Projects = props => {
 const Activity = props => {
     return <>
         <h2>WakaTime</h2>
-        <figure><embed src="https://wakatime.com/share/@brellin/486bd322-98a8-4e1a-a9a0-30c55d351ec5.svg" /></figure>
+        <figure><embed src="https://wakatime.com/share/@brellin/f844d8ee-85dc-4ba1-b3e1-4277288ef657.svg"></embed></figure>
 
         <h2>GitHub</h2>
         <GitHub username='brellin' theme={{
