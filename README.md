@@ -10,8 +10,8 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 
 _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
 - [ ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
@@ -21,7 +21,8 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 
 - [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
 - [ ] You make pick any template you like.  Here are some good choices for a portfolio:
-	- [https://html5up.net/story](https://html5up.net/story)
+	- [https://html5up.ne
+	t/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
 	- [https://html5up.net/miniport](https://html5up.net/miniport)
 	- [https://html5up.net/dimension](https://html5up.net/dimension)
