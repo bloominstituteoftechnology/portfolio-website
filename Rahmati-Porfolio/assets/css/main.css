@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	width: 80%;
 	line-height: 1;
 }
 
