@@ -1,0 +1,300 @@
+::-moz-selection {
+  background: #8993a0;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #8993a0;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+a {
+	color: #8993a0;
+}
+
+a:hover {
+	color:#666e78;
+}
+
+footer .nav-list li a:hover,footer ul.regular li a:hover  {
+	color:#666e78;
+}
+
+.btn-link:hover {
+  color: #666e78;
+}
+
+.btn-theme {
+  background: #8993a0;
+}
+.btn-theme:hover,
+.btn-theme.active,
+.btn-theme.disabled,
+.btn-theme[disabled] {
+  background: #666e78;
+  *background: #666e78;
+}
+
+.rheading span {
+  background: #8993a0;
+}
+/* sequence slider */
+
+.info  h2{
+	background: #8993a0;
+}
+
+
+/* iview slider */
+.iview-caption.caption-theme {
+	background: #8993a0;
+}
+
+/* flexslider */
+.flex-caption {
+	border-bottom: 2px solid #8993a0;
+}
+
+/* fontawesome icons */
+.icon-square:hover,
+.icon-rounded:hover,
+.icon-circled:hover {
+    background-color: #8993a0;
+}
+[class^="icon-"].active,
+[class*=" icon-"].active {
+    background-color: #8993a0;
+}
+
+/* header */
+.navbar .nav li.active a {
+	background:#8993a0;
+}
+.navbar .nav li.active a:hover {
+	background:#666e78;
+}
+
+.color {
+	background: #8993a0;
+	color:#fff;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #8993a0;
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+}
+
+/* sequence slider */
+.sequence-nav .next:hover,.sequence-nav .prev:hover {
+	background: #8993a0;
+}
+
+
+/* jcarousel */
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+	background-color:#8993a0;
+}
+
+/* breadcrumb */
+.breadcrumb {
+
+}
+
+/* call action */
+.call-action {
+	border-left:5px solid #8993a0;
+}
+
+/* box */
+
+.features:hover .box {
+	border-bottom: 2px solid #8993a0;
+}
+
+/* accordion */
+.accordion-heading a:hover {
+	color: #8993a0;
+}
+.accordion-heading .active{
+	color: #8993a0;
+}
+
+/* tab */
+.tabs-top .nav-tabs > li.active > a:hover,
+.tabs-top .nav-tabs > li.active > a { border-top-color: #8993a0; }
+
+/* pricing box */
+.priceBox.special .emphasis {
+  background: #8993a0;
+}
+
+/* tagline */
+.tagline {
+	border-bottom:5px solid #8993a0;
+}
+
+
+
+/* button */
+.btn-link {
+	color: #8993a0;
+}
+
+.nav .dropdown-toggle .caret {
+  margin-top: 6px;
+  border-top-color: #8993a0;
+  border-bottom-color: #8993a0;
+}
+
+
+
+/* tabs */
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: #ffffff;
+  background-color: #8993a0;
+}
+
+/* accordion */
+.accordion-heading a.accordion-toggle:hover {
+	color: #8993a0;
+}
+
+/* label */
+.label-orange,
+.badge-orange {
+  background-color: #8993a0;
+}
+
+
+/* nav */
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+  background: #8993a0;
+}
+
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  background: #8993a0;
+}
+
+.nav .dropdown-toggle .caret {
+  border-top-color: #8993a0;
+  border-bottom-color: #8993a0;
+}
+
+/* custom progress bar according template skin */
+.progress-orange .bar,
+.progress .bar-orange {
+  background: #8993a0;
+}
+
+.progress-orange.progress-striped .bar,
+.progress-striped .bar-orange {
+  background: #8993a0;
+}
+
+/* pagination */
+
+.pagination ul li a:hover {
+  background: #8993a0;
+  border-color:#8993a0;
+}
+
+
+/* widget */
+aside .widget ul.cat li a:hover {
+	color: #8993a0;
+}
+
+aside .widget ul.tags li a {
+  background: #8993a0;
+}
+
+aside .widget ul.recent-posts li a:hover {
+	color: #8993a0;
+}
+
+/* flickr footer badge */
+
+footer .widget .flickr-badge img:hover {
+	border:2px solid #8993a0;
+}
+
+/* blog */
+
+.post-meta {
+	border-left:2px solid #8993a0;
+}
+
+.entry-body a h5.title:hover {
+	color: #8993a0;
+}
+
+article.blog-post .post-heading h3 a:hover {
+	color:#8993a0;
+}
+
+article.last-post {
+	background: #8993a0;
+}
+
+ul.time-post li.year{
+	border-bottom:1px solid #8993a0;
+}
+
+section#subintro {
+	background: #8993a0;
+}
+
+/* footer */
+
+
+
+ /* 404 */
+ 
+
+.error-body{
+	background:#8993a0;
+	padding:20px;
+	text-align:center;
+}
+
+
+/* misc */
+a.thumbnail:hover {
+  border-color: #8993a0;
+}
+
+ul.filter li.active a:hover,.flex-control-nav li a:hover, .flex-control-nav li a.active{
+	background: #8993a0;
+}
+
+.thumbnail h4 a:hover, .thumbnail .meta  span a:hover, ul.recent li h6 a:hover, ul.post-meta li a:hover, .media-body span, .media-body .media-heading a:hover, form label span, article.last-post h5 a:hover{
+	color: #8993a0;
+	text-decoration:none;
+}
