@@ -8601,3 +8601,12 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+			/********************** MY CODE ****************************/
+
+			.content-img img {
+				display: flex;
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+			  }
