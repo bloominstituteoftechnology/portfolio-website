@@ -21,7 +21,21 @@
       <!-- Header -->
       <header id="header">
         <div class="logo">
-          <span class="icon fa-gem"></span>
+          
+            <spam
+              class="fas fa-play"
+              style="font-size:45px;color:yellow;">
+              <audio autoplay>
+                <source src="audio.mp3">
+                  <source src="audio.ogg">
+                    <source src="audio.wav">
+                      <source src="audio.mpeg">
+                      
+                
+                
+              </audio></spam>
+            </spam>
+          
         </div>
         <div class="content">
           <div class="inner">
@@ -113,7 +127,7 @@
             20 years of experience working in Music Audio Recording & Radio
             Broadcast Production both combined. Now, I am ready to bring my
             creativity and organizational skills and technological expertise to
-            your QA/Online Development Framework process systems to ensure
+            your QA/Online Web Development Framework process systems to ensure
             timely completion and implementation to increase brand awareness and
             promote your company’s products. I look forward to speaking with you
             in more detail about my experience and qualifications at entry level
@@ -150,22 +164,30 @@
           </form>
           <ul class="icons">
             <li>
-              <a href="#" class="icon brands fa-twitter"
+              <a
+                href="https://twitter.com/airstereo"
+                class="icon brands fa-twitter"
                 ><span class="label">Twitter</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands fa-facebook-f"
+              <a
+                href="https://www.facebook.com/airestereo"
+                class="icon brands fa-facebook-f"
                 ><span class="label">Facebook</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands fa-instagram"
+              <a
+                href="https://www.instagram.com/airestereo/"
+                class="icon brands fa-instagram"
                 ><span class="label">Instagram</span></a
               >
             </li>
             <li>
-              <a href="#" class="icon brands fa-github"
+              <a
+                href="https://github.com/Airestereo"
+                class="icon brands fa-github"
                 ><span class="label">GitHub</span></a
               >
             </li>
@@ -497,5 +519,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="/audiojs/audio.min.js"></script>
+    <script>
+      audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+      });
+    </script>
   </body>
 </html>
