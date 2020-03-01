@@ -119,8 +119,7 @@ input, select, textarea {
 			border-bottom-color: transparent !important;
 			color: #6bd4c8;
 		}
-
-/* I am not exacty sure what stong is, I see it in the HTML but is isn't called like a class */
+/* strong makes text bold while in a h or p */
 	strong, b {
 		color: #555;
 		font-weight: 400;
