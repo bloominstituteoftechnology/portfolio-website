@@ -160,14 +160,14 @@ input, select, textarea {
 		-webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-		color: #35b88f;
+		color: #859583;
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
 		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 	}
 
 		a:hover {
-			border-bottom-color: rgba(53, 184, 143, 0);
+			border-bottom-color: #15270F);
 		}
 
 	sub {
@@ -1751,7 +1751,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		border: 0;
-		background: #35b88f;
+		background: #859583;
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		cursor: pointer;
@@ -1901,7 +1901,7 @@ margin: 0 2%;
 								position: relative;
 								display: inline-block;
 								border: 0;
-								background: #35b88f;
+								background: #859583;
 								color: #fff;
 								text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 								cursor: pointer;
@@ -2309,7 +2309,7 @@ margin: 0 2%;
 		}
 
 			#footer a:hover {
-				color: #35b88f;
+				color: #859684;
 				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
 				border-bottom-color: rgba(53, 184, 143, 0.5);
 			}
@@ -2318,6 +2318,7 @@ margin: 0 2%;
 			padding: 0.75em 2em 0.75em 2em;
 			border-radius: 3em;
 			border: solid 1px #fff;
+			background-color: #15270F;
 			display: inline-block;
 			margin: 0 0 3em 0;
 		}
