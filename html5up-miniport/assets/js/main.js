@@ -27,8 +27,15 @@
 
 	// Scrolly.
 		$('#nav a, .scrolly').scrolly({
-			speed: 700,
+			speed: 1000,
 			offset: function() { return $nav.height(); }
 		});
 
 })(jQuery);
+
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+	    var d = new Date();
+	   document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+							};
+						

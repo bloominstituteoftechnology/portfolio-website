@@ -2003,6 +2003,24 @@ input, select, textarea {
 			text-shadow: 1px 1px 0px #fff;
 		}
 
+		/* timer animation  */
+		.wrapper.style2 header #demo{
+			
+			color:black;
+			background-color: pink;
+			animation-name: example;
+			animation-duration: 4s;
+			font-size: larger;
+		}
+		@keyframes example {
+			from {background-color: blue;}
+			to {background-color: yellow;}
+		  }
+
+
+
+
+		  
 		.wrapper.style3 {
 			background-color: #f4f4f4;
 			text-shadow: 1px 1px 0px #fff;
