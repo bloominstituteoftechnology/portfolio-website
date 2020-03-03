@@ -401,8 +401,8 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 h1 small,
 .h1 small,
@@ -1388,7 +1388,7 @@ pre code {
     margin-left: 33.33333333%;
   }
   .col-lg-offset-3 {
-    margin-left: 25%;
+    margin-left: 32%;
   }
   .col-lg-offset-2 {
     margin-left: 16.66666667%;
