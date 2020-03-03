@@ -152,14 +152,20 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: solid 1px rgba(161, 2, 2, 0.5);
+		border-bottom: ;
+		(161, 2, 2, 0.5);
 		text-decoration: none;
 		color: inherit;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: red;
+	.aboutAnchors {
+		border-bottom: solid 1px;
+	}
+
+		a:hover { 
+			color: darkslategray;
+			border-bottom: transparent;
+			
 		}
 
 	strong, b {
@@ -1329,12 +1335,17 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
-			#header .content p {
+			#header .content a {
 				text-transform: uppercase;
+				list-style: none;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
 			}
+			 .contentLinks {
+				 list-style: none;
+				
+			 }
 
 		#header nav ul {
 			display: -moz-flex;
