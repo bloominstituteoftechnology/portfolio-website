@@ -27,7 +27,7 @@
 
 	// Scrolly.
 		$('#nav a, .scrolly').scrolly({
-			speed: 1000,
+			speed: 700,
 			offset: function() { return $nav.height(); }
 		});
 
