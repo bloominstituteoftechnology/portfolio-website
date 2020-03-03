@@ -31,7 +31,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+
 }
+
 
 ol, ul {
 	list-style: none;
@@ -100,7 +102,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: rgb(70, 58, 58);
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -112,6 +114,7 @@ input, select, textarea {
 		transition: color .2s ease-in-out;
 		color: #43B3E0;
 		text-decoration: underline;
+
 	}
 
 		a:hover {
@@ -125,7 +128,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color:plum;
 	}
 
 	i, em {
@@ -151,7 +154,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color:teal;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -159,7 +162,7 @@ input, select, textarea {
 		text-decoration: none;
 		color: inherit;
 	}
-
+	
 	h2, h3, h4, h5, h6 {
 		font-weight: 700;
 	}
