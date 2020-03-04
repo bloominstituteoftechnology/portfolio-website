@@ -1940,6 +1940,7 @@ input, select, textarea {
 		right: 0;
 		top: 0;
 		font-size: 0.9em;
+		margin-right: 8%;
 	}
 
 		#nav ul {
@@ -2606,7 +2607,7 @@ input, select, textarea {
 		/* Logo */
 
 			#logo h1 {
-				font-size: 2.75em;
+				font-size: 3.75em;
 				padding: 0.2em 0.275em;
 			}
 
