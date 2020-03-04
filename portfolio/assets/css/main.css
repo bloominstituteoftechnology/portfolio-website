@@ -399,8 +399,8 @@ footer > p {
   align-items: stretch;
 }
 .row img {
-  width: 400px;
-  height: 350px;
+  width: 300px;
+  height: 250px;
 }
 .row > * {
   box-sizing: border-box;
