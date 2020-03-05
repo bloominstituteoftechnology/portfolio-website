@@ -32,34 +32,3 @@
     }
   });
 })(jQuery);
-let array = [
-  "Tashi Delek",
-  "Namaste",
-  "Hola",
-  "Bonjour",
-  "Olá",
-  "Hallo",
-  "Ciao",
-  "Geia sas",
-  "Sveiki",
-  "Bok",
-  "Bongu",
-  "Salut",
-  "Merhaba",
-  "Barev Dzez",
-  "Zdravstvuyte"
-];
-let button = document.getElementById("details");
-button.addEventListener("click", function(e) {
-  e.preventDefault();
-  let box = document.querySelector(".box");
-  let show = document.createElement("div");
-  let text1 = document.createTextNode(
-    "Quickly learned and put into action React Native in order to deliver an improved framework for user experience."
-  );
-  if (e.target.innerText === "Details") {
-    box.style.display = "none";
-    show.appendChild(text1);
-    button.insertBefore(show);
-  }
-});

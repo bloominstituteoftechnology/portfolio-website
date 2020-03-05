@@ -2569,7 +2569,7 @@ body > article {
   justify-content: space-evenly;
 }
 .greeting:before {
-  content: "Nǐ hǎo";
+  content: "Bok";
   animation: animate infinite 40s;
 }
 
@@ -2611,7 +2611,7 @@ body > article {
     content: "Merhaba";
   }
   60% {
-    content: "Bok";
+    content: "Nǐ hǎo";
   }
   65% {
     content: "Sveiki";
@@ -2626,7 +2626,7 @@ body > article {
     content: "Kon'nichiwa";
   }
   85% {
-    content: "yeoboseyo";
+    content: "Yeoboseyo";
   }
   90% {
     content: "Sawubona";
@@ -2635,6 +2635,6 @@ body > article {
     content: "S̄wạs̄dī";
   }
   100% {
-    content: "aloha";
+    content: "Aloha";
   }
 }
