@@ -2568,3 +2568,73 @@ body > article {
   display: flex;
   justify-content: space-evenly;
 }
+.greeting:before {
+  content: "Nǐ hǎo";
+  animation: animate infinite 40s;
+}
+
+@keyframes animate {
+  0% {
+    content: "Tashi Delek";
+  }
+  5% {
+    content: "Namaste";
+  }
+  10% {
+    content: "Hello";
+  }
+  15% {
+    content: "Hola";
+  }
+  20% {
+    content: "Bonjour";
+  }
+  25% {
+    content: "Olá";
+  }
+  30% {
+    content: "Ciao";
+  }
+  35% {
+    content: "Bongu";
+  }
+  40% {
+    content: "Salut";
+  }
+  45% {
+    content: "Barev Dzez";
+  }
+  50% {
+    content: "Zdravstvuyte";
+  }
+  55% {
+    content: "Merhaba";
+  }
+  60% {
+    content: "Bok";
+  }
+  65% {
+    content: "Sveiki";
+  }
+  70% {
+    content: "Hallo";
+  }
+  75% {
+    content: "Geia sas";
+  }
+  80% {
+    content: "Kon'nichiwa";
+  }
+  85% {
+    content: "yeoboseyo";
+  }
+  90% {
+    content: "Sawubona";
+  }
+  95% {
+    content: "S̄wạs̄dī";
+  }
+  100% {
+    content: "aloha";
+  }
+}

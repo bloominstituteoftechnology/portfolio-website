@@ -32,7 +32,23 @@
     }
   });
 })(jQuery);
-
+let array = [
+  "Tashi Delek",
+  "Namaste",
+  "Hola",
+  "Bonjour",
+  "Olá",
+  "Hallo",
+  "Ciao",
+  "Geia sas",
+  "Sveiki",
+  "Bok",
+  "Bongu",
+  "Salut",
+  "Merhaba",
+  "Barev Dzez",
+  "Zdravstvuyte"
+];
 let button = document.getElementById("details");
 button.addEventListener("click", function(e) {
   e.preventDefault();
