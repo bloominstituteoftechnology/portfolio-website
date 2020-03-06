@@ -2670,6 +2670,8 @@ body > article {
 .flip-card-front,
 .flip-card-back {
   text-align: left;
+  padding: 0 2% 0 2%;
+  line-height: 150%;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2687,6 +2689,7 @@ body > article {
   background-color: #43b3e0;
   border-radius: 10px;
   font-family: sans-serif;
+  padding: 5% 2% 0 2%;
   text-shadow: none;
   font-style: normal;
   text-align: left;
