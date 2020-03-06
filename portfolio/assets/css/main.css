@@ -2572,7 +2572,7 @@ body > article {
   color: #ff8d33;
 }
 .greeting:before {
-  content: "Bok";
+  content: "Hello";
   animation: animate infinite 40s;
 }
 
@@ -2584,7 +2584,7 @@ body > article {
     content: "Namaste";
   }
   10% {
-    content: "Hello";
+    content: "God dag";
   }
   15% {
     content: "Hola";
