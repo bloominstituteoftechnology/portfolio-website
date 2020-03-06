@@ -2568,6 +2568,9 @@ body > article {
   display: flex;
   justify-content: space-evenly;
 }
+.greeting {
+  color: #ff8d33;
+}
 .greeting:before {
   content: "Bok";
   animation: animate infinite 40s;
@@ -2644,6 +2647,7 @@ body > article {
   width: 100%;
   height: 200px;
   border: 1px solid #f1f1f1;
+  border-radius: 10px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -2665,6 +2669,7 @@ body > article {
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
+  text-align: left;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2673,14 +2678,18 @@ body > article {
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
+/* .flip-card-front {
   color: black;
-  font-family: "Open Sans", sans-serif;
-}
+} */
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #43b3e0;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-shadow: none;
+  font-style: normal;
+  text-align: left;
   color: white;
   transform: rotateY(180deg);
 }
