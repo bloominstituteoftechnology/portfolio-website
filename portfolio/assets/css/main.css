@@ -2670,6 +2670,11 @@ body > article {
 .flip-card-front,
 .flip-card-back {
   text-align: left;
+  background-color: #43b3e0;
+  border-radius: 10px;
+  font-size: 0.95em;
+  color: white;
+  text-shadow: none;
   padding: 0 2% 0 2%;
   line-height: 150%;
   position: absolute;
