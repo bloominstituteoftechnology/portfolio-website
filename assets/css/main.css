@@ -709,10 +709,9 @@ input, select, textarea {
                 width: 100%;
             }
 
-            .wolf-icon {
-                width: 70%;
-                margin-top: 15%;
-                opacity: 0.5;
+            .profile-image {
+                width: 100%;
+                border-radius: 50%;
             }
 
             .website {
