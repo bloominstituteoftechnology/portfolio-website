@@ -1602,12 +1602,15 @@ input, select, textarea {
 		flex-wrap: wrap;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	}
-
+	#main a:hover {
+		-webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+		filter: blur(10px);
+	}
 		#main .thumb {
 			-moz-transition: opacity 1.25s ease-in-out;
 			-webkit-transition: opacity 1.25s ease-in-out;
 			-ms-transition: opacity 1.25s ease-in-out;
-			transition: opacity 1.25s ease-in-out;
+			transition: opaciy 1.25s ease-in-out;
 			pointer-events: auto;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 			opacity: 1;
