@@ -1604,7 +1604,7 @@ input, select, textarea {
 	}
 	#main a:hover {
 		-webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-		filter: blur(10px);
+		filter: contrast(200%);
 	}
 		#main .thumb {
 			-moz-transition: opacity 1.25s ease-in-out;
