@@ -91,6 +91,8 @@ input, select, textarea {
 		color: #888;
 	}
 
+
+
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -162,16 +164,7 @@ input, select, textarea {
 		color: #666;
 	}
 
-	.blinking{
-		animation:blinkingText 1.2s infinite;
-	}
-	@keyframes blinkingText{
-		0%{     color: #000;    }
-		49%{    color: #000; }
-		60%{    color: transparent; }
-		99%{    color:transparent;  }
-		100%{   color: #000;    }
-	}
+	
 
 	em, i {
 		font-style: italic;
@@ -2079,6 +2072,8 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+
+			
 		}
 
 		#header .bottom {
@@ -2240,12 +2235,29 @@ input, select, textarea {
 
 				#main > section.dark h2, #main > section.dark h3, #main > section.dark h4, #main > section.dark h5, #main > section.dark h6 {
 					color: inherit;
+					
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: black;
 					border-color: inherit;
+					text-shadow: 0 0 5px blue, 0 0 7px whitesmoke;
+					/* text-shadow: 8px 8px 12px black; */
+					/* text-decoration: underline overline wavy #01A2BF; */
+
 				}
+
+
+				.blinking{
+					animation:blinkingText 1.2s infinite;
+				}
+				@keyframes blinkingText{
+					0%{     color: #000;    }
+					49%{    color: #000; }
+					60%{    color: transparent; }
+					99%{    color:transparent;  }
+					100%{   color: #000;    }
+				}				
 
 				#main > section.dark a {
 					color: #fff;
