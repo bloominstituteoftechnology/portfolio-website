@@ -1,0 +1,7 @@
+{
+    "allowedExtensions":[".less"],
+    "minified": false,
+    "sourceMap": false,
+    "watchFolder": "assets/less",
+    "outputFolder": "assets/css"
+}
