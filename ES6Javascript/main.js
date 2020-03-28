@@ -4,6 +4,257 @@
  License: pixelarity.com/license
  */
 
+class Svg{
+  /**
+   *
+   * @param {number} animationTimeSpan Span of time in seconds to apply the
+   * animation.
+   * @param {number} domUpdateTimeSpan Time span between translate calls.
+   * @param {number} animationDistance Percentage of bounding box to
+   * translate across each animation time span.
+   */
+  constructor( animationTimeSpan = 1, domUpdateTimeSpan = 50,
+    animationDistance = .02 ){
+    this.icons = [];
+    this.lines = [];
+    let icons = document.querySelector( "#icons" );
+    let lines = document.querySelector( "#connectionLines" );
+    this.animationTime = animationTimeSpan * 1000;
+    this.animationUpdateTimeSpan = domUpdateTimeSpan;
+    this.animationDistanceMultiplier = animationDistance;
+    debugger;
+    lines.childNodes.forEach( line => {
+      if( line.nodeName === "line" ){
+        this.lines.push( new Line( line ) );
+      }
+    } );
+    
+    icons.childNodes.forEach( child => {
+      if( child.nodeName === "g" ){
+        const icon = new Icon( child,
+          this.animationTime,
+          this.animationUpdateTimeSpan,
+          this.animationDistanceMultiplier,
+        );
+        this.lines.forEach( line => {
+          icon.addLine( line );
+        } );
+        this.icons.push( icon );
+      }
+    } );
+    
+    this.animate = this.animate.bind( this );
+    window.setInterval( this.animate, animationTimeSpan );
+  }
+  
+  animate(){
+    this.icons.forEach( icon => {
+      icon.animate();
+    } );
+  }
+  
+}
+
+class Icon{
+  constructor( node, animationInterval, updateTimeSpan, distanceMultiplier ){
+    this.node = node;
+    this.updateInterval = updateTimeSpan;
+    this.nodeToAnimate = null;
+    this.children = [];
+    
+    if( this.node.hasChildNodes() ){
+      this.node.childNodes.forEach( child => {
+        if( child.nodeName === "g" ){
+          this.children.push( child );
+          if( !child.id.includes( "IconBox" ) ){
+            this.nodeToAnimate = child;
+          }
+        }
+      } );
+    }
+    
+    this.circle = this.getCircle( this.node );
+    if( this.circle.nodeName === "circle" ){
+      this.radius = parseFloat( this.circle.getAttribute( "r" ) );
+      this.centerX = parseFloat( this.circle.getAttribute( "cx" ) );
+      this.centerY = parseFloat( this.circle.getAttribute( "cy" ) );
+    }else{
+      const circleBB = this.circle.getBBox();
+      this.radius = circleBB.height >= circleBB.width ? circleBB.height / 2 :
+        circleBB.width / 2;
+      this.centerX = circleBB.x + ( circleBB.width / 2 );
+      this.centerY = circleBB.y + ( circleBB.height / 2 );
+    }
+    
+    this.transX = 0;
+    this.transY = 0;
+    this.incrementX = 0;
+    this.incrementY = 0;
+    this.x = 0;
+    this.y = 0;
+    this.xDirection = Math.ceil( Math.random() * 2 );
+    this.yDirection = Math.ceil( Math.random() * 2 );
+    this.boundingBox = this.node.getBBox();
+    this.boundingBox.x2 = this.boundingBox.x + this.boundingBox.width;
+    this.boundingBox.y2 = this.boundingBox.y + this.boundingBox.height;
+    this.boundingBox.maxX = this.boundingBox.x2 - this.radius;
+    this.boundingBox.maxY = this.boundingBox.y2 - this.radius;
+    this.boundingBox.minX = this.boundingBox.x + this.radius;
+    this.boundingBox.minY = this.boundingBox.y + this.radius;
+    this.numberOfTimesUpdated = 0;
+    const width = this.boundingBox.width * distanceMultiplier;
+    const height = this.boundingBox.height * distanceMultiplier;
+    this.animationDistance = Math.ceil( ( width + height ) / 2 );
+    this.halfAnimationDistance = Math.ceil( this.animationDistance / 2 );
+    this.numberOfUpdatesEachAnimation = animationInterval / this.updateInterval;
+    this.lines = [];
+    this.animateFrame = this.animateFrame.bind( this );
+    this.calcDirection = this.calcDirection.bind( this );
+    this.calcTranslate = this.calcTranslate.bind( this );
+  }
+  
+  /**
+   *
+   * @param {ChildNode} node
+   * @return {*}
+   */
+  getCircle( node ){
+    if( node.nodeName === "circle" ||
+      ( node.nodeName === "path" && node.id.includes( "circle" ) ) ){
+      return node;
+    }else{
+      if( node.hasChildNodes() ){
+        let circle = null;
+        node.childNodes.forEach( child => {
+          const returnValue = this.getCircle( child );
+          if( returnValue ){
+            circle = returnValue;
+          }
+        } );
+        if( circle ){
+          return circle;
+        }
+      }
+    }
+  }
+  
+  addLine( line ){
+    if( line.x1 < this.boundingBox.x2 && line.x1 > this.boundingBox.x ){
+      if( line.y1 < this.boundingBox.y2 && line.y1 > this.boundingBox.y ){
+        this.lines.push( { point: 1, line: line } );
+      }
+    }
+    if( line.x2 < this.boundingBox.x2 && line.x2 > this.boundingBox.x ){
+      if( line.y2 < this.boundingBox.y2 && line.y2 > this.boundingBox.y ){
+        this.lines.push( { point: 2, line: line } );
+      }
+    }
+  }
+  
+  animate(){
+    
+    this.calcTranslate();
+    
+    if( !this.timer ){
+      this.timer = window.setInterval( this.animateFrame, this.updateInterval );
+    }
+    
+  }
+  
+  calcTranslate(){
+    const newX = this.calcDirection( "x" );
+    const newY = this.calcDirection( "y" );
+    
+    this.incrementX = newX / this.numberOfUpdatesEachAnimation;
+    this.incrementY = newY / this.numberOfUpdatesEachAnimation;
+    this.transX += this.xDirection === 2 ? -newX : newX;
+    this.transY += this.yDirection === 2 ? -newY : newY;
+  }
+  
+  calcDirection( property ){
+    const key = "center" + property.toUpperCase();
+    const newNum = this.getNewNumber();
+    const center = this[key];
+    const trans = this[ "trans" + property.toUpperCase() ];
+    let newCenter = center + trans;
+    const direction = this[ property.toLowerCase() + "Direction" ];
+    newCenter += direction === 2 ? -newNum :  newNum;
+    const max = this.boundingBox[ "max" + property.toUpperCase() ];
+    const min = this.boundingBox[ "min" + property.toUpperCase() ];
+  
+    if( newCenter > max ){
+      this[ property.toLowerCase() + "Direction" ] = 1;
+    }else if( newCenter < min ){
+      this[ property.toLowerCase() + "Direction" ] = 2;
+    }else if( newCenter > (max - this.radius) ){
+      this[ property.toLowerCase() + "Direction" ] = Math.ceil( Math.random() *
+        2 );
+    }else if( newCenter <
+      ( min + this.radius ) ){
+      this[ property.toLowerCase() + "Direction" ] = Math.ceil( Math.random() *
+        2 );
+    }
+    
+    return newNum;
+  }
+  
+  getNewNumber(){
+    return Math.ceil( Math.random() * this.animationDistance ) +
+      this.halfAnimationDistance;
+  }
+  
+  animateFrame(){
+    
+    this.calcTransform( "x" );
+    this.calcTransform( "y" );
+    this.numberOfTimesUpdated++;
+    this.nodeToAnimate.setAttribute( "transform",
+      `translate(${ this.x }, ${ this.y })`,
+    );
+    
+    this.lines.forEach( line => {
+      line.line.animate( line.point, this.x, this.y );
+    } );
+  }
+  
+  calcTransform( property ){
+    const propValue = this[ property ];
+    const trans = this[ "trans" + property.toUpperCase() ];
+    const increment = this[ "increment" + property.toUpperCase() ];
+    const propertyDirection = this[ property.toLowerCase() + "Direction" ];
+    if( Math.abs( propValue - trans ) <= increment ){
+      this[ property ] = trans;
+    }else if( propertyDirection === 1 ){
+      this[ property ] -= increment;
+    }else{
+      this[ property ] += increment;
+    }
+  }
+}
+
+class Line{
+  constructor( line ){
+    this.node = line;
+    this.x1 = line.x1.baseVal.value;
+    this.x2 = line.x2.baseVal.value;
+    this.y1 = line.y1.baseVal.value;
+    this.y2 = line.y2.baseVal.value;
+  }
+  
+  animate( point, xValue, yValue ){
+    const xAttName = "x" + point.toString();
+    const yAttName = "y" + point.toString();
+    
+    let y = this[ yAttName ] + yValue;
+    let x = this[ xAttName ] + xValue;
+    this.node.setAttribute( yAttName, y );
+    this.node.setAttribute( xAttName, x );
+    
+  }
+}
+
+new Svg();
+
 var settings = {
   
   slider: {
@@ -14,7 +265,7 @@ var settings = {
     speed: 1500,
     
     // Transition delay (in ms)
-    delay: 4000
+    delay: 4000,
     
   },
   
@@ -25,13 +276,90 @@ var settings = {
     // ".carousel > article".
     speed: 350, width: 0, height: 0, iframeWidth: 0, iframeHeight: 0,
     
-  }
+  },
   
 };
 
+class Feedback{
+  constructor(){
+    
+    this.feedback = [
+      "My Team Lead is awesome as always!",
+      "I wish I could give Jeremiah more" + " stars.", "he's 10/10brink",
+      "What more can be said that has not been" +
+      " stated already. Fantastic TL. Incredible grasp on the material and" +
+      " willingness to help. Made Lambda special.",
+      " I only have good things to" +
+      " say about Jeremiah. He is awesome and knowledgeable as always.",
+      "Awesome as always!",
+      "Most reliable TL there is. If you need to debug, he would be the one I" +
+      " would turn to.", "Jeremiah keeps it legit in our TL group",
+      "We've been" +
+      " having just the best time these past few weeks I tell ya",
+      "My TL" + " continues to be helpful and knowledgeable.",
+      "Awesome! Thanks for the" + " continuous help and explanations.",
+      "He's the best of the best.",
+      "Solid" + " and excellent to work with as always",
+      "Jeremiah continues to be" +
+      " awesome. He is encouraging and understanding. He is also super" +
+      " professional and knowledgeable. Someone should give him a job like asap" +
+      " (but then I'll miss being in his group).",
+      "Super accommodating, super" + " flexible. Glad to have around",
+      "The more I hear from other students" +
+      " about their experience with their TL the more I appreciate Jeremiah. He" +
+      " is always professional and helpful. I am super glad to be in his group.",
+      "When you want to quit, he won't let you. Great motivational TL",
+      "Jeremiah's super helpful in finding bugs and leaning us in the right path.",
+      "One on one peer programming with you has been a game changer for me.",
+      "I'm really glad that I continue to be in Jeremiah's group. He is super" +
+      " knowledgeable and helpful, and he gave an excellent demo during the" +
+      " after hour session on Tuesday.", "I had a tough week personally, and" +
+      " Jeremiah offered me additional support to help through a rough week",
+      "My PM continues to be awesome and knowledgeable.. I had some issue with deploying the build week project and he helped me get that resolved. He also held a very resourceful after hour on Thursday.",
+      "Keep up the good work! You've been more helpful than anyone else in this" +
+      " program thus far.", "Jeremiah's is great as always. He seems to" +
+      " understand so much of the technical aspects in React and ways to write" +
+      " better/faster code. I imagine Jeremiah having his own business and" +
+      " selling React classes he made.", "Jeremiah continuously helps our PM" +
+      " group learn to better help one another. He lets those of us who" +
+      " understand the material be navigators while someone is driving to debug" +
+      " their code, and will help both sides learn to better lead and follow.",
+      "What more can I say. Jeremiah is great! This week was pretty tough on most of us. He was willing to walk us through the material and help us understand the why. Someone get this guy a job already!",
+      "As far as I am concerned, Jeremiah is the best PM Lambda School could" +
+      " ever hope to have. He is extremely available, provides group sessions to" +
+      " work through problems, and gives students the opportunity to explain solutions to other students before he gives his version of an answer. He promotes learning at all levels, and our PM group is closer to each other because of his style.",
+      "My PM is always available and is always ready to help not just us but everyone in the class. He also gave us very useful feedback on the project assignments and during standup. On top of this, he gave great demos during the afterhour sessions.",
+    ];
+    
+    this.element = document.querySelector( "#feedback-div" );
+    this.pos = Math.ceil( Math.random() * this.feedback.length );
+    this.element.textContent = this.feedback[ this.pos ];
+    this.element.classList.add( "visible" );
+    this.switchFeedback = this.switchFeedback.bind( this );
+    this.interval = setInterval( this.switchFeedback, 5000 );
+  }
+  
+  switchFeedback(){
+    this.element.classList.remove( "visible" );
+    
+    setTimeout( () => {
+      const prevPosition = this.pos;
+      if( prevPosition === this.feedback.length - 1 ){
+        this.pos = 0;
+      }else{
+        this.pos++;
+      }
+      this.element.textContent = this.feedback[ this.pos ];
+      this.element.classList.add( "visible" );
+    }, 1000 );
+  }
+}
+
+const feedback = new Feedback();
+
 class Carousel{
   constructor(){
-    debugger;
+    
     this.pos = 0;
     this.projects = [];
     this.locked = false;
@@ -50,7 +378,7 @@ class Carousel{
   }
   
   changeSlide( e ){
-    debugger;
+    
     if( this.locked ){
       return;
     }
@@ -74,7 +402,7 @@ class Carousel{
     window.setTimeout( () => {
       this.projects[ this.pos ].setVisible( this.iframe,
         this.headingElement,
-        this.p
+        this.p,
       );
       this.projectArticle.classList.add( "visible" );
       this.locked = false;
@@ -83,7 +411,7 @@ class Carousel{
   };
   
   addProject( project ){
-    debugger;
+    
     if( this.projects.length === 0 ){
       project.setVisible( this.iframe, this.headingElement, this.p );
     }
@@ -110,10 +438,10 @@ class Project{
   setVisible( iframe, headingElement, p ){
     
     const width = Math.max( document.documentElement.clientWidth,
-      window.innerWidth || 0
+      window.innerWidth || 0,
     );
     const height = Math.max( document.documentElement.clientHeight,
-      window.innerHeight || 0
+      window.innerHeight || 0,
     );
     
     if( width !== settings.carousel.width || height !==
@@ -201,7 +529,7 @@ const pmDashboard = new Project( "PM Dashboard",
       "We leveraged Google auth and firebase for authentication and" +
       " storing data.",
       new Img( "./assets/images/GoogleSignin.JPG", "Google Auth Signin", 1 ),
-      1
+      1,
     ), new Article( "React",
     "We utilized React, React-Router, and Redux to build out frontend." +
     " The PM-Dashboard comes with various forms that are to be subbmited on" +
@@ -212,10 +540,10 @@ const pmDashboard = new Project( "PM Dashboard",
     " students enrolled into the student dashboard.",
     new Img( "./assets/images/PMDashboard.JPG",
       "PM Dashboard main dashboard" + " view.",
-      2
+      2,
     ),
-    2
-  )
+    2,
+  ),
   ],
   "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&autoplay=1&mute=1",
   "https://pm-dashboard-ls.netlify.com/start",
@@ -235,21 +563,21 @@ const studentDashboard = new Project( "Student Dashboard",
       "Login is handled by firebase google auth api.",
       new Img( "./assets/images/StudentDashboardLogin.JPG",
         "Google Auth" + " Signin",
-        1
+        1,
       ),
-      1
+      1,
     ), new Article( "React",
     "This dashboard is created with React, React Redux, React Router and" +
-    " many other library's. It is linked to the PM Dashboard via the" +
+    " many other libraries. It is linked to the PM Dashboard via the" +
     " firebase api. It subscribes to the students info so once the info" +
     " is updated by the Team Lead on the PM Dashboard it is" +
     " automatically updated on the student dashboard.",
     new Img( "./assets/images/StudentDashboardMain.JPG",
       "Student Dashboard Main",
-      2
+      2,
     ),
-    2
-  )
+    2,
+  ),
   ],
   "https://www.youtube.com/embed/TwY_q5fxTEE?rel=0;&autoplay=1&mute=1",
   "https://ls-student-dashboard.netlify.com",
@@ -374,164 +702,6 @@ carosel.addProject( studentDashboard );
     
   };
   
-  // /**
-  //  * Custom carousel for Altitude.
-  //  * @return {jQuery} jQuery object.
-  //  */
-  // $.fn._carousel = function( options ){
-  //
-  //     var $window = $( window ), $this = $( this );
-  //
-  //     // Handle no/multiple elements.
-  //     if( this.length == 0 ){
-  //         return $this;
-  //     }
-  //
-  //     if( this.length > 1 ){
-  //
-  //         for( var i = 0; i < this.length; i++ ){
-  //             $( this[ i ] )._slider( options );
-  //         }
-  //
-  //         return $this;
-  //
-  //     }
-  //
-  //     // Vars.
-  //     var current = 0, pos = 0, lastPos = 0, slides = [],
-  //         $slides = $this.children( "article" ), articles = [], intervalId,
-  //         isLocked = false, i = 0;
-  //
-  //     articles.push( pmDashboard );
-  //     articles.push( studentDashbaord );
-  //
-  //     // Functions.
-  //     $this._switchTo = function( x, stop ){
-  //
-  //         // Handle lock.
-  //         if( isLocked || pos == x ){
-  //             return;
-  //         }
-  //
-  //         isLocked = true;
-  //
-  //         // Stop?
-  //         if( stop ){
-  //             window.clearInterval( intervalId );
-  //         }
-  //
-  //         // Update positions.
-  //         lastPos = pos;
-  //         pos = x;
-  //
-  //         // Hide last slide.
-  //         slides[ lastPos ].removeClass( "visible" );
-  //
-  //         // Finish hiding last slide after a short delay.
-  //         window.setTimeout( function(){
-  //
-  //             // Hide last slide (display).
-  //             slides[ lastPos ].hide();
-  //
-  //             // Show new slide (display).
-  //             slides[ pos ].show();
-  //
-  //             // Show new new slide.
-  //             window.setTimeout( function(){
-  //                 slides[ pos ].addClass( "visible" );
-  //                 let content = slides[ pos ].children( ".content" );
-  //                 let h3 = content[ 0 ].children[ 0 ];
-  //                 let slideName = h3.textContent;
-  //                 articles.forEach( ( article ) => {
-  //                     if( article.name === slideName ){
-  //                         article.setVisible();
-  //                     }
-  //                 } );
-  //             }, 25 );
-  //
-  //             // Unlock after sort delay.
-  //             window.setTimeout( function(){
-  //                 isLocked = false;
-  //             }, options.speed );
-  //
-  //         }, options.speed );
-  //
-  //     };
-  //
-  //     // Slides.
-  //     $slides
-  //         .each( function(){
-  //
-  //             var $slide = $( this );
-  //
-  //             // Add to slides.
-  //             slides.push( $slide );
-  //
-  //             // Hide.
-  //             $slide.hide();
-  //
-  //             i++;
-  //
-  //         } );
-  //
-  //     // Nav.
-  //     $this
-  //         .on( "click", ".next", function( event ){
-  //
-  //             // Prevent default.
-  //             event.preventDefault();
-  //             event.stopPropagation();
-  //
-  //             // Increment.
-  //             current++;
-  //
-  //             if( current >= slides.length ){
-  //                 current = 0;
-  //             }
-  //
-  //             // Switch.
-  //             $this._switchTo( current );
-  //
-  //         } )
-  //         .on( "click", ".previous", function( event ){
-  //
-  //             // Prevent default.
-  //             event.preventDefault();
-  //             event.stopPropagation();
-  //
-  //             // Decrement.
-  //             current--;
-  //
-  //             if( current < 0 ){
-  //                 current = slides.length - 1;
-  //             }
-  //
-  //             // Switch.
-  //             $this._switchTo( current );
-  //
-  //         } );
-  //
-  //     // Initial slide.
-  //     slides[ pos ]
-  //         .show()
-  //         .addClass( "visible" );
-  //     let content = slides[ pos ].children( ".content" );
-  //     let h3 = content[ 0 ].children[ 0 ];
-  //     let slideName = h3.textContent;
-  //     articles.map( ( article ) => {
-  //         if( article.name === slideName ){
-  //             article.setVisible( article );
-  //         }
-  //     } );
-  //     let mainContent = document.getElementById( "main-content" );
-  //
-  //     // Bail if we only have a single slide.
-  //     if( slides.length === 1 ){
-  //
-  //     }
-  //
-  // };
-  
   // Breakpoints.
   breakpoints( {
     xlarge: [ "1281px", "1680px" ],
@@ -539,7 +709,7 @@ carosel.addProject( studentDashboard );
     medium: [ "737px", "980px" ],
     small: [ "481px", "736px" ],
     xsmall: [ "361px", "480px" ],
-    xxsmall: [ null, "360px" ]
+    xxsmall: [ null, "360px" ],
   } );
   
   // Play initial animations on page load.
@@ -585,7 +755,7 @@ carosel.addProject( studentDashboard );
       resetForms: true,
       target: $body,
       visibleClass: "is-menu-visible",
-      side: "right"
+      side: "right",
     } );
   
 } )( jQuery );

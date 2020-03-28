@@ -1,0 +1,38 @@
+#feedback {
+  max-height: 100vh;
+  min-height: 600px;
+  background-color: #4cabb1;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  .title {
+    margin: 5rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      color: #ffffff;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+
+    .feedback {
+      padding: 2rem;
+      font-size: 1.5rem;
+      max-width: 600px;
+      color: #fff;
+      opacity: 0;
+      transition: all 1s;
+
+      &.visible {
+        opacity: 1;
+      }
+    }
+  }
+
+
+}

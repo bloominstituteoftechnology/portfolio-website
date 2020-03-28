@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up form</title>
+    <style>
+        body {
+            font-size: 2rem;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-bottom: 4rem;
+            font-size: 2rem;
+        }
+
+        button {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="sign-up-form">
+    <form>
+        <div class="column">
+            <label>First Name</label>
+            <input required type="text" name="firstName"
+                   placeholder="First Name">
+            <label>Last Name</label>
+            <input required type="text" name="lastName" placeholder="Last Name">
+            <label>Email</label>
+            <input required type="email" name="email" placeholder="Email">
+            <label>Password</label>
+            <input required type="password" name="password"
+                   placeholder="Password">
+            <label>Confirm Password</label>
+            <input required type="password" name="confirm"
+                   placeholder="Confirm Password">
+            <button>Submit</button>
+        </div>
+
+    </form>
+</div>
+<script>
+  const form = document.querySelector( "form" );
+  form.onsubmit = handleSubmit;
+
+  function handleSubmit( e ){
+    debugger;
+    const values = {};
+    const children = form.children[ 0 ].children;
+    for( let i = 0; i < children.length; i++ ){
+      if( children[ i ].localName === "input" ){
+        values[ children[ i ].name ] = children[ i ].value;
+      }
+    }
+
+    if( values.password !== values.confirm ){
+      e.preventDefault();
+      alert( "Password Fields Do Not match" );
+    }
+
+  }
+</script>
+</body>
+</html>
