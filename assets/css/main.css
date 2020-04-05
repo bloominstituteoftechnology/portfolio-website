@@ -221,6 +221,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		justify-content: center;
 	}
 
 		.row > * {
@@ -1081,7 +1082,8 @@ input, select, textarea {
 				}
 
 				.row > .col-12-medium {
-					width: 100%;
+					/* width: 100%; */
+					margin: 0 auto;
 				}
 
 				.row > .off-12-medium {
