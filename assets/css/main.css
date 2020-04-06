@@ -29,6 +29,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+
+
 body {
 	line-height: 1;
 }
@@ -155,6 +158,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #000000;
 	}
+
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -8605,4 +8609,9 @@ input, select, textarea {
 			.propic{
 				width:10rem!important;
 				height:10rem !important;
+			}
+
+			.headClass {
+				border: 100px solid red;;
+			
 			}
