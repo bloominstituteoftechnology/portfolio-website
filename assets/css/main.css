@@ -2647,10 +2647,17 @@ input, select, textarea {
 
 	/* MY UPDATES */
 
+	.GithubImage{
+		text-align: center;
+
+		height: 20.5rem;
+		margin-bottom: 3.5rem;
+		
+	}
+	
 	.GithubImage img{
 		height: 20rem;
 		width: 20rem;
 		border-radius: 50%;
-
 		
 	}
