@@ -1775,6 +1775,8 @@ input, select, textarea {
 			color: #3a3939;
 			background: #fff;
 			box-shadow: inset 0 0 0 1px #fff;
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
 		}
 
 			input[type="button"].style2:hover,
@@ -2659,5 +2661,39 @@ input, select, textarea {
 		height: 20rem;
 		width: 20rem;
 		border-radius: 50%;
-		
 	}
+
+	/* Resume Header */
+	.resume-header {
+		/* padding: 6em 0 6em 0; */
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+
+
+			.resume-header h1 {
+				font-size: 1.75em;
+				letter-spacing: 6px;
+			}
+
+			.resume-header footer {
+			bottom: 4.5em;
+			padding: 0 2em 0 2em;
+		}
+
+		.resume-header footer:after {
+				bottom: -4.5em;
+				left: 50%;
+				height: 4.5em;
+			}
+
+			.resume-header footer:before {
+				width: 45px;
+				height: 33px;
+				bottom: -2.25em;
+				margin-left: -22.5px;
+				margin-bottom: -16.5px;
+				background-size: 45px 33px;
+			}
+
