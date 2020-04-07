@@ -71,7 +71,23 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	text-align: center;
+	
+}
+.centerT {
+	transform: translate(0px,-50px);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	text-align: center;
 
+}
 /* Basic */
 
 	@-ms-viewport {
