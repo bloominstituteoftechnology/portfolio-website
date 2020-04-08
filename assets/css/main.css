@@ -1948,7 +1948,6 @@ input, select, textarea {
 		.box.style3 {
 			background: #fff;
 			padding: 3em;
-			/* padding: 1rem; */
 		}
 
 			.box.style3 header {
@@ -2568,7 +2567,6 @@ input, select, textarea {
 
 				.box.style3 {
 					padding: 2em 1.25em 2em 1.25em;
-					background: black;
 				}
 
 		/* Header */
