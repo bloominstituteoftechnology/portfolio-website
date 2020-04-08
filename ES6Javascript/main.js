@@ -4,257 +4,6 @@
  License: pixelarity.com/license
  */
 
-class Svg{
-  /**
-   *
-   * @param {number} animationTimeSpan Span of time in seconds to apply the
-   * animation.
-   * @param {number} domUpdateTimeSpan Time span between translate calls.
-   * @param {number} animationDistance Percentage of bounding box to
-   * translate across each animation time span.
-   */
-  constructor( animationTimeSpan = 1, domUpdateTimeSpan = 50,
-    animationDistance = .02 ){
-    this.icons = [];
-    this.lines = [];
-    let icons = document.querySelector( "#icons" );
-    let lines = document.querySelector( "#connectionLines" );
-    this.animationTime = animationTimeSpan * 1000;
-    this.animationUpdateTimeSpan = domUpdateTimeSpan;
-    this.animationDistanceMultiplier = animationDistance;
-    debugger;
-    lines.childNodes.forEach( line => {
-      if( line.nodeName === "line" ){
-        this.lines.push( new Line( line ) );
-      }
-    } );
-    
-    icons.childNodes.forEach( child => {
-      if( child.nodeName === "g" ){
-        const icon = new Icon( child,
-          this.animationTime,
-          this.animationUpdateTimeSpan,
-          this.animationDistanceMultiplier,
-        );
-        this.lines.forEach( line => {
-          icon.addLine( line );
-        } );
-        this.icons.push( icon );
-      }
-    } );
-    
-    this.animate = this.animate.bind( this );
-    window.setInterval( this.animate, animationTimeSpan );
-  }
-  
-  animate(){
-    this.icons.forEach( icon => {
-      icon.animate();
-    } );
-  }
-  
-}
-
-class Icon{
-  constructor( node, animationInterval, updateTimeSpan, distanceMultiplier ){
-    this.node = node;
-    this.updateInterval = updateTimeSpan;
-    this.nodeToAnimate = null;
-    this.children = [];
-    
-    if( this.node.hasChildNodes() ){
-      this.node.childNodes.forEach( child => {
-        if( child.nodeName === "g" ){
-          this.children.push( child );
-          if( !child.id.includes( "IconBox" ) ){
-            this.nodeToAnimate = child;
-          }
-        }
-      } );
-    }
-    
-    this.circle = this.getCircle( this.node );
-    if( this.circle.nodeName === "circle" ){
-      this.radius = parseFloat( this.circle.getAttribute( "r" ) );
-      this.centerX = parseFloat( this.circle.getAttribute( "cx" ) );
-      this.centerY = parseFloat( this.circle.getAttribute( "cy" ) );
-    }else{
-      const circleBB = this.circle.getBBox();
-      this.radius = circleBB.height >= circleBB.width ? circleBB.height / 2 :
-        circleBB.width / 2;
-      this.centerX = circleBB.x + ( circleBB.width / 2 );
-      this.centerY = circleBB.y + ( circleBB.height / 2 );
-    }
-    
-    this.transX = 0;
-    this.transY = 0;
-    this.incrementX = 0;
-    this.incrementY = 0;
-    this.x = 0;
-    this.y = 0;
-    this.xDirection = Math.ceil( Math.random() * 2 );
-    this.yDirection = Math.ceil( Math.random() * 2 );
-    this.boundingBox = this.node.getBBox();
-    this.boundingBox.x2 = this.boundingBox.x + this.boundingBox.width;
-    this.boundingBox.y2 = this.boundingBox.y + this.boundingBox.height;
-    this.boundingBox.maxX = this.boundingBox.x2 - this.radius;
-    this.boundingBox.maxY = this.boundingBox.y2 - this.radius;
-    this.boundingBox.minX = this.boundingBox.x + this.radius;
-    this.boundingBox.minY = this.boundingBox.y + this.radius;
-    this.numberOfTimesUpdated = 0;
-    const width = this.boundingBox.width * distanceMultiplier;
-    const height = this.boundingBox.height * distanceMultiplier;
-    this.animationDistance = Math.ceil( ( width + height ) / 2 );
-    this.halfAnimationDistance = Math.ceil( this.animationDistance / 2 );
-    this.numberOfUpdatesEachAnimation = animationInterval / this.updateInterval;
-    this.lines = [];
-    this.animateFrame = this.animateFrame.bind( this );
-    this.calcDirection = this.calcDirection.bind( this );
-    this.calcTranslate = this.calcTranslate.bind( this );
-  }
-  
-  /**
-   *
-   * @param {ChildNode} node
-   * @return {*}
-   */
-  getCircle( node ){
-    if( node.nodeName === "circle" ||
-      ( node.nodeName === "path" && node.id.includes( "circle" ) ) ){
-      return node;
-    }else{
-      if( node.hasChildNodes() ){
-        let circle = null;
-        node.childNodes.forEach( child => {
-          const returnValue = this.getCircle( child );
-          if( returnValue ){
-            circle = returnValue;
-          }
-        } );
-        if( circle ){
-          return circle;
-        }
-      }
-    }
-  }
-  
-  addLine( line ){
-    if( line.x1 < this.boundingBox.x2 && line.x1 > this.boundingBox.x ){
-      if( line.y1 < this.boundingBox.y2 && line.y1 > this.boundingBox.y ){
-        this.lines.push( { point: 1, line: line } );
-      }
-    }
-    if( line.x2 < this.boundingBox.x2 && line.x2 > this.boundingBox.x ){
-      if( line.y2 < this.boundingBox.y2 && line.y2 > this.boundingBox.y ){
-        this.lines.push( { point: 2, line: line } );
-      }
-    }
-  }
-  
-  animate(){
-    
-    this.calcTranslate();
-    
-    if( !this.timer ){
-      this.timer = window.setInterval( this.animateFrame, this.updateInterval );
-    }
-    
-  }
-  
-  calcTranslate(){
-    const newX = this.calcDirection( "x" );
-    const newY = this.calcDirection( "y" );
-    
-    this.incrementX = newX / this.numberOfUpdatesEachAnimation;
-    this.incrementY = newY / this.numberOfUpdatesEachAnimation;
-    this.transX += this.xDirection === 2 ? -newX : newX;
-    this.transY += this.yDirection === 2 ? -newY : newY;
-  }
-  
-  calcDirection( property ){
-    const key = "center" + property.toUpperCase();
-    const newNum = this.getNewNumber();
-    const center = this[key];
-    const trans = this[ "trans" + property.toUpperCase() ];
-    let newCenter = center + trans;
-    const direction = this[ property.toLowerCase() + "Direction" ];
-    newCenter += direction === 2 ? -newNum :  newNum;
-    const max = this.boundingBox[ "max" + property.toUpperCase() ];
-    const min = this.boundingBox[ "min" + property.toUpperCase() ];
-  
-    if( newCenter > max ){
-      this[ property.toLowerCase() + "Direction" ] = 1;
-    }else if( newCenter < min ){
-      this[ property.toLowerCase() + "Direction" ] = 2;
-    }else if( newCenter > (max - this.radius) ){
-      this[ property.toLowerCase() + "Direction" ] = Math.ceil( Math.random() *
-        2 );
-    }else if( newCenter <
-      ( min + this.radius ) ){
-      this[ property.toLowerCase() + "Direction" ] = Math.ceil( Math.random() *
-        2 );
-    }
-    
-    return newNum;
-  }
-  
-  getNewNumber(){
-    return Math.ceil( Math.random() * this.animationDistance ) +
-      this.halfAnimationDistance;
-  }
-  
-  animateFrame(){
-    
-    this.calcTransform( "x" );
-    this.calcTransform( "y" );
-    this.numberOfTimesUpdated++;
-    this.nodeToAnimate.setAttribute( "transform",
-      `translate(${ this.x }, ${ this.y })`,
-    );
-    
-    this.lines.forEach( line => {
-      line.line.animate( line.point, this.x, this.y );
-    } );
-  }
-  
-  calcTransform( property ){
-    const propValue = this[ property ];
-    const trans = this[ "trans" + property.toUpperCase() ];
-    const increment = this[ "increment" + property.toUpperCase() ];
-    const propertyDirection = this[ property.toLowerCase() + "Direction" ];
-    if( Math.abs( propValue - trans ) <= increment ){
-      this[ property ] = trans;
-    }else if( propertyDirection === 1 ){
-      this[ property ] -= increment;
-    }else{
-      this[ property ] += increment;
-    }
-  }
-}
-
-class Line{
-  constructor( line ){
-    this.node = line;
-    this.x1 = line.x1.baseVal.value;
-    this.x2 = line.x2.baseVal.value;
-    this.y1 = line.y1.baseVal.value;
-    this.y2 = line.y2.baseVal.value;
-  }
-  
-  animate( point, xValue, yValue ){
-    const xAttName = "x" + point.toString();
-    const yAttName = "y" + point.toString();
-    
-    let y = this[ yAttName ] + yValue;
-    let x = this[ xAttName ] + xValue;
-    this.node.setAttribute( yAttName, y );
-    this.node.setAttribute( xAttName, x );
-    
-  }
-}
-
-new Svg();
-
 var settings = {
   
   slider: {
@@ -514,6 +263,49 @@ class Img{
   }
 }
 
+const voluntier = new Project( "VolunTier",
+  "VolunTier",
+  "This is my Lambda Labs Project. I worked with 6 other individuals" +
+  " for 6  weeks and this is what we produced. How often do you volunteer? " +
+  "This application helps solve the shortage of volunteers in our community " +
+  "by providing a central location to advertise for volunteers and by " +
+  "encouraging people to volunteer through gamification. In this application " +
+  "I played a crucial role in development because of my experience with " +
+  "firebase. Being the only person on the team with knowledge on how firebase" +
+  " worked, I assisted others in learning the no sql design and how to work" +
+  " with the firebase api. Over the 6 week period I produced 87 pull requests." +
+  " I created logic in the actions to fetch and create events in firebase. " +
+  "Created the organizations, and events reducers. I created the logic to " +
+  "upload pictures to the firebase buckets so we  could store user avatar " +
+  "images as well as images for different events. Created the organization " +
+  "dashboard and many other tasks. ",
+  [
+    new Article( "Firebase Api",
+      "Google auth and firebase data storage.",
+      new Img( "./assets/images/VoluntierLogin.JPG", "Google Auth Signin", 1 ),
+      1,
+    ), new Article( "Solid Team Atmosphere",
+    "This is the first time I got to work with a designer. It is " +
+    "amazing the content some are able to produce. Having a designer " +
+    "definitely made this app. I feel we owe the majority of our success " +
+    "to our team environment and how well we worked together. I became my " +
+    "team's TL in april and was there for almost all of their journey " +
+    "through Lambda. This made it extremely easy for me to decide who I " +
+    "wanted to work with in Labs.  I got to be there to help them through " +
+    "the tough aspects of their journey. Ant Design and Styled components " +
+    "for styling. Firebase for data storage and authentication. Moment.js to " +
+    "deal with time, axios to make http calls. ",
+    new Img( "./assets/images/VolunteerLanding.JPG",
+      "VolunTier Platform Landing Page",
+      2,
+    ),
+    2,
+  ),
+  ],
+  "https://www.youtube.com/embed/Z6lRqZpKSMU?rel=0;&autoplay=1&mute=1",
+  "https://voluntier-platform.netlify.com/login",
+  "https://github.com/Lambda-School-Labs/volunteer-platform-fe",
+);
 const pmDashboard = new Project( "PM Dashboard",
   "PM Dashboard",
   "This is a demo of the PM Dashboard another Team Lead" +
@@ -526,7 +318,7 @@ const pmDashboard = new Project( "PM Dashboard",
   " the student dashboard giving students the same functionality. ",
   [
     new Article( "Firebase Api",
-      "We leveraged Google auth and firebase for authentication and" +
+      "Leveraged Google auth and firebase for authentication and" +
       " storing data.",
       new Img( "./assets/images/GoogleSignin.JPG", "Google Auth Signin", 1 ),
       1,
@@ -585,6 +377,7 @@ const studentDashboard = new Project( "Student Dashboard",
 );
 
 const carosel = new Carousel();
+carosel.addProject( voluntier );
 carosel.addProject( pmDashboard );
 carosel.addProject( studentDashboard );
 

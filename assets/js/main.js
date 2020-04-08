@@ -10,278 +10,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  License: pixelarity.com/license
  */
 
-var Svg = function () {
-  /**
-   *
-   * @param {number} animationTimeSpan Span of time in seconds to apply the
-   * animation.
-   * @param {number} domUpdateTimeSpan Time span between translate calls.
-   * @param {number} animationDistance Percentage of bounding box to
-   * translate across each animation time span.
-   */
-  function Svg() {
-    var animationTimeSpan = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-
-    var _this = this;
-
-    var domUpdateTimeSpan = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 50;
-    var animationDistance = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : .02;
-
-    _classCallCheck(this, Svg);
-
-    this.icons = [];
-    this.lines = [];
-    var icons = document.querySelector("#icons");
-    var lines = document.querySelector("#connectionLines");
-    this.animationTime = animationTimeSpan * 1000;
-    this.animationUpdateTimeSpan = domUpdateTimeSpan;
-    this.animationDistanceMultiplier = animationDistance;
-    debugger;
-    lines.childNodes.forEach(function (line) {
-      if (line.nodeName === "line") {
-        _this.lines.push(new Line(line));
-      }
-    });
-
-    icons.childNodes.forEach(function (child) {
-      if (child.nodeName === "g") {
-        var icon = new Icon(child, _this.animationTime, _this.animationUpdateTimeSpan, _this.animationDistanceMultiplier);
-        _this.lines.forEach(function (line) {
-          icon.addLine(line);
-        });
-        _this.icons.push(icon);
-      }
-    });
-
-    this.animate = this.animate.bind(this);
-    window.setInterval(this.animate, animationTimeSpan);
-  }
-
-  _createClass(Svg, [{
-    key: "animate",
-    value: function animate() {
-      this.icons.forEach(function (icon) {
-        icon.animate();
-      });
-    }
-  }]);
-
-  return Svg;
-}();
-
-var Icon = function () {
-  function Icon(node, animationInterval, updateTimeSpan, distanceMultiplier) {
-    var _this2 = this;
-
-    _classCallCheck(this, Icon);
-
-    this.node = node;
-    this.updateInterval = updateTimeSpan;
-    this.nodeToAnimate = null;
-    this.children = [];
-
-    if (this.node.hasChildNodes()) {
-      this.node.childNodes.forEach(function (child) {
-        if (child.nodeName === "g") {
-          _this2.children.push(child);
-          if (!child.id.includes("IconBox")) {
-            _this2.nodeToAnimate = child;
-          }
-        }
-      });
-    }
-
-    this.circle = this.getCircle(this.node);
-    if (this.circle.nodeName === "circle") {
-      this.radius = parseFloat(this.circle.getAttribute("r"));
-      this.centerX = parseFloat(this.circle.getAttribute("cx"));
-      this.centerY = parseFloat(this.circle.getAttribute("cy"));
-    } else {
-      var circleBB = this.circle.getBBox();
-      this.radius = circleBB.height >= circleBB.width ? circleBB.height / 2 : circleBB.width / 2;
-      this.centerX = circleBB.x + circleBB.width / 2;
-      this.centerY = circleBB.y + circleBB.height / 2;
-    }
-
-    this.transX = 0;
-    this.transY = 0;
-    this.incrementX = 0;
-    this.incrementY = 0;
-    this.x = 0;
-    this.y = 0;
-    this.xDirection = Math.ceil(Math.random() * 2);
-    this.yDirection = Math.ceil(Math.random() * 2);
-    this.boundingBox = this.node.getBBox();
-    this.boundingBox.x2 = this.boundingBox.x + this.boundingBox.width;
-    this.boundingBox.y2 = this.boundingBox.y + this.boundingBox.height;
-    this.boundingBox.maxX = this.boundingBox.x2 - this.radius;
-    this.boundingBox.maxY = this.boundingBox.y2 - this.radius;
-    this.boundingBox.minX = this.boundingBox.x + this.radius;
-    this.boundingBox.minY = this.boundingBox.y + this.radius;
-    this.numberOfTimesUpdated = 0;
-    var width = this.boundingBox.width * distanceMultiplier;
-    var height = this.boundingBox.height * distanceMultiplier;
-    this.animationDistance = Math.ceil((width + height) / 2);
-    this.halfAnimationDistance = Math.ceil(this.animationDistance / 2);
-    this.numberOfUpdatesEachAnimation = animationInterval / this.updateInterval;
-    this.lines = [];
-    this.animateFrame = this.animateFrame.bind(this);
-    this.calcDirection = this.calcDirection.bind(this);
-    this.calcTranslate = this.calcTranslate.bind(this);
-  }
-
-  /**
-   *
-   * @param {ChildNode} node
-   * @return {*}
-   */
-
-
-  _createClass(Icon, [{
-    key: "getCircle",
-    value: function getCircle(node) {
-      var _this3 = this;
-
-      if (node.nodeName === "circle" || node.nodeName === "path" && node.id.includes("circle")) {
-        return node;
-      } else {
-        if (node.hasChildNodes()) {
-          var circle = null;
-          node.childNodes.forEach(function (child) {
-            var returnValue = _this3.getCircle(child);
-            if (returnValue) {
-              circle = returnValue;
-            }
-          });
-          if (circle) {
-            return circle;
-          }
-        }
-      }
-    }
-  }, {
-    key: "addLine",
-    value: function addLine(line) {
-      if (line.x1 < this.boundingBox.x2 && line.x1 > this.boundingBox.x) {
-        if (line.y1 < this.boundingBox.y2 && line.y1 > this.boundingBox.y) {
-          this.lines.push({ point: 1, line: line });
-        }
-      }
-      if (line.x2 < this.boundingBox.x2 && line.x2 > this.boundingBox.x) {
-        if (line.y2 < this.boundingBox.y2 && line.y2 > this.boundingBox.y) {
-          this.lines.push({ point: 2, line: line });
-        }
-      }
-    }
-  }, {
-    key: "animate",
-    value: function animate() {
-
-      this.calcTranslate();
-
-      if (!this.timer) {
-        this.timer = window.setInterval(this.animateFrame, this.updateInterval);
-      }
-    }
-  }, {
-    key: "calcTranslate",
-    value: function calcTranslate() {
-      var newX = this.calcDirection("x");
-      var newY = this.calcDirection("y");
-
-      this.incrementX = newX / this.numberOfUpdatesEachAnimation;
-      this.incrementY = newY / this.numberOfUpdatesEachAnimation;
-      this.transX += this.xDirection === 2 ? -newX : newX;
-      this.transY += this.yDirection === 2 ? -newY : newY;
-    }
-  }, {
-    key: "calcDirection",
-    value: function calcDirection(property) {
-      var key = "center" + property.toUpperCase();
-      var newNum = this.getNewNumber();
-      var newCenter = this[key] + this["trans" + property.toUpperCase()];
-      newCenter += this[property.toLowerCase() + "Direction"] === 2 ? -newNum : newNum;
-
-      if (newCenter > this.boundingBox["max" + property.toUpperCase()]) {
-        this[property.toLowerCase() + "Direction"] = 1;
-      } else if (newCenter < this.boundingBox["min" + property.toUpperCase()]) {
-        this[property.toLowerCase() + "Direction"] = 2;
-      } else if (newCenter > this.boundingBox["max" + property.toUpperCase()] - this.radius) {
-        this[property.toLowerCase() + "Direction"] = Math.ceil(Math.random() * 2);
-      } else if (newCenter < this.boundingBox["min" + property.toUpperCase()] + this.radius) {
-        this[property.toLowerCase() + "Direction"] = Math.ceil(Math.random() * 2);
-      }
-
-      return newNum;
-    }
-  }, {
-    key: "getNewNumber",
-    value: function getNewNumber() {
-      return Math.ceil(Math.random() * this.animationDistance) + this.halfAnimationDistance;
-    }
-  }, {
-    key: "animateFrame",
-    value: function animateFrame() {
-      var _this4 = this;
-
-      this.calcTransform("x");
-      this.calcTransform("y");
-      this.numberOfTimesUpdated++;
-      this.nodeToAnimate.setAttribute("transform", "translate(" + this.x + ", " + this.y + ")");
-
-      this.lines.forEach(function (line) {
-        line.line.animate(line.point, _this4.x, _this4.y);
-      });
-    }
-  }, {
-    key: "calcTransform",
-    value: function calcTransform(property) {
-      var propValue = this[property];
-      var trans = this["trans" + property.toUpperCase()];
-      var increment = this["increment" + property.toUpperCase()];
-      var propertyDirection = this[property.toLowerCase() + "Direction"];
-      if (Math.abs(propValue - trans) <= increment) {
-        this[property] = trans;
-      } else if (propertyDirection === 1) {
-        this[property] -= increment;
-      } else {
-        this[property] += increment;
-      }
-    }
-  }]);
-
-  return Icon;
-}();
-
-var Line = function () {
-  function Line(line) {
-    _classCallCheck(this, Line);
-
-    this.node = line;
-    this.x1 = line.x1.baseVal.value;
-    this.x2 = line.x2.baseVal.value;
-    this.y1 = line.y1.baseVal.value;
-    this.y2 = line.y2.baseVal.value;
-  }
-
-  _createClass(Line, [{
-    key: "animate",
-    value: function animate(point, xValue, yValue) {
-      var xAttName = "x" + point.toString();
-      var yAttName = "y" + point.toString();
-
-      var y = this[yAttName] + yValue;
-      var x = this[xAttName] + xValue;
-      this.node.setAttribute(yAttName, y);
-      this.node.setAttribute(xAttName, x);
-    }
-  }]);
-
-  return Line;
-}();
-
-new Svg();
-
 var settings = {
 
   slider: {
@@ -324,19 +52,19 @@ var Feedback = function () {
   _createClass(Feedback, [{
     key: "switchFeedback",
     value: function switchFeedback() {
-      var _this5 = this;
+      var _this = this;
 
       this.element.classList.remove("visible");
 
       setTimeout(function () {
-        var prevPosition = _this5.pos;
-        if (prevPosition === _this5.feedback.length - 1) {
-          _this5.pos = 0;
+        var prevPosition = _this.pos;
+        if (prevPosition === _this.feedback.length - 1) {
+          _this.pos = 0;
         } else {
-          _this5.pos++;
+          _this.pos++;
         }
-        _this5.element.textContent = _this5.feedback[_this5.pos];
-        _this5.element.classList.add("visible");
+        _this.element.textContent = _this.feedback[_this.pos];
+        _this.element.classList.add("visible");
       }, 1000);
     }
   }]);
@@ -370,7 +98,7 @@ var Carousel = function () {
   _createClass(Carousel, [{
     key: "changeSlide",
     value: function changeSlide(e) {
-      var _this6 = this;
+      var _this2 = this;
 
       if (this.locked) {
         return;
@@ -392,9 +120,9 @@ var Carousel = function () {
       this.projectArticle.classList.remove("visible");
 
       window.setTimeout(function () {
-        _this6.projects[_this6.pos].setVisible(_this6.iframe, _this6.headingElement, _this6.p);
-        _this6.projectArticle.classList.add("visible");
-        _this6.locked = false;
+        _this2.projects[_this2.pos].setVisible(_this2.iframe, _this2.headingElement, _this2.p);
+        _this2.projectArticle.classList.add("visible");
+        _this2.locked = false;
       }, settings.carousel.speed);
     }
   }, {
@@ -432,7 +160,7 @@ var Project = function () {
   _createClass(Project, [{
     key: "setVisible",
     value: function setVisible(iframe, headingElement, p) {
-      var _this7 = this;
+      var _this3 = this;
 
       var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -447,7 +175,7 @@ var Project = function () {
       headingElement.textContent = this.title;
       p.textContent = this.content;
       this.articles.forEach(function (article) {
-        article.setActive(_this7.demoUrl, _this7.githubUrl);
+        article.setActive(_this3.demoUrl, _this3.githubUrl);
       });
     }
   }, {
@@ -523,11 +251,13 @@ var Img = function () {
   return Img;
 }();
 
-var pmDashboard = new Project("PM Dashboard", "PM Dashboard", "This is a demo of the PM Dashboard another Team Lead" + " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School." + " I created it because Team Leads were spending almost an hour a day" + " trying to submit airtable reports. This web app helped solve this" + " problem by auto populating airtable report with prefilled data such as" + " student names for attendance and for one on one reports. Once I solved" + " this problem for Team Leads we spread the project out to" + " the student dashboard giving students the same functionality. ", [new Article("Firebase Api", "We leveraged Google auth and firebase for authentication and" + " storing data.", new Img("./assets/images/GoogleSignin.JPG", "Google Auth Signin", 1), 1), new Article("React", "We utilized React, React-Router, and Redux to build out frontend." + " The PM-Dashboard comes with various forms that are to be subbmited on" + " daily and weekly basis. Including daily attendance, end of day" + " retrospective, friday sprint forms, and daily one on one reports." + " For those that have access to the admin section also get access to" + " the course structure and links along with access to a list of all" + " students enrolled into the student dashboard.", new Img("./assets/images/PMDashboard.JPG", "PM Dashboard main dashboard" + " view.", 2), 2)], "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&autoplay=1&mute=1", "https://pm-dashboard-ls.netlify.com/start", "https://github.com/jeremiahtenbrink/web20");
+var voluntier = new Project("VolunTier", "VolunTier", "This is my Lambda Labs Project. I worked with 6 other individuals" + " for 6  weeks and this is what we produced. How often do you volunteer? " + "This application helps solve the shortage of volunteers in our community " + "by providing a central location to advertise for volunteers and by " + "encouraging people to volunteer through gamification. In this application " + "I played a crucial role in development because of my experience with " + "firebase. Being the only person on the team with knowledge on how firebase" + " worked, I assisted others in learning the no sql design and how to work" + " with the firebase api. Over the 6 week period I produced 87 pull requests." + " I created logic in the actions to fetch and create events in firebase. " + "Created the organizations, and events reducers. I created the logic to " + "upload pictures to the firebase buckets so we  could store user avatar " + "images as well as images for different events. Created the organization " + "dashboard and many other tasks. ", [new Article("Firebase Api", "Google auth and firebase data storage.", new Img("./assets/images/VoluntierLogin.JPG", "Google Auth Signin", 1), 1), new Article("Solid Team Atmosphere", "This is the first time I got to work with a designer. It is " + "amazing the content some are able to produce. Having a designer " + "definitely made this app. I feel we owe the majority of our success " + "to our team environment and how well we worked together. I became my " + "team's TL in april and was there for almost all of their journey " + "through Lambda. This made it extremely easy for me to decide who I " + "wanted to work with in Labs.  I got to be there to help them through " + "the tough aspects of their journey. Ant Design and Styled components " + "for styling. Firebase for data storage and authentication. Moment.js to " + "deal with time, axios to make http calls. ", new Img("./assets/images/VolunteerLanding.JPG", "VolunTier Platform Landing Page", 2), 2)], "https://www.youtube.com/embed/Z6lRqZpKSMU?rel=0;&autoplay=1&mute=1", "https://voluntier-platform.netlify.com/login", "https://github.com/Lambda-School-Labs/volunteer-platform-fe");
+var pmDashboard = new Project("PM Dashboard", "PM Dashboard", "This is a demo of the PM Dashboard another Team Lead" + " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School." + " I created it because Team Leads were spending almost an hour a day" + " trying to submit airtable reports. This web app helped solve this" + " problem by auto populating airtable report with prefilled data such as" + " student names for attendance and for one on one reports. Once I solved" + " this problem for Team Leads we spread the project out to" + " the student dashboard giving students the same functionality. ", [new Article("Firebase Api", "Leveraged Google auth and firebase for authentication and" + " storing data.", new Img("./assets/images/GoogleSignin.JPG", "Google Auth Signin", 1), 1), new Article("React", "We utilized React, React-Router, and Redux to build out frontend." + " The PM-Dashboard comes with various forms that are to be subbmited on" + " daily and weekly basis. Including daily attendance, end of day" + " retrospective, friday sprint forms, and daily one on one reports." + " For those that have access to the admin section also get access to" + " the course structure and links along with access to a list of all" + " students enrolled into the student dashboard.", new Img("./assets/images/PMDashboard.JPG", "PM Dashboard main dashboard" + " view.", 2), 2)], "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&autoplay=1&mute=1", "https://pm-dashboard-ls.netlify.com/start", "https://github.com/jeremiahtenbrink/web20");
 
 var studentDashboard = new Project("Student Dashboard", "Student Dashboard", "Student Dashboard is a web app that was extended from the PM Dashboard. " + "This Student Dashboard is linked to the PM Dashboard. It allows" + " students to input their Team Lead. Their Team Lead can then keep track" + " of the students attendance and the classes they have completed. Each" + " class has links to the Project for the lesson. As well as links to the" + " airtable report the student is to submit at the end of the day. ", [new Article("Firebase Api", "Login is handled by firebase google auth api.", new Img("./assets/images/StudentDashboardLogin.JPG", "Google Auth" + " Signin", 1), 1), new Article("React", "This dashboard is created with React, React Redux, React Router and" + " many other libraries. It is linked to the PM Dashboard via the" + " firebase api. It subscribes to the students info so once the info" + " is updated by the Team Lead on the PM Dashboard it is" + " automatically updated on the student dashboard.", new Img("./assets/images/StudentDashboardMain.JPG", "Student Dashboard Main", 2), 2)], "https://www.youtube.com/embed/TwY_q5fxTEE?rel=0;&autoplay=1&mute=1", "https://ls-student-dashboard.netlify.com", "https://github.com/jeremiahtenbrink/student-dashboard");
 
 var carosel = new Carousel();
+carosel.addProject(voluntier);
 carosel.addProject(pmDashboard);
 carosel.addProject(studentDashboard);
 
