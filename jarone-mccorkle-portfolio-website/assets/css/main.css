@@ -248,7 +248,7 @@ input, select, textarea {
 		/* No Scroll Bars */
 		overflow: hidden;
 		width: 100%;
-		height:	75vh;
+		height:	95vh;
 		border: solid black;
 
 		
@@ -285,10 +285,11 @@ input, select, textarea {
 		left: 0;
 		background-color: lightblue;
 		width: 100%;
-		height: 75vh;
+		height: 95vh;
 		opacity: 0.5;
 		
 	}
+	
 
 		.container.medium {
 			width: 900px;
