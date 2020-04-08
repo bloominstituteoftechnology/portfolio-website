@@ -77,16 +77,42 @@ input, select, textarea {
 	margin-right: auto;
 	width: 65%;
 	text-align: center;
-	
 }
-.centerT {
-	transform: translate(0px,-50px);
+.centerL1 {
+	margin-top: 3%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
 	text-align: center;
-
+}
+.centerL2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	text-align: center;
+}
+.centerT {
+	margin-top:-7%;
+	margin-bottom: 2%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	text-align: center;
+	font-size: 14px
+}
+.centerT2 {
+	margin-top:1%;
+	margin-bottom: 1%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
 }
 /* Basic */
 
@@ -895,6 +921,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		margin-left: 30%
 	}
 
 		ul.icons li {
