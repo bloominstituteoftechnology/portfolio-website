@@ -292,7 +292,7 @@ input, select, textarea {
 	/* jarones card add-on */
 	.card-container{
 		width: 300px;
-		height: 430px;
+		height: 450px;
 		background: #fff;
 		border-radius: 6px;
 		position: absolute;
@@ -341,13 +341,13 @@ input, select, textarea {
 	.contact-button{
 		display: flex;
 		/* object-fit: cover; */
-		justify-content: flex-start;
 		line-height: 3;
 		border: solid black;
 		border-radius: 46px;
 		border-width: 1px;
+		margin: 0 auto;
 		
-		
+		width: 225px;
 	}
 
 	.contact-button img{
@@ -358,7 +358,7 @@ input, select, textarea {
 
 	.contact-button .btn{
 		text-decoration: none;
-		padding-left: 50px;
+		padding-left: 25px;
 		color: black;
 	}
 
