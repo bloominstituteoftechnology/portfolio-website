@@ -289,6 +289,71 @@ input, select, textarea {
 		opacity: 0.5;
 		
 	}
+	/* jarones card add-on */
+	.card-container{
+		width: 300px;
+		height: 430px;
+		background: #fff;
+		border-radius: 6px;
+		position: absolute;
+		/* top:50%; */
+		left:50%;
+
+		/* Maybe rotate element to look like mta car on a diagonal */
+		transform: translate(-50%, -50%);
+		box-shadow: 0px 1px 10px 1px #000;
+	}
+
+	.upper-container{
+		height: 150px;
+		background: white;
+
+	}
+
+	.lower-container{
+		height: 280px;
+		background: white;
+		border-top: solid black;
+
+	}
+
+	.image-container{
+		/* background: black; */
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		padding: 5px;
+
+		/* position photo */
+		transform: translate(100px,100px);
+	}
+
+	.image-container img{
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+	}
+
+
+
+
+	/* jarones animation add-on */
+	
+	/* Animation */
+	@-webkit-keyframes typing{
+		from { width: 100%;}
+		to { width: 0;}
+	}
+	@-webkit-keyframes cursor{
+		50% { border-color: white;}
+	}
+	@keyframes typing{
+		from{ width: 100%;}
+		to{ width: 0;}
+	}
+	@keyframes cursor{
+		50% { border-color: white;}
+	}
 	
 
 		.container.medium {
@@ -2059,17 +2124,20 @@ input, select, textarea {
 			background-image: none;
 			background-color: #fff;
 
-			/* Jarones Add-On */
+			/* jarones add-on */
 			border: dotted black;
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			background-color: #fff;
 			text-shadow: 1px 1px 0px #fff;
+
+			/* Jarones add-on */
+			border: dotted black;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background-color: #fff;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
