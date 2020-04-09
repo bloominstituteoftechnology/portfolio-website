@@ -161,6 +161,9 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: black;
 		margin: 0 0 0.75em 0;
+
+		/* jarones add-on */
+		/* font-family: sans-serif; */
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -400,11 +403,19 @@ input, select, textarea {
 
 	/* jarones subway strip map add-on */
 
+	.subway-streets-map-icon-wrapper{
+		
+		/* border: dotted white; */
+		width: 1000px;
+		margin: 0 auto;
+	}
+
 	.subway-strip-map-btn{
+		margin-top: 18px;
 		display: flex;
 		justify-content: space-around;
-		width: 800px;
-		margin: 0 auto;
+		/* width: 800px;
+		margin: 0 auto; */
 		border:solid black;
 		border-radius: 46px;
 		background-color: #fccc0a;
@@ -425,6 +436,28 @@ input, select, textarea {
 		background-color: #ffb612;
 	}
 
+	/* jarone streets start */
+	.streets{
+		padding-left: 100px;
+		display: flex;
+		justify-content: space-around;
+		/* border: solid white; */
+		
+	}
+
+	.streets h4{
+		/* padding-left: 35px; */
+		/* padding-top: 30px; */
+		padding-right: 50px;
+		/* border: solid white;  */
+		color: white;
+		transform: rotate(-47deg);
+	}
+	/* jarone streets end */
+
+	/* jarones subway icons start */
+
+	/* jarones subway icons end */
 
 	/* end jarones animation add-on */
 	
