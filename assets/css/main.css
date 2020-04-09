@@ -2732,8 +2732,8 @@ input, select, textarea {
 		text-align: center;
 	}
 }
-/* 
-@media screen and (max-width: 820px){
+
+@media screen and (max-width: 469px){
 
 	.button.style2 {
 		color: #3a3939;
@@ -2745,4 +2745,4 @@ input, select, textarea {
 		width: 5rem;
 		text-align: center;
 	}
-} */
+}
