@@ -10,11 +10,6 @@
   padding: 5em 12em;
   position: relative;
 
-  .svg-frame {
-    position: absolute;
-    z-index: 10;
-  }
-
   article {
     @include vendor('transform', 'translateY(0.5em)');
     @include vendor('transition', 'all 0.35s ease-in-out');

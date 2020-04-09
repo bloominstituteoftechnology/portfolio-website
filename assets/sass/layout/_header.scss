@@ -33,7 +33,7 @@
     #WritePath {
       stroke: #fff;
       fill: transparent;
-      animation: dash 10s reverse;
+      animation: dash 8s reverse linear;
     }
 
     @keyframes dash {

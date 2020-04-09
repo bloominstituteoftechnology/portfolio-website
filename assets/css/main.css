@@ -6030,15 +6030,34 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  margin: -0.75em 0 3em 0; }
+  margin: -0.75em 0 1.5em 0;
+  text-align: left; }
 
 header.major {
   text-align: center; }
   header.major > :first-child {
     margin-top: -0.25em; }
+  header.major > #list-items {
+    list-style: circle;
+    list-style-position: inside;
+    color: rgba(67, 75, 86, 0.75);
+    text-align: left;
+    margin: -0.75em 0 3em 1.5rem; }
+    header.major > #list-items li {
+      margin: .5em 0; }
+
+@media screen and (max-width: 1680px) {
+  header #list-items {
+    margin: -0.5em 0 2em 0.5em; } }
+
+@media screen and (max-width: 1280px) {
+  header #list-items {
+    margin: -0.5em 0 2em 0.1em; } }
 
 @media screen and (max-width: 736px) {
   header p {
+    margin: -0.25em 0 2em 0; }
+  header #list-items {
     margin: -0.25em 0 2em 0; } }
 
 header p {
@@ -6103,9 +6122,6 @@ table.alt tbody tr td {
 .carousel {
   padding: 5em 12em;
   position: relative; }
-  .carousel .svg-frame {
-    position: absolute;
-    z-index: 10; }
   .carousel article {
     -moz-transform: translateY(0.5em);
     -webkit-transform: translateY(0.5em);
@@ -7097,7 +7113,7 @@ table.alt tbody tr td {
     #header > .logo #WritePath {
       stroke: #fff;
       fill: transparent;
-      animation: dash 10s reverse; }
+      animation: dash 8s reverse linear; }
 
 @keyframes dash {
   0% {

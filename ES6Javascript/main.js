@@ -11,7 +11,7 @@ var settings = {
     // Transition speed (in ms)
     // For timing purposes only. It *must* match the transition speed of
     // ".slider > article".
-    speed: 1500,
+    speed: 4000,
     
     // Transition delay (in ms)
     delay: 4000,
@@ -23,7 +23,7 @@ var settings = {
     // Transition speed (in ms)
     // For timing purposes only. It *must* match the transition speed of
     // ".carousel > article".
-    speed: 350, width: 0, height: 0, iframeWidth: 0, iframeHeight: 0,
+    speed: 3000, width: 0, height: 0, iframeWidth: 0, iframeHeight: 0,
     
   },
   
@@ -162,7 +162,9 @@ class Carousel{
   addProject( project ){
     
     if( this.projects.length === 0 ){
-      project.setVisible( this.iframe, this.headingElement, this.p );
+      window.setTimeout( () => {
+        project.setVisible( this.iframe, this.headingElement, this.p );
+      }, settings.carousel.speed );
     }
     this.projects.push( project );
   };
@@ -171,7 +173,7 @@ class Carousel{
 
 class Project{
   constructor( name, title, content, articles, videoUrl, demoUrl = "#",
-    githubUrl = "#" ){
+    githubUrl = "#", listItems = [] ){
     
     this.name = name;
     this.title = title;
@@ -180,12 +182,14 @@ class Project{
     this.videoUrl = videoUrl;
     this.demoUrl = demoUrl;
     this.githubUrl = githubUrl;
+    this.listItems = listItems;
     this.setVisible = this.setVisible.bind( this );
     this.setWidthAndHeight = this.setWidthAndHeight.bind( this );
+    this.setLiItems = this.setLiItems.bind( this );
   }
   
   setVisible( iframe, headingElement, p ){
-    
+    debugger;
     const width = Math.max( document.documentElement.clientWidth,
       window.innerWidth || 0,
     );
@@ -203,8 +207,29 @@ class Project{
     iframe.height = settings.carousel.iframeHeight;
     headingElement.textContent = this.title;
     p.textContent = this.content;
+    this.setLiItems();
     this.articles.forEach( ( article ) => {
       article.setActive( this.demoUrl, this.githubUrl );
+    } );
+  }
+  
+  setLiItems(){
+    debugger;
+    const ul = document.querySelector( "#list-items" );
+    if( ul.hasChildNodes() ){
+      let child = ul.firstChild;
+      let next = null;
+      do{
+        next = child.nextSibling;
+        ul.removeChild( ( child ) );
+        child = next;
+      }while( child );
+    }
+    
+    this.listItems.forEach( li => {
+      const item = document.createElement( "li" );
+      item.textContent = li;
+      ul.appendChild( item );
     } );
   }
   
@@ -265,20 +290,11 @@ class Img{
 
 const voluntier = new Project( "VolunTier",
   "VolunTier",
-  "This is my Lambda Labs Project. I worked with 6 other individuals" +
-  " for 6  weeks and this is what we produced. How often do you volunteer? " +
-  "This application helps solve the shortage of volunteers in our community " +
-  "by providing a central location to advertise for volunteers and by " +
-  "encouraging people to volunteer through gamification. In this application " +
-  "I played a crucial role in development because of my experience with " +
-  "firebase. Being the only person on the team with knowledge on how firebase" +
-  " worked, I assisted others in learning the no sql design and how to work" +
-  " with the firebase api. Over the 6 week period I produced 87 pull requests." +
-  " I created logic in the actions to fetch and create events in firebase. " +
-  "Created the organizations, and events reducers. I created the logic to " +
-  "upload pictures to the firebase buckets so we  could store user avatar " +
-  "images as well as images for different events. Created the organization " +
-  "dashboard and many other tasks. ",
+  "How often do you volunteer? This is my Lambda Labs Project that " +
+  "I and 6 others worked on over the 6 weeks long event. This application " +
+  "helps solve the shortage of volunteers in our community by providing a " +
+  "central location to advertise for volunteers and by encouraging people to " +
+  "volunteer through gamification.",
   [
     new Article( "Firebase Api",
       "Google auth and firebase data storage.",
@@ -302,10 +318,20 @@ const voluntier = new Project( "VolunTier",
     2,
   ),
   ],
-  "https://www.youtube.com/embed/Z6lRqZpKSMU?rel=0;&autoplay=1&mute=1",
+  "https://www.youtube.com/embed/Z6lRqZpKSMU?rel=0;&amp;mute=1",
   "https://voluntier-platform.netlify.com/login",
   "https://github.com/Lambda-School-Labs/volunteer-platform-fe",
+  [
+    "I Played a crucial role in development because of my experience with" +
+    " firebase ", "Assisted others in learning the no sql design and how to" +
+    " work with the firebase api", " Produced 87 pull requests",
+    "Developed the Organization dashboard", "Created organization, and" +
+    " events reducers, and  logic to fetch and create events",
+    "Built and implemented the logic to upload images to firebase storage" +
+    " bucket",
+  ],
 );
+
 const pmDashboard = new Project( "PM Dashboard",
   "PM Dashboard",
   "This is a demo of the PM Dashboard another Team Lead" +
@@ -337,7 +363,7 @@ const pmDashboard = new Project( "PM Dashboard",
     2,
   ),
   ],
-  "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&autoplay=1&mute=1",
+  "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&amp;autoplay=1&amp;mute=1",
   "https://pm-dashboard-ls.netlify.com/start",
   "https://github.com/jeremiahtenbrink/web20",
 );
@@ -371,7 +397,7 @@ const studentDashboard = new Project( "Student Dashboard",
     2,
   ),
   ],
-  "https://www.youtube.com/embed/TwY_q5fxTEE?rel=0;&autoplay=1&mute=1",
+  "https://www.youtube.com/embed/TwY_q5fxTEE?rel=0;&amp;autoplay=1&amp;mute=1",
   "https://ls-student-dashboard.netlify.com",
   "https://github.com/jeremiahtenbrink/student-dashboard",
 );

@@ -17,7 +17,7 @@ var settings = {
     // Transition speed (in ms)
     // For timing purposes only. It *must* match the transition speed of
     // ".slider > article".
-    speed: 1500,
+    speed: 4000,
 
     // Transition delay (in ms)
     delay: 4000
@@ -29,7 +29,7 @@ var settings = {
     // Transition speed (in ms)
     // For timing purposes only. It *must* match the transition speed of
     // ".carousel > article".
-    speed: 350, width: 0, height: 0, iframeWidth: 0, iframeHeight: 0
+    speed: 3000, width: 0, height: 0, iframeWidth: 0, iframeHeight: 0
 
   }
 
@@ -128,9 +128,12 @@ var Carousel = function () {
   }, {
     key: "addProject",
     value: function addProject(project) {
+      var _this3 = this;
 
       if (this.projects.length === 0) {
-        project.setVisible(this.iframe, this.headingElement, this.p);
+        window.setTimeout(function () {
+          project.setVisible(_this3.iframe, _this3.headingElement, _this3.p);
+        }, settings.carousel.speed);
       }
       this.projects.push(project);
     }
@@ -143,6 +146,7 @@ var Project = function () {
   function Project(name, title, content, articles, videoUrl) {
     var demoUrl = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "#";
     var githubUrl = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : "#";
+    var listItems = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : [];
 
     _classCallCheck(this, Project);
 
@@ -153,15 +157,18 @@ var Project = function () {
     this.videoUrl = videoUrl;
     this.demoUrl = demoUrl;
     this.githubUrl = githubUrl;
+    this.listItems = listItems;
     this.setVisible = this.setVisible.bind(this);
     this.setWidthAndHeight = this.setWidthAndHeight.bind(this);
+    this.setLiItems = this.setLiItems.bind(this);
   }
 
   _createClass(Project, [{
     key: "setVisible",
     value: function setVisible(iframe, headingElement, p) {
-      var _this3 = this;
+      var _this4 = this;
 
+      debugger;
       var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
       var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
@@ -174,8 +181,30 @@ var Project = function () {
       iframe.height = settings.carousel.iframeHeight;
       headingElement.textContent = this.title;
       p.textContent = this.content;
+      this.setLiItems();
       this.articles.forEach(function (article) {
-        article.setActive(_this3.demoUrl, _this3.githubUrl);
+        article.setActive(_this4.demoUrl, _this4.githubUrl);
+      });
+    }
+  }, {
+    key: "setLiItems",
+    value: function setLiItems() {
+      debugger;
+      var ul = document.querySelector("#list-items");
+      if (ul.hasChildNodes()) {
+        var child = ul.firstChild;
+        var next = null;
+        do {
+          next = child.nextSibling;
+          ul.removeChild(child);
+          child = next;
+        } while (child);
+      }
+
+      this.listItems.forEach(function (li) {
+        var item = document.createElement("li");
+        item.textContent = li;
+        ul.appendChild(item);
       });
     }
   }, {
@@ -251,10 +280,11 @@ var Img = function () {
   return Img;
 }();
 
-var voluntier = new Project("VolunTier", "VolunTier", "This is my Lambda Labs Project. I worked with 6 other individuals" + " for 6  weeks and this is what we produced. How often do you volunteer? " + "This application helps solve the shortage of volunteers in our community " + "by providing a central location to advertise for volunteers and by " + "encouraging people to volunteer through gamification. In this application " + "I played a crucial role in development because of my experience with " + "firebase. Being the only person on the team with knowledge on how firebase" + " worked, I assisted others in learning the no sql design and how to work" + " with the firebase api. Over the 6 week period I produced 87 pull requests." + " I created logic in the actions to fetch and create events in firebase. " + "Created the organizations, and events reducers. I created the logic to " + "upload pictures to the firebase buckets so we  could store user avatar " + "images as well as images for different events. Created the organization " + "dashboard and many other tasks. ", [new Article("Firebase Api", "Google auth and firebase data storage.", new Img("./assets/images/VoluntierLogin.JPG", "Google Auth Signin", 1), 1), new Article("Solid Team Atmosphere", "This is the first time I got to work with a designer. It is " + "amazing the content some are able to produce. Having a designer " + "definitely made this app. I feel we owe the majority of our success " + "to our team environment and how well we worked together. I became my " + "team's TL in april and was there for almost all of their journey " + "through Lambda. This made it extremely easy for me to decide who I " + "wanted to work with in Labs.  I got to be there to help them through " + "the tough aspects of their journey. Ant Design and Styled components " + "for styling. Firebase for data storage and authentication. Moment.js to " + "deal with time, axios to make http calls. ", new Img("./assets/images/VolunteerLanding.JPG", "VolunTier Platform Landing Page", 2), 2)], "https://www.youtube.com/embed/Z6lRqZpKSMU?rel=0;&autoplay=1&mute=1", "https://voluntier-platform.netlify.com/login", "https://github.com/Lambda-School-Labs/volunteer-platform-fe");
-var pmDashboard = new Project("PM Dashboard", "PM Dashboard", "This is a demo of the PM Dashboard another Team Lead" + " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School." + " I created it because Team Leads were spending almost an hour a day" + " trying to submit airtable reports. This web app helped solve this" + " problem by auto populating airtable report with prefilled data such as" + " student names for attendance and for one on one reports. Once I solved" + " this problem for Team Leads we spread the project out to" + " the student dashboard giving students the same functionality. ", [new Article("Firebase Api", "Leveraged Google auth and firebase for authentication and" + " storing data.", new Img("./assets/images/GoogleSignin.JPG", "Google Auth Signin", 1), 1), new Article("React", "We utilized React, React-Router, and Redux to build out frontend." + " The PM-Dashboard comes with various forms that are to be subbmited on" + " daily and weekly basis. Including daily attendance, end of day" + " retrospective, friday sprint forms, and daily one on one reports." + " For those that have access to the admin section also get access to" + " the course structure and links along with access to a list of all" + " students enrolled into the student dashboard.", new Img("./assets/images/PMDashboard.JPG", "PM Dashboard main dashboard" + " view.", 2), 2)], "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&autoplay=1&mute=1", "https://pm-dashboard-ls.netlify.com/start", "https://github.com/jeremiahtenbrink/web20");
+var voluntier = new Project("VolunTier", "VolunTier", "How often do you volunteer? This is my Lambda Labs Project that " + "I and 6 others worked on over the 6 weeks long event. This application " + "helps solve the shortage of volunteers in our community by providing a " + "central location to advertise for volunteers and by encouraging people to " + "volunteer through gamification.", [new Article("Firebase Api", "Google auth and firebase data storage.", new Img("./assets/images/VoluntierLogin.JPG", "Google Auth Signin", 1), 1), new Article("Solid Team Atmosphere", "This is the first time I got to work with a designer. It is " + "amazing the content some are able to produce. Having a designer " + "definitely made this app. I feel we owe the majority of our success " + "to our team environment and how well we worked together. I became my " + "team's TL in april and was there for almost all of their journey " + "through Lambda. This made it extremely easy for me to decide who I " + "wanted to work with in Labs.  I got to be there to help them through " + "the tough aspects of their journey. Ant Design and Styled components " + "for styling. Firebase for data storage and authentication. Moment.js to " + "deal with time, axios to make http calls. ", new Img("./assets/images/VolunteerLanding.JPG", "VolunTier Platform Landing Page", 2), 2)], "https://www.youtube.com/embed/Z6lRqZpKSMU?rel=0;&amp;mute=1", "https://voluntier-platform.netlify.com/login", "https://github.com/Lambda-School-Labs/volunteer-platform-fe", ["I Played a crucial role in development because of my experience with" + " firebase ", "Assisted others in learning the no sql design and how to" + " work with the firebase api", " Produced 87 pull requests", "Developed the Organization dashboard", "Created organization, and" + " events reducers, and  logic to fetch and create events", "Built and implemented the logic to upload images to firebase storage" + " bucket"]);
 
-var studentDashboard = new Project("Student Dashboard", "Student Dashboard", "Student Dashboard is a web app that was extended from the PM Dashboard. " + "This Student Dashboard is linked to the PM Dashboard. It allows" + " students to input their Team Lead. Their Team Lead can then keep track" + " of the students attendance and the classes they have completed. Each" + " class has links to the Project for the lesson. As well as links to the" + " airtable report the student is to submit at the end of the day. ", [new Article("Firebase Api", "Login is handled by firebase google auth api.", new Img("./assets/images/StudentDashboardLogin.JPG", "Google Auth" + " Signin", 1), 1), new Article("React", "This dashboard is created with React, React Redux, React Router and" + " many other libraries. It is linked to the PM Dashboard via the" + " firebase api. It subscribes to the students info so once the info" + " is updated by the Team Lead on the PM Dashboard it is" + " automatically updated on the student dashboard.", new Img("./assets/images/StudentDashboardMain.JPG", "Student Dashboard Main", 2), 2)], "https://www.youtube.com/embed/TwY_q5fxTEE?rel=0;&autoplay=1&mute=1", "https://ls-student-dashboard.netlify.com", "https://github.com/jeremiahtenbrink/student-dashboard");
+var pmDashboard = new Project("PM Dashboard", "PM Dashboard", "This is a demo of the PM Dashboard another Team Lead" + " (Maksim Vakarchuk) and I created while I was a Team Lead at Lambda School." + " I created it because Team Leads were spending almost an hour a day" + " trying to submit airtable reports. This web app helped solve this" + " problem by auto populating airtable report with prefilled data such as" + " student names for attendance and for one on one reports. Once I solved" + " this problem for Team Leads we spread the project out to" + " the student dashboard giving students the same functionality. ", [new Article("Firebase Api", "Leveraged Google auth and firebase for authentication and" + " storing data.", new Img("./assets/images/GoogleSignin.JPG", "Google Auth Signin", 1), 1), new Article("React", "We utilized React, React-Router, and Redux to build out frontend." + " The PM-Dashboard comes with various forms that are to be subbmited on" + " daily and weekly basis. Including daily attendance, end of day" + " retrospective, friday sprint forms, and daily one on one reports." + " For those that have access to the admin section also get access to" + " the course structure and links along with access to a list of all" + " students enrolled into the student dashboard.", new Img("./assets/images/PMDashboard.JPG", "PM Dashboard main dashboard" + " view.", 2), 2)], "https://www.youtube.com/embed/JLlfabvf0h8?rel=0;&amp;autoplay=1&amp;mute=1", "https://pm-dashboard-ls.netlify.com/start", "https://github.com/jeremiahtenbrink/web20");
+
+var studentDashboard = new Project("Student Dashboard", "Student Dashboard", "Student Dashboard is a web app that was extended from the PM Dashboard. " + "This Student Dashboard is linked to the PM Dashboard. It allows" + " students to input their Team Lead. Their Team Lead can then keep track" + " of the students attendance and the classes they have completed. Each" + " class has links to the Project for the lesson. As well as links to the" + " airtable report the student is to submit at the end of the day. ", [new Article("Firebase Api", "Login is handled by firebase google auth api.", new Img("./assets/images/StudentDashboardLogin.JPG", "Google Auth" + " Signin", 1), 1), new Article("React", "This dashboard is created with React, React Redux, React Router and" + " many other libraries. It is linked to the PM Dashboard via the" + " firebase api. It subscribes to the students info so once the info" + " is updated by the Team Lead on the PM Dashboard it is" + " automatically updated on the student dashboard.", new Img("./assets/images/StudentDashboardMain.JPG", "Student Dashboard Main", 2), 2)], "https://www.youtube.com/embed/TwY_q5fxTEE?rel=0;&amp;autoplay=1&amp;mute=1", "https://ls-student-dashboard.netlify.com", "https://github.com/jeremiahtenbrink/student-dashboard");
 
 var carosel = new Carousel();
 carosel.addProject(voluntier);
