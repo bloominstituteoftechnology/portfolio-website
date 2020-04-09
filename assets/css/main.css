@@ -2705,3 +2705,30 @@ input, select, textarea {
 	width: 80.5rem;
 	margin: auto;
 } */
+
+@media screen and (max-width: 500px){
+
+	.button.style2 {
+		color: #3a3939;
+		background: #fff;
+		box-shadow: inset 0 0 0 1px #fff;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		margin: 0.5rem;
+		width: 2rem;
+	}
+}
+
+@media screen and (max-width: 840px){
+
+	.button.style2 {
+		color: #3a3939;
+		background: #fff;
+		box-shadow: inset 0 0 0 1px #fff;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		margin: 0.5rem;
+		width: 11rem;
+		text-align: center;
+	}
+}
