@@ -338,6 +338,29 @@ input, select, textarea {
 		padding-top: 30px;
 	}
 
+	.contact-button{
+		display: flex;
+		/* object-fit: cover; */
+		justify-content: flex-start;
+		line-height: 3;
+		border: solid black;
+		border-radius: 46px;
+		border-width: 1px;
+		
+		
+	}
+
+	.contact-button img{
+		width:50px;
+		height:50px;
+		border-radius: 24px;
+	}
+
+	.contact-button .btn{
+		text-decoration: none;
+		padding-left: 50px;
+		color: black;
+	}
 
 	/* jarones animation add-on */
 	
