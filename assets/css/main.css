@@ -2799,7 +2799,7 @@ input, select, textarea {
 			}
 
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
+				background-color: rgba(36, 41, 67, 0.5);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3380,7 +3380,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../profile-site-thumbnails/pic02.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
