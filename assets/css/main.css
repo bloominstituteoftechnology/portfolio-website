@@ -3495,7 +3495,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: rgba(0,0,0,.6);
 		}
 
 		#banner.style3:after {
