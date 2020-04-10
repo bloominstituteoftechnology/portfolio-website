@@ -1755,7 +1755,7 @@ input, select, textarea {
 		outline: 0;
 		padding: 1em 3em 1em 3em;
 		text-align: center;
-		border-radius: 3em;
+		border-radius: 4em;
 		font-weight: 400;
 	}
 
@@ -1775,6 +1775,9 @@ input, select, textarea {
 			color: #3a3939;
 			background: #fff;
 			box-shadow: inset 0 0 0 1px #fff;
+			margin-left: 0.5rem;
+			width: 14rem;
+			margin-right: 0.5rem;
 		}
 
 			input[type="button"].style2:hover,
@@ -2086,6 +2089,8 @@ input, select, textarea {
 
 	#banner {
 		position: relative;
+
+		
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
@@ -2418,6 +2423,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 3.5em;
+				/* width: 80%; */
 				background-size: 200% auto;
 			}
 
@@ -2643,3 +2649,100 @@ input, select, textarea {
 			}
 
 	}
+
+
+	/* MY UPDATES */
+
+	.GithubImage{
+		text-align: center;
+
+		height: 20.5rem;
+		margin-bottom: 3.5rem;
+		
+	}
+	
+	.GithubImage img{
+		height: 20rem;
+		width: 20rem;
+		border-radius: 50%;
+		border: 1rem solid #455554;
+	}
+
+
+	.resume-header {
+		text-align: center;
+		margin-top: 3rem;
+	}
+
+
+
+			.resume-header h1 {
+				font-size: 1.75em;
+				letter-spacing: 6px;
+			}
+
+			.resume-header footer {
+			bottom: 4.5em;
+			padding: 0 2em 0 2em;
+		}
+
+		.resume-header footer:after {
+				bottom: -4.5em;
+				left: 50%;
+				height: 4.5em;
+			}
+
+			.resume-header footer:before {
+				width: 45px;
+				height: 33px;
+				bottom: -2.25em;
+				margin-left: -22.5px;
+				margin-bottom: -16.5px;
+				background-size: 45px 33px;
+			}
+
+/* .banner-block{
+	width: 80.5rem;
+	margin: auto;
+} */
+
+@media screen and (max-width: 500px){
+
+	.button.style2 {
+		color: #3a3939;
+		background: #fff;
+		box-shadow: inset 0 0 0 1px #fff;
+		margin-left: 0.3rem;
+		margin-right: 0.3rem;
+		margin: 0.5rem;
+		width: 6rem;
+	}
+}
+
+@media screen and (max-width: 736px){
+
+	.button.style2 {
+		color: #3a3939;
+		background: #fff;
+		box-shadow: inset 0 0 0 1px #fff;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		margin: 0.5rem;
+		width: 7rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 469px){
+
+	.button.style2 {
+		color: #3a3939;
+		background: #fff;
+		box-shadow: inset 0 0 0 1px #fff;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		margin: 0.5rem;
+		width: 5rem;
+		text-align: center;
+	}
+}
