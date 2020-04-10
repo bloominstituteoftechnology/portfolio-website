@@ -1701,13 +1701,16 @@ input, select, textarea {
 /* Table */
 
 	.table-wrapper {
-		width: 100%;
+		width: 107%;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
+		margin: auto;
+		text-align: center;
 	}
 
 	table {
 		width: 100%;
+		/* text-align: left; */
 	}
 
 		table tbody tr {
@@ -1719,13 +1722,15 @@ input, select, textarea {
 			}
 
 		table td {
-			padding: 0.75em 1.25em 0.75em 1.25em;
+			padding: 1.5em 1em 1.5em 1em;
+			text-align: left;
 		}
 
 		table th {
 			text-align: left;
 			font-weight: 400;
 			padding: 0.75em 1.25em 0.75em 1.25em;
+			margin: auto;
 		}
 
 		table thead {
