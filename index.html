@@ -16,12 +16,16 @@
 	</head>
 	<body class="is-preload">
 
+	<!--provides alternative way to go back one page-->
+	<div class="goBack tooltip">
+		<a href="index.html"><i class="fas fa-arrow-circle-left fa-2x"></i></a>
+	</div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><img src="profile-site-thumbnails/dragonlogo.png" alt="logo"> <span class="logoSpan">CodingwithDragon</span></a>
+						<a href="index.html" onclick="goBack()" class="logo"><img src="profile-site-thumbnails/dragonlogo.png" alt="logo"> <span class="logoSpan">CodingwithDragon</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -29,6 +33,7 @@
 
 				<!-- Menu -->
 					<nav id="menu">
+						<img src="profile-site-thumbnails/dragonlogo.png" alt="logo">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="ourTeam.html">Our Team</a></li>
@@ -187,12 +192,12 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/LightYagami116" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/jonathan-lamantia-9543713b/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+								<li><a href="#" target="_blank" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a>
+								<li><a href="https://www.facebook.com/CodingwithDragon" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<!--<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
+								<li><a href="https://github.com/LightYagami116" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jonathan-lamantia-9543713b/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="copyright">
 								<li>&copy; Made by Jonathan LaMantia</li><li>Designed by <a href="https://html5up.net">HTML5 UP</a></li>
@@ -210,6 +215,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/user-profile.js"></script>
 
 	</body>
 </html>
