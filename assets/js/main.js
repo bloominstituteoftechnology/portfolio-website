@@ -197,8 +197,8 @@
 				$banner.scrollex({
 					bottom:		$header.height() + 10,
 					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
+					enter:		function() { $header.addClass('alt'); $(".logoSpan").css("visibility","hidden");},
+					leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); $(".logoSpan").css("visibility","visible")}
 				});
 
 				window.setTimeout(function() {

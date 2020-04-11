@@ -149,17 +149,17 @@ input, select, textarea {
 		}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		/*-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: dotted 1px;*/
+		border-bottom-color: transparent;
 		color: inherit;
 		text-decoration: none;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
 			color: #9bf1ff !important;
 		}
 
@@ -3434,6 +3434,9 @@ input, select, textarea {
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
+			animation: fadeInLeft 2s;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
 		}
 
 			#banner > .inner .image {

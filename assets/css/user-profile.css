@@ -2,3 +2,20 @@ img{
   width: 570px !important;
   height: auto;
 }
+
+.contact-method a:hover{
+  -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+}
+#header a img{
+  width: 40px !important;
+  height auto;
+  opacity: .8;
+}
+#header a span{
+  position: relative;
+  top: -20px;
+}
