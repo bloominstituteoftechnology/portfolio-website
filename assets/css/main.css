@@ -2939,6 +2939,7 @@ input, select, textarea {
 			-ms-flex-direction: row;
 			flex-direction: row;
 			background-color: #2e3450;
+			box-shadow: inset 0 0 1px #000;
 		}
 
 			.spotlights > section > .image {
@@ -3434,7 +3435,7 @@ input, select, textarea {
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
-			animation: fadeInLeft 2s;
+			animation: fadeInLeft 1s;
 			-webkit-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
 		}

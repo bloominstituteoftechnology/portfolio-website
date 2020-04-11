@@ -19,3 +19,6 @@ img{
   position: relative;
   top: -20px;
 }
+#one img{
+  box-shadow: 0 8px 6px -6px black;
+}
