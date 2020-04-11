@@ -770,11 +770,7 @@ input, select, textarea {
 		dl dd {
 			margin-left: 2rem;
 		}
-		.list-level-2{
-			padding-left: 1rem;
-			list-style-type: circle
 
-		}
 /* Actions */
 
 	ul.actions {
@@ -1085,7 +1081,6 @@ input, select, textarea {
 			background-color: #ffffff;
 			color: #1b1f22 !important;
 			font-weight: 600;
-			margin-bottom: 1rem
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -1145,12 +1140,9 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
+			background-size: auto, 256px 256px;
+			background-position: center, center;
+			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
 
@@ -1354,7 +1346,7 @@ input, select, textarea {
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1p #ffffff;
+				border-left: solid 1px #ffffff;
 			}
 
 				#header nav ul li:first-child {
@@ -1380,16 +1372,8 @@ input, select, textarea {
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
-					
-					#header .nav-link{
-						line-height: .5
-					}
 
-					#header .nav-link:first-child{
-					padding-top: 1rem;
-					}
-
-		/* #header nav.use-middle:after {
+		#header nav.use-middle:after {
 			content: '';
 			display: block;
 			position: absolute;
@@ -1397,7 +1381,7 @@ input, select, textarea {
 			left: calc(50% - 1px);
 			width: 1px;
 			height: 100%;
-			background: #ffffff; */
+			background: #ffffff;
 		}
 
 		#header nav.use-middle ul li.is-middle {
