@@ -26,7 +26,20 @@ img{
   width: 60px !important;
   opacity: .8;
 }
-
+#one .inner .image.main img{
+  max-width: 60rem !important;
+  max-height: 30rem;
+}
+#one .inner p{
+  max-width: 800px !important;
+  font-weight: bold !important;
+  color: #999;
+}
+.content .inner p, #three .inner p{
+  max-width: 800px !important;
+  font-weight: bold !important;
+  color: #999;
+}
 .goBack{
   position: fixed;
   top: 50%;
@@ -84,12 +97,15 @@ a:hover + .helptool{
 }
 
 /*====================================================================
+Media queries
+====================================================================*/
+/*====================================================================
 Experimental Code
 =====================================================================*/
-.wisdom{
+/*.wisdom{
   position: relative;
   top: 40px;
-}
+}*/
 
 blockquote{
   font-size: 1.4em;
@@ -126,3 +142,18 @@ blockquote span{
   margin-top: 10px;
   margin-left: 5em;
 }
+#one{border: 2px solid red;}
+#one .gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  justify-items: center;
+  margin-bottom: 10rem;
+}
+
+/*.testing{
+  background: red;
+  width: 350px;
+  height: 350px;
+}*/
