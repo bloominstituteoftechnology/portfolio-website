@@ -3798,15 +3798,15 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight .image {
-				border-radius: 100%;
+				border-radius: 10%;
 				margin: 0 3em 2em 0;
-				width: 22em;
+				width: 72em;
 				overflow: hidden;
-				-ms-flex: 1;
+				/* -ms-flex: 1; */
 			}
 
 				.wrapper.spotlight .image img {
-					border-radius: 100%;
+					border-radius: 10%;
 					width: 100%;
 				}
 
