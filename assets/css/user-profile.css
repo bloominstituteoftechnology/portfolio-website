@@ -1,8 +1,6 @@
 img{
   width: 100% !important;
   height: auto;
-  transition: transform 2s;
-  transform-style: preserve-3d;
 }
 
 .contact-method a:hover{
@@ -88,12 +86,43 @@ a:hover + .helptool{
 /*====================================================================
 Experimental Code
 =====================================================================*/
-
-.is-flipped {
-  transform: rotateY(180deg);
+.wisdom{
+  position: relative;
+  top: 40px;
 }
 
-.card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left: transparent;
+  line-height:1.4;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color: #555555;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#999;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 15em;
 }

@@ -2,8 +2,3 @@
 function goBack() {
   window.history.back();
 }
-
-var card = document.querySelector('.pie');
-card.addEventListener( 'click', function() {
-  card.classList.toggle('is-flipped');
-});
