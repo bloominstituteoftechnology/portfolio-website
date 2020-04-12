@@ -35,6 +35,9 @@ img{
   font-weight: bold !important;
   color: #999;
 }
+.pcenter{
+  margin: 0 20px;
+}
 .content .inner p, #three .inner p{
   max-width: 800px !important;
   font-weight: bold !important;
@@ -142,7 +145,7 @@ blockquote span{
   margin-top: 10px;
   margin-left: 5em;
 }
-#one{border: 2px solid red;}
+/*#one{border: 2px solid red;}*/
 #one .gallery{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
@@ -151,9 +154,49 @@ blockquote span{
   justify-items: center;
   margin-bottom: 10rem;
 }
+#userCustomActions{
+  position: relative;
+  left: 50%;
+  transform: translateX(-30%);
+}
 
 /*.testing{
   background: red;
   width: 350px;
   height: 350px;
 }*/
+
+.social-gallery{
+  box-shadow: inset 0 0 5px #000;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.item1,.item2,.item3{
+  width: 400px;
+  height: 260px;
+  background: transparent;
+}
+.social-gallery img{
+  width: 150px !important;
+  height: auto;
+  margin-left: 8rem;
+  margin-top: 40px;
+}
+.social-gallery h3{
+  position: relative;
+  left: 120px;
+  visibility: hidden;
+}
+
+.item1 a:hover + h3{
+  visibility: visible;
+}
+.item2 a:hover + h3{
+  visibility: visible;
+}
+.item3 a:hover + h3{
+  visibility: visible;
+}
