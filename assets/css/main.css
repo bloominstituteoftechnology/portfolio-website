@@ -3805,6 +3805,13 @@ input, select, textarea {
 				/* -ms-flex: 1; */
 			}
 
+			.topBanner {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				align-content: space-between;
+			}
+
 				.wrapper.spotlight .image img {
 					border-radius: 10%;
 					width: 100%;
