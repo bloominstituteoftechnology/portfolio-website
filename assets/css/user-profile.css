@@ -230,7 +230,10 @@ blockquote span{
   bottom: -.4rem;
   z-index: 10000;
 }
+#contact{overflow: hidden !important;}
+.heightfix{
 
+}
 /*=============================================================
 Styles for star night in footers
 ===============================================================*/
