@@ -1,0 +1,71 @@
+.tiles article:before {
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.tiles article:after {
+  background-color: rgba(36, 41, 67, 0.5);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.tiles article:hover:before {
+  opacity: 0;
+}
+
+.tiles article.is-transitioning {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  -moz-filter: blur(0.5em);
+  -webkit-filter: blur(0.5em);
+  -ms-filter: blur(0.5em);
+  filter: blur(0.5em);
+  opacity: 0;
+}
+
+.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+  width: 60%;
+}
+
+.tiles article:nth-child(6n - 5):before {
+  background-color: #6fc3df;
+}
+
+.tiles article:nth-child(6n - 4):before {
+  background-color: #8d82c4;
+}
+
+.tiles article:nth-child(6n - 3):before {
+  background-color: #ec8d81;
+}
+
+.tiles article:nth-child(6n - 2):before {
+  background-color: #e7b788;
+}
+
+.tiles article:nth-child(6n - 1):before {
+  background-color: #8ea9e8;
+}
+
+.tiles article:nth-child(6n):before {
+  background-color: #87c5a4;
+}
