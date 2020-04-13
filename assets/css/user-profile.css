@@ -1,3 +1,10 @@
+.isDisabled{
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.isDisabled span{
+  color: #6f5605;
+}
 img{
   width: 100% !important;
   height: auto;
@@ -102,6 +109,11 @@ a:hover + .helptool{
 /*====================================================================
 Media queries
 ====================================================================*/
+@media screen and (max-width: 800px){
+  .social-gallery h3{
+    visibility: visible !important;
+  }
+}
 /*====================================================================
 Experimental Code
 =====================================================================*/
@@ -161,18 +173,24 @@ blockquote span{
 }
 
 /*.testing{
+  border: 2px solid red;
   background: red;
   width: 350px;
   height: 350px;
 }*/
 
-.social-gallery{
+/*.social-gallery{
   box-shadow: inset 0 0 5px #000;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}*/
+.social-gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .item1,.item2,.item3{
   width: 400px;
