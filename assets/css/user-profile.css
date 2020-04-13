@@ -50,6 +50,10 @@ img{
   font-weight: bold !important;
   color: #999;
 }
+.heightfix img{
+  width: 100%;
+  height: 100%;
+}
 .goBack{
   position: fixed;
   top: 50%;
@@ -90,7 +94,7 @@ a:hover + .helptool{
   z-index: 1000;
   position: absolute;
   top: 25px;
-  left: 48px;
+  left: 58px;
   height: 50px;
   width: 100px;
   border-radius: 10px;
@@ -112,6 +116,9 @@ Media queries
 @media screen and (max-width: 800px){
   .social-gallery h3{
     visibility: visible !important;
+  }
+  blockquote{
+    visibility: hidden;
   }
 }
 /*====================================================================
