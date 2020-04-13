@@ -698,6 +698,7 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			display: flex;
 		}
 
 			.image.main img {
@@ -1659,4 +1660,12 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+
+		.skills {
+			display: flex;
+		}
+
+		.right-skills {
+			margin-left: 30%;
 		}
