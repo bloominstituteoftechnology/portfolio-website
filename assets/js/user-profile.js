@@ -1,8 +1,9 @@
-//doesn't worrk locally will have to test once live to see if thats issue
+//doesn't work locally or on live site will have to comeback to issue
 function goBack() {
   window.history.back();
 }
 
+//Thanks to Jones Joseph for making this free to use project can be found here https://codepen.io/jo_Geek/details/QWwKbKe
 $(function() {
   var nightsky = ["#280F36", "#632B6C", "#BE6590", "#FFC1A0", "#FE9C7F"];
 
