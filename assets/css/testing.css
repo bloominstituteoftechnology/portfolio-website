@@ -1,0 +1,379 @@
+
+.footer-quote{
+  margin: 0 auto;
+}
+.starLink{
+  list-style-type: none;
+  position: relative;
+  left: 7.4rem;
+  bottom: -.5rem;
+  z-index: 10000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sky {
+  padding-top: 2rem;
+  position: relative;
+  height: 400px;
+  width: 100vw;
+  background: #060010;
+  background: -moz-linear-gradient(
+    top,
+    #060010 0%,
+    #060010 6%,
+    #090016 11%,
+    #070016 20%,
+    #0a0121 48%,
+    #0a0127 55%,
+    #0a0129 57%,
+    #0c012b 62%,
+    #0e0131 68%,
+    #0d012f 69%,
+    #18023c 78%,
+    #19023e 79%,
+    #19023e 79%,
+    #1c0242 81%,
+    #22034b 85%,
+    #2e045a 92%,
+    #2f045e 96%,
+    #340464 98%,
+    #370569 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #060010 0%,
+    #060010 6%,
+    #090016 11%,
+    #070016 20%,
+    #0a0121 48%,
+    #0a0127 55%,
+    #0a0129 57%,
+    #0c012b 62%,
+    #0e0131 68%,
+    #0d012f 69%,
+    #18023c 78%,
+    #19023e 79%,
+    #19023e 79%,
+    #1c0242 81%,
+    #22034b 85%,
+    #2e045a 92%,
+    #2f045e 96%,
+    #340464 98%,
+    #370569 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    #060010 0%,
+    #060010 6%,
+    #090016 11%,
+    #070016 20%,
+    #0a0121 48%,
+    #0a0127 55%,
+    #0a0129 57%,
+    #0c012b 62%,
+    #0e0131 68%,
+    #0d012f 69%,
+    #18023c 78%,
+    #19023e 79%,
+    #19023e 79%,
+    #1c0242 81%,
+    #22034b 85%,
+    #2e045a 92%,
+    #2f045e 96%,
+    #340464 98%,
+    #370569 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#060010",
+      endColorstr="#370569",
+      GradientType=0
+    );
+
+  transform: scale(1);
+}
+
+.mountains {
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.light-base {
+  position: absolute;
+  bottom: -80px;
+  left: 10vw;
+  width: 80vw;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: -0px -10px 30px 10px #ffc1a0, -0px -20px 40px 20px #fe9c7f,
+    -0px -30px 60px 30px #be6590, -0px -50px 150px 75px #632b6c;
+  background-color: #ffc1a0;
+  z-index: 1;
+}
+
+.mountains-base {
+  content: "";
+
+  background: -moz-linear-gradient(
+    top,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#00370569",
+      endColorstr="#090016",
+      GradientType=0
+    );
+
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -10px;
+  z-index: 3;
+}
+
+.mountains-base:after {
+  content: "";
+
+  background: -moz-linear-gradient(
+    top,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#00370569",
+      endColorstr="#090016",
+      GradientType=0
+    );
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.mountains-base:before {
+  content: "";
+
+  background: -moz-linear-gradient(
+    top,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(55, 5, 105, 0) 0%,
+    rgba(9, 0, 22, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#00370569",
+      endColorstr="#090016",
+      GradientType=0
+    );
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+}
+
+.mountains > [class^="mountain"],
+.mountains > [class^="mountain"]:after,
+.mountains > [class^="mountain"]:before,
+.mountains > [class^="land"],
+.mountains > [class^="land"]:after,
+.mountains > [class^="land"]:before {
+  background: #110124;
+  box-shadow: 0px 0px 50px 5px rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 0px;
+}
+
+.mountain-2 {
+  width: 60px;
+  height: 60px;
+  bottom: -20px !important;
+  left: -10px;
+  transform: rotate(45deg);
+  border-top-left-radius: 10px;
+}
+
+.mountain-1 {
+  width: 100px;
+  height: 100px;
+  bottom: -40px !important;
+  left: 10px;
+  transform: rotate(45deg);
+  border-top-left-radius: 10px;
+}
+
+.land-1 {
+  width: 30%;
+  height: 20px;
+  border-top-right-radius: 100%;
+}
+
+.land-2 {
+  width: 60%;
+  height: 15px;
+  left: 30%;
+  border-top-left-radius: 200%;
+  border-top-right-radius: 200%;
+}
+
+.land-3 {
+  width: 20%;
+  height: 20px;
+  left: 80%;
+  border-top-left-radius: 100%;
+}
+
+.stars {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 000vw;
+  height: 100vh;
+  transition: all 10s linear;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.blink {
+  animation: blink ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.star-0 {
+  height: 0.5px;
+  width: 0.5px;
+}
+
+.star-1 {
+  height: 1px;
+  width: 1px;
+}
+
+.star-2 {
+  height: 1.5px;
+  width: 1.5px;
+}
+
+.star-3 {
+  height: 2px;
+  width: 2px;
+}
+
+.star-4 {
+  height: 2.5px;
+  width: 2.5px;
+  box-shadow: 0px 0px 6px 1px rgba(255,255,255,0.5);
+}
+
+.star-5 {
+  height: 2.5px;
+  width: 2.5px;
+  box-shadow: 0px 0px 6px 1px rgba(255,255,255,0.7);
+}
+
+.stars-cross {
+  position: absolute;
+  top: 10vh;
+  left: 0px;
+  width: 120vw;
+  height: 20vh;
+  transform: rotate(20deg);
+  transform-origin: top left;
+}
+
+.stars-cross-aux {
+  position: absolute;
+  top: 0vh;
+  left: 10vw;
+  width: 120vw;
+  height: 10vh;
+  transform: rotate(20deg);
+  transform-origin: top left;
+}
+
+.stars-cross > .blur,
+.stars-cross-aux > .blur {
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 1;
+  filter: blur(15px);
+  width: 5px;
+  height: 10px;
+}
