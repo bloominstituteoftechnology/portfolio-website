@@ -118,7 +118,15 @@ Media queries
     visibility: visible !important;
   }
   blockquote{
-    visibility: hidden;
+    visibility: visible;
+    font-size: 1.2em !important;
+    overflow: scroll !important;
+    width: 400px !important;
+    /*height: 350px;*/
+  }
+  blockquote::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
   }
 }
 /*====================================================================
