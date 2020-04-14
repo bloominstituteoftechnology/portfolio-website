@@ -1467,7 +1467,8 @@ input, select, textarea {
 		.bordered-feature-image img {
 			display: block;
 			width: 100%;
-			height: 300px;
+			height: 301px;
+
 		}
 
 	.button-large {
