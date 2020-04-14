@@ -8,14 +8,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="main.css" />
 		<link href="/css/fontawesome-all.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_IaI1sFXUBJVptED4xJ5HX");
+   })();
+</script>
 		
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<div id="header">
-				<!-- <a href="https://www.animatedimages.org/cat-city-634.htm">
-					<img src="https://www.animatedimages.org/data/media/634/animated-city-image-0033.gif" border="0" alt="animated-city-image-0033" /></a> -->
+
 				<div class="top">
 
 					<!-- Logo -->
@@ -180,7 +185,7 @@
 
 							<p>For all business inquiries please fill out form below.</p>
 
-							<form method="post" action="mailto:michael.demery@ymail.com" enctype="text/plain">
+							<form>
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
@@ -189,10 +194,23 @@
 									</div>
 									<div class="col-12">
 										<input type="submit" value="Send Message" />
+							<script>
+								var template_params = {
+  								 "from_name": "name",
+  								 "to_name": "Michael Demery",
+  								 "message_html": "message"
+								}
+
+								var service_id = "default_service";
+								var template_id = "template_bonV0J0B";
+								emailjs.send(service_id, template_id, template_params);
+							 </script>
 									</div>
 
 								</div>
 							</form>
+
+
 
 						</div>
 					</section> 
