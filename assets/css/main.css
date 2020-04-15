@@ -3011,6 +3011,10 @@ input, select, textarea {
 				width: 16em;
 			}
 
+		/*Testing Zoom class*/
+
+		
+
 		@media screen and (max-width: 980px) {
 
 			.spotlight {
@@ -3041,6 +3045,7 @@ input, select, textarea {
 						justify-content: center;
 						width: calc(100% + 1em);
 					}
+					
 
 				.spotlight .image {
 					-moz-flex: 0 1 auto;
