@@ -4004,6 +4004,9 @@ input, select, textarea {
 			}
 
 		}
+		#four{
+			display:none;
+		}
 
 /* Footer */
 
