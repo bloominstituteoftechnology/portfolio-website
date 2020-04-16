@@ -9,11 +9,21 @@
 		<link rel="stylesheet" href="main.css" />
 		<link href="/css/fontawesome-all.min.css" rel="stylesheet">
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_IaI1sFXUBJVptED4xJ5HX");
-   })();
-</script>
+		<script type="text/javascript">
+   			(function(){
+      		emailjs.init("user_IaI1sFXUBJVptED4xJ5HX");
+   					})();
+		</script>
+		    <script type="text/javascript">
+				window.onload = function() {
+					document.getElementById('contact-form').addEventListener('submit', function(event) {
+						event.preventDefault();
+						// generate the contact number value
+						this.contact_number.value = Math.random() * 100000 | 0;
+						emailjs.sendForm('contact_service', 'contact_form', this);
+					});
+				}
+			</script>
 		
 	</head>
 	<body class="is-preload">
@@ -185,30 +195,32 @@
 
 							<p>For all business inquiries please fill out form below.</p>
 
-							<form>
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-							<script>
-								var template_params = {
-  								 "from_name": "name",
-  								 "to_name": "Michael Demery",
-  								 "message_html": "message"
-								}
 
-								var service_id = "default_service";
-								var template_id = "template_bonV0J0B";
-								emailjs.send(service_id, template_id, template_params);
-							 </script>
-									</div>
 
-								</div>
-							</form>
+					<form id="myform" onsubmit="emailjs.sendForm('default_service', 'contact_form', this); return false;" method="post">
+					<div class="row">
+					<!-- <label>Name</label> -->
+					<div class="col-6 col-12-mobile"><input type="text" name="user_name" placeholder="Name" /></div>
+					<!-- <label>Email</label> -->
+					<div class="col-6 col-12-mobile"><input type="text" name="user_email" placeholder="Email"/></div>
+					<!-- <label>Message</label> -->
+					<div class="col-12">
+					<textarea name="message" name="message" placeholder="Message"></textarea>
+					</div>
+					<div class="col-12">
+					<button>
+					Send Message
+					</button>
+					</div>
+					</div>
+					</form>
+	
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+				<script type="text/javascript">
+	  			 (function(){
+		 		 emailjs.init("user_IaI1sFXUBJVptED4xJ5HX");
+	   			})();
+				</script>
 
 
 
