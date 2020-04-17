@@ -208,13 +208,18 @@
 					<textarea name="message" name="message" placeholder="Message"></textarea>
 					</div>
 					<div class="col-12">
-					<button>
+					<button onclick="myFunction()">
 					Send Message
 					</button>
+					<script>
+						function myFunction() {
+						  alert("Your message was received");
+						}
+						</script>
 					</div>
 					</div>
 					</form>
-	
+					
 				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 				<script type="text/javascript">
 	  			 (function(){
