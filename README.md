@@ -3,13 +3,13 @@
 
 ## Hosted Links
 
-[Netlify.app___](https://madison-mckown-portfolio.netlify.app/)
+[Netlify.app](https://madison-mckown-portfolio.netlify.app/)
 
-[ZEIT.app___](https://portfolio-website.madisonmckown.now.sh/index.html)
+[ZEIT.app](https://portfolio-website.madisonmckown.now.sh/index.html)
 
 ## Contacts
 
-[Linked-in___](https://www.linkedin.com/in/madison-mckown-welcome/)
+[Linked-in](https://www.linkedin.com/in/madison-mckown-welcome/)
 
 Email: madison.s.mckown@gmail.com
 
@@ -23,13 +23,15 @@ README.txt
 
 [HTML5up.net](https://html5up.net/).
 
-
-
-
-
-
-
-
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
 # Original Lambda Readme
 
