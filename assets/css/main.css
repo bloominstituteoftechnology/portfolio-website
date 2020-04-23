@@ -39,6 +39,16 @@ body {
 ol, ul {
 	list-style: none;
 }
+.projectSection{
+background-color: #a9acaf28;
+padding-top: 5px;
+text-align: center;
+margin-top:3rem;
+}
+.projecth2{
+	margin-bottom: 0 !important;
+
+}
 
 blockquote, q {
 	quotes: none;
