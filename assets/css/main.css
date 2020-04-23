@@ -39,6 +39,28 @@ body {
 ol, ul {
 	list-style: none;
 }
+.nav{
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 4rem;
+	background-color: #e7e7e7;
+	font-size: 1.3rem;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+
+}
+nav a {
+	margin-left:2rem ;
+	text-decoration: none; 
+
+}
+ nav a:hover {
+	transform: scale(1.1);
+
+ }
+ .navname{
+	 margin-right: 50%;
+ }
 .projectSection{
 background-color: #a9acaf28;
 padding-top: 5px;
