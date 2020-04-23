@@ -117,6 +117,8 @@ nav,
 @media (max-width: 800px) {
   section {
     background-color: white;
+    opacity: 1;
+    filter: alpha(opacity=100);
   }
 }
 
@@ -133,6 +135,12 @@ section:hover {
 
 body {
   line-height: 1;
+}
+
+footer:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-color: white;
 }
 
 ol,
