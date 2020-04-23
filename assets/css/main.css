@@ -2919,6 +2919,26 @@ ul.actions.special li:first-child {
   padding-left: 0;
 }
 
+ul.actions.side {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.right {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
 ul.actions.stacked {
   -moz-flex-direction: column;
   -webkit-flex-direction: column;
