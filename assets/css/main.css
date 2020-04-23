@@ -137,10 +137,22 @@ body {
   line-height: 1;
 }
 
+.bottomContent {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* .inner {
+  
+  opacity: 1;
+  filter: alpha(opacity=100);
+} */
+
 footer:hover {
   opacity: 1;
   filter: alpha(opacity=100);
   background-color: white;
+  transition: 0.8s;
 }
 
 ol,
@@ -2907,6 +2919,26 @@ ul.actions.special li:first-child {
   padding-left: 0;
 }
 
+ul.actions.side {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.right {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
 ul.actions.stacked {
   -moz-flex-direction: column;
   -webkit-flex-direction: column;
@@ -3153,6 +3185,12 @@ table.uniform tbody tr:nth-child(2n + 1) {
 }
 
 /* Banner (transitions) */
+
+.banner {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-color: white;
+}
 
 .banner.onload-content-fade-up .content {
   -moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
@@ -8474,12 +8512,14 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #wrapper > .invert a.icon.style2:hover:before {
   box-shadow: inset 0 0 0 1px #47d3e5;
   color: #47d3e5;
+  transition: 0.8s;
 }
 
 #wrapper > .invert a.icon.style2:active:before {
   background-color: rgba(71, 211, 229, 0.1);
   box-shadow: inset 0 0 0 1px #47d3e5;
   color: #47d3e5;
+  transition: 0.4s;
 }
 
 #wrapper > .invert ul.alt li {
