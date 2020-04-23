@@ -110,6 +110,8 @@ nav,
   section {
   display: block;
   background-color: rgb(234, 234, 234);
+  opacity: 0.4;
+  filter: alpha(opacity=40);
 }
 
 @media (max-width: 800px) {
@@ -123,6 +125,8 @@ nav,
 section:hover {
   text-decoration: none;
   background-color: white;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 /* } */
 
@@ -2727,6 +2731,14 @@ a.icon.style2:active:before {
   border-radius: 4px;
   display: inline-block;
   position: relative;
+  /* opacity: 0.4;
+  filter: alpha(opacity=40); msie */
+}
+
+/* on hover */
+image:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .image img {
@@ -5866,6 +5878,10 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 }
 
 /* Gallery (transitions) */
+/* .gallery:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+} */
 
 .gallery.onload-fade-in article .image img {
   -moz-transition: opacity 0.75s ease-in-out;
@@ -6500,6 +6516,9 @@ body.is-preload .gallery.onload-fade-in article .image img {
   -webkit-justify-content: inherit;
   -ms-justify-content: inherit;
   justify-content: inherit;
+
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .gallery.style1 article {
@@ -6877,6 +6896,13 @@ body.is-preload .gallery.onload-fade-in article .image img {
   overflow-y: hidden;
   position: relative;
   width: 100%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.inner :hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 .gallery.style2 article {
