@@ -127,7 +127,7 @@ section:hover {
   background-color: white;
   opacity: 1;
   filter: alpha(opacity=100);
-  transition: 1.2s;
+  transition: 0.5s;
 }
 /* } */
 
@@ -2219,6 +2219,7 @@ button,
     color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
     color 0.2s ease-in-out;
+  transition: 0.8s;
   border: 0;
   cursor: pointer;
   display: inline-block;
@@ -2667,6 +2668,7 @@ input[type='radio']:focus + label:before {
   border-bottom: none;
   position: relative;
   text-align: center;
+  transition: 0.8s;
 }
 
 .icon:before {
@@ -2690,6 +2692,10 @@ input[type='radio']:focus + label:before {
   width: 2.75em;
 }
 
+.icon.style2 {
+  transition: 0.8s;
+}
+
 .icon.major {
   display: block;
   margin: 0 0 1rem 0;
@@ -2700,13 +2706,13 @@ input[type='radio']:focus + label:before {
 }
 
 a.icon.style2:before {
-  -moz-transition: background-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+  -moz-transition: background-color 0.8s ease-in-out,
+    box-shadow 0.2s ease-in-out, color 0.8s ease-in-out;
+  -webkit-transition: background-color 0.8s ease-in-out,
+    box-shadow 0.2s ease-in-out, color 0.8s ease-in-out;
+  -ms-transition: background-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out,
     color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+  transition: background-color 0.8s ease-in-out, box-shadow 0.8s ease-in-out,
     color 0.2s ease-in-out;
 }
 
@@ -2732,6 +2738,7 @@ a.icon.style2:active:before {
   border-radius: 4px;
   display: inline-block;
   position: relative;
+  transition: 0.8s;
   /* opacity: 0.4;
   filter: alpha(opacity=40); msie */
 }
