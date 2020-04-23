@@ -127,6 +127,7 @@ section:hover {
   background-color: white;
   opacity: 1;
   filter: alpha(opacity=100);
+  transition: 1.2s;
 }
 /* } */
 
@@ -6898,11 +6899,13 @@ body.is-preload .gallery.onload-fade-in article .image img {
   width: 100%;
   opacity: 1;
   filter: alpha(opacity=100);
+  transition: 1.2s;
 }
 
 .inner :hover {
   opacity: 1;
   filter: alpha(opacity=100);
+  transition: 1.2s;
 }
 
 .gallery.style2 article {
