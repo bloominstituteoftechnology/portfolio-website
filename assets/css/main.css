@@ -4161,3 +4161,8 @@ input, select, textarea {
 		}
 
 	}
+
+
+	 .imageMain img{
+		width: 30%;
+	}
