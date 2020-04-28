@@ -720,6 +720,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+		
 		}
 
 		ul.alt {
@@ -1635,4 +1636,7 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
+		}
+		.skills {
+			list-style-type: none
 		}
