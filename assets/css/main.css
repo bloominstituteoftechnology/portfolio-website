@@ -2919,25 +2919,30 @@ ul.actions.special li:first-child {
   padding-left: 0;
 }
 
-ul.actions.side {
+div.actions.side {
   /* background-color: red; */
   display: flex;
   flex-direction: row;
+  width: 100%;
+  text-align: center;
 }
 
-.left {
-  /* background-color: green; */
-  display: flex;
-  flex-direction: column;
-  padding: 10px 10px;
+@media screen and (min-width: 551px) and (max-width: 850px) {
+  div.actions.side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
 }
-
-.right {
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-}
+/* @media screen and (max-width: 850px) {
+  div.actions.side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+} */
 
 ul.actions.stacked {
   -moz-flex-direction: column;
