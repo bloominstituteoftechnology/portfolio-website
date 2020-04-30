@@ -107,7 +107,7 @@ hgroup,
 menu,
 nav,
 /* @media only screen and (max-width: 400px) { */
-  section {
+  /* section:hover {
   display: block;
   background-color: rgb(234, 234, 234);
   opacity: 0.4;
@@ -115,22 +115,22 @@ nav,
 }
 
 @media (max-width: 800px) {
-  section {
+  .content {
     background-color: white;
     opacity: 1;
     filter: alpha(opacity=100);
   }
-}
+} */
 
 /* @media (max-width: 500px) { */
 /* @media only screen and (max-width: 400px) { */
-section:hover {
+/* section:hover {
   text-decoration: none;
   background-color: white;
   opacity: 1;
   filter: alpha(opacity=100);
   transition: 0.5s;
-}
+} */
 /* } */
 
 body {
@@ -2927,7 +2927,7 @@ div.actions.side {
   text-align: center;
 }
 
-@media screen and (min-width: 551px) and (max-width: 850px) {
+@media screen and (min-width: 650px) and (max-width: 980px) {
   div.actions.side {
     display: flex;
     flex-direction: column;
