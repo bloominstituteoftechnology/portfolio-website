@@ -1621,6 +1621,9 @@ input, select, textarea {
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
+		#footer .copyright a{
+			text-decoration: none;
+		}
 
 		body.is-article-visible #footer {
 			-moz-transform: scale(0.95);
@@ -1637,6 +1640,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		
 		.skills {
-			list-style-type: none
+			list-style-type: none;
 		}
