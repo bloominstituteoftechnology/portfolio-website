@@ -236,6 +236,7 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		text-decoration: none;
+		height:50px;
 	}
 
 		.icon:before {
@@ -309,6 +310,10 @@ input, select, textarea {
 
 			#wrapper {
 				min-height: 0;
+
+			}
+			.title{
+				font-size: 2em;
 			}
 
 		}
