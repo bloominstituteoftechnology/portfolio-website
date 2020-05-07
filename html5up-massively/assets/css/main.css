@@ -2612,9 +2612,9 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
+			/* display: block; */
 			margin: 4rem 0;
-			width: 100%;
+			width: 50%;
 		}
 
 			.image.main:first-child {
@@ -3922,6 +3922,7 @@ input, select, textarea {
 
 	#footer {
 		color: #717981;
+		text-align: center;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
