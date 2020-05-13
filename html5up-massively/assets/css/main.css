@@ -2612,9 +2612,11 @@ input, select, textarea {
 			}
 
 		.image.main {
-			/* display: block; */
-			margin: 4rem 0;
-			width: 50%;
+			display: block;
+			margin: auto;
+			padding-bottom: 3rem;
+			width: 80%;
+			
 		}
 
 			.image.main:first-child {
