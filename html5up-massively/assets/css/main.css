@@ -183,7 +183,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
-		line-height: 1.5;
+		line-height: 1;
 		letter-spacing: 0.075em;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
@@ -198,7 +198,7 @@ input, select, textarea {
 	h1 {
 		font-size: 4rem;
 		line-height: 1.1;
-		margin: 0 0 2rem 0;
+		margin: 0;
 	}
 
 	h2 {
@@ -268,11 +268,11 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-bottom: solid 2px;
-		margin: 3rem 0;
+		margin: 1rem 0;
 	}
 
 		hr.major {
-			margin: 5rem 0;
+			margin: 3rem 0;
 		}
 
 	.align-left {
@@ -321,6 +321,7 @@ input, select, textarea {
 	hr {
 		border-bottom-color: #eeeeee;
 	}
+
 
 /* Row */
 
@@ -2039,8 +2040,8 @@ input, select, textarea {
 
 	.box {
 		border: solid 2px;
-		margin-bottom: 2rem;
-		padding: 1.5rem;
+		margin-bottom: 1rem;
+		padding: 1rem;
 	}
 
 		.box > :last-child,
@@ -2082,9 +2083,9 @@ input, select, textarea {
 		font-size: 0.8rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
-		height: 3rem;
-		line-height: 3rem;
-		padding: 0 2rem;
+		height: 2rem;
+		line-height: 2rem;
+		padding: 0 1rem;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -2160,7 +2161,7 @@ input, select, textarea {
 			font-size: 0.9rem;
 			height: 3.5rem;
 			line-height: 3.5rem;
-			padding: 0 2.75rem;
+			padding: 0 1.5rem;
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2573,6 +2574,13 @@ input, select, textarea {
 		position: relative;
 	}
 
+		.profile {
+			display: block;
+			margin: auto;
+			padding: 1rem;
+			width: 50%;	
+		}
+
 		.image img {
 			display: block;
 		}
@@ -2614,9 +2622,8 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: auto;
-			padding-bottom: 3rem;
-			width: 80%;
-			
+			padding-bottom: 2rem;
+			width: 65%;	
 		}
 
 			.image.main:first-child {
@@ -3740,7 +3747,7 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2rem;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
@@ -3754,7 +3761,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 6rem;
 		}
 
 			#main > .post header.major > .date {
