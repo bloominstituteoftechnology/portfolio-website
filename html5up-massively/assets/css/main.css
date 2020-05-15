@@ -2578,7 +2578,7 @@ input, select, textarea {
 			display: block;
 			margin: auto;
 			padding: 1rem;
-			width: 50%;	
+			width: 35%;	
 		}
 
 		.image img {
@@ -2623,7 +2623,7 @@ input, select, textarea {
 			display: block;
 			margin: auto;
 			padding-bottom: 2rem;
-			width: 65%;	
+			width: 50%;	
 		}
 
 			.image.main:first-child {
