@@ -1664,9 +1664,11 @@ input, select, textarea {
 /* Custom Styles */
 .image.main.mydish {
 	display: flex;
+	justify-content: space-evenly;
 }
-.mydish {
-	width: 50%;
+.image.main.mydish img {
+	/* margin: 0 0.5rem; */
+	max-width: 40%;
 	max-height: 400px;
 	object-fit: contain;
 }
