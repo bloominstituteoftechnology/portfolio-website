@@ -891,7 +891,12 @@ input, select, textarea {
 			padding: 0 0.75em 0 0;
 		}
 
-			ul.icons li:last-child {
+		#header ul.icons li {
+			display: inline-block;
+			padding: 0 2.5em 0 0;
+		}
+
+			#header ul.icons li:last-child, ul.icons li:last-child {
 				padding-right: 0;
 			}
 
@@ -903,6 +908,12 @@ input, select, textarea {
 				line-height: 2.25rem;
 				text-align: center;
 				width: 2.25rem;
+			}
+
+			#header ul.icons li a {
+				box-shadow: none;
+				height: auto;
+				width: auto;
 			}
 
 				ul.icons li a:hover {
@@ -1667,3 +1678,7 @@ input, select, textarea {
 	#projects section h3 {
 		font-size: 1.3rem;
 	}
+
+#contact-form-status {
+	min-height: 1.7rem;
+}
