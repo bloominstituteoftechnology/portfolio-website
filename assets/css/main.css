@@ -1679,6 +1679,15 @@ input, select, textarea {
 		font-size: 1.3rem;
 	}
 
+	#projects section p {
+		margin-bottom: 1rem;
+	}
+
+	#projects section a {
+		font-weight: bold;
+	}
+
+
 #contact-form-status {
 	min-height: 1.7rem;
 }
