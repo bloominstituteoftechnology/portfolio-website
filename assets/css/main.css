@@ -1096,6 +1096,7 @@ input, select, textarea {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
+		backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
@@ -1124,7 +1125,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1304,16 +1305,22 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+				position: relative;
 			}
 
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
 				}
 
+			#header .content h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1.5rem;
+			}
+
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-size: 1rem;
 				line-height: 2;
 			}
 
@@ -1642,11 +1649,21 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		.image.main.mydish {
-			display: flex;
-		}
-		.mydish {
-			width: 50%;
-			max-height: 400px;
-			object-fit: contain;
-		}
+
+/* Custom Styles */
+.image.main.mydish {
+	display: flex;
+}
+.mydish {
+	width: 50%;
+	max-height: 400px;
+	object-fit: contain;
+}
+
+#projects section {
+	margin-bottom: 5rem;
+}
+
+	#projects section h3 {
+		font-size: 1.3rem;
+	}
