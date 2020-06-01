@@ -885,7 +885,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 	}
-
+	
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.75em 0 0;
@@ -922,6 +922,11 @@ input, select, textarea {
 
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+				#header ul.icons li a:hover,
+				#header ul.icons li a:active {
+					background: none;
 				}
 
 /* Table */
@@ -1662,6 +1667,7 @@ input, select, textarea {
 
 
 /* Custom Styles */
+
 .image.main.mydish {
 	display: flex;
 	justify-content: space-evenly;
