@@ -2758,9 +2758,9 @@ input, select, textarea {
 				width: calc(100% - 10px);
 			}
 
-			.farm-photo {
+			/* .farm-photo {
 				width: 100%;
-			}
+			} */
 
 			.me_picture {
 				width: 100%;
