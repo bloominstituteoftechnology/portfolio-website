@@ -128,7 +128,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/* border-bottom: dotted 1px; */
 		color: #8cd1a8;
 		text-decoration: none;
 	}
@@ -2758,12 +2758,33 @@ input, select, textarea {
 				width: calc(100% - 10px);
 			}
 
-			/* .farm-photo {
+			.project-images {
 				width: 100%;
-			} */
+			}
+
+			.project-images:hover {
+				opacity: 0.8;
+				transition: 0.4s;
+			}
 
 			.me_picture {
 				width: 100%;
+			}
+			.github-logo {
+				width: 12%;
+				padding-top: 20px;
+				opacity: 0.7;
+			}
+
+			.github-logo:hover {
+				opacity: 0.5;
+				transition: 0.4s;
+			}
+
+			.projects {
+				background-color: #dae4de;
+				padding: 20px;
+				margin-bottom: 50px;
 			}
 
 		.main .goto-next {
