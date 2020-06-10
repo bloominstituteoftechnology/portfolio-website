@@ -2936,6 +2936,10 @@ input, select, textarea {
 						margin-left: 0;
 						padding-left: 0;
 					}
+	.contact-links:hover {
+		opacity: 0.5;
+		transition: 0.4s;
+	}
 
 /* Large */
 
