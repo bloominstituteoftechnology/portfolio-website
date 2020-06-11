@@ -3,9 +3,9 @@
 
 ## Hosted Links
 
-[Netlify.app](https://madison-mckown-portfolio.netlify.app/)
+[Hosted Netlify Link](https://madison-mckown-portfolio.netlify.app/)
 
-[ZEIT.app](https://portfolio-website.madisonmckown.now.sh/index.html)
+[Hosted ZEIT Link](https://portfolio-website.madisonmckown.now.sh/index.html)
 
 ## Contacts
 
@@ -19,4 +19,4 @@ README.txt
 
 ## Original Design Template
 
-[HTML5up.net](https://html5up.net/).
+[HTML5up.net](https://html5up.net/)
