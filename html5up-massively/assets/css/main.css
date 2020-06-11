@@ -3845,9 +3845,11 @@ input, select, textarea {
 
 			#main > .posts > article {
 				border-color: #eeeeee;
-				border-left-width: 2px;
-				border-style: solid;
 				border-top-width: 2px;
+				border-right-width: 1px;
+				border-left-width: 1px;
+				border-bottom-width: 1px;
+				border-style: solid;
 				text-align: center;
 			}
 
