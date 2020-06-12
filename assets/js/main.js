@@ -68,6 +68,7 @@
 	// Main.
 		var	delay = 325,
 			locked = false;
+		$('#date').text(new Date().getFullYear());
 
 		// Methods.
 			$main._show = function(id, initial) {
