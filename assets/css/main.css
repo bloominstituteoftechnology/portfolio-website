@@ -1668,6 +1668,11 @@ input, select, textarea {
 
 /* Custom Styles */
 
+#main #about {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
 .image.main.mydish {
 	display: flex;
 	justify-content: space-evenly;
