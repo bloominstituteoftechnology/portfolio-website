@@ -1954,6 +1954,13 @@ input, select, textarea {
 
 	header.major {
 		text-align: center;
+		
+	}
+
+	header.major ul li {
+		list-style: none;
+		padding: 0;
+		margin: 0;
 	}
 
 		header.major h1, header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -2785,6 +2792,13 @@ input, select, textarea {
 				background-color: #dae4de;
 				padding: 20px;
 				margin-bottom: 50px;
+			}
+			.project-bullets {
+				text-align: left;
+			}
+
+			.projects h3 {
+				text-align: center;
 			}
 
 		.main .goto-next {
