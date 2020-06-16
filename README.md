@@ -3,6 +3,8 @@
 
 ## Hosted Links
 
+I have this portfolio application hosted on both Netlify and ZEIT.
+
 [Hosted Netlify Link](https://madison-mckown-portfolio.netlify.app/)
 
 [Hosted ZEIT Link](https://portfolio-website.madisonmckown.now.sh/index.html)
