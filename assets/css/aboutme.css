@@ -1,0 +1,232 @@
+#me{
+	display:inline;
+	}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[data-icon]::before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  margin-right: 8px;
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+h1 {
+  margin-top: 2%;
+  font-size: 40 px;
+  color:#a3c2ff;
+  letter-spacing: 5px;
+  font-size: 2em ;
+}
+
+h2 {
+  font-size:15px;
+  margin-top:10px;
+  letter-spacing:3px;
+  color:#E53F32;
+}
+
+h3 {
+  font-size:13px;
+  margin-top:2%;
+  letter-spacing:1px;
+  color:black;
+}
+
+h4 {
+  font-size:11px;
+  margin-top: 0.5%;
+  letter-spacing:1px;
+  color:#666;
+}
+
+h3 em,
+h4 em {
+  font-size:8px;
+  position:relative;
+  top:-1px;
+  color:#aaa;
+}
+
+
+body {
+  font-size:17px;
+  line-height:17px;
+  height:100%;
+  width: 100%;
+  font-family: "Century Gothic",Helvetica,Arial,sans-serif;
+  letter-spacing:3px;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+
+nav ul {
+  display: inline-table;
+}
+
+nav ul li {
+  float: left;
+  color: black;
+  padding: 5px;
+  font-size: 20px;
+  display: inline;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+nav a:hover,
+nav a:hover,
+nav a:active {
+  color: black;
+  text-decoration: underline;
+}
+
+
+.descripts{
+	margin-left: 4em;
+	margin-right: 4em;
+
+}
+
+#index-table{
+  height: 50%;
+}
+/*ul li{
+	border: .2rem solid;
+	display: inline ;
+	text-align: center; 
+	background-color: rgba(255, 255, 255, 0.86);
+	list-style: none;
+    padding:20px;
+    border-radius: 25px;
+
+}
+li{
+	float: left;
+}
+a:link{
+	font-size :35px ;
+	text-decoration: none ;
+	} 
+a:visited{ 
+	 color: grey
+}
+a:hover{
+
+	color: gold
+
+}*/
+
+
+#head{
+	margin-top: 1em;
+	display:block ;
+	font-size: 3em;
+	font-family: "courier";
+	text-align: center ;
+	margin-right: 20px;
+font-weight: bold ;
+
+}
+
+#wins{
+  display: block ;
+  height: 100%; 
+  margin-right: 2em ;
+  margin-left: 1em ;
+  overflow: scroll ;
+  border:solid;
+  border-radius: .5em;
+}
+
+#couch{ 
+ 
+display: inline-block;
+
+}
+
+
+
+
+#left-col{
+  width: 45% ;
+
+}#right-col{
+  width: 45% ;
+  vertical-align: top;
+}
+
+#angel{
+	display: inline-block;
+}
+
+#updates{
+	border: solid ;
+	display:block;
+  margin-left: 2em;
+  margin-right: 1em;
+
+min-height: 150px;
+font-size:20px; 
+background-color: rgba(255, 255, 255, 0.86);
+font-family: "courier";
+overflow: scroll;
+/*height: 100%;
+*/border-radius: .5em; 
+
+}
+
+
+footer{
+	display: block ;
+	font-size: 2em ;
+	margin-left: 2em ;
+	margin-top: 5em ;
+}
