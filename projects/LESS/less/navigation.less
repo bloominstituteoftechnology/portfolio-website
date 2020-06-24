@@ -1,0 +1,44 @@
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: @main-bg;
+  border-bottom: 2px dashed @navigation-border;
+  position: fixed;
+
+  .nav-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+    }
+
+    .logo-heading {
+      @media @mobile {
+        font-size: 3rem;
+      }
+    }
+
+    .nav {
+      width: 350px;
+      display: flex;
+      justify-content: space-evenly;
+
+      @media @mobile {
+        width: 100%;
+        justify-content: space-around;
+      }
+      
+      
+      a {
+        font-size: 1.6rem;
+        color: @font-color;
+        text-decoration: none;
+      }
+    }
+  }
+} // .main-navigation
