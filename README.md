@@ -23,8 +23,7 @@ Html5 up template of my current and past projects.
 
 ```sh
 npm install
-```
-
+``
 ## Usage
 
 ```sh
@@ -43,10 +42,6 @@ The start script will start live-server and node-sass watch with source maps
 * Twitter: [@CO_Comp_Nerd](https://twitter.com/CO_Comp_Nerd)
 * Github: [@jeremiahtenbrink](https://github.com/jeremiahtenbrink)
 * LinkedIn: [@jeremiahtenbrink](https://linkedin.com/in/jeremiahtenbrink)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jeremiahtenbrink/jeremiahtenbrink.github.io/issues). You can also take a look at the [contributing guide](https://github.com/jeremiahtenbrink/jeremiahtenbrinkhub.io.git/blob/master/CONTRIBUTING.md).
 
 ## Show your support
 
