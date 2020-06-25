@@ -6030,15 +6030,34 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  margin: -0.75em 0 3em 0; }
+  margin: -0.75em 0 1.5em 0;
+  text-align: left; }
 
 header.major {
   text-align: center; }
   header.major > :first-child {
     margin-top: -0.25em; }
+  header.major > #list-items {
+    list-style: circle;
+    list-style-position: inside;
+    color: rgba(67, 75, 86, 0.75);
+    text-align: left;
+    margin: -0.75em 0 3em 1.5rem; }
+    header.major > #list-items li {
+      margin: .5em 0; }
+
+@media screen and (max-width: 1680px) {
+  header #list-items {
+    margin: -0.5em 0 2em 0.5em; } }
+
+@media screen and (max-width: 1280px) {
+  header #list-items {
+    margin: -0.5em 0 2em 0.1em; } }
 
 @media screen and (max-width: 736px) {
   header p {
+    margin: -0.25em 0 2em 0; }
+  header #list-items {
     margin: -0.25em 0 2em 0; } }
 
 header p {
@@ -7032,6 +7051,39 @@ table.alt tbody tr td {
         .wrapper > .inner > .main {
           padding: 3em 1.5em 1em 1.5em ; } }
 
+#feedback {
+  max-height: 100vh;
+  min-height: 600px;
+  background-color: #4cabb1;
+  display: flex;
+  flex-direction: column;
+  justify-items: center; }
+  #feedback .title {
+    margin: 5rem 0 3rem 0;
+    display: flex;
+    justify-content: center; }
+    #feedback .title h2 {
+      color: #ffffff; }
+  #feedback .content {
+    display: flex;
+    justify-content: center; }
+    #feedback .content .feedback {
+      padding: 2rem;
+      font-size: 1.5rem;
+      max-width: 600px;
+      color: #fff;
+      opacity: 0;
+      transition: all 1s; }
+      #feedback .content .feedback.visible {
+        opacity: 1; }
+
+#page-wrapper #side-svg-animation {
+  padding: 0 0;
+  top: 0;
+  position: absolute;
+  margin: 0 auto;
+  border: 1px solid yellow; }
+
 /* Header */
 #header {
   display: -moz-flex;
@@ -7065,6 +7117,18 @@ table.alt tbody tr td {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     vertical-align: middle; }
+    #header > .logo #WritePath {
+      stroke: #fff;
+      fill: transparent;
+      animation: dash 8s reverse linear; }
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 4000px, 4000px;
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dasharray: 4000px, 4000px;
+    stroke-dashoffset: 4000px; } }
     #header > .logo span {
       border-left: solid 1px rgba(255, 255, 255, 0.25);
       color: rgba(255, 255, 255, 0.5);
@@ -7131,8 +7195,10 @@ table.alt tbody tr td {
       height: 44px;
       line-height: 44px;
       margin: 0;
-      padding: 0 1.25em; }
+      padding: 0 1.25em;
+      display: none; }
       #header > .logo {
+        display: none;
         font-size: 0.8em; }
         #header > .logo span {
           display: none; }
@@ -7813,6 +7879,7 @@ body.is-menu-visible #menu {
 
 /* Page Wrapper */
 #page-wrapper {
+  position: relative;
   overflow-x: hidden;
   width: 100%; }
   #page-wrapper > :first-child,

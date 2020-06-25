@@ -1,5 +1,9 @@
 'use strict'
-function inCommand (cmd) {
+function inCommand (cmd, cmdStr) {
+  if (process.env.npm_command) {
+    return process.env.npm_command === cmdStr
+  }
+
   try {
     var npm_config_argv = JSON.parse(process.env['npm_config_argv'])
   } catch (e) {
@@ -20,9 +24,9 @@ function inCommand (cmd) {
 }
 
 exports.inPublish = function () {
-  return inCommand(/^pu(b(l(i(sh?)?)?)?)?$/)
+  return inCommand(/^pu(b(l(i(sh?)?)?)?)?$/, 'publish')
 }
 
 exports.inInstall = function () {
-  return inCommand(/^i(n(s(t(a(ll?)?)?)?)?)?$/)
+  return inCommand(/^i(n(s(t(a(ll?)?)?)?)?)?$/, 'install')
 }

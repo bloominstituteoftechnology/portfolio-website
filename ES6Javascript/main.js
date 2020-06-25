@@ -189,7 +189,7 @@ class Project{
   }
   
   setVisible( iframe, headingElement, p ){
-    debugger;
+    
     const width = Math.max( document.documentElement.clientWidth,
       window.innerWidth || 0,
     );
@@ -214,7 +214,7 @@ class Project{
   }
   
   setLiItems(){
-    debugger;
+    
     const ul = document.querySelector( "#list-items" );
     if( ul.hasChildNodes() ){
       let child = ul.firstChild;
@@ -301,16 +301,19 @@ const voluntier = new Project( "VolunTier",
       new Img( "./assets/images/VoluntierLogin.JPG", "Google Auth Signin", 1 ),
       1,
     ), new Article( "Solid Team Atmosphere",
-    "This is the first time I got to work with a designer. It is " +
-    "amazing the content some are able to produce. Having a designer " +
-    "definitely made this app. I feel we owe the majority of our success " +
-    "to our team environment and how well we worked together. I became my " +
-    "team's TL in april and was there for almost all of their journey " +
-    "through Lambda. This made it extremely easy for me to decide who I " +
-    "wanted to work with in Labs.  I got to be there to help them through " +
-    "the tough aspects of their journey. Ant Design and Styled components " +
-    "for styling. Firebase for data storage and authentication. Moment.js to " +
-    "deal with time, axios to make http calls. ",
+    "I became my team's TL in April. Which gave me the opportunity  to be" +
+    " there for most of their journey. This made it feasible for me to gain" +
+    " a  better perception of which members were skilled in the various" +
+    " units  we covered. As a TL I was able to guide them through the tough" +
+    "  aspects of their journey such as Ant Design and Styled  components" +
+    " for styling. We were also able to cover Firebase for data storage  and" +
+    " authentication, Moment.js to deal with time, and Axios to make http" +
+    "  calls. This is the first time I got to work with a UX designer. The" +
+    "  content that they were able to produce allowed us to focus more on" +
+    "  the components and functionality rather than layouts of the project." +
+    "  I feel we owe the majority of our success, to our team environment." +
+    "  Each member was able to communicate and contribute equally throughout" +
+    "  the duration of this project.",
     new Img( "./assets/images/VolunteerLanding.JPG",
       "VolunTier Platform Landing Page",
       2,
@@ -322,7 +325,7 @@ const voluntier = new Project( "VolunTier",
   "https://voluntier-platform.netlify.com/login",
   "https://github.com/Lambda-School-Labs/volunteer-platform-fe",
   [
-    "I Played a crucial role in development because of my experience with" +
+    "I played a crucial role in development because of my experience with" +
     " firebase ", "Assisted others in learning the no sql design and how to" +
     " work with the firebase api", " Produced 87 pull requests",
     "Developed the Organization dashboard", "Created organization, and" +

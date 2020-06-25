@@ -1,47 +1,58 @@
-# Build A Portfolio Website
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<h1 align="center">Welcome to Portfolio 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-With all of the projects you will be working on here at Lambda School, you will need somewhere to house them!  There is no better opportunity to learn and show off your skills than a beautiful portfolio website.  
+  <a href="https://github.com/jeremiahtenbrink/jeremiahtenbrinkhub.io.git/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://twitter.com/CO_Comp_Nerd" target="_blank">
+    <img alt="Twitter: CO_Comp_Nerd" src="https://img.shields.io/twitter/follow/CO_Comp_Nerd.svg?style=social" />
+  </a>
+</p>
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jeremiahtenbrink"><a class="LI-simple-link" href='https://www.linkedin.com/in/jeremiahtenbrink?trk=profile-badge'>Jeremiah Tenbrink</a></div>
 
-You have the ability to write HTML, CSS, and responsive media queries.  You also know how to identify and write responsive units.  It's time to put that knowledge into action by reading someone else's code and adding your own flavor.  You will be building a portfolio website from a template found on [https://html5up.net/](https://html5up.net/).
+### 🏠 [Homepage](http://tenbrink.dev)
 
-## Project Set Up
+Html5 up template of my current and past projects. 
 
-### Follow these steps to set up and work on your project:
+## Install
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on the `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+```sh
+npm install
+```
 
-### Follow these steps to download your template and start the project:
+## Usage
 
-- [ ] Navigate here: [https://html5up.net/](https://html5up.net/)
-- [ ] Pick a template that represents you and download it to your local machine
-- [ ] Unzip the code and copy the site to your git repository that you just set up
-  * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
-- [ ] Work on the MVP requirements listed below
+```sh
+npm run start
+```
 
-### Follow these steps for completing your project after your MVP is completed:
+## Start
+The start script will start live-server and node-sass watch with source maps
+ set to true.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by merging the branch back into master.
+## Author
 
-## MVP Requirements
+👤 **Jeremiah Tenbrink**
 
-- [ ] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
-- [ ] Customize the template to you 
-	- [ ] Update the title tag match your name
-	- [ ] Update the place holder content throughout the template to your information
-		* Some templates are much larger than others, you don't need to fill in every little div with information, just try to get the site representing you and your work 
-		* You can use sites like [https://www.pexels.com/](https://www.pexels.com/) for free images to fill in place holders
-		* Showcase projects you have worked on by providing some information and links to your git hub projects
-- [ ] Implement proper attribution: Attribution is required under the [creative commons license](https://html5up.net/license) that came with the website files you downloaded.  Be sure to provide attribution somewhere in the site.  The templates should already come with attribution found in most footers but double check to be sure.
-- [ ] Host your website for the world to see. Follow the instructions found here [https://pages.github.com/](https://pages.github.com/).  Once you have hosted your web page, share it for your peers to see.  This is not a small feat!
+* Website: [Tenbrink.dev](http://tenbrink.dev)
+* Twitter: [@CO_Comp_Nerd](https://twitter.com/CO_Comp_Nerd)
+* Github: [@jeremiahtenbrink](https://github.com/jeremiahtenbrink)
+* LinkedIn: [@jeremiahtenbrink](https://linkedin.com/in/jeremiahtenbrink)
 
-## Stretch
+## 🤝 Contributing
 
-- [ ] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
-- [ ] Download another template and see if you can get the CSS preprocessor working on the project
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jeremiahtenbrink/jeremiahtenbrink.github.io/issues). You can also take a look at the [contributing guide](https://github.com/jeremiahtenbrink/jeremiahtenbrinkhub.io.git/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Jeremiah Tenbrink](https://github.com/jeremiahtenbrink).<br />
+This project is [ISC](https://github.com/jeremiahtenbrink/jeremiahtenbrinkhub.io.git/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
