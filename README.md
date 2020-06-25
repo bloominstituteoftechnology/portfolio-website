@@ -1,4 +1,4 @@
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
 <h1 align="center">Welcome to Portfolio 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
@@ -9,8 +9,11 @@
   <a href="https://twitter.com/CO_Comp_Nerd" target="_blank">
     <img alt="Twitter: CO_Comp_Nerd" src="https://img.shields.io/twitter/follow/CO_Comp_Nerd.svg?style=social" />
   </a>
+  <a href="https://www.linkedin.com/in/jeremiahtenbrink/" target="_blank">
+      <img alt="LinkedIn: JeremiahTenbrink" src="./assets/images/linkedInBadge.svg" />
+    </a>
 </p>
-<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jeremiahtenbrink"><a class="LI-simple-link" href='https://www.linkedin.com/in/jeremiahtenbrink?trk=profile-badge'>Jeremiah Tenbrink</a></div>
+
 
 ### 🏠 [Homepage](http://tenbrink.dev)
 
