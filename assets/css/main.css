@@ -1630,6 +1630,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			/* max-height: 200px; */
 		}
 
 		.image.fit {
@@ -1915,6 +1916,9 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
+		/* my stuff below */
+		width: 100%;
+		height: 100%;
 	}
 
 		.box.style1 {
@@ -1935,6 +1939,11 @@ input, select, textarea {
 			top: 2em;
 			margin: -4em 0 4em -4em;
 			width: auto;
+		}
+		.box.style2 img { 
+			/* My stuff here */
+			width: 100%;
+			height: 250px;
 		}
 
 /* Icons */
