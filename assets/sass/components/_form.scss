@@ -1,5 +1,5 @@
 ///
-/// Ethereal by HTML5 UP
+/// Solid State by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -13,8 +13,8 @@
 			margin-bottom: 0;
 		}
 
-		> .fields {
-			$gutter: (_size(element-margin) * 1);
+		> .fields  {
+			$gutter: (_size(element-margin) * 0.75);
 
 			@include vendor('display', 'flex');
 			@include vendor('flex-wrap', 'wrap');
@@ -41,7 +41,7 @@
 			}
 		}
 
-		@include breakpoint('<=small') {
+		@include breakpoint('<=xsmall') {
 			> .fields {
 				$gutter: (_size(element-margin) * 0.75);
 
@@ -72,9 +72,11 @@
 		color: _palette(fg-bold);
 		display: block;
 		font-family: _font(family-heading);
-		font-size: 0.8rem;
-		font-weight: _font(weight-heading);
-		margin: 0 0 (_size(element-margin) * 0.325) 0;
+		font-size: 0.8em;
+		font-weight: _font(weight-heading-bold);
+		letter-spacing: _font(kern-heading);
+		margin: 0 0 (_size(element-margin) * 0.35) 0;
+		text-transform: uppercase;
 	}
 
 	input[type="text"],
@@ -84,13 +86,14 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: transparent;
-		border: solid 2px _palette(border);
+		background: _palette(border-bg);
 		border-radius: _size(border-radius);
+		border: none;
+		border: solid 2px _palette(border);
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 0.75rem;
+		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
 
@@ -99,13 +102,8 @@
 		}
 
 		&:focus {
-			border-color: _palette(accent3);
+			border-color: desaturate(lighten(_palette(accent), 6), 3);
 		}
-	}
-
-	option {
-		background-color: _palette(fg-bold);
-		color: _palette(bg);
 	}
 
 	select {
@@ -141,7 +139,7 @@
 	}
 
 	textarea {
-		padding: 0.75rem 1rem;
+		padding: 0.75em 1em;
 	}
 
 	input[type="checkbox"],
@@ -149,95 +147,54 @@
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
-		margin-right: -2rem;
+		margin-right: -2em;
 		opacity: 0;
-		width: 1rem;
+		width: 1em;
 		z-index: -1;
 
 		& + label {
 			@include icon(false, solid);
-			position: relative;
 			color: _palette(fg);
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1rem;
+			font-size: 1em;
+			font-family: _font(family);
+			text-transform: none;
+			letter-spacing: 0;
 			font-weight: _font(weight);
-			margin-bottom: 0;
-			padding-left: (_size(element-height) * 0.6) + 1rem;
-			padding-right: 1rem;
+			padding-left: (_size(element-height) * 0.6) + 0.75em;
+			padding-right: 0.75em;
+			position: relative;
 
 			&:before {
+				background: _palette(border-bg);
+				border-radius: _size(border-radius);
+				border: solid 2px _palette(border);
 				content: '';
 				display: inline-block;
-				font-size: 0.8rem;
-				position: absolute;
-				top: 0;
+				font-size: 0.8em;
+				height: (_size(element-height) * 0.75);
 				left: 0;
-				width: (_size(element-height) * 0.675);
-				height: (_size(element-height) * 0.675);
-				line-height: (_size(element-height) * 0.675);
-				background: _palette(border-bg);
-				border: solid 1px _palette(border);
-				border-radius: _size(border-radius);
-				color: _palette(bg);
+				line-height: (_size(element-height) * 0.75);
+				position: absolute;
 				text-align: center;
-
-				body.is-ie & {
-					line-height: 1.5;
-				}
+				top: 0;
+				width: (_size(element-height) * 0.75);
 			}
 		}
 
 		&:checked + label {
 			&:before {
-				content: '\f00c';
 				background: _palette(fg-bold);
 				border-color: _palette(fg-bold);
+				content: '\f00c';
+				color: _palette(bg);
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				border-color: _palette(accent3);
-				box-shadow: 0 0 0 1px _palette(accent3);
-			}
-		}
-
-		&:focus:checked + label {
-			&:before {
-				background: _palette(accent3);
-			}
-		}
-
-		&.color1 {
-			& + label {
-				&:before {
-					color: _palette(accent1);
-				}
-			}
-		}
-
-		&.color2 {
-			& + label {
-				&:before {
-					color: _palette(accent2);
-				}
-			}
-		}
-
-		&.color3 {
-			& + label {
-				&:before {
-					color: _palette(accent3);
-				}
-			}
-		}
-
-		&.color4 {
-			& + label {
-				&:before {
-					color: _palette(accent4);
-				}
+				border-color: _palette(accent);
 			}
 		}
 	}
