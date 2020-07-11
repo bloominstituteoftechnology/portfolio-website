@@ -1,10 +1,3 @@
-/* Error: Expected expression.
- *    ,
- * 19 |             line-height: inherit;http://127.0.0.1:5501/assets/css/main.css
- *    |                                                                           ^
- *    '
- *   components/_icon.scss 19:66  @import
- *   main.scss 115:10             root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +7,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 19 \2502              line-height: inherit;http://127.0.0.1:5501/assets/css/main.css\d\a    \2502                                                                            ^\a    \2575 \a   components/_icon.scss 19:66  @import\a   main.scss 115:10             root stylesheet";
+  
 }
