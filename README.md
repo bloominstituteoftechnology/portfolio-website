@@ -10,7 +10,7 @@ Github: https://github.com/ShrutiMalik123
 Portfolio: https://porfolio-shruti-malik.now.sh/
 Resume: https://www.linkedin.com/in/shruti-malik123/
 
-March 19, 2020
+
 
 Dear Hiring Manager,
 It gives me great pleasure to apply as Full Stack Developer. Design in chaos has been my life’s most interesting revelation. I would love to help your company in their many activities.
