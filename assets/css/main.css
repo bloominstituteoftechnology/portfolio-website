@@ -36,6 +36,18 @@ body {
 	line-height: 1;
 }
 
+@media screen and (min-width: 900px) {
+
+	.bjj{
+		/* object-fit:  !important; */
+		width:60% !important;
+		border-top: 1px solid lightgrey !important;
+		border-bottom: 1px solid lightgrey !important;
+
+	}
+
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -4931,6 +4943,8 @@ input, select, textarea {
 			border-radius: 0;
 		}
 
+		/* ********************* */
+
 			.spotlight.style1 .image img {
 				-moz-object-fit: cover;
 				-webkit-object-fit: cover;
@@ -4948,6 +4962,7 @@ input, select, textarea {
 				height: 100%;
 				border-radius: 0;
 			}
+		
 
 		@media screen and (max-width: 1680px) {
 
