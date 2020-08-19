@@ -4941,6 +4941,7 @@ input, select, textarea {
 			width: 35%;
 			min-width: 25rem;
 			border-radius: 0;
+			margin:1rem
 		}
 
 		/* ********************* */
