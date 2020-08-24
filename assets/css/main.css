@@ -47,6 +47,32 @@ body {
 	}
 
 }
+.tooltip .tooltiptext {
+	visibility: hidden;
+	background: rgba(12, 12, 12, 0.575);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 0 0.7rem;
+	top: 30%;
+	left: 103%;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
+  .contactEmail{
+	  font-size:2rem;
+	  font-weight: 600;
+	font-family: 'Indie Flower', cursive;
+	/* font-family: 'Annie Use Your Telescope', cursive; */
+
+
+  }
 .githubLink{
 	text-decoration: underline;
 }
