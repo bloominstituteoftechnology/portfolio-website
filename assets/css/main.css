@@ -74,7 +74,24 @@ input, select, textarea {
 
 /* Basic */
 
+.myVivPic {
+	width: 100%;
+}
 
+.randomPic  {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.farmFreshPic  {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.workpic {
+	margin-top: 20px;
+	width: 100%;
+}
 	@-ms-viewport {
 		width: device-width;
 	}
