@@ -2568,3 +2568,13 @@ body.is-touch .main {
 	background-clip: text;
 	border-color: white;
 }
+#logo {
+	height: auto;
+	width: auto;
+	max-height: 72px;
+	max-width: 250px;
+}
+
+.cap {
+	color: #066674;
+}

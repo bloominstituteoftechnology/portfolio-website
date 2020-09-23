@@ -10,6 +10,13 @@ body {
 a {
 	text-decoration: none;
 }
+.img {
+	background-color: #e52e71;
+	height: auto;
+	width: auto;
+	max-height: 72px;
+	max-width: 250px;
+}
 
 .card-list {
 	display: flex;
