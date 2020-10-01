@@ -4,11 +4,11 @@ With all of the projects you will be working on here at Lambda School, you will 
 
 You have the ability to write HTML, CSS, and responsive media queries.  You also know how to identify and write responsive units.  It's time to put that knowledge into action by reading someone else's code and adding your own flavor.  You will be building a portfolio website from a template found on [https://html5up.net/](https://html5up.net/).
 
-## Project Set Up
+## Project Set-Up
 
 ### Follow these steps to set up and work on your project:
 
-_ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
+_ Watch this walkthrough video:  https://youtu.be/P2Y9W29kcjs
 
 - [ ] Create a forked copy of this project.
 - [ ] Add PM as collaborator on Github.
@@ -27,14 +27,14 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 	- [https://html5up.net/dimension](https://html5up.net/dimension)
 
 - [ ] Unzip the code and copy the site to your git repository that you just set up
-  * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
+  * Note that we won't be utilizing the pre-processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
 - [ ] Work on the MVP requirements listed below
 
 ### Follow these steps for completing your project after your MVP is completed:
 
 - [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by merging the branch back into master.
+- [ ] PM then will count the HW as done by merging the branch back into the master.
 
 ## MVP Requirements
 
@@ -45,7 +45,7 @@ _ Watch this walk through video:  https://youtu.be/P2Y9W29kcjs
 		* Some templates are much larger than others, you don't need to fill in every little div with information, just try to get the site representing you and your work 
 		* You can use sites like [https://www.pexels.com/](https://www.pexels.com/) for free images to fill in place holders
 		* Showcase projects you have worked on by providing some information and links to your git hub projects
-- [ ] Implement proper attribution: Attribution is required under the [creative commons license](https://html5up.net/license) that came with the website files you downloaded.  Be sure to provide attribution somewhere in the site.  The templates should already come with attribution found in most footers but double check to be sure.
+- [ ] Implement proper attribution: Attribution is required under the [creative commons license](https://html5up.net/license) that came with the website files you downloaded.  Be sure to provide attribution somewhere on the site.  The templates should already come with attribution found in most footers but double-check to be sure.
 - [ ] Host your website for the world to see. Follow the instructions found here [https://pages.github.com/](https://pages.github.com/).  Once you have hosted your web page, share it for your peers to see.  This is not a small feat!
 
 ## Stretch
