@@ -72,6 +72,14 @@ input, select, textarea {
 	appearance: none;
 }
 
+.github {
+	width: 10%;
+}
+
+.linkedIn {
+	width: 10%;
+}
+
 /* Basic */
 
 .myVivPic {
