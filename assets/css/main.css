@@ -76,8 +76,23 @@ input, select, textarea {
 	width: 10%;
 }
 
+#selfPic {
+	width: 50%;
+    margin: 0 auto;
+
+}
+
 .linkedIn {
 	width: 10%;
+}
+.shoutOut {
+	font-size: .5rem;
+}
+
+.gitFlex {
+	margin-top: 20%;
+    border-top: 1px solid white;
+    padding-top: 3%;
 }
 
 /* Basic */
@@ -94,6 +109,10 @@ input, select, textarea {
 .farmFreshPic  {
 	margin-top: 20px;
 	width: 100%;
+}
+
+.bk {
+	background-color: white;
 }
 
 .workpic {
@@ -673,6 +692,7 @@ input, select, textarea {
 			border-radius: 4px;
 			display: block;
 		}
+	
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -1649,6 +1669,7 @@ input, select, textarea {
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
+			font-size: .5rem;
 		}
 
 		body.is-article-visible #footer {
