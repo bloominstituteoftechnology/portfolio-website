@@ -54,6 +54,7 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	background-image: "images/background matrix.gif";
 }
 
 mark {
