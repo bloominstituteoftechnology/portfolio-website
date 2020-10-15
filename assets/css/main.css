@@ -88,6 +88,8 @@ time,
 mark,
 audio,
 video {
+	max-height: auto;
+	max-width: auto;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -114,6 +116,15 @@ body {
 	line-height: 1;
 	background-image: 'https://64.media.tumblr.com/4b58ca126a78cfe9930c5b73a4ee1751/tumblr_omvpewVdh11s4fz4bo1_500.gifv';
 }
+.slogan {
+	font-size: 2.5rem;
+}
+#myName {
+	font-size: 4.5em;
+	color: black;
+	text-decoration: underline;
+	text-shadow: 2px 2px 2px white;
+}
 
 ol,
 ul {
@@ -131,6 +142,12 @@ q:before,
 q:after {
 	content: '';
 	content: none;
+}
+
+#selfie {
+	box-shadow: 15px white;
+	border-radius: 10%;
+	padding-bottom: 10%;
 }
 
 table {
