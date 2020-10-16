@@ -97,6 +97,17 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
+#bio {
+	font-size: 2rem;
+	text-align: center;
+	color: whitesmoke;
+	text-shadow: 3px 3px 5px black;
+}
+#bioContent {
+	line-height: 1.2rem;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 3px black;
+}
 
 article,
 aside,
