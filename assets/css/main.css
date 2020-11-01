@@ -97,6 +97,10 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+#myLogo {
+	height: 15%;
+}
 #bio {
 	font-size: 2rem;
 	text-align: center;
@@ -158,7 +162,7 @@ q:after {
 #selfie {
 	box-shadow: 15px white;
 	border-radius: 10%;
-	padding-bottom: 10%;
+	/* padding-bottom: 10%; */
 }
 
 table {
