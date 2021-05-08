@@ -42,7 +42,7 @@ function ajax(method, url, data, handleResponse) {
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
         if (xhr.readyState !== XMLHttpRequest.DONE) return;
-        handleResponse(xhr.status, xhr.response, xhr.responseType);
+        handleResponse(xhr.status, JSON.parse(xhr.response), xhr.responseType);
     };
     xhr.send(data);
 }
