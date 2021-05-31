@@ -1,13 +1,13 @@
 @import '../../variables';
 
 div.Work {
-    @include flex($direction: column, $align: center);
-    margin: 0 auto 50px;
-    
+  @include flex($direction: column, $align: center);
+  margin: 0 auto 50px;
+
     div.Buttons {
         @include flex();
         margin: 50px auto;
-        
+
         a {
             font-size: 4rem;
             text-decoration: none;
@@ -16,37 +16,37 @@ div.Work {
             background: none;
             outline: none;
             border: none;
-            transition: .3s ease-in-out;
+            transition: 0.3s ease-in-out;
             border: 2px ridge $dark;
             border-right: none;
             border-radius: 25px 0 0 25px;
             font-family: $header-font;
             cursor: pointer;
-            
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 border-radius: 0 25px 25px 0;
                 border: 2px ridge $dark;
                 border-right: 2px ridge $dark;
                 border-left: none;
             }
-            
-            &.active, &:hover {
-                color: $accent;
-                background: $dark;
+
+            &.active,
+            &:hover {
+                color: $dark;
+                background: $mid;
             }
-            
+
             @media (max-width: 500px) {
                 font-size: 2rem;
             }
-            
         }
-        
     }
-    
+
     h2 {
         font-family: $header-font;
         font-size: 3rem;
-        text-shadow: 5px 5px 25px black, 5px 5px 25px black;
+        color: $accent;
+        -webkit-text-stroke: 1px $mid;
     }
     
     figure {
@@ -56,7 +56,7 @@ div.Work {
             width: 90%;
         }
         
-    }
+    } 
     
     div.Project {
         width: 100%;
@@ -64,17 +64,17 @@ div.Work {
         text-align: center;
         min-height: 150px;
         cursor: pointer;
+        padding: 2.5px 0;
         background-attachment: fixed;
         background-position: center;
         margin-bottom: 50px;
         border-radius: 50px;
-        transition: .5s ease-out;
-        
+        transition: 0.5s ease-out;
+
         @media (max-width: 500px) {
             border-radius: 25%;
         }
-        
-        
+
         p {
             color: whitesmoke;
             font-size: 2rem;
@@ -82,61 +82,60 @@ div.Work {
             white-space: pre-line;
             user-select: none;
             text-shadow: 5px 5px 25px black, 5px 5px 25px black;
-            
+
             a {
                 color: $accent;
                 text-decoration: none;
                 position: relative;
-                
+                width: 100%;
+
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     height: 2px;
                     width: 0px;
                     transform: translate(-50vw, 20px);
-                    transition: .5s ease-out;    
+                    transition: 0.5s ease-out;
                 }
-                
+
                 &:hover {
                     &::before {
-                        width: 100%;
-                        background: $accent;
-                        transform: translateY(20px);
+                    width: 100%;
+                    background: $accent;
+                    transform: translateY(20px);
                     }
                 }
-                
-                
             }
-            
         }
-        
+
         &.BlackHole {
-            background-image: linear-gradient(#000000aa, #000000aa), url(../../images/blackhole.png);
-            
+            background-image: linear-gradient(#000000aa, #000000aa),
+            url(../../images/blackhole.png);
+
             &:hover {
-                background-image: linear-gradient(#00000080, #00000080), url(../../images/blackhole.png);
+                background-image: linear-gradient(#00000080, #00000080),
+                url(../../images/blackhole.png);
             }
-            
         }
-        
+
         &.Howl {
-            background-image: linear-gradient(#000000aa, #000000aa), url(../../images/howl.png);
-            
+            background-image: linear-gradient(#000000aa, #000000aa),
+            url(../../images/howl.png);
+
             &:hover {
-                background-image: linear-gradient(#00000080, #00000080), url(../../images/howl.png);
+                background-image: linear-gradient(#00000080, #00000080),
+                url(../../images/howl.png);
             }
-            
         }
-        
+
         &.Chao {
-            background-image: linear-gradient(#000000aa, #000000aa), url(../../images/chao.png);
-            
+            background-image: linear-gradient(#000000aa, #000000aa),
+            url(../../images/chao.png);
+
             &:hover {
-                background-image: linear-gradient(#00000080, #00000080), url(../../images/chao.png);
+                background-image: linear-gradient(#00000080, #00000080),
+                url(../../images/chao.png);
             }
-            
         }
-        
     }
-    
 }

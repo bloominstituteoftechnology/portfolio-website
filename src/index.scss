@@ -5,11 +5,13 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient($mid, $dark) fixed;
-    font-family: $body-font;
-    color: $accent;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background: $light;
+  font-family: $body-font;
+  color: $dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }

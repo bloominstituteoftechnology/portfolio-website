@@ -2,14 +2,17 @@
 
 
 div.App {
-    @include flex($direction: column, $align: center);
-    flex-wrap: wrap;
-    padding: 0 25px;
+    @include flex(column, flex-start, center, wrap);
+    max-width: 100%;
 
     nav {
-        margin: 20px auto 0;
-        @include flex($justify: space-evenly);
-        position: relative;
+        @include flex(row, center, center);
+        width: 100%;
+        min-height: 50px;
+        height: 10%;
+        position: fixed;
+        background: linear-gradient($mid 90%, 95%, transparent 100%);
+        z-index: 5;
 
         @media (max-width: 500px) {
             width: 100%;
@@ -25,37 +28,37 @@ div.App {
 
             &.home{
                 &:hover ~ hr {
-                    @include transform(translate(-139px, 21px) !important);
+                    @include transform(translate(-139px, 10px) !important);
                     width: 5rem !important;
                 }
                 
                 &.active ~ hr{
-                    @include transform(translate(-139px, 21px));
+                    @include transform(translate(-139px, 10px));
                 }
             }
             
             &.about {
                 &:hover ~ hr {
-                    @include transform(translate(-52.5px, 21px) !important);
+                    @include transform(translate(-52.5px, 10px) !important);
                     width: 5rem !important;
                 }
                 
                 &.active ~ hr {
-                    @include transform(translate(-52.5px, 21px));
+                    @include transform(translate(-52.5px, 10px));
                 }
             }
             
             &.work {
                 &:hover ~ hr,
                 &.active ~ hr {
-                    @include transform(translate(33px, 21px));
+                    @include transform(translate(33px, 10px));
                     width: 4.25rem;    
                 }
             } 
             
             &:nth-child(4).active ~ hr, 
             &:nth-child(4):hover ~ hr {
-                @include transform(translate(128px, 21px));
+                @include transform(translate(128px, 10px));
                 width: 70px;
             }
 
@@ -65,7 +68,7 @@ div.App {
             width: 50px;
             position: absolute;
             border: 1px solid white;
-            @include transform(translate(-139px, 21px));
+            @include transform(translate(-139px, 10px));
             user-select: none;
             z-index: -1;
             transition: .5s ease-in-out;
@@ -74,10 +77,11 @@ div.App {
     }
 
     div.Routes {
-        min-height: 70vh;
-        width: 100%;
+        margin: 75px 25px 0;
+        min-height: 65vh;
+        width: calc(100%-50px);
     }
-
+        
     footer {
         @include flex($justify: space-around);
         flex-wrap: wrap;
@@ -88,28 +92,26 @@ div.App {
         @media (max-width: 500px) {
             width: 100%;
         }
-        
+
         h2 {
-            font-family: $header-font;
             width: 100%;
             text-align: center;
         }
-        
+
         div {
             @include flex($direction: column, $align: center);
-            transition: .3s ease-out;
+            transition: 0.3s ease-out;
 
             &:hover {
                 @include transform(scale(1.2));
             }
 
             svg.Link {
-                font-size: 5rem;
-                cursor: pointer;
+            font-size: 5rem;
+            cursor: pointer;
+            color: $mid;
             }
-
         }
-
     }
     
 }

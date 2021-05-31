@@ -1,16 +1,23 @@
 $mid: #099;
 $accent: #03D4FE;
 $dark: #001a1a;
+$light: #d5fdfd;
 
 $header-font: 'Gugi', cursive;
 $body-font: 'Do Hyeon', sans-serif;
 
-@mixin flex($align: flex-start, $justify: flex-start, $direction: row) {
+@mixin flex($direction: row, $justify: flex-start, $align: flex-start, $wrap: nowrap) {
     display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: $direction;
     flex-direction: $direction;
+    -webkit-justify-content: $justify;
     justify-content: $justify;
+    -webkit-align-items: $align;
     align-items: $align;
-}
+    -webkit-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+} 
 
 @mixin transform($transforms) {
 	-webkit-transform: $transforms;
