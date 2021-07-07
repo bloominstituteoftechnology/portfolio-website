@@ -1,0 +1,20 @@
+h2{
+	color: blue;
+}
+
+.boxmodel{
+	border: 5px solid red;
+	display: inline-block;
+	padding: 5px 15px 5px;
+	margin: 10px;
+
+}
+
+
+img{
+	float: :both;
+	text-align: center;
+}
+span{
+	font-size: 3em;
+}

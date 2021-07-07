@@ -1,0 +1,41 @@
+
+body {
+	background-image: url(vv.jpg);
+	background-size: cover;
+
+ }
+ *{
+ 	text-align: right;
+ }
+
+h2, p {
+	color: red;
+	text-align: center;
+	border: 6px solid lightblue;
+	cursor: pointer;
+}
+img{
+	float: right;
+}
+img{
+	float: :both;
+	text-align: center;
+}
+
+p {
+	color: rgb(20, 100, 180);
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 100%;
+	font-family: 'Poiret One', cursive;
+}
+li {
+	list-style: none;
+	display: inline-block;
+
+}
+.webtext{
+
+	border: 5px dashed green;
+	text-align: center;
+}
