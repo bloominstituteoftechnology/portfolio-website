@@ -1,0 +1,43 @@
+///
+/// Solid State by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Contact */
+
+	ul.contact {
+		list-style: none;
+		padding: 0;
+
+		li {
+			@include icon;
+			margin: (_size(element-margin) * 1.25) 0 0 0;
+			padding: 0 0 0 3.25em;
+			position: relative;
+
+			&:before {
+				border-radius: 100%;
+				border: solid 2px _palette(border);
+				display: inline-block;
+				font-size: 0.8em;
+				height: 2.5em;
+				left: 0;
+				line-height: 2.35em;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 2.5em;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			li {
+				margin: (_size(element-margin) * 0.75) 0 0 0;
+			}
+		}
+	}
