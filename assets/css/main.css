@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1291,7 +1294,7 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 1px #b12020;
 			border-radius: 100%;
 		}
 
@@ -1656,3 +1659,152 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+
+		<div class="row button-section">
+		<div class="col-twelve">
+			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Get in contact</a>
+			<a href="Hicham_Mokhtari_-_Cover_Letter (3).pdf" title="Download CV (Growth)" class="button button-primary">Download Cover</a>
+			<a href="Hicham_Mokhtari_-_Student (1).pdf" title="Download CV (Solidity)" class="button button-primary">Download CV</a>
+		</div>   		
+	</div>
+
+</section> <!-- /process-->    
+
+
+<!-- resume Section
+================================================== -->
+ <section id="resume" class="grey-section">
+
+	 <div class="row section-intro">
+		<div class="col-twelve">
+
+			<h5>Resume</h5>
+		 <h2>My Credentials</h2>
+		</div>   		
+	</div> <!-- /section-intro--> 
+
+	<div class="row resume-timeline">
+
+		<div class="col-twelve resume-header">
+
+			<h2>Education</h2>
+
+		</div> <!-- /resume-header -->
+
+		<div class="col-twelve">
+
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Bachelor's Degree</h3>
+						<p>July 2018 - Present(2024)</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4><a href="https://www.hogeschoolrotterdam.nl/">Hogeschool Rotterdam</a></h4>
+						<p>Currently pursuing a Bachlor is science at Rotterdam School Of Applyied Sciences Studying Business IT & Management.                              - KJSCE.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+			 
+			 
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>MBO Alround Laborant Techniek college Rotterdam </h3>
+						<p>2014 - 2018</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4><a href="">Techniek College Rotterdam </a></h4>
+						<p>Studied Microbiologie worked in various labs for interns and work related. such as Nutricia, Koppert and Star-SHl .</p>
+					</div>
+}
+
+/**
+ * responsive:
+ * resume
+ * ------------------------------------------------------------------- 
+ */
+@media only screen and (max-width:1024px) {
+	#resume .timeline-header {
+		padding-right: 50px;
+	}
+	#resume .timeline-header h3 {
+		font-size: 1.8rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.4rem;
+	}
+	#resume .timeline-content {
+		padding-left: 50px;
+	}
+}
+@media only screen and (max-width:768px) {
+	#resume .timeline-wrap::before {
+		left: 2.4rem;
+	}
+	#resume .timeline-ico {
+		left: 2.4rem;
+	}
+	#resume .timeline-header {
+		float: none;
+		width: auto;
+		padding-right: 15px;
+		text-align: left;
+	}
+	#resume .timeline-header h3 {
+		font-size: 2rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	#resume .timeline-content {
+		margin: 0;
+	}
+	#resume .timeline-content h4 {
+		padding-bottom: 0;
+		padding-top: 2.1rem;
+		margin-bottom: .6rem;
+		font-size: 1.7rem;
+	}
+	#resume .timeline-content h4::after {
+		bottom: auto;
+		top: 0;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 7rem;
+	}
+}
+@media only screen and (max-width:480px) {
+	#resume .resume-header h2 {
+		font-size: 2.2rem;
+	}
+	#resume .timeline-wrap::before {
+		left: 1.8rem;
+	}
+	#resume .timeline-ico {
+		height: 3.6rem;
+		width: 3.6rem;
+		line-height: 3.6rem;
+		left: 1.8rem;
+		margin-left: -1.8rem;
+		font-size: 1.5rem;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 5.5rem;
+	}
+}
