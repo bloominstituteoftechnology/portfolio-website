@@ -1693,7 +1693,7 @@ input, select, textarea {
 	height: 100%;
 }
 .skill-bars li .progress span {
-	position: relative;
+	position: absolute;
 	right: 0;
 	top: -3.6rem;
 	display: block;
